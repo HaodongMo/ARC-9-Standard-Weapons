@@ -1,6 +1,6 @@
 ASSAULT RIFLES
  AKM - Assault rifle with rough handling. 650 RPM. Can be equipped with GP30 GL.
- M16A2 - Burst fire assault rifle. 750 RPM. Can be equipped with M320 GL.
+ M16A2 - Burst fire assault rifle. 750 RPM. Can be equipped with M203 GL.
  FAL - Slow-firing assault rifle. 450 RPM.
  F2000 - Fast firing assault rifle. 800 RPM. Can be equipped with FN GL40.
 SMGS
