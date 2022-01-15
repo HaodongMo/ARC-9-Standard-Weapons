@@ -1,0 +1,60 @@
+PISTOLS
+ Stetchkin: 600 RPM fully automatic machine pistol.
+ 1911: Semi automatic .45 calibre pistol. 3 shot kill.
+ TEC-9: Semi automatic 9mm pistol. Well rounded with high capacity.
+ Vaquero: .44 Magnum single-action revolver. Extremely powerful with glacial reload.
+
+SMGS:
+ Bizon: 750 RPM submachine gun with high magazine capacity.
+ Vector: 1000 RPM submachine gun. Incredible rate of fire.
+ UMP-45: 650 RPM submachine gun. Very controllable.
+ Skorpion: 900 RPM submachine gun with good handling at the expense of poor damage.
+
+SHOTGUNS:
+ Double Barrel: Powerful double barrelled shotgun capable of shooting both barrels at once.
+ KSG: Pump action shotgun with large magazine tubes.
+ SPAS-12: Semi automatic shotgun with 7 round capacity. Loads ammunition one at a time.
+ AA-12: Fully automatic shotgun. Needs no introduction.
+
+ASSAULT RIFLES:
+ M4A1: 750 RPM well rounded assault rifle.
+ AKM: 600 RPM assault rifle. Poor accuracy.
+ G36: 700 RPM assault rifle. Great handling.
+ F2000T: 850 RPM fast firing assault rifle.
+
+BATTLE RIFLES:
+ M14 DMR: Well rounded semi automatic marksman rifle.
+ ASh-12: 550 RPM bullpup burst fire assault rifle.
+ Garand: Powerful DMR with a small capacity.
+ G3A3: 550 RPM slow firing assault rifle. Very powerful, but with a slow fire rate.
+
+LMGS:
+ HK21E: 500 RPM light machine gun that fires slowly to sustain fire for as long as possible.
+ M249: 650 RPM well rounded light machine gun.
+ MG42: 900 RPM fast firing LMG with horrible undeployed performance and tiny 50 round capacity.
+ Microgun: 900 RPM fast firing, low damage LMG.
+
+SNIPER RIFLES:
+ M95: .50 calibre sniper rifle. One shots above the legs. Terrible handling.
+ SRS-338: .338 Lapua Magnum sniper rifle. One shots to upper chest and head. Excellent range.
+ MSR: .308 Winchester sniper rifle. One shots to head only.
+ Marlin: Lever-action .45-70 sniper rifle. One shots above stomach within a very short distance.
+
+SPECIAL:
+ RPG-7: Dumbfire single-shot rocket launcher. Very powerful.
+ M320: Single-shot grenade launcher. Accepts a variety of ammunition.
+ Airbow: Repeating pneumatic weapon. Fires darts which can be retrieved.
+ Not-A-Flamethrower: Short range flamethrower weapon. Shoots a continuous cloud of flame.
+
+THROWABLE:
+ Frag Grenade
+ Flashbang
+ Smoke Grenade
+ Molotov Cocktail
+
+MELEE:
+All melee weapons are a 1-shot from the back.
+ Bayonet: Close-range combat knife. Fast swing rate. 2 shot kill to front. Short lunge range.
+ Machete: Slower swing rate than the knife. 3 shot kill to front. Medium lunge range.
+ Katana: Slow swing rate weapon. 2 shot kill to front. Long lunge range.
+ Knuckles: Very fast swing rate weapon. 4 shot kill to front. Short lunge range.

@@ -1,0 +1,52 @@
+ASSAULT RIFLES
+ AKM - Assault rifle with rough handling. 650 RPM. Can be equipped with GP30 GL.
+ M16A2 - Burst fire assault rifle. 750 RPM. Can be equipped with M320 GL.
+ FAL - Slow-firing assault rifle. 450 RPM.
+ F2000 - Fast firing assault rifle. 800 RPM. Can be equipped with FN GL40.
+SMGS
+ Bizon - Submachine gun with large magazine. 750 RPM.
+ Vector - Submachine gun with very fast fire rate. 1000 RPM.
+ SIG MPX - Submachine gun with controllable fire rate. 650 RPM.
+ MP5 - Well rounded submachine gun. 750 RPM.
+LMGS
+ PKP Pecheneg - Balanced slow-firing LMG. 600 RPM.
+ MG3 - LMG with fast firing rate. 900 RPM.
+ M60 LMG - Very slow firing LMG. 500 RPM.
+DMRS
+ VSS - High rate of fire DMR with integral silencer and very poor long range performance. 400 RPM.
+ M14 - Balanced semi-automatic DMR. 200 RPM.
+ SKS - Close-range DMR. 300 RPM.
+SNIPER RIFLES
+ Hecate II - .50 Cal anti-materiel rifle. Very slow firing. One-shot to head, chest, and arms within close range, one-shot to head at any range.
+ AWM - .338 Lapua sniper rifle. Balanced performance. One-shot to head and chest at any range.
+ Marlin - .45-70 sniper rifle. Fast reaction time. One-shot to head and chest at close range, one-shot to head at any range.
+SHOTGUNS
+ Double-Barrel - Two-shot DB shotgun.
+ TOZ-106 - Bolt-action shotgun. Weaker than other shotguns, but more accurate.
+ KSG - Pump-action shotgun. Powerful at close range.
+ Striker - Automatic shotgun with revolving drum feed system. Very slow to reload.
+PISTOLS
+ M1911 - .45 ACP pistol.
+ Desert Eagle - .50 cal pistol with extreme impact.
+ TEC-9 - Semi-auto 9mm pistol.
+ APS - Fully automatic 9x18mm pistol.
+LAUNCHERS
+ M79 - 40mm grenade launcher. Good splash damage.
+ RPG-7 - Dumb-fire rocket launcher with good direct impact damage.
+ CGM4 - Laser-guided missile launcher. Missiles follow aim.
+GADGETS
+ Crash Mat APS - Active protection system that fires lasers to intercept incoming projectiles. Recharges for 3 seconds after activation.
+ IFAK - Medical kit. Heals self or others. Needs to be recharged over time.
+ Supply Crate - Ammo kit. Resupplies held weapon up to supply limit.
+ Deploy Beacon - Player will respawn at the location at which this is placed.
+ Ballistic Shield - Stops bullets.
+THROWABLES
+ Frag Grenade - Explosive hand grenade.
+ Flashbang - Stun grenade for entering rooms. Temporarily disables digital scopes.
+ Smoke Grenade - Produces a smokescreen on impact.
+ C4 - Remotely detonated high explosive charge.
+ Recon Device - Upon "detonation", it briefly reveals enemies within its camera radius.
+MELEE
+ Bayonet: Close-range combat knife. Fast swing rate. 2 shot kill to front. Short lunge range.
+ Machete: Slower swing rate than the knife. 3 shot kill to front. Medium lunge range.
+ Katana: Slow swing rate weapon. 2 shot kill to front. Long lunge range.
