@@ -5,7 +5,7 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9"
 
-SWEP.PrintName = "R/CAR-83"
+SWEP.PrintName = "RAY/CAR 83"
 SWEP.TrueName = "M16A2"
 
 SWEP.Class = ARC9.CLASS_RIFLE
@@ -31,7 +31,7 @@ SWEP.Trivia = {
     Year = "1983"
 }
 
-SWEP.Description = [[Adopted in 1983, the R/CAR-83 (Rayter/Combat Automatic Rifle) is a widely used assault rifle created as a development of the AR series. It comes with new furniture, an improved rear sight, a case deflector, and a semi-auto/three-round burst fire selector.
+SWEP.Description = [[Adopted in 1983, the RAY/CAR 83 (Rayter Combat Automatic Rifle) is a widely used assault rifle created as a development of the AR series. It comes with new furniture, an improved rear sight, a case deflector, and a semi-auto/three-round burst fire selector.
 
 Medium weight with good rate of fire in burst. Pace bursts well to maximize volume of fire.]]
 
@@ -39,6 +39,7 @@ end
 
 SWEP.ViewModel = "models/weapons/arc9/c_ud_m16.mdl"
 
+SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-1, 3, -5.5),
     Ang = Angle(-5, 0, 180),
@@ -112,7 +113,7 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 3 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 1.75 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -124,6 +125,8 @@ SWEP.RecoilDissipationRate = 10 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.1 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1.25 -- Multiplier for automatic recoil control.
+
+SWEP.RecoilKick = 2
 
 -------------------------- SPREAD
 
@@ -163,6 +166,17 @@ SWEP.IronSights = {
 
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, 0)
+
+SWEP.ActivePos = Vector(0, 0, -1)
+SWEP.ActiveAng = Angle(0, 0, 0)
+
+-------------------------- EFFECTS
+
+SWEP.MuzzleParticle = "muzzleflash_ak47" -- Used for some muzzle effects.
+
+SWEP.ShellModel = "models/shells/shell_556.mdl"
+
+SWEP.ShellCorrectAng = Angle(0, 180, 0)
 
 -------------------------- SOUNDS
 
