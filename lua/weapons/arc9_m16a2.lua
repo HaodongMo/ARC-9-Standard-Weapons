@@ -8,13 +8,17 @@ SWEP.Category = "ARC-9"
 SWEP.PrintName = "RAY/CAR 83"
 SWEP.TrueName = "M16A2"
 
-SWEP.Class = ARC9.CLASS_RIFLE
+SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    Manufacturer = "FN Herstal",
+    Manufacturer = "Colt's Manufacturing Company",
     Calibre = "5.56x45mm NATO",
     Mechanism = "Gas-Operated Rotating Bolt",
     Country = "United States of America",
     Year = "1983"
+}
+
+SWEP.Credits = {
+    Author = "Urban Decay Team",
 }
 
 SWEP.Description = [[Adopted in 1983, the M16A2 is a widely used assault rifle created as a development of the M16A1. It comes with new furniture, an improved rear sight, a case deflector, and a semi-auto/three-round burst fire selector. With a worldwide production of 8 million, it is the most produced firearm of the 5.56mm calibre on Earth.
@@ -130,7 +134,7 @@ SWEP.RecoilKick = 2
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.00025
+SWEP.Spread = 0.001
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
@@ -172,7 +176,7 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "muzzleflash_ak47" -- Used for some muzzle effects.
+SWEP.MuzzleParticle = "muzzleflash_5" -- Used for some muzzle effects.
 
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 
