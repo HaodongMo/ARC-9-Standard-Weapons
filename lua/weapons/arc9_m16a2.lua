@@ -321,10 +321,24 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
+SWEP.AttachmentElements = {
+    ["upper_m16a4"] = {
+        Bodygroups = {
+            {1, 1},
+            {3, 3}
+        },
+    },
+    ["nofs"] = {
+        Bodygroups = {
+            {6, 1},
+        },
+    }
+}
+
 SWEP.Attachments = {
     [1] = {
-        PrintName = "MOUNT",
-        Category = "mount_m16ch",
+        PrintName = "UPPER",
+        Category = {"m16_upper", "mount_m16ch"},
         Bone = "m16_parent",
         Pos = Vector(0, -3.15, 3.5),
         Ang = Angle(90, 0, -90),

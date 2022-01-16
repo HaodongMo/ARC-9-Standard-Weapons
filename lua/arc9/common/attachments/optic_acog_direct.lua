@@ -32,7 +32,7 @@ ATT.Sights = {
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 10
-ATT.RTScopeReticle = Material("arc9/acog.png")
+ATT.RTScopeReticle = Material("arc9/acog.png", "mips smooth")
 
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, -0.4)
