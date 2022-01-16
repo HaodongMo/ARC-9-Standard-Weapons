@@ -326,6 +326,5 @@ SWEP.Attachments = {
         Bone = "m16_parent",
         Pos = Vector(0, -3.15, 3.5),
         Ang = Angle(90, 0, -90),
-        Installed = "mount_m16ch"
     }
 }

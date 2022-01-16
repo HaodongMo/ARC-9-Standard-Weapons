@@ -23,3 +23,7 @@ ATT.CompactName = "RAY/CAR-CHR"
 ATT.Description = "Device for attaching picatinny standard optics to the top of any RAY/CAR type carrying handle."
 
 end
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 2)
+end
