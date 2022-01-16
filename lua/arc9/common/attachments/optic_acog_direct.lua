@@ -4,9 +4,11 @@ ATT.Icon = Material("entities/arc9_att_optic_acog.png", "mips smooth")
 ATT.Description = "Magnified combat scope."
 ATT.SortOrder = 1
 
-ATT.Model = "models/weapons/arc9/atts/acog.mdl"
+ATT.Model = "models/weapons/arc9/atts/acog_direct.mdl"
 
-ATT.Category = "optic_picatinny" // can be "string" or {"list", "of", "strings"}
+ATT.Category = "mount_m16ch" // can be "string" or {"list", "of", "strings"}
+
+ATT.InvAtt = "optic_acog"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {
@@ -29,7 +31,7 @@ ATT.RTScopeFOV = 10
 ATT.RTScopeReticle = Material("arc9/acog.png")
 
 ATT.Scale = 1.25
-ATT.ModelOffset = Vector(0, 0, -0.175)
+ATT.ModelOffset = Vector(0, 0, -0.4)
 
 ATT.SwayAdd = 0.15
 ATT.FreeAimRadiusMultSights = 0.1

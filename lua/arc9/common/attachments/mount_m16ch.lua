@@ -26,5 +26,5 @@ ATT.Description = "Device for attaching picatinny standard optics to the top of 
 end
 
 ATT.ActivePosHook = function(swep, pos)
-    return pos - Vector(0, 0, 2)
+    return pos - Vector(0, 0, 3)
 end
