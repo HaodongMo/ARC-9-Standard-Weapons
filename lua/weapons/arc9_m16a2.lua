@@ -42,23 +42,26 @@ Medium weight with good rate of fire in burst. Pace bursts well to maximize volu
 end
 
 SWEP.ViewModel = "models/weapons/arc9/c_ud_m16.mdl"
+SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    Pos = Vector(-1, 3, -5.5),
+    Pos = Vector(-7.5, 4, -7.5),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
 
+SWEP.DefaultBodygroups = "0000000000000000000000"
+
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 26 -- Damage done at point blank range
-SWEP.DamageMin = 15 -- Damage done at maximum range
+SWEP.DamageMax = 35 -- Damage done at point blank range
+SWEP.DamageMin = 20 -- Damage done at maximum range
 
 SWEP.DamageRand = 0 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
 SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 5000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMax = 10000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 5 -- Units of wood that can be penetrated by this gun.
 
@@ -174,6 +177,19 @@ SWEP.SprintPos = Vector(5, 0, 0)
 SWEP.ActivePos = Vector(0, 0, -1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
+-------------------------- HoldTypes
+
+SWEP.HoldType = "shotgun"
+SWEP.HoldTypeSprint = "passive"
+SWEP.HoldTypeHolstered = "passive"
+SWEP.HoldTypeSights = "ar2"
+SWEP.HoldTypeCustomize = "slam"
+SWEP.HoldTypeBlindfire = "pistol"
+
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
+SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
+
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "muzzleflash_5" -- Used for some muzzle effects.
@@ -192,6 +208,8 @@ SWEP.DistantShootSound = path .. "dist.ogg"
 SWEP.ShootSoundSilenced = path .. "fire_sup.ogg"
 SWEP.DistantShootSoundSilenced = common .. "sup_tail.ogg"
 SWEP.DryFireSound = path .. "dryfire.ogg"
+
+SWEP.FiremodeSound = "weapons/arccw/firemode.wav"
 
 local rottle = {common .. "cloth_1.ogg", common .. "cloth_2.ogg", common .. "cloth_3.ogg", common .. "cloth_4.ogg", common .. "cloth_6.ogg", common .. "rattle.ogg"}
 local ratel = {path .. "rattle_1.ogg", path .. "rattle_2.ogg", path .. "rattle_3.ogg"}
@@ -297,4 +315,17 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 2.15},
         },
     },
+}
+
+-------------------------- ATTACHMENTS
+
+SWEP.Attachments = {
+    [1] = {
+        PrintName = "MOUNT",
+        Category = "mount_m16ch",
+        Bone = "m16_parent",
+        Pos = Vector(0, -3.15, 3.5),
+        Ang = Angle(90, 0, -90),
+        Installed = "mount_m16ch"
+    }
 }
