@@ -1,7 +1,11 @@
-ATT.PrintName = "Trijicon ACOG TA11"
+ATT.PrintName = "Trijicon ACOG TA01"
 ATT.CompactName = "ACOG"
 ATT.Icon = Material("entities/arc9_att_optic_acog.png", "mips smooth")
-ATT.Description = "Magnified combat scope."
+ATT.Description = [[The ACOG is a magnified gunsight for aiding with target acquisition at long range.
+
+It is very popular for its wide field of view and reliable design, and has made its way into the hands of military units worldwide.
+
+Using a mount, it can be attached to a Picatinny rail, or it can be attached to an AR carry handle directly.]]
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/acog.mdl"

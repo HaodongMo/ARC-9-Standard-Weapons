@@ -1,7 +1,9 @@
 ATT.PrintName = "Sightmark Sure Shot Reflex"
 ATT.CompactName = "SURESHOT"
 ATT.Icon = Material("entities/arc9_att_optic_sureshot.png", "mips smooth")
-ATT.Description = "Mass produced red dot compact collimator sight."
+ATT.Description = [[The "world's worst red dot sight", it still shows up constantly, always in knock-off form. Sightmark, Barska, Walther, and dozens of Chinese airsoft accessory companies make their own versions. It is rumored that the original comes from a high end Japanese shooting sports company, but nobody knows for sure.
+
+Clear with a wide sight picture.]]
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/sureshot.mdl"
@@ -19,7 +21,7 @@ ATT.Sights = {
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("arc9/dot.png", "additive")
-ATT.HoloSightSize = 512
+ATT.HoloSightSize = 1024
 ATT.HoloSightColor = Color(255, 0, 0)
 
 ATT.ModelOffset = Vector(0, 0, 0)

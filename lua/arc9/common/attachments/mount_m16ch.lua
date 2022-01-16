@@ -1,7 +1,7 @@
 ATT.PrintName = "M16 Carry Handle Rail"
 ATT.CompactName = "M16RAIL"
 ATT.Icon = Material("entities/arc9_att_m16ch.png", "mips smooth")
-ATT.Description = "Device for attaching picatinny standard optics to the top of any M16 type carrying handle."
+ATT.Description = [[Device for attaching picatinny standard optics to the top of any M16 type carrying handle.]]
 ATT.SortOrder = 0
 
 ATT.Category = "mount_m16ch" // can be "string" or {"list", "of", "strings"}
