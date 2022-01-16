@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+   "$basetexture"   "models/weapons/arc9/atts/uc_glass"
+	"$nodecal" "1"
+	"$translucent" 1
+
+
+}

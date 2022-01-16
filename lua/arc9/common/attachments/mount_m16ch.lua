@@ -18,8 +18,8 @@ ATT.Attachments = {
 
 if not ARC9:EnableTrueNames() then
 
-ATT.PrintName = "RAY/CAR Carry Handle Rail"
-ATT.CompactName = "RAY/CAR-CHR"
+ATT.PrintName = "RAYTER Carry Handle Rail"
+ATT.CompactName = "RAYTER"
 ATT.Description = "Device for attaching picatinny standard optics to the top of any RAY/CAR type carrying handle."
 
 end

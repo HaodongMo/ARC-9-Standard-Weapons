@@ -1,10 +1,10 @@
 ATT.PrintName = "Sightmark Sure Shot Reflex"
-ATT.CompactName = "SURESHOT"
-ATT.Icon = Material("entities/stalkerplus_att_optic_sureshot.png", "mips smooth")
+ATT.CompactName = "REFLEX"
+ATT.Icon = Material("entities/arc9_att_optic_sureshot.png", "mips smooth")
 ATT.Description = "Mass produced red dot compact collimator sight."
 ATT.SortOrder = 1
 
-ATT.Model = "models/weapons/arccw/atts/uc_sureshot.mdl"
+ATT.Model = "models/weapons/arc9/atts/sureshot.mdl"
 
 ATT.Category = "optic_picatinny" // can be "string" or {"list", "of", "strings"}
 
@@ -18,7 +18,7 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("stalkerplus/dot.png", "additive")
+ATT.HoloSightReticle = Material("arc9/dot.png", "additive")
 ATT.HoloSightSize = 512
 ATT.HoloSightColor = Color(255, 0, 0)
 
