@@ -322,18 +322,34 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["upper_m16a4"] = {
+    ["m16_upper_a4"] = {
         Bodygroups = {
             {1, 1},
             {3, 3}
         },
+    },
+    ["m16_upper_a1"] = {
+        Bodygroups = {
+            {1, 5}
+        },
+    },
+    ["m16_barrel_a1"] = {
+        Bodygroups = {
+            {5, 1}
+        },
+    },
+    ["m16_barrel_wood"] = {
+        Bodygroups = {
+            {5, 1}
+        },
+        Skin = 1
     },
     ["nofs"] = {
         Bodygroups = {
             {6, 1},
         },
     },
-    ["rs_m16"] = {
+    ["m16rs"] = {
         Bodygroups = {
             {12, 2},
             {6, 0},
@@ -386,7 +402,7 @@ SWEP.Attachments = {
     {
         PrintName = "BARREL",
         DefaultName = "Standard 20\" Barrel",
-        Category = {""},
+        Category = {"m16_barrel"},
         Bone = "m16_parent",
         Pos = Vector(0, 0, 10),
         Ang = Angle(90, 0, -90),

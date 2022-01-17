@@ -1,6 +1,6 @@
 ATT.PrintName = "M16 Railed Upper"
 ATT.CompactName = "A4UPPER"
-ATT.Icon = Material("entities/arc9_att_upper_m16a4.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_m16_upper_a4.png", "mips smooth")
 ATT.Description = [[Upper receiver that comes with a picatinny rail as standard.]]
 ATT.SortOrder = 0
 
