@@ -394,9 +394,9 @@ SWEP.Attachments = {
     {
         PrintName = "MUZZLE",
         DefaultName = "Factory Flash Hider",
-        Category = {""},
+        Category = "muzzle",
         Bone = "m16_parent",
-        Pos = Vector(0, 0, 28),
+        Pos = Vector(0, -0.21, 29.75),
         Ang = Angle(90, 0, -90),
     },
     {

@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/atts/flashlight_1_d"
+	"$bumpmap" "models/weapons/arc9/atts/flashlight_1_n"
+	"$normalmapalphaenvmapmask" 	1
+	
+	"$phong" 		"1"
+	"$phongexponent" "10"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[.6 1 2]"
+	
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" 			"1"
+	"$envmapFresnelMinMaxExp" "[0 5 .4]"
+	"$envmaptint" "[.1 .1 .1]"
+}

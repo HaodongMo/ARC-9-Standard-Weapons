@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/atts/annihilator_laserdot_d"
+    
+	"$selfillum"   "1"
+}
+
