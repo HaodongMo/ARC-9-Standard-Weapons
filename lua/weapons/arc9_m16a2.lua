@@ -139,7 +139,7 @@ SWEP.RecoilKick = 2
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.001
+SWEP.Spread = 0.002
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
@@ -338,7 +338,33 @@ SWEP.AttachmentElements = {
             {12, 2},
             {6, 0},
         }
-    }
+    },
+    ["stock_buffertube"] = {
+        Bodygroups = {
+            {7, 4}
+        }
+    },
+    ["stock_m16_wire"] = {
+        Bodygroups = {
+            {7, 2}
+        }
+    },
+    ["stock_m16_m607"] = {
+        Bodygroups = {
+            {7, 5}
+        }
+    },
+    ["stock_m16_wood"] = {
+        Bodygroups = {
+            {7, 10}
+        }
+    },
+    ["stock_m16_adar"] = {
+        Bodygroups = {
+            {7, 11},
+            {8, 4}
+        }
+    },
 }
 
 SWEP.Attachments = {
@@ -352,14 +378,14 @@ SWEP.Attachments = {
     {
         PrintName = "STOCK",
         DefaultName = "Factory Fixed Stock",
-        Category = {""},
+        Category = {"m16_stock", "btube"},
         Bone = "m16_parent",
         Pos = Vector(0, 0, -1),
         Ang = Angle(90, 0, -90),
     },
     {
         PrintName = "BARREL",
-        DefaultName = "Standard 16\" Barrel",
+        DefaultName = "Standard 20\" Barrel",
         Category = {""},
         Bone = "m16_parent",
         Pos = Vector(0, 0, 10),
