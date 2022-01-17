@@ -21,3 +21,5 @@ end
 ATT.SwayAdd = -0.1
 ATT.SprintToFireTimeMult = 1.05
 ATT.AimDownSightsTimeMult = 1.05
+
+ATT.ActivateElements = {"gripstock"}

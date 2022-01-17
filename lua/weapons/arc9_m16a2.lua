@@ -434,6 +434,7 @@ SWEP.Attachments = {
     {
         PrintName = "GRIP",
         DefaultName = "Factory Grip",
+        ExcludeElements = {"gripstock"},
         Category = {""},
         Bone = "m16_parent",
         Pos = Vector(0, 3, 1.5),
