@@ -332,15 +332,76 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {6, 1},
         },
+    },
+    ["rs_m16"] = {
+        Bodygroups = {
+            {12, 2},
+            {6, 0},
+        }
     }
 }
 
 SWEP.Attachments = {
-    [1] = {
+    {
         PrintName = "UPPER",
         Category = {"m16_upper", "mount_m16ch"},
         Bone = "m16_parent",
         Pos = Vector(0, -3.15, 3.5),
         Ang = Angle(90, 0, -90),
-    }
+    },
+    {
+        PrintName = "STOCK",
+        DefaultName = "Factory Fixed Stock",
+        Category = {""},
+        Bone = "m16_parent",
+        Pos = Vector(0, 0, -1),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "BARREL",
+        DefaultName = "Standard 16\" Barrel",
+        Category = {""},
+        Bone = "m16_parent",
+        Pos = Vector(0, 0, 10),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "MUZZLE",
+        DefaultName = "Factory Flash Hider",
+        Category = {""},
+        Bone = "m16_parent",
+        Pos = Vector(0, 0, 28),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "MAG",
+        DefaultName = "Standard 30 Round",
+        Category = {""},
+        Bone = "m16_parent",
+        Pos = Vector(0, 4, 6),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "AMMO",
+        DefaultName = "Standard FMJ",
+        Category = {""},
+        Bone = "m16_parent",
+        Pos = Vector(0, 6, 7),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "GRIP",
+        DefaultName = "Factory Grip",
+        Category = {""},
+        Bone = "m16_parent",
+        Pos = Vector(0, 3, 1.5),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "TACTICAL",
+        Category = {""},
+        Bone = "m16_parent",
+        Pos = Vector(0, 0, 20),
+        Ang = Angle(90, 0, -90),
+    },
 }

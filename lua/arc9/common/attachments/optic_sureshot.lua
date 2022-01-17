@@ -1,5 +1,5 @@
 ATT.PrintName = "Sightmark Sure Shot Reflex"
-ATT.CompactName = "SURESHOT"
+ATT.CompactName = "REFLEX"
 ATT.Icon = Material("entities/arc9_att_optic_sureshot.png", "mips smooth")
 ATT.Description = [[The "world's worst red dot sight", it still shows up constantly, always in knock-off form. Sightmark, Barska, Walther, and dozens of Chinese airsoft accessory companies make their own versions. It is rumored that the original comes from a high end Japanese shooting sports company, but nobody knows for sure.
 

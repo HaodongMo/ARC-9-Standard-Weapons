@@ -17,7 +17,7 @@ end
 ATT.Attachments = {
     {
         PrintName = "OPTIC",
-        Category = "optic_picatinny", // single or {"list", "of", "values"}
+        Category = {"optic_picatinny", "m16rs"}, // single or {"list", "of", "values"}
         Pos = Vector(-0.25, 0, 1.2),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(24, 0, 0),
