@@ -21,8 +21,8 @@ end
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RangeMaxMult = 0.85
 
-ATT.RecoilUpMult = 0.9
-ATT.RecoilSideMult = 0.95
+ATT.RecoilUpMult = 1.01
+ATT.RecoilSideMult = 1.12
 ATT.RPMMult = 1.05
 
 ATT.SpreadAdd = 0.00085
