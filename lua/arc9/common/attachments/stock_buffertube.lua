@@ -20,6 +20,6 @@ ATT.SwayAdd = 1
 ATT.FreeAimRadiusMult = 1.25
 ATT.SprintToFireTimeMult = 0.5
 ATT.AimDownSightsTimeMult = 0.75
-ATT.RecoilMult = 2
+ATT.RecoilMult = 1.5
 ATT.RecoilKickMult = 0.75
 ATT.RecoilAutoControlMult = 0.25

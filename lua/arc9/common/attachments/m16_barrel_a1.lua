@@ -11,7 +11,7 @@ ATT.Category = "m16_barrel" // can be "string" or {"list", "of", "strings"}
 if not ARC9:EnableTrueNames() then
 
 ATT.PrintName = "RAI Falcon 20\" Barrel"
-ATT.CompactName = "14\"LIGHT"
+ATT.CompactName = "20\"LIGHT"
 ATT.Description = [[Handguard and barrel assembly. Lighter construction compared to the standard barrel.
 
 Improves handling slightly, with a penalty to recoil.]]
