@@ -9,10 +9,10 @@ ATT.Category = "btube" // can be "string" or {"list", "of", "strings"}
 ATT.Attachments = {
     {
         PrintName = "TUBE",
-        Category = "stock", // single or {"list", "of", "values"}
+        Category = "bt_stock", // single or {"list", "of", "values"}
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(-64, -8, 0)
+        Icon_Offset = Vector(-4, -1, 0)
     }
 }
 

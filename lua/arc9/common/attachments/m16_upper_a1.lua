@@ -20,14 +20,16 @@ ATT.Attachments = {
         Category = "mount_m16ch", // single or {"list", "of", "values"}
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(-24, -16, 0),
+        Icon_Offset = Vector(-4, -1, 0),
     }
 }
 
 ATT.RPMMult = 1.05
 ATT.RecoilMult = 1.1
 
-ATT.Firemodes = {
+ATT.RecoilSideAdd = 1.25
+
+ATT.FiremodesOverride = {
     {
         Mode = -1
     },
@@ -35,3 +37,5 @@ ATT.Firemodes = {
         Mode = 1
     }
 }
+
+ATT.RecoilPatternDriftMult = 1.15

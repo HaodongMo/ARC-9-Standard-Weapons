@@ -130,7 +130,7 @@ SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.1
 SWEP.RecoilRandomSide = 0.5
 
-SWEP.RecoilDissipationRate = 10 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.1 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1.25 -- Multiplier for automatic recoil control.
@@ -215,6 +215,20 @@ SWEP.FiremodeSound = "weapons/arccw/firemode.wav"
 
 local rottle = {common .. "cloth_1.ogg", common .. "cloth_2.ogg", common .. "cloth_3.ogg", common .. "cloth_4.ogg", common .. "cloth_6.ogg", common .. "rattle.ogg"}
 local ratel = {path .. "rattle_1.ogg", path .. "rattle_2.ogg", path .. "rattle_3.ogg"}
+
+SWEP.Hook_SelectReloadAnimation = function(swep, anim)
+    local elements = swep:GetElements()
+
+    if elements["m16_mag_20"] then
+        return anim .. "_20"
+    elseif elements["m16_mag_40"] then
+        return anim .. "_40"
+    elseif elements["m16_mag_60"] then
+        return anim .. "_60"
+    elseif elements["m16_mag_100"] then
+        return anim .. "_100"
+    end
+end
 
 SWEP.Animations = {
     ["idle"] = {
@@ -317,11 +331,208 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 2.15},
         },
     },
+
+    -- 20 Round Reloads --
+
+    ["reload_20"] = {
+        Source = "reload_20",
+        Time = 71 / 30,
+        MinProgress = 1.5,
+        LastClip1OutTime = 0.9,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.5,
+        EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = path .. "magout.ogg", 	 t = 0.35},
+            {s = rottle,  t = 0.75},
+            {s = path .. "magin.ogg",    t = 0.95},
+            {s = rottle,  t = 1.1},
+            {s = common .. "shoulder.ogg", t = 1.925},
+        },
+    },
+    ["reload_20_empty"] = {
+        Source = "reload_empty_20",
+        Time = 79 / 30,
+        MinProgress = 2,
+        LastClip1OutTime = 0.7,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.5,
+        EventTable = {
+            {s = rottle, t = 0.0},
+            {s = path .. "magout.ogg", 	 t = 0.2},
+            {s = rottle, t = 0.75},
+            {s = common .. "rifle_magdrop.ogg",  t = 0.8},
+            {s = path .. "magin.ogg",    t = 0.95},
+            {s = rottle, t = 1.39},
+            {s = path .. "boltdrop.ogg", t = 1.77},
+            {s = common .. "shoulder.ogg", t = 2.13},
+        },
+    },
+
+    -- 40 Round Reloads --
+
+    ["reload_40"] = {
+        Source = "reload_40",
+        Time = 71 / 30,
+        MinProgress = 1.5,
+        LastClip1OutTime = 0.9,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.4,
+        LHIKOut = 0.6,
+        EventTable = {
+            {s = rottle, t = 0.0},
+            {s = path .. "magout.ogg", 	 t = 0.35},
+            {s = rottle, t = 0.75},
+            {s = path .. "magin.ogg",    t = 1.05},
+            {s = rottle, t = 1.1},
+            {s = common .. "shoulder.ogg", t = 1.85},
+        },
+    },
+    ["reload_40_empty"] = {
+        Source = "reload_empty_40",
+        Time = 79 / 30,
+        MinProgress = 2,
+        LastClip1OutTime = 0.7,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.5,
+        EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = path .. "magout.ogg", 	 t = 0.35},
+            {s = rottle,  t = 0.75},
+            {s = common .. "rifle_magdrop.ogg",  t = 0.8},
+            {s = path .. "magin.ogg",    t = 1.05},
+            {s = rottle,  t = 1.475},
+            {s = path .. "boltdrop.ogg", t = 1.78},
+            {s = common .. "shoulder.ogg", t = 2.2},
+        },
+    },
+
+    -- 60 Round Reloads --
+
+    ["reload_60"] = {
+        Source = "reload_60",
+        Time = 71 / 30,
+        MinProgress = 1.5,
+        LastClip1OutTime = 0.9,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.5,
+        EventTable = {
+            {s = rottle, t = 0.0},
+            {s = path .. "magout.ogg", 	 t = 0.35},
+            {s = rottle, t = 0.75},
+            {s = path .. "magin.ogg",    t = 1.1},
+            {s = rottle, t = 1.1},
+            {s = common .. "shoulder.ogg", t = 1.97},
+        },
+    },
+    ["reload_60_empty"] = {
+        Source = "reload_empty_60",
+        Time = 79 / 30,
+        MinProgress = 2,
+        LastClip1OutTime = 0.7,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.3,
+        LHIKOut = 0.5,
+        EventTable = {
+            {s = rottle, t = 0.0},
+            {s = path .. "magout.ogg", 	 t = 0.35},
+            {s = rottle, t = 0.75},
+            {s = common .. "rifle_magdrop.ogg",  t = 0.8},
+            {s = path .. "magin.ogg",    t = 1.1},
+            {s = rottle, t = 1.475},
+            {s = path .. "boltdrop.ogg", t = 1.9},
+            {s = common .. "shoulder.ogg", t = 2.2},
+        },
+    },
+
+    -- 100 Round Reloads --
+
+    ["reload_100"] = {
+        Source = "reload_100",
+        Time = 71 / 30,
+        MinProgress = 1.75,
+        LastClip1OutTime = 0.9,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKEaseIn = 0.5,
+        LHIKEaseOut = 0.4,
+        LHIKOut = 0.5,
+        EventTable = {
+            {s = rottle, t = 0.0},
+            {s = path .. "magout.ogg", 	 t = 0.3},
+            {s = rottle, t = 0.75},
+            {s = path .. "magin.ogg",    t = 1.29},
+            {s = rottle, t = 1.1},
+            {s = path .. "magtap.ogg",   t = 1.83},
+            {s = common .. "cloth_4.ogg",  t = 1.65},
+            {s = common .. "shoulder.ogg", t = 2.05},
+        },
+    },
+    ["reload_100_empty"] = {
+        Source = "reload_empty_100",
+        Time = 90 / 30,
+        MinProgress = 2.5,
+        LastClip1OutTime = 0.7,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.4,
+        LHIKOut = 0.5,
+        EventTable = {
+            {s = rottle, t = 0.0},
+            {s = path .. "magout.ogg", 	 t = 0.3},
+            {s = rottle, t = 0.75},
+            {s = common .. "magdrop.ogg",  t = 0.65},
+            {s = path .. "magin.ogg",    t = 1.29},
+            {s = path .. "magtap.ogg",   t = 1.83},
+            {s = rottle, t = 1.75},
+            {s = path .. "chback.ogg",   t = 2.4},
+            {s = common .. "cloth_4.ogg",  t = 2.35},
+            {s = path .. "chamber.ogg",  t = 2.7},
+            {s = common .. "shoulder.ogg", t = 2.9},
+        },
+    },
 }
 
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["m16_mag_20"] = {
+        Bodygroups = {
+            {2, 1}
+        }
+    },
+    ["m16_mag_40"] = {
+        Bodygroups = {
+            {2, 2}
+        }
+    },
+    ["m16_mag_60"] = {
+        Bodygroups = {
+            {2, 3}
+        }
+    },
+    ["m16_mag_100"] = {
+        Bodygroups = {
+            {2, 4}
+        }
+    },
     ["m16_upper_a4"] = {
         Bodygroups = {
             {1, 1},
@@ -332,6 +543,51 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {1, 5}
         },
+    },
+    ["m16_barrel_carbine"] = {
+        Bodygroups = {
+            {5, 4},
+            {4, 1},
+            {6, 2}
+        },
+        AttPosMods = {
+            [4] = {
+                Pos = Vector(0, -0.05, 24.5),
+            },
+            [8] = {
+                Pos = Vector(0, -0.05, 18),
+            }
+        }
+    },
+    ["m16_barrel_commando"] = {
+        Bodygroups = {
+            {5, 4},
+            {4, 2},
+            {6, 2}
+        },
+        AttPosMods = {
+            [4] = {
+                Pos = Vector(0, -0.05, 20),
+            },
+            [8] = {
+                Pos = Vector(0, -0.05, 18),
+            }
+        }
+    },
+    ["m16_barrel_fpw"] = {
+        Bodygroups = {
+            {5, 6},
+            {4, 1},
+            {6, 5}
+        },
+        AttPosMods = {
+            [4] = {
+                Pos = Vector(0, -0.05, 24.5),
+            },
+            [8] = {
+                Pos = Vector(0, -0.05, 18),
+            }
+        }
     },
     ["m16_barrel_a1"] = {
         Bodygroups = {
@@ -360,22 +616,22 @@ SWEP.AttachmentElements = {
             {7, 4}
         }
     },
-    ["stock_m16_wire"] = {
+    ["m16_stock_wire"] = {
         Bodygroups = {
             {7, 2}
         }
     },
-    ["stock_m16_m607"] = {
+    ["m16_stock_m607"] = {
         Bodygroups = {
             {7, 5}
         }
     },
-    ["stock_m16_wood"] = {
+    ["m16_stock_wood"] = {
         Bodygroups = {
             {7, 10}
         }
     },
-    ["stock_m16_adar"] = {
+    ["m16_stock_adar"] = {
         Bodygroups = {
             {7, 11},
             {8, 4}
@@ -396,7 +652,7 @@ SWEP.Attachments = {
         DefaultName = "Factory Fixed Stock",
         Category = {"m16_stock", "btube"},
         Bone = "m16_parent",
-        Pos = Vector(0, 0, -1),
+        Pos = Vector(0, 0, -5.5),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -404,7 +660,7 @@ SWEP.Attachments = {
         DefaultName = "Standard 20\" Barrel",
         Category = {"m16_barrel"},
         Bone = "m16_parent",
-        Pos = Vector(0, 0, 10),
+        Pos = Vector(0, -0.05, 10),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -412,13 +668,13 @@ SWEP.Attachments = {
         DefaultName = "Factory Flash Hider",
         Category = "muzzle",
         Bone = "m16_parent",
-        Pos = Vector(0, -0.21, 29.75),
+        Pos = Vector(0, -0.05, 29.75),
         Ang = Angle(90, 0, -90),
     },
     {
         PrintName = "MAG",
         DefaultName = "Standard 30 Round",
-        Category = {""},
+        Category = "m16_mag",
         Bone = "m16_parent",
         Pos = Vector(0, 4, 6),
         Ang = Angle(90, 0, -90),
@@ -441,10 +697,10 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "TACTICAL",
+        PrintName = "MOUNT",
         Category = {""},
         Bone = "m16_parent",
-        Pos = Vector(0, 0, 20),
+        Pos = Vector(0, -0.05, 24),
         Ang = Angle(90, 0, -90),
     },
 }

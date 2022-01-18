@@ -8,7 +8,7 @@ ATT.Category = "m16rs" // can be "string" or {"list", "of", "strings"}
 
 if not ARC9:EnableTrueNames() then
 
-ATT.PrintName = "RAY/CAR-83 Rear Sight"
+ATT.PrintName = "RAI BUIS"
 ATT.CompactName = "RC83RS"
 ATT.Description = [[Rear iron sight for flat top uppers.]]
 

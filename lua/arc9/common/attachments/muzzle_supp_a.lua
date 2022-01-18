@@ -11,7 +11,7 @@ ATT.Model = "models/weapons/arc9/atts/silencer_tactical.mdl"
 ATT.Category = "muzzle" // can be "string" or {"list", "of", "strings"}
 
 ATT.Scale = 1.25
-ATT.ModelOffset = Vector(0, 0, -0.175)
+ATT.ModelOffset = Vector(0, 0, 0)
 
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 ATT.RangeMaxMult = 1.1
@@ -23,3 +23,6 @@ ATT.SprintToFireTimeMult = 1.03
 ATT.Silencer = true
 ATT.ShootVolumeMult = 0.8
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+
+ATT.RecoilUpMult = 1.1
+ATT.RecoilRandomMult = 0.9

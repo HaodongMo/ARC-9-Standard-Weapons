@@ -10,7 +10,7 @@ ATT.Category = "m16_barrel" // can be "string" or {"list", "of", "strings"}
 
 if not ARC9:EnableTrueNames() then
 
-ATT.PrintName = "RAY/CAR Wooden 20\" Barrel"
+ATT.PrintName = "Cali Wooden 20\" Barrel"
 ATT.CompactName = "20\"WOOD"
 ATT.Description = [[Handguard and barrel assembly. Lighter construction compared to the standard barrel.
 
@@ -24,3 +24,5 @@ ATT.RangeMaxMult = 1.1
 ATT.RPMMult = 0.9
 
 ATT.SpreadAdd = -0.0005
+
+ATT.RecoilPatternDriftMult = 0.95
