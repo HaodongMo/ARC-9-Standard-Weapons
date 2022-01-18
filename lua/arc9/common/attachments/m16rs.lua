@@ -1,15 +1,13 @@
-ATT.PrintName = "M16 Rear Sight"
-ATT.CompactName = "M16RS"
-ATT.Icon = Material("entities/arc9_att_m16rs.png", "mips smooth")
-ATT.Description = [[Rear iron sight for flat top uppers.]]
-ATT.SortOrder = 0
-
-ATT.Category = "m16rs" // can be "string" or {"list", "of", "strings"}
-
-if not ARC9:EnableTrueNames() then
-
-ATT.PrintName = "RAI BUIS"
+ATT.PrintName = "RAI Backup Iron Sights"
 ATT.CompactName = "RC83RS"
 ATT.Description = [[Rear iron sight for flat top uppers.]]
 
-end
+ATT.PrintName_TrueName = "M16 Rear Sight"
+ATT.CompactName_TrueName = "M16RS"
+
+ATT.Description = [[Rear iron sight for flat top uppers.]]
+
+ATT.Icon = Material("entities/arc9_att_m16rs.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Category = "m16rs"

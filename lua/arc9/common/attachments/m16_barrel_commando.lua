@@ -1,22 +1,19 @@
-ATT.PrintName = "Colt CAR 11\" Barrel"
-ATT.CompactName = "14\"CAR"
-ATT.Icon = Material("entities/arc9_att_m16_barrel_commando.png", "mips smooth")
-ATT.Description = [[Very short barrel for the CAR-15.
-
-Improves fire rate and handling, at the cost of range.]]
-ATT.SortOrder = 0
-
-ATT.Category = "m16_barrel" // can be "string" or {"list", "of", "strings"}
-
-if not ARC9:EnableTrueNames() then
-
 ATT.PrintName = "RAI SEAL 11\" Barrel"
 ATT.CompactName = "11\"SEAL"
 ATT.Description = [[Extremely short barrel for special forces teams.
 
 Improves fire rate and handling, at the cost of range.]]
 
-end
+ATT.PrintName_TrueName = "Colt CAR 11\" Barrel"
+ATT.CompactName_TrueName = "14\"CAR"
+ATT.Icon = Material("entities/arc9_att_m16_barrel_commando.png", "mips smooth")
+ATT.Description_TrueName = [[Very short barrel for the CAR-15.
+
+Improves fire rate and handling, at the cost of range.]]
+
+ATT.SortOrder = 0
+ATT.Category = "m16_barrel"
+
 
 ATT.PhysBulletMuzzleVelocityMult = 0.85
 ATT.RangeMaxMult = 0.8

@@ -10,7 +10,7 @@ ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/acog_direct.mdl"
 
-ATT.Category = "mount_m16ch" // can be "string" or {"list", "of", "strings"}
+ATT.Category = "mount_m16ch"
 
 ATT.InvAtt = "optic_acog"
 
@@ -40,7 +40,7 @@ ATT.ScopeScreenRatio = 0.5
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, -0.4)
 
-ATT.SwayAdd = 0.15
+ATT.SwayAdd = 0.1
 ATT.FreeAimRadiusMultSights = 0.1
 ATT.AimDownSightsTimeAdd = 0.11
 ATT.SprintToFireTimeAdd = 0.05

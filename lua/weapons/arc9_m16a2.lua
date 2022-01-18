@@ -25,7 +25,7 @@ SWEP.Description = [[Adopted in 1983, the M16A2 is a widely used assault rifle c
 
 Medium weight with good rate of fire in burst. Pace bursts well to maximize volume of fire.]]
 
-if not ARC9:EnableTrueNames() then
+if not ARC9:UseTrueNames() then
 
 SWEP.Trivia = {
     Manufacturer = "Rayter Arms Industries",
@@ -122,16 +122,16 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 1.75 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.75 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.4 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.1
 SWEP.RecoilRandomSide = 0.5
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0.1 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
+SWEP.RecoilResetTime = 0.05 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1.25 -- Multiplier for automatic recoil control.
 
@@ -146,7 +146,7 @@ SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 -------------------------- HANDLING
 
 SWEP.FreeAimRadius = 10 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 1 -- How much the gun sways.
+SWEP.Sway = 0.75 -- How much the gun sways.
 
 SWEP.FreeAimRadiusSights = 1
 
@@ -599,6 +599,11 @@ SWEP.AttachmentElements = {
             {5, 1}
         },
         Skin = 1
+    },
+    ["m16_barrel_ris"] = {
+        Bodygroups = {
+            {5, 2}
+        },
     },
     ["nofs"] = {
         Bodygroups = {

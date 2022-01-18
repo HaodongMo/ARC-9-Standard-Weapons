@@ -10,7 +10,7 @@ ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/acog.mdl"
 
-ATT.Category = "optic_picatinny" // can be "string" or {"list", "of", "strings"}
+ATT.Category = "optic_picatinny"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {
@@ -38,7 +38,7 @@ ATT.ScopeScreenRatio = 0.5
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, -0.175)
 
-ATT.SwayAdd = 0.15
+ATT.SwayAdd = 0.1
 ATT.FreeAimRadiusMultSights = 0.1
 ATT.AimDownSightsTimeAdd = 0.12
 ATT.SprintToFireTimeAdd = 0.05
