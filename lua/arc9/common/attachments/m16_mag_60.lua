@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/arc9_att_m16_mag_60.png", "mips smooth")
 ATT.Description = [[Significantly improved capacity with reduced handling.]]
 ATT.SortOrder = 0
 
-ATT.Category = "m16_mag" // can be "string" or {"list", "of", "strings"}
+ATT.Category = "m16_mag"
 
 ATT.ClipSizeOverride = 60
 

@@ -10,7 +10,7 @@ ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/acog_direct.mdl"
 
-ATT.Category = "mount_m16ch" // can be "string" or {"list", "of", "strings"}
+ATT.Category = "mount_m16ch"
 
 ATT.InvAtt = "optic_acog"
 

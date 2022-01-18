@@ -25,7 +25,7 @@ SWEP.Description = [[Adopted in 1983, the M16A2 is a widely used assault rifle c
 
 Medium weight with good rate of fire in burst. Pace bursts well to maximize volume of fire.]]
 
-if not ARC9:EnableTrueNames() then
+if not ARC9:UseTrueNames() then
 
 SWEP.Trivia = {
     Manufacturer = "Rayter Arms Industries",
@@ -599,6 +599,11 @@ SWEP.AttachmentElements = {
             {5, 1}
         },
         Skin = 1
+    },
+    ["m16_barrel_ris"] = {
+        Bodygroups = {
+            {5, 2}
+        },
     },
     ["nofs"] = {
         Bodygroups = {

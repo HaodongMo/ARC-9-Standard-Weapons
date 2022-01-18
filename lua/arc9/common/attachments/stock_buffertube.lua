@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/arc9_att_stock_buffertube.png", "mips smooth")
 ATT.Description = [[Removal of standard stock, enabling the installation of standardized buffer tube stocks.]]
 ATT.SortOrder = 0
 
-ATT.Category = "btube" // can be "string" or {"list", "of", "strings"}
+ATT.Category = "btube"
 
 ATT.Attachments = {
     {

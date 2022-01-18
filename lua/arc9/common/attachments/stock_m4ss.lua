@@ -1,23 +1,21 @@
-ATT.PrintName = "M4 Standard Stock"
-ATT.CompactName = "M4SS"
-ATT.Icon = Material("entities/arc9_att_stock_m4ss.png", "mips smooth")
-ATT.Description = [[Standard lightweight adjustable stock for AR style buffer tubes.
-
-Average recoil and sway mitigation, but quite light weight.]]
-ATT.SortOrder = 0
-
-ATT.Category = "bt_stock" // can be "string" or {"list", "of", "strings"}
-ATT.Model = "models/weapons/arc9/atts/stock_m4ss.mdl"
-
-if not ARC9:EnableTrueNames() then
-
 ATT.PrintName = "RAI High Standard"
 ATT.CompactName = "H-ST"
-ATT.Description = [[Standard lightweight adjustable stock for AR style buffer tubes.
+ATT.Description = [[Standard lightweight adjustable stock for Rayter style buffer tubes.
 
-Average recoil and sway mitigation, but quite light weight.]]
+Average recoil and sway mitigation, but quite lightweight.]]
 
-end
+ATT.PrintName_TrueName = "M4 Standard Stock"
+ATT.CompactName_TrueName = "M4SS"
+ATT.Description_TrueName = [[Standard lightweight adjustable stock for AR style buffer tubes.
+
+Average recoil and sway mitigation, but quite lightweight.]]
+
+ATT.Icon = Material("entities/arc9_att_stock_m4ss.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Category = "bt_stock"
+
+ATT.Model = "models/weapons/arc9/atts/stock_m4ss.mdl"
 
 ATT.SwayAdd = -0.92
 ATT.SprintToFireTimeMult = 1.37
