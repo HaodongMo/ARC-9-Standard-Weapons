@@ -12,7 +12,7 @@ ATT.SortOrder = 0
 ATT.Category = "m16_stock"
 
 ATT.SwayAdd = -0.15
-ATT.SprintToFireTimeMult = 1.05
-ATT.AimDownSightsTimeMult = 1.05
-ATT.RecoilMult = 0.96
+ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.1
+ATT.RecoilMult = 0.95
 ATT.RecoilKickMult = 0.9

@@ -16,8 +16,8 @@ ATT.SortOrder = 0
 ATT.Category = "m16_stock"
 
 
-ATT.SwayAdd = -0.4
-ATT.SprintToFireTimeMult = 1.05
-ATT.AimDownSightsTimeMult = 1.05
+ATT.SwayAdd = -0.35
+ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.1
 
 ATT.ActivateElements = {"gripstock"}
