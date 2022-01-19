@@ -1,13 +1,19 @@
 Parent = Material3'/Game/Animated/Shared/Materials/MM_WP_Basic.MM_WP_Basic'
-ScalarParameterValues[2] =
+ScalarParameterValues[3] =
 {
     ScalarParameterValues[0] =
     {
-        ParameterInfo = { Name=Adjust Roughness }
-        ParameterValue = 0.16
+        ParameterInfo = { Name=Distance Bias }
+        ParameterValue = -10
         ParameterName = None
     }
     ScalarParameterValues[1] =
+    {
+        ParameterInfo = { Name=Distance Normalize }
+        ParameterValue = 128
+        ParameterName = None
+    }
+    ScalarParameterValues[2] =
     {
         ParameterInfo = { Name=RefractionDepthBias }
         ParameterValue = 0
@@ -19,31 +25,23 @@ TextureParameterValues[3] =
     TextureParameterValues[0] =
     {
         ParameterInfo = { Name=Albedo }
-        ParameterValue = Texture2D'/Game/Animated/Weapons/Upgrades/Sight/Optic/T_3P_FX_Optic_A.T_3P_FX_Optic_A'
+        ParameterValue = Texture2D'/Game/Animated/Weapons/Upgrades/Sight/Optic/CScope3x20/Textures/T_1P_A_S_CScope_BC.T_1P_A_S_CScope_BC'
         ParameterName = None
     }
     TextureParameterValues[1] =
     {
         ParameterInfo = { Name=Normal }
-        ParameterValue = Texture2D'/Game/Animated/Weapons/Generic/Base/Textures/T_1P_BlankTest_N.T_1P_BlankTest_N'
+        ParameterValue = Texture2D'/Game/Animated/Weapons/Upgrades/Sight/Optic/CScope3x20/Textures/T_1P_A_S_CScope_N.T_1P_A_S_CScope_N'
         ParameterName = None
     }
     TextureParameterValues[2] =
     {
         ParameterInfo = { Name=Roughness/Metalness/AO }
-        ParameterValue = Texture2D'/Game/Animated/Weapons/Generic/Base/Textures/T_1P_BlankTest_M.T_1P_BlankTest_M'
+        ParameterValue = Texture2D'/Game/Animated/Weapons/Upgrades/Sight/Optic/CScope3x20/Textures/T_1P_A_S_CScope_M.T_1P_A_S_CScope_M'
         ParameterName = None
     }
 }
-VectorParameterValues[1] =
-{
-    VectorParameterValues[0] =
-    {
-        ParameterInfo = { Name=BaseColourTint }
-        ParameterValue = { R=0, G=0, B=0, A=0 }
-        ParameterName = None
-    }
-}
+VectorParameterValues[0] = {}
 BasePropertyOverrides =
 {
     bOverride_BlendMode = false
@@ -55,18 +53,12 @@ BasePropertyOverrides =
 }
 StaticParameters =
 {
-    StaticSwitchParameters[2] =
+    StaticSwitchParameters[1] =
     {
         StaticSwitchParameters[0] =
         {
             Value = true
-            ParameterInfo = { Name=ThirdPerson }
-            bOverride = true
-        }
-        StaticSwitchParameters[1] =
-        {
-            Value = true
-            ParameterInfo = { Name=Use BaseColour Tint? }
+            ParameterInfo = { Name=ClipOnlyMasked }
             bOverride = true
         }
     }
@@ -87,18 +79,18 @@ TextureStreamingData[3] =
     {
         SamplingScale = 1
         UVChannelIndex = 0
-        TextureName = T_1P_BlankTest_M
+        TextureName = T_1P_A_S_CScope_BC
     }
     TextureStreamingData[1] =
     {
         SamplingScale = 1
         UVChannelIndex = 0
-        TextureName = T_1P_BlankTest_N
+        TextureName = T_1P_A_S_CScope_M
     }
     TextureStreamingData[2] =
     {
         SamplingScale = 1
         UVChannelIndex = 0
-        TextureName = T_3P_FX_Optic_A
+        TextureName = T_1P_A_S_CScope_N
     }
 }

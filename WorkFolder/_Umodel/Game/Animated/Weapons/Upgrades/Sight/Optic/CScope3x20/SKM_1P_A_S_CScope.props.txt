@@ -1,11 +1,11 @@
 Skeleton = Skeleton'/Game/Animated/Shared/Skeletons/SK_1P_Attachment.SK_1P_Attachment'
 bHasVertexColors = false
-LODInfo[4] =
+LODInfo[2] =
 {
     LODInfo[0] =
     {
         DisplayFactor = 0
-        LODHysteresis = 0.02
+        LODHysteresis = 0
         LODMaterialMap[0] = {}
         bEnableShadowCasting[0] = {}
         BonesToRemove[0] = {}
@@ -22,29 +22,9 @@ LODInfo[4] =
         BonesToPrioritize[0] = {}
         SourceImportFilename = ""
     }
-    LODInfo[2] =
-    {
-        DisplayFactor = 0
-        LODHysteresis = 0
-        LODMaterialMap[0] = {}
-        bEnableShadowCasting[0] = {}
-        BonesToRemove[0] = {}
-        BonesToPrioritize[0] = {}
-        SourceImportFilename = ""
-    }
-    LODInfo[3] =
-    {
-        DisplayFactor = 0
-        LODHysteresis = 0
-        LODMaterialMap[0] = {}
-        bEnableShadowCasting[0] = {}
-        BonesToRemove[0] = {}
-        BonesToPrioritize[0] = {}
-        SourceImportFilename = ""
-    }
 }
 MorphTargets[0] = {}
-Sockets[1] =
+Sockets[2] =
 {
     Sockets[0] =
     {
@@ -54,13 +34,21 @@ Sockets[1] =
         RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
         RelativeScale = { X=1, Y=1, Z=1 }
     }
+    Sockets[1] =
+    {
+        SocketName = ReticleAlignment
+        BoneName = b_attachment_root
+        RelativeLocation = { X=3.40426, Y=-3.0037e-006, Z=1.158 }
+        RelativeRotation = { Yaw=0, Pitch=0, Roll=0 }
+        RelativeScale = { X=1, Y=1, Z=1 }
+    }
 }
 SamplingInfo =
 {
     Regions[0] = {}
     BuiltData =
     {
-        WholeMeshBuiltData[4] = { , , ,  }
+        WholeMeshBuiltData[2] = { ,  }
         RegionBuiltData[0] = {}
     }
 }
