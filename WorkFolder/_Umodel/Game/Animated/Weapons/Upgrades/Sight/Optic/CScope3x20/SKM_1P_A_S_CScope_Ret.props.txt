@@ -1,0 +1,28 @@
+Skeleton = Skeleton'/Game/Animated/Shared/Skeletons/SK_1P_Attachment.SK_1P_Attachment'
+bHasVertexColors = false
+LODInfo[1] =
+{
+    LODInfo[0] =
+    {
+        DisplayFactor = 0
+        LODHysteresis = 0
+        LODMaterialMap[0] = {}
+        bEnableShadowCasting[0] = {}
+        BonesToRemove[0] = {}
+        BonesToPrioritize[0] = {}
+        SourceImportFilename = ""
+    }
+}
+MorphTargets[0] = {}
+Sockets[0] = {}
+SamplingInfo =
+{
+    Regions[0] = {}
+    BuiltData =
+    {
+        WholeMeshBuiltData[1] = {  }
+        RegionBuiltData[0] = {}
+    }
+}
+SkinWeightProfiles[0] = {}
+NumVertexColorChannels = 0
