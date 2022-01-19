@@ -82,8 +82,10 @@ SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
 SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 
-SWEP.DropMagazineModel = nil -- Set to a string or table to drop this magazine when reloading.
-SWEP.DropMagazineSounds = {} -- Table of sounds a dropped magazine should play.
+SWEP.DropMagazineModel = "models/weapons/arc9/droppedmags/m16_mag_30.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineSounds = {
+    "weapons/arc9_ud/common/rifle_magdrop.ogg"
+}  -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 
 -------------------------- FIREMODES
@@ -321,7 +323,6 @@ SWEP.Animations = {
             {s = path .. "magout.ogg", 	 t = 0.335},
             {s = ratel, t = 0.5},
             {s = rottle,  t = 0.75},
-            {s = common .. "rifle_magdrop.ogg",  t = 0.8},
             {s = path .. "magin.ogg",    t = 1.05},
             {s = ratel, t = 1.1},
             {s = rottle,  t = 1.39},
@@ -367,7 +368,6 @@ SWEP.Animations = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.2},
             {s = rottle, t = 0.75},
-            {s = common .. "rifle_magdrop.ogg",  t = 0.8},
             {s = path .. "magin.ogg",    t = 0.95},
             {s = rottle, t = 1.39},
             {s = path .. "boltdrop.ogg", t = 1.77},
@@ -410,7 +410,6 @@ SWEP.Animations = {
             {s = rottle,  t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
             {s = rottle,  t = 0.75},
-            {s = common .. "rifle_magdrop.ogg",  t = 0.8},
             {s = path .. "magin.ogg",    t = 1.05},
             {s = rottle,  t = 1.475},
             {s = path .. "boltdrop.ogg", t = 1.78},
@@ -453,7 +452,6 @@ SWEP.Animations = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
             {s = rottle, t = 0.75},
-            {s = common .. "rifle_magdrop.ogg",  t = 0.8},
             {s = path .. "magin.ogg",    t = 1.1},
             {s = rottle, t = 1.475},
             {s = path .. "boltdrop.ogg", t = 1.9},
@@ -498,7 +496,6 @@ SWEP.Animations = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.3},
             {s = rottle, t = 0.75},
-            {s = common .. "magdrop.ogg",  t = 0.65},
             {s = path .. "magin.ogg",    t = 1.29},
             {s = path .. "magtap.ogg",   t = 1.83},
             {s = rottle, t = 1.75},

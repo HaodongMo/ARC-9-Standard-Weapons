@@ -12,3 +12,5 @@ ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.1
 
 ATT.ReloadTimeMult = 1.05
+
+ATT.DropMagazineModel = "models/weapons/arc9/droppedmags/m16_mag_40.mdl"

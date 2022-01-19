@@ -2,15 +2,15 @@ $modelname "weapons\arc9\c_ud_m16.mdl"
  
 $bodygroup "studio" {
 	studio "base.smd"
-	studio "base_usas.smd"
+	// studio "base_usas.smd"
 	blank
 }
 
 $bodygroup "1" {
 	studio "upper_ch.smd" //0
 	studio "upper_flat.smd" //1
-	studio "upper_usas.smd" //2
-	studio "upper_usas_flat.smd" //3
+	blank // studio "upper_usas.smd" //2
+	blank // studio "upper_usas_flat.smd" //3
 	blank //4
 	studio "upper_ch_a1.smd" //5
 	studio "upper_ch_modern.smd" //6
@@ -23,19 +23,19 @@ $bodygroup "2" {
 	studio "mag_60.smd" //3
 	studio "mag_100.smd" //4
 	studio "mag_9mm_20.smd" //5
-	studio "mag_usas_10.smd" //6
-	studio "mag_usas_20.smd" //7
+	blank // studio "mag_usas_10.smd" //6
+	blank // studio "mag_usas_20.smd" //7
 	studio "mag_9mm_32.smd" //8
 	blank //9
-	studio "mag_50beo_10.smd" //10
+	// studio "mag_50beo_10.smd" //10
 }
 
 $bodygroup "3" {
 	blank //0
-	studio "rail_optic.smd" //1
-	studio "rail_flat_optic.smd" //2
+	blank // studio "rail_optic.smd" //1
+	blank // studio "rail_flat_optic.smd" //2
 	studio "rail_m16_dedicated.smd" //3
-	studio "rail_optic_colt.smd" //4
+	// studio "rail_optic_colt.smd" //4
 }
 
 $bodygroup "4" {
@@ -43,7 +43,7 @@ $bodygroup "4" {
 	studio "barrels_new/barrel_14.smd" //1
 	studio "barrels_new/barrel_11.smd" //2
 	studio "barrels_old/barrel_SD.smd" //3
-	studio "barrels_new/barrel_11_ru556.smd" //4
+	// studio "barrels_new/barrel_11_ru556.smd" //4
 	blank
 }
 
@@ -72,24 +72,24 @@ $bodygroup "6" {
 
 $bodygroup "7" {
 	studio "stock.smd" //0
-	studio "stock_usas.smd" //1
+	blank // studio "stock_usas.smd" //1
 	studio "Stock_231_EX.smd" //2
 	studio "Stock_231_IN.smd" //3
 	studio "Stock_231_TUBE.smd" //4
 	studio "Stock_607_EX.smd" //5
 	studio "Stock_607_IN.smd" //6
 	studio "Stock_608.smd" //7
-	studio "Stock_Carbine_EX.smd" //8
-	studio "Stock_Carbine_IN.smd" //9
+	blank // studio "Stock_Carbine_EX.smd" //8
+	blank // studio "Stock_Carbine_IN.smd" //9
 	studio "stock_wood.smd" //10
 	studio "stock_adar.smd" //11
-	studio "stock_ru556.smd" //12
+	blank // studio "stock_ru556.smd" //12
 	blank //13
 }
 
 $bodygroup "8" {
 	studio "grip.smd" //0
-	studio "grip_ergo.smd" //1
+	blank // studio "grip_ergo.smd" //1
 	studio "grip_skel.smd" //2
 	studio "grip_wood.smd" //3
 	blank
@@ -105,9 +105,9 @@ $bodygroup "9" {
 
 $bodygroup "10" {
 	blank //0
-	studio "barrels_new/clamp_20.smd" //1
-	studio "barrels_new/clamp_11.smd" //2
-	studio "barrels_new/clamp_14.smd" //3
+	// studio "barrels_new/clamp_20.smd" //1
+	// studio "barrels_new/clamp_11.smd" //2
+	// studio "barrels_new/clamp_14.smd" //3
 }
 
 $bodygroup "11" {
@@ -118,11 +118,6 @@ $bodygroup "12" {
 	blank
 	studio "sights_m4a4.smd"
 	studio "sights_magpul.smd"
-}
-
-$bodygroup "13" {
-	blank
-	studio "strap_bo1.smd"
 }
 
 $cdmaterials "models\weapons\arc9\ud_m16"
@@ -153,6 +148,31 @@ $illumposition 0 0 0
 $cbox 0 0 0 0 0 0
 
 $poseparameter "sights" 0 1 loop 0
+$poseparameter "firemode" 1 2 loop 0
+
+$sequence "firemode_1_pose" "anims\firemode_auto_pose.smd" {
+	fps 30
+	fadein 0.03
+	fadeout 0.03
+}
+
+$sequence "firemode_2_pose" "anims\firemode_semi_pose.smd" {
+	fps 30
+	fadein 0.03
+	fadeout 0.03
+}
+
+$sequence "firemode_1" "anims\firemode_semi.smd" {
+	fps 30
+	fadein 0.2
+	fadeout 0.2
+}
+
+$sequence "firemode_2" "anims\firemode_auto.smd" {
+	fps 30
+	fadein 0.2
+	fadeout 0.2
+}
 
 $sequence "idle" "anims\idle.smd" {
 	fps 30
@@ -170,16 +190,14 @@ $sequence "idle_empty" "anims\idle_empty.smd" {
 	node "Ready"
 }
 
-$sequence "firemode_auto" "anims\firemode_auto.smd" {
-	fps 30
-	"ACT_VM_IDLE" 1
-	snap
-}
-
-$sequence "firemode_semi" "anims\firemode_semi.smd" {
-	fps 30
-	"ACT_VM_IDLE" 1
-	snap
+$sequence "firemode_pose" {
+	"anims\firemode_auto_pose.smd"
+	"anims\firemode_semi_pose.smd"
+	blend "firemode" 1 2
+	blendwidth 2
+	delta
+	autoplay
+	subtract "firemode_1_pose" 0
 }
 
 $sequence "fire" {
