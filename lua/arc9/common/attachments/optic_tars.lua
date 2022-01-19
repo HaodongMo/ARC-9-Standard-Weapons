@@ -8,7 +8,7 @@ ATT.SortOrder = 7
 
 ATT.Model = "models/weapons/arc9/atts/trijitars.mdl"
 
-ATT.Category = "optic_picatinny" // can be "string" or {"list", "of", "strings"}
+ATT.Category = "optic_picatinny"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {
