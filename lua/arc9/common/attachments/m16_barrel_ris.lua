@@ -6,7 +6,7 @@ Allows for easy mounting of tactical devices and grips. Rail interface is less c
 
 ATT.PrintName_TrueName = "Colt M16A4 RIS 20\" Barrel"
 
-ATT.Icon = Material("entities/arc9_att_m16_barrel_wood.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_m16_barrel_ris.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "m16_barrel"

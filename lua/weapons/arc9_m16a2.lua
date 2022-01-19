@@ -541,6 +541,21 @@ SWEP.AttachmentElements = {
             {1, 5}
         },
     },
+    ["m16_barrel_carbine_ris"] = {
+        Bodygroups = {
+            {5, 5},
+            {4, 1},
+            {6, 2}
+        },
+        AttPosMods = {
+            [4] = {
+                Pos = Vector(0, -0.05, 24.5),
+            },
+            [8] = {
+                Pos = Vector(0, -0.05, 18),
+            }
+        }
+    },
     ["m16_barrel_carbine"] = {
         Bodygroups = {
             {5, 4},
