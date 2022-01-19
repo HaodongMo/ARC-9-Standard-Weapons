@@ -3,7 +3,7 @@
 	"$basetexture" "models\weapons\arc9\ud_m1014/new/m1014_base_color"
 	"$bumpmap" "models\weapons\arc9\ud_m1014/new/m1014_normal"
 	"$phongexponenttexture" 			"models\weapons\arc9\ud_m1014/new/m1014_pe"
-	"$phongwarptexture"			"models\weapons\arccw\ud_stalol\phongwarp_shiny"
+	"$phongwarptexture"			"models\weapons\arc9\ud_stalol\phongwarp_shiny"
 	"$color2"					"[0.45 0.45 0.45]"
 	"$blendTintByBaseAlpha" "1"
 

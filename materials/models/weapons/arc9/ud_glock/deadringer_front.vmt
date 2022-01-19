@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
-	"$baseTexture" "models\weapons\arccw\ud_glock\deadringer_front_d"
-	"$bumpmap" "models\weapons\arccw\ud_glock\deadringer_front_n"
+	"$baseTexture" "models\weapons\arc9\ud_glock\deadringer_front_d"
+	"$bumpmap" "models\weapons\arc9\ud_glock\deadringer_front_n"
 
 	$phongalbedotint 1
 	$envmap env_cubemap

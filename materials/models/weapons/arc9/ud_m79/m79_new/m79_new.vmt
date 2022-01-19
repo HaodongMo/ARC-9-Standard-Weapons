@@ -1,7 +1,7 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models\weapons\arccw\ud_m79\m79_new\m79_color"
-	"$bumpmap" "models\weapons\arccw\ud_m79\m79_new\m79_normal"
+	"$basetexture" "models\weapons\arc9\ud_m79\m79_new\m79_color"
+	"$bumpmap" "models\weapons\arc9\ud_m79\m79_new\m79_normal"
 	"$normalmapalphaenvmapmask" 	1
 	
 	"$phong" 		"1"
