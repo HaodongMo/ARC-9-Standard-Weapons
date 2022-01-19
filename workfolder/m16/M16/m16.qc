@@ -164,13 +164,13 @@ $sequence "firemode_2_pose" "anims\firemode_semi_pose.smd" {
 
 $sequence "firemode_1" "anims\firemode_semi.smd" {
 	fps 30
-	fadein 0.2
+	fadein 0
 	fadeout 0.2
 }
 
 $sequence "firemode_2" "anims\firemode_auto.smd" {
 	fps 30
-	fadein 0.2
+	fadein 0
 	fadeout 0.2
 }
 
