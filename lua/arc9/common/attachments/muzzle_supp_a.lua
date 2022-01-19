@@ -1,6 +1,6 @@
 ATT.PrintName = "ARC Tactical Suppressor"
 ATT.CompactName = "SUPP.A"
-ATT.Icon = Material("entities/arc9_att_supp_a.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_muzzle_supp_a.png", "mips smooth")
 ATT.Description = [[Firearm suppressor for use with multiple calibers developed by the Advanced Research Centre. Combines sound suppression with light weight.
 
 Reduces weapon report and improves ranged ballistic performance at the cost of handling.]]
