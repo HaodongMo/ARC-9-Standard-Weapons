@@ -170,6 +170,18 @@ $sequence "idle_empty" "anims\idle_empty.smd" {
 	node "Ready"
 }
 
+$sequence "firemode_auto" "anims\firemode_auto.smd" {
+	fps 30
+	"ACT_VM_IDLE" 1
+	snap
+}
+
+$sequence "firemode_semi" "anims\firemode_semi.smd" {
+	fps 30
+	"ACT_VM_IDLE" 1
+	snap
+}
+
 $sequence "fire" {
 	"anims\fire.smd"
 	"anims\fire_iron.smd"
