@@ -32,7 +32,7 @@ ATT.RTScopeAdjustmentLevels = 4
 ATT.RTScopeReticle = Material("arc9/tars.png", "mips smooth")
 ATT.RTScopeColor = Color(255, 0, 0)
 
-ATT.ScopeScreenRatio = 0.5
+ATT.ScopeScreenRatio = 0.9
 
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, -0.175)
