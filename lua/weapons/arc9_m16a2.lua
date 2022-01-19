@@ -600,11 +600,6 @@ SWEP.AttachmentElements = {
         },
         Skin = 1
     },
-    ["nofs"] = {
-        Bodygroups = {
-            {6, 1},
-        },
-    },
     ["m16rs"] = {
         Bodygroups = {
             {12, 2},
@@ -652,7 +647,7 @@ SWEP.Attachments = {
         DefaultName = "Factory Fixed Stock",
         Category = {"m16_stock", "btube"},
         Bone = "m16_parent",
-        Pos = Vector(0, 0, -5.5),
+        Pos = Vector(0, 0, -5.5 ),
         Ang = Angle(90, 0, -90),
     },
     {
