@@ -44,8 +44,6 @@ end
 SWEP.ViewModel = "models/weapons/arc9/c_ud_m16.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 
-SWEP.DesiredViewModelFOV = 75
-
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-7.5, 4, -7.5),
@@ -163,6 +161,11 @@ SWEP.SpeedMultShooting = 1
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 1
 SWEP.SpeedMultBlindFire = 1
+
+-------------------------- TRACERS
+
+SWEP.TracerNum = 1 -- Tracer every X
+SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if tracer effect supports it. For physical bullets, this is compressed down to 9-bit color.
 
 -------------------------- POSITIONS
 
@@ -531,6 +534,12 @@ SWEP.AttachmentElements = {
             {2, 4}
         }
     },
+    ["m16_upper_a3"] = {
+        Bodygroups = {
+            {1, 1},
+            {3, 3}
+        },
+    },
     ["m16_upper_a4"] = {
         Bodygroups = {
             {1, 1},
@@ -621,7 +630,6 @@ SWEP.AttachmentElements = {
     ["m16rs"] = {
         Bodygroups = {
             {12, 2},
-            {6, 0},
         }
     },
     ["stock_buffertube"] = {
@@ -695,7 +703,7 @@ SWEP.Attachments = {
     {
         PrintName = "AMMO",
         DefaultName = "Standard FMJ",
-        Category = {""},
+        Category = {"ammo", "ammo_assault"},
         Bone = "m16_parent",
         Pos = Vector(0, 6, 7),
         Ang = Angle(90, 0, -90),

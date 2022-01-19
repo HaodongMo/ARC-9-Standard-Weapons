@@ -15,7 +15,7 @@ $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arc9\atts"
 
-$attachment "muzzle" "muzzle" 0 0 0 rotate 0 0 0
+$attachment "muzzle" "muzzle" 0 0 0 rotate -0 90 -0
 
 $cbox 0 0 0 0 0 0
 
