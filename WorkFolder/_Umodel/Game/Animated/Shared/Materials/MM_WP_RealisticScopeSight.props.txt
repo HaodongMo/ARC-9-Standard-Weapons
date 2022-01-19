@@ -1,0 +1,157 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+    ReferencedTextures[1] = Texture2D'/Game/Animated/Weapons/Upgrades/Sight/Optic/Acog/Textures/T_1P_FX_R_TA31.T_1P_FX_R_TA31'
+    ReferencedTextures[2] = Texture2D'/Game/Animated/Weapons/Upgrades/Sight/Optic/T_1P_FX_R_Optic_Dark.T_1P_FX_R_Optic_Dark'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[9] =
+                {
+                    ParameterInfos[0] = { Name=Cubic distortion amount }
+                    ParameterInfos[1] = { Name=ScopeBumpHeight }
+                    ParameterInfos[2] = { Name=RecticleIlluminateAmount }
+                    ParameterInfos[3] = { Name=Radius }
+                    ParameterInfos[4] = { Name=Constant distortion offset }
+                    ParameterInfos[5] = { Name=EmissiveReticleFilter }
+                    ParameterInfos[6] = { Name=DistortionFalloff }
+                    ParameterInfos[7] = { Name=Distance }
+                    ParameterInfos[8] = { Name=ReticleScale }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=ReticleColour }
+                    ParameterInfos[1] = { Name=SmokeColor }
+                    ParameterInfos[2] = { Name=ReticleEmissiveColour }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=ReticleMask }
+                    ParameterInfos[1] = { Name=RenderTarget }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[9] = { 0.5, 5, 0.2, 1000, 0.5, 0.4, 7, 200, 1 }
+        VectorValues[3] =
+        {
+            VectorValues[0] = { R=0, G=0, B=0, A=1 }
+            VectorValues[1] = { R=0.5, G=0.5, B=0.5, A=1 }
+            VectorValues[2] = { R=1, G=0, B=0, A=1 }
+        }
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/Animated/Weapons/Upgrades/Sight/Optic/Acog/Textures/T_1P_FX_R_TA31.T_1P_FX_R_TA31'
+            TextureValues[1] = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Animated/Weapons/Upgrades/Sight/Optic/Acog/Textures/T_1P_FX_R_TA31.T_1P_FX_R_TA31'
+        ReferencedTextures[1] = Texture2D'/Game/Animated/Weapons/Upgrades/Sight/Optic/T_1P_FX_R_Optic_Dark.T_1P_FX_R_Optic_Dark'
+        ReferencedTextures[2] = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+    }
+}
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Animated/Weapons/Upgrades/Sight/Optic/Acog/Textures/T_1P_FX_R_TA31.T_1P_FX_R_TA31'
+        Name = ReticleMask
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+        Name = RenderTarget
+        Group = None
+    }
+}
+CollectedScalarParameters[9] =
+{
+    CollectedScalarParameters[0] =
+    {
+        Value = 0.5
+        Name = Cubic distortion amount
+        Group = None
+    }
+    CollectedScalarParameters[1] = { Value=5, Name=ScopeBumpHeight, Group=None }
+    CollectedScalarParameters[2] =
+    {
+        Value = 0.2
+        Name = RecticleIlluminateAmount
+        Group = None
+    }
+    CollectedScalarParameters[3] = { Value=1000, Name=Radius, Group=None }
+    CollectedScalarParameters[4] =
+    {
+        Value = 0.5
+        Name = Constant distortion offset
+        Group = None
+    }
+    CollectedScalarParameters[5] =
+    {
+        Value = 0.4
+        Name = EmissiveReticleFilter
+        Group = None
+    }
+    CollectedScalarParameters[6] = { Value=7, Name=DistortionFalloff, Group=None }
+    CollectedScalarParameters[7] = { Value=200, Name=Distance, Group=None }
+    CollectedScalarParameters[8] = { Value=1, Name=ReticleScale, Group=None }
+}
+CollectedVectorParameters[3] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = ReticleColour
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=0.5, G=0.5, B=0.5, A=1 }
+        Name = SmokeColor
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=1, G=0, B=0, A=1 }
+        Name = ReticleEmissiveColour
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[1] =
+{
+    TextureStreamingData[0] =
+    {
+        SamplingScale = 0.25
+        UVChannelIndex = 1
+        TextureName = DefaultDiffuse
+    }
+}
