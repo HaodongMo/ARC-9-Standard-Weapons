@@ -21,7 +21,14 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
+
 ATT.RTScopeFOV = 1.5
+
+ATT.RTScopeFOVMax = 1.5
+ATT.RTScopeFOVMin = 15
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 4
+
 ATT.RTScopeReticle = Material("arc9/tars.png", "mips smooth")
 ATT.RTScopeColor = Color(255, 0, 0)
 
