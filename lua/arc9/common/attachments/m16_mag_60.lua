@@ -17,3 +17,6 @@ ATT.FreeAimRadiusMult = 1.25
 ATT.SpeedMult = 0.98
 
 ATT.SwayAdd = 0.2
+ATT.SpeedMult = 0.995
+
+ATT.DropMagazineModel = "models/weapons/arc9/droppedmags/m16_mag_60.mdl"

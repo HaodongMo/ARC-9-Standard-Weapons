@@ -1,7 +1,7 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models\weapons\arccw\ud_m16/m16_barrel_ris"
-	"$bumpmap" "models\weapons\arccw\ud_m16/m16_barrel_ris_n"
+	"$basetexture" "models\weapons\arc9\ud_m16/m16_barrel_ris"
+	"$bumpmap" "models\weapons\arc9\ud_m16/m16_barrel_ris_n"
 	
 	"$phong" 		"1"
 	"$phongboost" "1.5"

@@ -21,16 +21,23 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
+
 ATT.RTScopeFOV = 1.5
+
+ATT.RTScopeFOVMax = 1.5
+ATT.RTScopeFOVMin = 15
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 4
+
 ATT.RTScopeReticle = Material("arc9/tars.png", "mips smooth")
 ATT.RTScopeColor = Color(255, 0, 0)
 
-ATT.ScopeScreenRatio = 0.5
+ATT.ScopeScreenRatio = 0.9
 
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, -0.175)
 
-ATT.SwayAdd = 0.25
+ATT.SwayAdd = 0.2
 ATT.FreeAimRadiusMultSights = 0.1
 ATT.AimDownSightsTimeAdd = 0.16
 ATT.SprintToFireTimeAdd = 0.12

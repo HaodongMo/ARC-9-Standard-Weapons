@@ -5,7 +5,7 @@ ATT.Description = [[Extremely short barrel for special forces teams.
 Improves fire rate substantially as well as handling, at the cost of range.]]
 
 ATT.PrintName_TrueName = "Colt CAR 11\" Barrel"
-ATT.CompactName_TrueName = "14\"CAR"
+ATT.CompactName_TrueName = "11\"CAR"
 ATT.Icon = Material("entities/arc9_att_m16_barrel_commando.png", "mips smooth")
 ATT.Description_TrueName = [[Very short barrel for the CAR-15.
 

@@ -4,7 +4,7 @@
 	"$basetexture" "models/weapons/arc9/atts/uc_trijitars_c"
 	"$bumpmap" "models/weapons/arc9/atts/uc_trijitars_n"
 	"$phongexponenttexture" "models/weapons/arc9/atts/uc_trijitars_m"
-	"$phongwarptexture" "models/weapons/arccw/ud_stalol/phongwarp_metal"
+	"$phongwarptexture" "models/weapons/arc9/ud_stalol/phongwarp_metal"
 	"$color2" "[ .5 .5 .5 ]"
 	"$blendtintbybasealpha" "1"
 	"$phong" "1"

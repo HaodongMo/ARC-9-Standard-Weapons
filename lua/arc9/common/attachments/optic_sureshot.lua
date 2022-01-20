@@ -27,6 +27,6 @@ ATT.HoloSightColor = Color(255, 0, 0)
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.Scale = 1.25
 
-ATT.SwayAdd = 0.05
+ATT.SwayAdd = 0.011
 ATT.FreeAimRadiusMultSights = 0.25
 ATT.SprintToFireTimeAdd = 0.02

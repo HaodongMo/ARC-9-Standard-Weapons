@@ -44,8 +44,6 @@ end
 SWEP.ViewModel = "models/weapons/arc9/c_ud_m16.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 
-SWEP.DesiredViewModelFOV = 75
-
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-7.5, 4, -7.5),
@@ -53,11 +51,11 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.DefaultBodygroups = "0000000000000000000000"
+SWEP.DefaultBodygroups = "0000000400000000000000"
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 35 -- Damage done at point blank range
+SWEP.DamageMax = 27 -- Damage done at point blank range
 SWEP.DamageMin = 20 -- Damage done at maximum range
 
 SWEP.DamageRand = 0 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
@@ -77,31 +75,33 @@ SWEP.Ammo = "smg1" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 30 -- Self-explanatory.
-SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ArcCW-A2 supply crate.
+SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
 SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 
-SWEP.DropMagazineModel = nil -- Set to a string or table to drop this magazine when reloading.
-SWEP.DropMagazineSounds = {} -- Table of sounds a dropped magazine should play.
+SWEP.DropMagazineModel = "models/weapons/arc9/droppedmags/m16_mag_30.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineSounds = {
+    "weapons/arc9_ud/common/rifle_magdrop.ogg"
+}  -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 
 -------------------------- FIREMODES
 
 SWEP.RPM = 750
 
-// Works different to ArcCW
+-- Works different to ArcCW
 
-// -1: Automatic
-// 0: Safe. Don't use this for safety.
-// 1: Semi.
-// 2: Two-round burst.
-// 3: Three-round burst.
-// n: n-round burst.
+-- -1: Automatic
+-- 0: Safe. Don't use this for safety.
+-- 1: Semi.
+-- 2: Two-round burst.
+-- 3: Three-round burst.
+-- n: n-round burst.
 SWEP.Firemodes = {
     {
         Mode = 3,
-        // add other attachment modifiers
+        -- add other attachment modifiers
     },
     {
         Mode = 1
@@ -119,7 +119,7 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 1.5
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.75 -- Multiplier for vertical recoil
@@ -133,7 +133,7 @@ SWEP.RecoilRandomSide = 0.5
 SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.05 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.25 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1.25 * 0.25 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 2
 
@@ -145,15 +145,15 @@ SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 10 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0.75 -- How much the gun sways.
+SWEP.FreeAimRadius = 10 / 1.25 -- In degrees, how much this gun can free aim in hip fire.
+SWEP.Sway = 0.75 + 1 -- How much the gun sways.
 
 SWEP.FreeAimRadiusSights = 1
 
 SWEP.SwayMultSights = 0.5
 
-SWEP.AimDownSightsTime = 0.28 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.34 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.28 * 0.75 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.34 * 0.5 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMult = 0.95
 SWEP.SpeedMultSights = 0.75
@@ -161,6 +161,11 @@ SWEP.SpeedMultShooting = 1
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 1
 SWEP.SpeedMultBlindFire = 1
+
+-------------------------- TRACERS
+
+SWEP.TracerNum = 1 -- Tracer every X
+SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if tracer effect supports it. For physical bullets, this is compressed down to 9-bit color.
 
 -------------------------- POSITIONS
 
@@ -211,7 +216,7 @@ SWEP.ShootSoundSilenced = path .. "fire_sup.ogg"
 SWEP.DistantShootSoundSilenced = common .. "sup_tail.ogg"
 SWEP.DryFireSound = path .. "dryfire.ogg"
 
-SWEP.FiremodeSound = "weapons/arccw/firemode.wav"
+SWEP.FiremodeSound = "arc9/firemode.wav"
 
 local rottle = {common .. "cloth_1.ogg", common .. "cloth_2.ogg", common .. "cloth_3.ogg", common .. "cloth_4.ogg", common .. "cloth_6.ogg", common .. "rattle.ogg"}
 local ratel = {path .. "rattle_1.ogg", path .. "rattle_2.ogg", path .. "rattle_3.ogg"}
@@ -321,7 +326,6 @@ SWEP.Animations = {
             {s = path .. "magout.ogg", 	 t = 0.335},
             {s = ratel, t = 0.5},
             {s = rottle,  t = 0.75},
-            {s = common .. "rifle_magdrop.ogg",  t = 0.8},
             {s = path .. "magin.ogg",    t = 1.05},
             {s = ratel, t = 1.1},
             {s = rottle,  t = 1.39},
@@ -367,7 +371,6 @@ SWEP.Animations = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.2},
             {s = rottle, t = 0.75},
-            {s = common .. "rifle_magdrop.ogg",  t = 0.8},
             {s = path .. "magin.ogg",    t = 0.95},
             {s = rottle, t = 1.39},
             {s = path .. "boltdrop.ogg", t = 1.77},
@@ -410,7 +413,6 @@ SWEP.Animations = {
             {s = rottle,  t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
             {s = rottle,  t = 0.75},
-            {s = common .. "rifle_magdrop.ogg",  t = 0.8},
             {s = path .. "magin.ogg",    t = 1.05},
             {s = rottle,  t = 1.475},
             {s = path .. "boltdrop.ogg", t = 1.78},
@@ -453,7 +455,6 @@ SWEP.Animations = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
             {s = rottle, t = 0.75},
-            {s = common .. "rifle_magdrop.ogg",  t = 0.8},
             {s = path .. "magin.ogg",    t = 1.1},
             {s = rottle, t = 1.475},
             {s = path .. "boltdrop.ogg", t = 1.9},
@@ -477,9 +478,9 @@ SWEP.Animations = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.3},
             {s = rottle, t = 0.75},
-            {s = path .. "magin.ogg",    t = 1.29},
+            {s = path .. "magin.ogg",    t = 1.05},
             {s = rottle, t = 1.1},
-            {s = path .. "magtap.ogg",   t = 1.83},
+            {s = path .. "magtap.ogg",   t = 1.59},
             {s = common .. "cloth_4.ogg",  t = 1.65},
             {s = common .. "shoulder.ogg", t = 2.05},
         },
@@ -499,13 +500,13 @@ SWEP.Animations = {
             {s = path .. "magout.ogg", 	 t = 0.3},
             {s = rottle, t = 0.75},
             {s = common .. "magdrop.ogg",  t = 0.65},
-            {s = path .. "magin.ogg",    t = 1.29},
-            {s = path .. "magtap.ogg",   t = 1.83},
+            {s = path .. "magin.ogg",    t = 1.05},
+            {s = path .. "magtap.ogg",   t = 1.59},
             {s = rottle, t = 1.75},
-            {s = path .. "chback.ogg",   t = 2.4},
-            {s = common .. "cloth_4.ogg",  t = 2.35},
-            {s = path .. "chamber.ogg",  t = 2.7},
-            {s = common .. "shoulder.ogg", t = 2.9},
+            {s = path .. "chback.ogg",   t = 2.0},
+            {s = common .. "cloth_4.ogg",  t = 2.05},
+            {s = path .. "chamber.ogg",  t = 2.22},
+            {s = common .. "shoulder.ogg", t = 2.6},
         },
     },
 }
@@ -533,6 +534,12 @@ SWEP.AttachmentElements = {
             {2, 4}
         }
     },
+    ["m16_upper_a3"] = {
+        Bodygroups = {
+            {1, 1},
+            {3, 3}
+        },
+    },
     ["m16_upper_a4"] = {
         Bodygroups = {
             {1, 1},
@@ -544,6 +551,21 @@ SWEP.AttachmentElements = {
             {1, 5}
         },
     },
+    ["m16_barrel_carbine_ris"] = {
+        Bodygroups = {
+            {5, 5},
+            {4, 1},
+            {6, 2}
+        },
+        AttPosMods = {
+            [5] = {
+                Pos = Vector(0, -0.05, 24.5),
+            },
+            [9] = {
+                Pos = Vector(0, -0.05, 18),
+            }
+        }
+    },
     ["m16_barrel_carbine"] = {
         Bodygroups = {
             {5, 4},
@@ -551,10 +573,10 @@ SWEP.AttachmentElements = {
             {6, 2}
         },
         AttPosMods = {
-            [4] = {
+            [5] = {
                 Pos = Vector(0, -0.05, 24.5),
             },
-            [8] = {
+            [9] = {
                 Pos = Vector(0, -0.05, 18),
             }
         }
@@ -566,10 +588,10 @@ SWEP.AttachmentElements = {
             {6, 2}
         },
         AttPosMods = {
-            [4] = {
+            [5] = {
                 Pos = Vector(0, -0.05, 20),
             },
-            [8] = {
+            [9] = {
                 Pos = Vector(0, -0.05, 18),
             }
         }
@@ -581,10 +603,10 @@ SWEP.AttachmentElements = {
             {6, 5}
         },
         AttPosMods = {
-            [4] = {
+            [5] = {
                 Pos = Vector(0, -0.05, 24.5),
             },
-            [8] = {
+            [9] = {
                 Pos = Vector(0, -0.05, 18),
             }
         }
@@ -608,12 +630,16 @@ SWEP.AttachmentElements = {
     ["m16rs"] = {
         Bodygroups = {
             {12, 2},
-            {6, 0},
         }
     },
     ["stock_buffertube"] = {
         Bodygroups = {
             {7, 4}
+        }
+    },
+    ["m16_stock_solid"] = {
+        Bodygroups = {
+            {7, 0}
         }
     },
     ["m16_stock_wire"] = {
@@ -641,18 +667,27 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "UPPER",
-        Category = {"m16_upper", "mount_m16ch"},
+        PrintName = "RECEIVER",
+        Category = "m16_upper",
         Bone = "m16_parent",
+        Pos = Vector(0, -1, 1.5),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "MOUNT",
+        Category = "mount_m16ch",
+        Bone = "m16_parent",
+        ExcludeElements = {"flattop"},
         Pos = Vector(0, -3.15, 3.5),
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "STOCK",
-        DefaultName = "Factory Fixed Stock",
-        Category = {"m16_stock", "btube"},
+        PrintName = "TUBE",
+        DefaultName = "Buffer Tube",
+        Category = {"m16_stock", "bt_stock"},
+        Installed = "m16_stock_solid",
         Bone = "m16_parent",
-        Pos = Vector(0, 0, -5.5 ),
+        Pos = Vector(0, 0, -5.5),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -682,7 +717,7 @@ SWEP.Attachments = {
     {
         PrintName = "AMMO",
         DefaultName = "Standard FMJ",
-        Category = {""},
+        Category = {"ammo", "ammo_assault"},
         Bone = "m16_parent",
         Pos = Vector(0, 6, 7),
         Ang = Angle(90, 0, -90),

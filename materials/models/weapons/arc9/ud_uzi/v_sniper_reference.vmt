@@ -1,6 +1,6 @@
 VertexLitGeneric
 {
-$baseTexture "models\weapons\arccw\ud_mini14\v_sniper_reference"
+$baseTexture "models\weapons\arc9\ud_mini14\v_sniper_reference"
 $bumpmap "effects/flat_normal"
 
 $phongalbedotint 1

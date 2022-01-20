@@ -16,6 +16,9 @@ ATT.Attachments = {
     }
 }
 
+ATT.Ignore = true
+
+-- These stats are baked into the gun itself now
 ATT.SwayAdd = 1
 ATT.FreeAimRadiusMult = 1.25
 ATT.SprintToFireTimeMult = 0.5
