@@ -1,5 +1,5 @@
 ATT.PrintName = "Patriotic Tracer"
-ATT.CompactName = "TR-P"
+ATT.CompactName = "TR-USA"
 ATT.Icon = Material("entities/arc9_att_ammo.png", "mips smooth")
 ATT.Description = [[Tracer rounds. Loaded with a random mix of red, white, and blue tracers.
 
