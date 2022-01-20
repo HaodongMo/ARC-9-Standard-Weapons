@@ -10,9 +10,11 @@ ATT.Icon = Material("entities/arc9_att_m16_stock_wire.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = "m16_stock"
 
-ATT.SwayAdd = 0.15
-ATT.SprintToFireTimeMult = 0.9
-ATT.AimDownSightsTimeMult = 0.9
-ATT.RecoilMult = 1.05
-ATT.RecoilKickMult = 1.25
-ATT.RecoilAutoControlMult = 0.9
+ATT.SwayAdd = -0.85
+ATT.SprintToFireTimeMult = 1.8
+ATT.AimDownSightsTimeMult = 1.15
+ATT.RecoilMult = 0.7
+ATT.RecoilKickMult = 1.125
+
+ATT.RecoilAutoControlMult = 3.6
+ATT.FreeAimRadiusMult = 0.7

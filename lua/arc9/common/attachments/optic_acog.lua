@@ -38,7 +38,7 @@ ATT.ScopeScreenRatio = 0.5
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, -0.175)
 
-ATT.SwayAdd = 0.1
+ATT.SwayAdd = 0.05
 ATT.FreeAimRadiusMultSights = 0.1
 ATT.AimDownSightsTimeAdd = 0.12
 ATT.SprintToFireTimeAdd = 0.05

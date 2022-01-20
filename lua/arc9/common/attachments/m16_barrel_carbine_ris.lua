@@ -13,25 +13,26 @@ ATT.Attachments = {
     {
         PrintName = "RAIL",
         Category = {"ris_grip", "ris_tac"},
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(-3, 0, 1.5),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(4, -1.5, 0)
+        Icon_Offset = Vector(0, 0, 0)
     },
     {
         PrintName = "RAIL",
         Category = "ris_tac",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(-3, -1.5, -0.2),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(4, 0.5, 0)
+        Icon_Offset = Vector(0, 0, 0)
     },
     {
         PrintName = "RAIL",
         Category = "ris_tac",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(-3, 0, -1.7),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(4, 2, 0)
+        Icon_Offset = Vector(0, 0, 0)
     },
 }
+
 
 ATT.RecoilAutoControlMult = 0.94
 ATT.PhysBulletMuzzleVelocityMult = 0.9

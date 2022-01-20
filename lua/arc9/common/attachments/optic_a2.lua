@@ -19,7 +19,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 12.5
+ATT.RTScopeFOV = 15
 ATT.RTScopeReticle = Material("arc9/colt.png", "mips smooth")
 ATT.RTScopeColor = Color(255, 255, 255)
 
@@ -27,7 +27,7 @@ ATT.ScopeScreenRatio = 0.5
 
 ATT.ModelOffset = Vector(0, 0, -0.1)
 
-ATT.SwayAdd = 0.05
+ATT.SwayAdd = 0.03
 ATT.FreeAimRadiusMultSights = 0.1
 ATT.AimDownSightsTimeAdd = 0.09
 ATT.SprintToFireTimeAdd = 0.04

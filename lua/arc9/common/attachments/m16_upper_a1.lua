@@ -11,20 +11,11 @@ ATT.Icon = Material("entities/arc9_att_m16_upper_a1.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = "m16_upper"
 
-ATT.Attachments = {
-    {
-        PrintName = "MOUNT",
-        Category = "mount_m16ch",
-        Pos = Vector(0, 0, 0),
-        Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(-4, -1, 0),
-    }
-}
-
-ATT.RPMMult = 1.05
+ATT.RPMMult = 1.2
 ATT.RecoilMult = 1.1
 
-ATT.RecoilSideAdd = 1.25
+ATT.RecoilSideAdd = 1.2
+ATT.SpreadAdd = 0.0003
 
 ATT.FiremodesOverride = {
     {
@@ -35,4 +26,4 @@ ATT.FiremodesOverride = {
     }
 }
 
-ATT.RecoilPatternDriftMult = 1.15
+ATT.RecoilPatternDriftMult = 1.25

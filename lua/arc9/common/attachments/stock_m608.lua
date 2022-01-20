@@ -5,7 +5,7 @@ ATT.Description = [[Extremely short stock for buffer tube stocks.
 Poor recoil and sway mitigation, but helps a lot with point shooting.]]
 
 ATT.PrintName_TrueName = "M608 Survival Rifle Pad"
-ATT.CompactName_TrueName = "608"
+ATT.CompactName_TrueName = "M608"
 ATT.Description_TrueName = [[Extremely short stock for buffer tube stocks.
 
 Poor recoil and sway mitigation, but helps a lot with point shooting.]]
@@ -25,6 +25,6 @@ ATT.RecoilMult = 0.90
 ATT.RecoilKickMult = 1.26
 ATT.RecoilAutoControlMult = 3.5
 
-ATT.FreeAimRadiusMult = 0.667
+ATT.FreeAimRadiusMult = 0.6
 
 ATT.ModelOffset = Vector(-3.5, 0, 0)

@@ -25,3 +25,5 @@ ATT.Attachments = {
 ATT.ActivePosHook = function(swep, pos)
     return pos - Vector(0, 0, 3)
 end
+
+ATT.SwayAdd = 0.05

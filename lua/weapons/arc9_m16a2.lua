@@ -51,7 +51,7 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.DefaultBodygroups = "0000000000000000000000"
+SWEP.DefaultBodygroups = "0000000400000000000000"
 
 -------------------------- DAMAGE PROFILE
 
@@ -90,18 +90,18 @@ SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 
 SWEP.RPM = 750
 
-// Works different to ArcCW
+-- Works different to ArcCW
 
-// -1: Automatic
-// 0: Safe. Don't use this for safety.
-// 1: Semi.
-// 2: Two-round burst.
-// 3: Three-round burst.
-// n: n-round burst.
+-- -1: Automatic
+-- 0: Safe. Don't use this for safety.
+-- 1: Semi.
+-- 2: Two-round burst.
+-- 3: Three-round burst.
+-- n: n-round burst.
 SWEP.Firemodes = {
     {
         Mode = 3,
-        // add other attachment modifiers
+        -- add other attachment modifiers
     },
     {
         Mode = 1
@@ -119,7 +119,7 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 1.5
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.75 -- Multiplier for vertical recoil
@@ -133,7 +133,7 @@ SWEP.RecoilRandomSide = 0.5
 SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.05 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.25 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1.25 * 0.25 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 2
 
@@ -145,15 +145,15 @@ SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 10 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0.75 -- How much the gun sways.
+SWEP.FreeAimRadius = 10 / 1.25 -- In degrees, how much this gun can free aim in hip fire.
+SWEP.Sway = 0.75 + 1 -- How much the gun sways.
 
 SWEP.FreeAimRadiusSights = 1
 
 SWEP.SwayMultSights = 0.5
 
-SWEP.AimDownSightsTime = 0.28 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.34 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.28 * 0.75 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.34 * 0.5 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMult = 0.95
 SWEP.SpeedMultSights = 0.75
@@ -558,10 +558,10 @@ SWEP.AttachmentElements = {
             {6, 2}
         },
         AttPosMods = {
-            [4] = {
+            [5] = {
                 Pos = Vector(0, -0.05, 24.5),
             },
-            [8] = {
+            [9] = {
                 Pos = Vector(0, -0.05, 18),
             }
         }
@@ -573,10 +573,10 @@ SWEP.AttachmentElements = {
             {6, 2}
         },
         AttPosMods = {
-            [4] = {
+            [5] = {
                 Pos = Vector(0, -0.05, 24.5),
             },
-            [8] = {
+            [9] = {
                 Pos = Vector(0, -0.05, 18),
             }
         }
@@ -588,10 +588,10 @@ SWEP.AttachmentElements = {
             {6, 2}
         },
         AttPosMods = {
-            [4] = {
+            [5] = {
                 Pos = Vector(0, -0.05, 20),
             },
-            [8] = {
+            [9] = {
                 Pos = Vector(0, -0.05, 18),
             }
         }
@@ -603,10 +603,10 @@ SWEP.AttachmentElements = {
             {6, 5}
         },
         AttPosMods = {
-            [4] = {
+            [5] = {
                 Pos = Vector(0, -0.05, 24.5),
             },
-            [8] = {
+            [9] = {
                 Pos = Vector(0, -0.05, 18),
             }
         }
@@ -637,6 +637,11 @@ SWEP.AttachmentElements = {
             {7, 4}
         }
     },
+    ["m16_stock_solid"] = {
+        Bodygroups = {
+            {7, 0}
+        }
+    },
     ["m16_stock_wire"] = {
         Bodygroups = {
             {7, 2}
@@ -662,18 +667,27 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "UPPER",
-        Category = {"m16_upper", "mount_m16ch"},
+        PrintName = "RECEIVER",
+        Category = "m16_upper",
         Bone = "m16_parent",
+        Pos = Vector(0, -1, 1.5),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "MOUNT",
+        Category = "mount_m16ch",
+        Bone = "m16_parent",
+        ExcludeElements = {"flattop"},
         Pos = Vector(0, -3.15, 3.5),
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "STOCK",
-        DefaultName = "Factory Fixed Stock",
-        Category = {"m16_stock", "btube"},
+        PrintName = "TUBE",
+        DefaultName = "Buffer Tube",
+        Category = {"m16_stock", "bt_stock"},
+        Installed = "m16_stock_solid",
         Bone = "m16_parent",
-        Pos = Vector(0, 0, -5.5 ),
+        Pos = Vector(0, 0, -5.5),
         Ang = Angle(90, 0, -90),
     },
     {
