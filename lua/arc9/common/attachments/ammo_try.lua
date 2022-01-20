@@ -5,6 +5,7 @@ ATT.Description = [[Tracer rounds. One tracer is loaded every 3 shots, and the l
 ATT.SortOrder = 0
 
 ATT.Category = {"ammo"}
+ATT.Folder = "tracer/monocolor"
 
 ATT.TracerNum = 3
 ATT.TracerFinalMag = 5
