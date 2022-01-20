@@ -13,11 +13,11 @@ ATT.Category = "m16_stock"
 
 ATT.SpeedMult = 0.975
 
-ATT.SwayAdd = -1.15
+ATT.SwayAdd = -1.1
 ATT.SprintToFireTimeMult = 2.1
-ATT.AimDownSightsTimeMult = 1.433
+ATT.AimDownSightsTimeMult = 1.3
 ATT.RecoilMult = 0.64
-ATT.RecoilKickMult = 0.9
+ATT.RecoilKickMult = 0.85
 
-ATT.RecoilAutoControlMult = 4.1
+ATT.RecoilAutoControlMult = 4.15
 ATT.FreeAimRadiusMult = 0.75

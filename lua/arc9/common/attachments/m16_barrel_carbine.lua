@@ -2,25 +2,26 @@ ATT.PrintName = "RAI Striker 14\" Barrel"
 ATT.CompactName = "14\"STRIKE"
 ATT.Description = [[Short barrel for close quarters action.
 
-Improves fire rate, at the cost of ballistic performance and precision.]]
+Short barrel improves fire rate and handling at the cost of ballistic performance and precision.]]
 
 ATT.PrintName_TrueName = "Colt M4 14\" Barrel"
 ATT.CompactName_TrueName = "14\"M4"
 ATT.Description_TrueName = [[Shortened barrel for the M4 carbine.
 
-Improves fire rate substantially, at the cost of ballistic performance and precision.]]
+Short barrel improves fire rate and handling at the cost of ballistic performance and precision.]]
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_carbine.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "m16_barrel"
+ATT.ActivateElements = {"shortfs"}
 
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RangeMaxMult = 0.85
 
 ATT.RecoilUpMult = 1.01
 ATT.RecoilSideMult = 1.12
-ATT.RPMMult = 1.025
+ATT.RPMMult = 1.05
 
 ATT.SpreadAdd = 0.00085
 

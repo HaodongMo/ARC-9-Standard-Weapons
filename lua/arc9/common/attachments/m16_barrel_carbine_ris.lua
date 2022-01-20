@@ -2,7 +2,8 @@ ATT.PrintName = "SOPMOD 14\" Barrel"
 ATT.CompactName = "14\"SOPMOD"
 ATT.Description = [[Carbine-length barrel shrouded by a quad-rail RIS handguard.
 
-Allows for easy mounting of tactical devices and grips. Rail interface is less comfortable than a standard handguard. Improves fire rate substantially, at the cost of ballistic performance and precision.]]
+Allows for easy mounting of tactical devices and grips, but is slightly uncomfortable to hold.
+Short barrel improves fire rate and handling at the cost of ballistic performance and precision.]]
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_carbine_ris.png", "mips smooth")
 
@@ -32,15 +33,15 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0)
     },
 }
+ATT.ActivateElements = {"shortfs"}
 
-
-ATT.RecoilAutoControlMult = 0.94
+ATT.RecoilAutoControlMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RangeMaxMult = 0.85
 
 ATT.RecoilUpMult = 1.01
 ATT.RecoilSideMult = 1.12
-ATT.RPMMult = 1.025
+ATT.RPMMult = 1.05
 
 ATT.SpreadAdd = 0.00085
 
