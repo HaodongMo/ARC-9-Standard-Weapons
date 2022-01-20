@@ -17,6 +17,8 @@ ATT.Category = "m16_stock"
 
 ATT.ActivateElements = {"gripstock"}
 
+ATT.SpeedMult = 0.975
+
 ATT.SwayAdd = -1.35
 ATT.SprintToFireTimeMult = 2.4
 ATT.AimDownSightsTimeMult = 1.4
