@@ -11,3 +11,11 @@ ATT.TracerFinalMag = 5
 ATT.TracerColor = Color(255, 255, 255)
 
 ATT.TracerSizeAdd = 5
+
+ATT.Hook_BulletImpact = function(swep, data)
+    local tr = data.tr
+
+    if math.Rand(0, 100) < data.dmgv * 0.25 then
+        tr.Entity:Ignite(0.25, 8)
+    end
+end
