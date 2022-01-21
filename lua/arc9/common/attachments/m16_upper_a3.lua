@@ -2,7 +2,7 @@ ATT.PrintName = "RAY/CAR-83 Flat Top Auto Upper"
 ATT.CompactName = "RC83FTA"
 ATT.Description = [[Experimental upper receiver that enables fully automatic fire and comes with a picatinny rail. Increases fire rate and recoil.]]
 
-ATT.PrintName_TrueName = "M16A3 Upper"
+ATT.PrintName_TrueName = "Colt M16A3 Railed Upper"
 ATT.CompactName_TrueName = "A3UPPER"
 ATT.Description_TrueName = [[Railed upper receiver that enables fully automatic fire. Increases fire rate and recoil.]]
 

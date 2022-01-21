@@ -2,7 +2,7 @@ ATT.PrintName = "RAY/CAR-83 Auto Upper"
 ATT.CompactName = "RC83AUTO"
 ATT.Description = [[Experimental upper receiver that enables fully automatic fire. Increases fire rate and recoil.]]
 
-ATT.PrintName_TrueName = "M16A1 Upper"
+ATT.PrintName_TrueName = "Colt M16A1 Upper"
 ATT.CompactName_TrueName = "A1UPPER"
 ATT.Description_TrueName = [[Classic upper receiver that enables fully automatic fire. Increases fire rate and recoil.]]
 

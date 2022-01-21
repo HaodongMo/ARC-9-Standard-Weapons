@@ -13,7 +13,7 @@ Improves fire rate and handling, at the cost of range.]]
 
 ATT.SortOrder = 0
 ATT.Category = "m16_barrel"
-
+ATT.ActivateElements = {"shortfs"}
 
 ATT.PhysBulletMuzzleVelocityMult = 0.85
 ATT.RangeMaxMult = 0.8

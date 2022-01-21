@@ -17,6 +17,8 @@ ATT.Category = "bt_stock"
 
 ATT.Model = "models/weapons/arc9/atts/stock_m4ss.mdl"
 
+ATT.SpeedMult = 0.99
+
 ATT.SwayAdd = -0.92
 ATT.SprintToFireTimeMult = 1.37
 ATT.AimDownSightsTimeMult = 1.28

@@ -25,7 +25,7 @@ SWEP.Description = [[Adopted in 1983, the M16A2 is a widely used assault rifle c
 
 Medium weight with good rate of fire in burst. Pace bursts well to maximize volume of fire.]]
 
-if not ARC9:UseTrueNames() then
+if !ARC9:UseTrueNames() then
 
 SWEP.Trivia = {
     Manufacturer = "Rayter Arms Industries",
@@ -162,7 +162,7 @@ SWEP.SprintToFireTime = 0.34 * 0.5 -- How long it takes to go from sprinting to 
 
 SWEP.SpeedMult = 0.95
 SWEP.SpeedMultSights = 0.75
-SWEP.SpeedMultShooting = 1
+SWEP.SpeedMultShooting = 0.75
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 1
 SWEP.SpeedMultBlindFire = 1
@@ -181,6 +181,7 @@ SWEP.IronSights = {
         Pos = Vector(0, 15, -4),
         Ang = Angle(0, 0, -45),
     },
+    Magnification = 1.1,
 }
 
 SWEP.SprintAng = Angle(30, -15, 0)
@@ -670,9 +671,21 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local vm = wep:GetOwner():GetViewModel()
+    if !vm then return end
+    if wep:HasElement("m16lp") then
+        vm:SetBodygroup(6, wep:HasElement("shortfs") and 3 or 1)
+    end
+end
+
 SWEP.Attachments = {
     {
         PrintName = "RECEIVER",
+        DefaultName = "RAI RC83 Upper",
+        DefaultCompactName = "RC83UPPER",
+        DefaultName_TrueName = "Colt M16A2 Upper",
+        DefaultCompactName_TrueName = "A2UPPER",
         Category = "m16_upper",
         Bone = "m16_parent",
         Pos = Vector(0, -1, 1.5),
@@ -697,7 +710,10 @@ SWEP.Attachments = {
     },
     {
         PrintName = "BARREL",
-        DefaultName = "Standard 20\" Barrel",
+        DefaultName = "RAI Ribbed 20\" Barrel",
+        DefaultCompactName = "20\"RIB",
+        DefaultName_TrueName = "Colt M16A2 20\" Barrel",
+        DefaultCompactName_TrueName = "20\"A2",
         Category = {"m16_barrel"},
         Bone = "m16_parent",
         Pos = Vector(0, -0.05, 10),
@@ -742,6 +758,14 @@ SWEP.Attachments = {
         ExcludeElements = {"m16_barrel_commando"},
         Bone = "m16_parent",
         Pos = Vector(0, -0.05, 26),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "IRONS",
+        Category = {"m16lp"},
+        Bone = "m16_parent",
+        ExcludeElements = {"fpw"},
+        Pos = Vector(0, -3, 24),
         Ang = Angle(90, 0, -90),
     },
 }

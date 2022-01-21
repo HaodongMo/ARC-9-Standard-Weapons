@@ -7,6 +7,7 @@ Effective for patriots of America, the United Kingdom, Russia, and many more.]]
 ATT.SortOrder = 0
 
 ATT.Category = {"ammo"}
+ATT.Folder = "tracer/multicolor"
 
 ATT.TracerNum = 1
 

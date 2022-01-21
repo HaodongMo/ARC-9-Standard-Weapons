@@ -14,6 +14,7 @@ ATT.Icon = Material("entities/arc9_att_m16_barrel_fpw.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "m16_barrel"
+ATT.ActivateElements = {"fpw"}
 
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RangeMaxMult = 0.85

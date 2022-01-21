@@ -2,7 +2,7 @@ ATT.PrintName = "RAY/CAR-83 Flat Top Upper"
 ATT.CompactName = "RC83FTU"
 ATT.Description = [[Upper receiver that comes with a picatinny rail as standard.]]
 
-ATT.PrintName_TrueName = "M16 Railed Upper"
+ATT.PrintName_TrueName = "Colt M16A4 Railed Upper"
 ATT.CompactName_TrueName = "A4UPPER"
 
 ATT.Icon = Material("entities/arc9_att_m16_upper_a4.png", "mips smooth")

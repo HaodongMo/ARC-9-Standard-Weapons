@@ -5,6 +5,7 @@ ATT.Description = [[Tracer rounds. Loaded with many different colors of rounds i
 ATT.SortOrder = 0
 
 ATT.Category = {"ammo"}
+ATT.Folder = "tracer/multicolor"
 
 ATT.TracerNum = 1
 
