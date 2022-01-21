@@ -148,6 +148,11 @@ SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 SWEP.FreeAimRadius = 10 / 1.25 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0.75 + 1 -- How much the gun sways.
 
+SWEP.SwayMultMidAir = 2
+SWEP.SwayMultMove = 1.15
+SWEP.SwayMultCrouch = 0.66
+SWEP.SwayMultShooting = 1.2
+
 SWEP.FreeAimRadiusSights = 1
 
 SWEP.SwayMultSights = 0.5
@@ -562,7 +567,7 @@ SWEP.AttachmentElements = {
                 Pos = Vector(0, -0.05, 24.5),
             },
             [9] = {
-                Pos = Vector(0, -0.05, 18),
+                Pos = Vector(0, -0.05, 20),
             }
         }
     },
@@ -577,7 +582,7 @@ SWEP.AttachmentElements = {
                 Pos = Vector(0, -0.05, 24.5),
             },
             [9] = {
-                Pos = Vector(0, -0.05, 18),
+                Pos = Vector(0, -0.05, 20),
             }
         }
     },
@@ -592,7 +597,7 @@ SWEP.AttachmentElements = {
                 Pos = Vector(0, -0.05, 20),
             },
             [9] = {
-                Pos = Vector(0, -0.05, 18),
+                Pos = Vector(0, -0.05, 17.9),
             }
         }
     },
@@ -607,7 +612,7 @@ SWEP.AttachmentElements = {
                 Pos = Vector(0, -0.05, 24.5),
             },
             [9] = {
-                Pos = Vector(0, -0.05, 18),
+                Pos = Vector(0, -0.05, 19),
             }
         }
     },
@@ -733,9 +738,10 @@ SWEP.Attachments = {
     },
     {
         PrintName = "MOUNT",
-        Category = {""},
+        Category = "mount_barrel",
+        ExcludeElements = {"m16_barrel_commando"},
         Bone = "m16_parent",
-        Pos = Vector(0, -0.05, 24),
+        Pos = Vector(0, -0.05, 26),
         Ang = Angle(90, 0, -90),
     },
 }

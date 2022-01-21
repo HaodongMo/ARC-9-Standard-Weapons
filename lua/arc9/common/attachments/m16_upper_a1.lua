@@ -11,7 +11,6 @@ ATT.Icon = Material("entities/arc9_att_m16_upper_a1.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = "m16_upper"
 
-ATT.RPMMult = 1.2
 ATT.RecoilMult = 1.1
 
 ATT.RecoilSideAdd = 1.2
