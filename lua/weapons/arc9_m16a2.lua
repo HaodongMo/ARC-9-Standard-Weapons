@@ -363,7 +363,7 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 1.925},
         },
     },
-    ["reload_20_empty"] = {
+    ["reload_empty_20"] = {
         Source = "reload_empty_20",
         Time = 79 / 30,
         MinProgress = 2,
@@ -405,7 +405,7 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 1.85},
         },
     },
-    ["reload_40_empty"] = {
+    ["reload_empty_40"] = {
         Source = "reload_empty_40",
         Time = 79 / 30,
         MinProgress = 2,
@@ -447,7 +447,7 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 1.97},
         },
     },
-    ["reload_60_empty"] = {
+    ["reload_empty_60"] = {
         Source = "reload_empty_60",
         Time = 79 / 30,
         MinProgress = 2,
@@ -491,7 +491,7 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 2.05},
         },
     },
-    ["reload_100_empty"] = {
+    ["reload_empty_100"] = {
         Source = "reload_empty_100",
         Time = 90 / 30,
         MinProgress = 2.5,
