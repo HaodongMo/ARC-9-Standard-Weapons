@@ -227,7 +227,7 @@ SWEP.FiremodeSound = "arc9/firemode.wav"
 local rottle = {common .. "cloth_1.ogg", common .. "cloth_2.ogg", common .. "cloth_3.ogg", common .. "cloth_4.ogg", common .. "cloth_6.ogg", common .. "rattle.ogg"}
 local ratel = {path .. "rattle_1.ogg", path .. "rattle_2.ogg", path .. "rattle_3.ogg"}
 
-SWEP.Hook_SelectReloadAnimation = function(swep, anim)
+SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
 
     if elements["m16_mag_20"] then
