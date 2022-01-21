@@ -15,7 +15,7 @@ ATT.Model = "models/weapons/arc9/atts/mount_gooseneck.mdl"
 ATT.Attachments = {
     {
         PrintName = "OPTIC",
-        Category = "optic_picatinny_medium", // single or {"list", "of", "values"}
+        Category = {"optic_picatinny_medium", "tac_picatinny"}, // single or {"list", "of", "values"}
         Pos = Vector(-7.45884, 0, 0.85),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 1, 0),

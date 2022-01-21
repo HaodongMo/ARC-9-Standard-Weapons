@@ -5,7 +5,7 @@ ATT.Description = [[Tactical laser/light module that provides an aiming point wh
 ATT.Icon = Material("entities/arc9_att_tac_anpeq16a.png", "mips smooth")
 
 ATT.SortOrder = 0
-ATT.Category = {"picatinny", "picatinny_tac_top", "picatinny_tac"}
+ATT.Category = {"picatinny", "tac_picatinny_top", "tac_picatinny"}
 ATT.Model = "models/weapons/arc9/atts/anpeq16a.mdl"
 
 ATT.Laser = true
