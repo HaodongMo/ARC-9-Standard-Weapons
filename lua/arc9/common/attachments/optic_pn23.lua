@@ -11,7 +11,7 @@ ATT.Category = "optic_picatinny"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 6, -2.0850625),
+        Pos = Vector(0, 7, -2.0850625),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5
     },
@@ -20,13 +20,27 @@ ATT.Sights = {
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 15
-ATT.RTScopeReticle = Material("arc9/pn23.png", "mips smooth")
+ATT.RTScopeReticle = Material("arc9/pn23.png", "smooth")
 ATT.RTScopeColor = Color(255, 0, 0)
+
+ATT.RTScopeNightVision = true
+ATT.RTScopeNightVisionMonochrome = true
+ATT.RTScopeNightVisionCC = {
+    ["$pp_colour_addr"] = -255,
+    ["$pp_colour_addg"] = 0,
+    ["$pp_colour_addb"] = -255,
+    ["$pp_colour_brightness"] = 0,
+    ["$pp_colour_contrast"] = 4,
+    ["$pp_colour_colour"] = 1,
+    ["$pp_colour_mulr"] = 0,
+    ["$pp_colour_mulg"] = 0,
+    ["$pp_colour_mulb"] = 0
+}
 
 ATT.ScopeScreenRatio = 0.5
 
 ATT.Scale = 1.25
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0, 0, -0.25)
 
 ATT.SwayAdd = 0.1
 ATT.FreeAimRadiusMultSights = 0.1
