@@ -8,7 +8,7 @@ ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/sureshot.mdl"
 
-ATT.Category = "optic_picatinny"
+ATT.Category = {"optic_picatinny_medium", "optic_picatinny"}
 
 // Allows a custom sight position to be defined
 ATT.Sights = {

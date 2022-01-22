@@ -44,6 +44,8 @@ end
 SWEP.ViewModel = "models/weapons/arc9/c_ud_m16.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 
+SWEP.Slot = 3
+
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-7.5, 4, -7.5),
@@ -148,6 +150,11 @@ SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 SWEP.FreeAimRadius = 10 / 1.25 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0.75 + 1 -- How much the gun sways.
 
+SWEP.SwayMultMidAir = 2
+SWEP.SwayMultMove = 1.15
+SWEP.SwayMultCrouch = 0.66
+SWEP.SwayMultShooting = 1.2
+
 SWEP.FreeAimRadiusSights = 1
 
 SWEP.SwayMultSights = 0.3
@@ -210,7 +217,7 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 
 local path = ")^weapons/arc9_ud/m16/"
 local common = ")^weapons/arc9_ud/common/"
-SWEP.FirstShootSound = path .. "first.ogg"
+SWEP.ShootSoundFirst = path .. "first.ogg"
 SWEP.ShootSound = {path .. "auto1.ogg", path .. "auto2.ogg", path .. "auto3.ogg", path .. "auto4.ogg"}
 SWEP.DistantShootSound = path .. "dist.ogg"
 SWEP.ShootSoundSilenced = path .. "fire_sup.ogg"
@@ -220,9 +227,9 @@ SWEP.DryFireSound = path .. "dryfire.ogg"
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
 local rottle = {common .. "cloth_1.ogg", common .. "cloth_2.ogg", common .. "cloth_3.ogg", common .. "cloth_4.ogg", common .. "cloth_6.ogg", common .. "rattle.ogg"}
-local ratel = {path .. "rattle_1.ogg", path .. "rattle_2.ogg", path .. "rattle_3.ogg"}
+local ratel = {common .. "rattle1.ogg", path .. "rattle2.ogg", path .. "rattle3.ogg"}
 
-SWEP.Hook_SelectReloadAnimation = function(swep, anim)
+SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
 
     if elements["m16_mag_20"] then
@@ -243,13 +250,12 @@ SWEP.Animations = {
     ["idle_empty"] = {
         Source = "idle_empty",
     },
-
     ["draw"] = {
         Source = "draw",
         EventTable = {
             {s = common .. "raise.ogg", t = 0},
             {s = common .. "shoulder.ogg", t = 0.15},
-            {s = path .. "rattle_3.ogg", t = 0.2},
+            {s = ratel, t = 0.2},
         },
     },
     ["draw_empty"] = {
@@ -258,53 +264,110 @@ SWEP.Animations = {
         EventTable = {
             {s = common .. "raise.ogg", t = 0},
             {s = common .. "shoulder.ogg", t = 0.15},
-            {s = path .. "rattle_3.ogg", t = 0.2},
+            {s = ratel, t = 0.2},
         },
     },
-
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = path .. "rattle_3.ogg", t = 0},
+            {s = ratel, t = 0},
             {s = common .. "cloth_6.ogg", t = 0.2},
         },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
+        Time = 20 / 30,
         EventTable = {
-            {s = path .. "rattle_3.ogg", t = 0},
+            {s = ratel, t = 0},
             {s = common .. "cloth_6.ogg", t = 0.2},
         },
     },
-
     ["fire"] = {
         Source = "fire",
+        Time = 13 / 30,
+        ShellEjectAt = 0.01,
         EventTable = {
             {s = path .. "mech.ogg", t = 0}, -- Temporary
         },
     },
     ["fire_empty"] = {
         Source = "fire_empty",
+        Time = 13 / 30,
+        ShellEjectAt = 0.01,
+        EventTable = {
+            {s = path .. "mech_last.ogg", t = 0}, -- Temporary
+        },
+    },
+    ["fire_usas"] = {
+        Source = "fire_usas",
+        Time = 20 / 30,
+        ShellEjectAt = 0.01,
+    },
+    ["fire_empty_usas"] = {
+        Source = "fire_empty_usas",
+        Time = 20 / 30,
+        ShellEjectAt = 0.01,
         EventTable = {
             {s = path .. "mech_last.ogg", t = 0}, -- Temporary
         },
     },
 
+    ["fire_cycle"] = {
+        Source = "fire",
+        Time = 13 / 30,
+    },
+
+    ["cycle"] = {
+        Source = "fix",
+        Time = 36 / 30 * 0.7,
+        ShellEjectAt = 0.3,
+        LHIK = true,
+        LHIKIn = 0.3 * 0.7,
+        LHIKEaseIn = 0.4 * 0.7,
+        LHIKEaseOut = 0.15 * 0.7,
+        LHIKOut = 0.4 * 0.7,
+        EventTable = {
+            {s = path .. "chback.ogg",   t = 0.05},
+            {s = common .. "cloth_4.ogg",  t = 0.2},
+            {s = path .. "chamber.ogg",  t = 0.3},
+        },
+    },
+
+    -- 30 Round Reloads --
+
     ["reload"] = {
         Source = "reload",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 0.25},
             {s = path .. "magout.ogg", 	 t = 0.335},
             {s = ratel, t = 0.5},
-            {s = rottle,  t = 0.75},
             {s = path .. "magin.ogg",    t = 1.05},
             {s = ratel, t = 1.1},
             {s = rottle,  t = 1.15},
@@ -314,19 +377,37 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 0.25},
             {s = path .. "magout.ogg", 	 t = 0.335},
             {s = ratel, t = 0.5},
-            {s = rottle,  t = 0.75},
             {s = path .. "magin.ogg",    t = 1.05},
             {s = ratel, t = 1.1},
             {s = rottle,  t = 1.39},
@@ -341,14 +422,32 @@ SWEP.Animations = {
 
     ["reload_20"] = {
         Source = "reload_20",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
@@ -358,16 +457,34 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 1.925},
         },
     },
-    ["reload_20_empty"] = {
+    ["reload_empty_20"] = {
         Source = "reload_empty_20",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.2},
@@ -383,14 +500,32 @@ SWEP.Animations = {
 
     ["reload_40"] = {
         Source = "reload_40",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.4,
-        LHIKOut = 0.6,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
@@ -400,16 +535,34 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 1.85},
         },
     },
-    ["reload_40_empty"] = {
+    ["reload_empty_40"] = {
         Source = "reload_empty_40",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
@@ -425,14 +578,32 @@ SWEP.Animations = {
 
     ["reload_60"] = {
         Source = "reload_60",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
@@ -442,16 +613,34 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 1.97},
         },
     },
-    ["reload_60_empty"] = {
+    ["reload_empty_60"] = {
         Source = "reload_empty_60",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
@@ -467,14 +656,32 @@ SWEP.Animations = {
 
     ["reload_100"] = {
         Source = "reload_100",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
         MinProgress = 1.75,
         LastClip1OutTime = 0.9,
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKEaseIn = 0.5,
-        LHIKEaseOut = 0.4,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.3},
@@ -486,21 +693,38 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 2.05},
         },
     },
-    ["reload_100_empty"] = {
+    ["reload_empty_100"] = {
         Source = "reload_empty_100",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 90 / 30,
         MinProgress = 2.5,
         LastClip1OutTime = 0.7,
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.4,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.3},
             {s = rottle, t = 0.75},
-            {s = common .. "magdrop.ogg",  t = 0.65},
             {s = path .. "magin.ogg",    t = 1.05},
             {s = path .. "magtap.ogg",   t = 1.59},
             {s = rottle, t = 1.75},
@@ -552,6 +776,16 @@ SWEP.AttachmentElements = {
             {1, 5}
         },
     },
+    ["m16_grip_skeleton"] = {
+        Bodygroups = {
+            {8, 2}
+        }
+    },
+    ["m16_grip_wood"] = {
+        Bodygroups = {
+            {8, 3}
+        }
+    },
     ["m16_barrel_carbine_ris"] = {
         Bodygroups = {
             {5, 5},
@@ -563,10 +797,7 @@ SWEP.AttachmentElements = {
                 Pos = Vector(0, -0.05, 24.5),
             },
             [9] = {
-                Pos = Vector(0, -0.05, 18),
-            },
-            [10] = {
-                Pos = Vector(0, -3, 18),
+                Pos = Vector(0, -0.05, 20),
             }
         }
     },
@@ -581,10 +812,7 @@ SWEP.AttachmentElements = {
                 Pos = Vector(0, -0.05, 24.5),
             },
             [9] = {
-                Pos = Vector(0, -0.05, 18),
-            },
-            [10] = {
-                Pos = Vector(0, -3, 18),
+                Pos = Vector(0, -0.05, 20),
             }
         }
     },
@@ -599,10 +827,22 @@ SWEP.AttachmentElements = {
                 Pos = Vector(0, -0.05, 20),
             },
             [9] = {
-                Pos = Vector(0, -0.05, 18),
+                Pos = Vector(0, -0.05, 17.9),
+            }
+        }
+    },
+    ["m16_barrel_commando_ris"] = {
+        Bodygroups = {
+            {5, 5},
+            {4, 2},
+            {6, 2}
+        },
+        AttPosMods = {
+            [5] = {
+                Pos = Vector(0, -0.05, 20),
             },
-            [10] = {
-                Pos = Vector(0, -3, 18),
+            [9] = {
+                Pos = Vector(0, -0.05, 17.9),
             }
         }
     },
@@ -617,10 +857,7 @@ SWEP.AttachmentElements = {
                 Pos = Vector(0, -0.05, 24.5),
             },
             [9] = {
-                Pos = Vector(0, -0.05, 18),
-            },
-            [10] = {
-                Pos = Vector(0, -3, 18),
+                Pos = Vector(0, -0.05, 19),
             }
         }
     },
@@ -754,17 +991,17 @@ SWEP.Attachments = {
         PrintName = "GRIP",
         DefaultName = "Factory Grip",
         ExcludeElements = {"gripstock"},
-        Category = {""},
+        Category = "m16_grip",
         Bone = "m16_parent",
         Pos = Vector(0, 3, 1.5),
         Ang = Angle(90, 0, -90),
     },
     {
         PrintName = "MOUNT",
-        Category = {""},
-        ExcludeElements = {"fpw"},
+        Category = "mount_barrel",
+        ExcludeElements = {"m16_barrel_commando"},
         Bone = "m16_parent",
-        Pos = Vector(0, -0.05, 24),
+        Pos = Vector(0, -0.05, 26),
         Ang = Angle(90, 0, -90),
     },
     {

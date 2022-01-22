@@ -14,21 +14,28 @@ ATT.Category = "m16_barrel"
 ATT.Attachments = {
     {
         PrintName = "RAIL",
-        Category = {"ris_grip", "ris_tac"},
-        Pos = Vector(-5, 0, 1.5),
-        Ang = Angle(0, 0, 0),
+        Category = {"grip_picatinny", "picatinny"},
+        Pos = Vector(-5, 0, 1.45),
+        Ang = Angle(0, 0, 180),
         Icon_Offset = Vector(0, 0, 0)
     },
     {
         PrintName = "RAIL",
-        Category = "ris_tac",
-        Pos = Vector(-5, -1.5, -0.2),
-        Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0)
+        Category = "picatinny",
+        Pos = Vector(-5, -1.42, -0.05),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(2, 0, 0)
     },
     {
         PrintName = "RAIL",
-        Category = "ris_tac",
+        Category = "picatinny",
+        Pos = Vector(-5, 1.42, -0.05),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(-2, 0, 0)
+    },
+    {
+        PrintName = "RAIL",
+        Category = "tac_picatinny_top",
         Pos = Vector(-5, 0, -1.7),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0)

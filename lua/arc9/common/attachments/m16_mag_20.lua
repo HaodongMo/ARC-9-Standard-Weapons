@@ -19,3 +19,5 @@ ATT.ReloadTimeMult = 0.95
 ATT.SwayAdd = -0.1
 
 ATT.DropMagazineModel = "models/weapons/arc9/droppedmags/m16_mag_20.mdl"
+
+ATT.SupplyLimitMult = 1.5

@@ -20,3 +20,5 @@ ATT.SwayAdd = 0.15
 ATT.SpeedMult = 0.995
 
 ATT.DropMagazineModel = "models/weapons/arc9/droppedmags/m16_mag_60.mdl"
+
+ATT.SupplyLimitMult = 0.5
