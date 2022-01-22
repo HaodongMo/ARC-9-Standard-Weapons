@@ -31,11 +31,19 @@ ATT.RecoilPatternDriftMult = 1.15
 ATT.Attachments = {
     {
         PrintName = "OPTIC",
-        Category = {"optic_picatinny", "m16rs"},
+        Category = "optic_picatinny",
         Pos = Vector(-1, 0, -1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 1.2, 0),
+        MergeSlots = {2}
         -- InstalledElements = {"nofs"},
+    },
+    {
+        PrintName = "OPTIC",
+        Category = "m16rs",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Hidden = true
     }
 }
 

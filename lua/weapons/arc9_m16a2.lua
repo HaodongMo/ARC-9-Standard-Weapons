@@ -709,6 +709,16 @@ SWEP.AttachmentElements = {
             {1, 5}
         },
     },
+    ["m16_grip_skel"] = {
+        Bodygroups = {
+            {8, 1}
+        }
+    },
+    ["m16_grip_wood"] = {
+        Bodygroups = {
+            {8, 3}
+        }
+    },
     ["m16_barrel_carbine_ris"] = {
         Bodygroups = {
             {5, 5},
@@ -899,7 +909,7 @@ SWEP.Attachments = {
         PrintName = "GRIP",
         DefaultName = "Factory Grip",
         ExcludeElements = {"gripstock"},
-        Category = {""},
+        Category = "m16_grip",
         Bone = "m16_parent",
         Pos = Vector(0, 3, 1.5),
         Ang = Angle(90, 0, -90),

@@ -11,13 +11,10 @@ ATT.Icon = Material("entities/arc9_att_m16_barrel_wood.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = "m16_barrel"
 
---[[
 ATT.PhysBulletMuzzleVelocityMult = 1.05
 ATT.RangeMaxMult = 1.1
 
 ATT.SpreadAdd = -0.0005
-
-]]
 
 ATT.RPMMult = 0.9
 
