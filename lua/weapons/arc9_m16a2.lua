@@ -709,9 +709,9 @@ SWEP.AttachmentElements = {
             {1, 5}
         },
     },
-    ["m16_grip_skel"] = {
+    ["m16_grip_skeleton"] = {
         Bodygroups = {
-            {8, 1}
+            {8, 2}
         }
     },
     ["m16_grip_wood"] = {
