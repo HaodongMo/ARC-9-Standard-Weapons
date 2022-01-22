@@ -333,67 +333,6 @@ SWEP.Animations = {
         },
     },
 
-    ["fix"] = {
-        Source = "fix",
-        Time = 45 / 30,
-        ShellEjectAt = false,
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.15,
-        LHIKOut = 0.4,
-        EventTable = {
-            {s = path .. "chback.ogg",   t = 0.15},
-            {s = common .. "cloth_4.ogg",  t = 0.5},
-            {s = path .. "chamber.ogg",  t = 0.5},
-        },
-    },
-    ["fix_empty"] = {
-        Source = "fix_empty",
-        Time = 45 / 30,
-        ShellEjectAt = false,
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.15,
-        LHIKOut = 0.4,
-        EventTable = {
-            {s = path .. "chback.ogg",   t = 0.15},
-            {s = common .. "cloth_4.ogg",  t = 0.5},
-            {s = path .. "ch_forward_empty.ogg",  t = 0.5},
-        },
-    },
-    ["fix_100"] = {
-        Source = "fix_100",
-        Time = 50 / 30,
-        ShellEjectAt = false,
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.15,
-        LHIKOut = 0.4,
-        EventTable = {
-            {s = path .. "chback.ogg",   t = 0.25},
-            {s = common .. "cloth_4.ogg",  t = 0.75},
-            {s = path .. "chamber.ogg",  t = 0.75},
-        },
-    },
-    ["fix_empty_100"] = {
-        Source = "fix_empty_100",
-        Time = 50 / 30,
-        ShellEjectAt = false,
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.15,
-        LHIKOut = 0.4,
-        EventTable = {
-            {s = path .. "chback.ogg",   t = 0.1},
-            {s = common .. "cloth_4.ogg",  t = 0.5},
-            {s = path .. "chamber.ogg",  t = 0.5},
-        },
-    },
-
     -- 30 Round Reloads --
 
     ["reload"] = {
@@ -402,11 +341,28 @@ SWEP.Animations = {
         Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 0.25},
@@ -425,11 +381,28 @@ SWEP.Animations = {
         Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 0.25},
@@ -453,11 +426,28 @@ SWEP.Animations = {
         Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
@@ -473,11 +463,28 @@ SWEP.Animations = {
         Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.2},
@@ -497,11 +504,28 @@ SWEP.Animations = {
         Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.4,
-        LHIKOut = 0.6,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
@@ -517,11 +541,28 @@ SWEP.Animations = {
         Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
@@ -541,11 +582,28 @@ SWEP.Animations = {
         Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
@@ -561,11 +619,28 @@ SWEP.Animations = {
         Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.3,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.35},
@@ -585,11 +660,28 @@ SWEP.Animations = {
         Time = 71 / 30,
         MinProgress = 1.75,
         LastClip1OutTime = 0.9,
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKEaseIn = 0.5,
-        LHIKEaseOut = 0.4,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.3},
@@ -607,11 +699,28 @@ SWEP.Animations = {
         Time = 90 / 30,
         MinProgress = 2.5,
         LastClip1OutTime = 0.7,
-        LHIK = true,
-        LHIKIn = 0.3,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.4,
-        LHIKOut = 0.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.3},
@@ -623,50 +732,6 @@ SWEP.Animations = {
             {s = common .. "cloth_4.ogg",  t = 2.05},
             {s = path .. "chamber.ogg",  t = 2.22},
             {s = common .. "shoulder.ogg", t = 2.6},
-        },
-    },
-
-    -- 9mm 32 Round Reloads --
-
-    ["reload_9mm"] = {
-        Source = "reload_9mm",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = 71 / 30,
-        MinProgress = 1.5,
-        LastClip1OutTime = 0.9,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.15,
-        LHIKOut = 0.5,
-        EventTable = {
-            {s = rottle, t = 0.0},
-            {s = "weapons/arccw_ud/uzi/" .. "magout.ogg", 	 t = 16 / 30},
-            {s = rottle, t = 0.75},
-            {s = "weapons/arccw_ud/uzi/" .. "magin.ogg",    t = 27 / 30},
-            {s = rottle, t = 1.1},
-            {s = common .. "shoulder.ogg", t = 1.93},
-        },
-    },
-    ["reload_empty_9mm"] = {
-        Source = "reload_empty_9mm",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = 79 / 30,
-        MinProgress = 2,
-        LastClip1OutTime = 0.7,
-        LHIK = true,
-        LHIKIn = 0.4,
-        LHIKEaseIn = 0.4,
-        LHIKEaseOut = 0.15,
-        LHIKOut = 0.4,
-        EventTable = {
-            {s = rottle, t = 0.0},
-            {s = "weapons/arccw_ud/uzi/" .. "magout.ogg", 	 t = 0.2},
-            {s = rottle, t = 0.75},
-            {s = "weapons/arccw_ud/uzi/" .. "magin.ogg",    t = 0.98},
-            {s = rottle, t = 1.39},
-            {s = path .. "boltdrop.ogg", t = 56 / 30},
-            {s = common .. "shoulder.ogg", t = 2.15},
         },
     },
 }
