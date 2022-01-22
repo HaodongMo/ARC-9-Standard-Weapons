@@ -45,7 +45,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0)
     },
 }
-ATT.ActivateElements = {"shortfs"}
+ATT.ActivateElements = {"shortfs", "nomount"}
 
 ATT.RecoilAutoControlMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 0.85

@@ -795,9 +795,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [5] = {
                 Pos = Vector(0, -0.05, 24.5),
-            },
-            [9] = {
-                Pos = Vector(0, -0.05, 20),
             }
         }
     },
@@ -810,9 +807,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [5] = {
                 Pos = Vector(0, -0.05, 24.5),
-            },
-            [9] = {
-                Pos = Vector(0, -0.05, 20),
             }
         }
     },
@@ -825,9 +819,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [5] = {
                 Pos = Vector(0, -0.05, 20),
-            },
-            [9] = {
-                Pos = Vector(0, -0.05, 17.9),
             }
         }
     },
@@ -840,9 +831,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [5] = {
                 Pos = Vector(0, -0.05, 20),
-            },
-            [9] = {
-                Pos = Vector(0, -0.05, 17.9),
             }
         }
     },
@@ -855,9 +843,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [5] = {
                 Pos = Vector(0, -0.05, 24.5),
-            },
-            [9] = {
-                Pos = Vector(0, -0.05, 19),
             }
         }
     },
@@ -913,6 +898,16 @@ SWEP.AttachmentElements = {
             {8, 4}
         }
     },
+    ["shortfs"] = {
+        AttPosMods = {
+            [9] = {
+                Pos = Vector(0, -0.05, 17.9),
+            },
+            [10] = {
+                Pos = Vector(0, -3, 17.9),
+            }
+        }
+    }
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -999,7 +994,7 @@ SWEP.Attachments = {
     {
         PrintName = "MOUNT",
         Category = "mount_barrel",
-        ExcludeElements = {"m16_barrel_commando"},
+        ExcludeElements = {"nomount"},
         Bone = "m16_parent",
         Pos = Vector(0, -0.05, 26),
         Ang = Angle(90, 0, -90),
