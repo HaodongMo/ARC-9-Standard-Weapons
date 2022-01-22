@@ -215,7 +215,7 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 
 local path = ")^weapons/arc9_ud/m16/"
 local common = ")^weapons/arc9_ud/common/"
-SWEP.FirstShootSound = path .. "first.ogg"
+SWEP.ShootSoundFirst = path .. "first.ogg"
 SWEP.ShootSound = {path .. "auto1.ogg", path .. "auto2.ogg", path .. "auto3.ogg", path .. "auto4.ogg"}
 SWEP.DistantShootSound = path .. "dist.ogg"
 SWEP.ShootSoundSilenced = path .. "fire_sup.ogg"
