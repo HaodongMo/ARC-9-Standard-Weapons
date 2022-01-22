@@ -764,6 +764,21 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["m16_barrel_commando_ris"] = {
+        Bodygroups = {
+            {5, 5},
+            {4, 2},
+            {6, 2}
+        },
+        AttPosMods = {
+            [5] = {
+                Pos = Vector(0, -0.05, 20),
+            },
+            [9] = {
+                Pos = Vector(0, -0.05, 17.9),
+            }
+        }
+    },
     ["m16_barrel_fpw"] = {
         Bodygroups = {
             {5, 6},
