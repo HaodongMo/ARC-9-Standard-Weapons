@@ -225,7 +225,7 @@ SWEP.DryFireSound = path .. "dryfire.ogg"
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
 local rottle = {common .. "cloth_1.ogg", common .. "cloth_2.ogg", common .. "cloth_3.ogg", common .. "cloth_4.ogg", common .. "cloth_6.ogg", common .. "rattle.ogg"}
-local ratel = {path .. "rattle_1.ogg", path .. "rattle_2.ogg", path .. "rattle_3.ogg"}
+local ratel = {common .. "rattle1.ogg", path .. "rattle2.ogg", path .. "rattle3.ogg"}
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -248,13 +248,12 @@ SWEP.Animations = {
     ["idle_empty"] = {
         Source = "idle_empty",
     },
-
     ["draw"] = {
         Source = "draw",
         EventTable = {
             {s = common .. "raise.ogg", t = 0},
             {s = common .. "shoulder.ogg", t = 0.15},
-            {s = path .. "rattle_3.ogg", t = 0.2},
+            {s = ratel, t = 0.2},
         },
     },
     ["draw_empty"] = {
@@ -263,40 +262,142 @@ SWEP.Animations = {
         EventTable = {
             {s = common .. "raise.ogg", t = 0},
             {s = common .. "shoulder.ogg", t = 0.15},
-            {s = path .. "rattle_3.ogg", t = 0.2},
+            {s = ratel, t = 0.2},
         },
     },
-
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = path .. "rattle_3.ogg", t = 0},
+            {s = ratel, t = 0},
             {s = common .. "cloth_6.ogg", t = 0.2},
         },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
+        Time = 20 / 30,
         EventTable = {
-            {s = path .. "rattle_3.ogg", t = 0},
+            {s = ratel, t = 0},
             {s = common .. "cloth_6.ogg", t = 0.2},
         },
     },
-
     ["fire"] = {
         Source = "fire",
+        Time = 13 / 30,
+        ShellEjectAt = 0.01,
         EventTable = {
             {s = path .. "mech.ogg", t = 0}, -- Temporary
         },
     },
     ["fire_empty"] = {
         Source = "fire_empty",
+        Time = 13 / 30,
+        ShellEjectAt = 0.01,
+        EventTable = {
+            {s = path .. "mech_last.ogg", t = 0}, -- Temporary
+        },
+    },
+    ["fire_usas"] = {
+        Source = "fire_usas",
+        Time = 20 / 30,
+        ShellEjectAt = 0.01,
+    },
+    ["fire_empty_usas"] = {
+        Source = "fire_empty_usas",
+        Time = 20 / 30,
+        ShellEjectAt = 0.01,
         EventTable = {
             {s = path .. "mech_last.ogg", t = 0}, -- Temporary
         },
     },
 
+    ["fire_cycle"] = {
+        Source = "fire",
+        Time = 13 / 30,
+    },
+
+    ["cycle"] = {
+        Source = "fix",
+        Time = 36 / 30 * 0.7,
+        ShellEjectAt = 0.3,
+        LHIK = true,
+        LHIKIn = 0.3 * 0.7,
+        LHIKEaseIn = 0.4 * 0.7,
+        LHIKEaseOut = 0.15 * 0.7,
+        LHIKOut = 0.4 * 0.7,
+        EventTable = {
+            {s = path .. "chback.ogg",   t = 0.05},
+            {s = common .. "cloth_4.ogg",  t = 0.2},
+            {s = path .. "chamber.ogg",  t = 0.3},
+        },
+    },
+
+    ["fix"] = {
+        Source = "fix",
+        Time = 45 / 30,
+        ShellEjectAt = false,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.15,
+        LHIKOut = 0.4,
+        EventTable = {
+            {s = path .. "chback.ogg",   t = 0.15},
+            {s = common .. "cloth_4.ogg",  t = 0.5},
+            {s = path .. "chamber.ogg",  t = 0.5},
+        },
+    },
+    ["fix_empty"] = {
+        Source = "fix_empty",
+        Time = 45 / 30,
+        ShellEjectAt = false,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.15,
+        LHIKOut = 0.4,
+        EventTable = {
+            {s = path .. "chback.ogg",   t = 0.15},
+            {s = common .. "cloth_4.ogg",  t = 0.5},
+            {s = path .. "ch_forward_empty.ogg",  t = 0.5},
+        },
+    },
+    ["fix_100"] = {
+        Source = "fix_100",
+        Time = 50 / 30,
+        ShellEjectAt = false,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.15,
+        LHIKOut = 0.4,
+        EventTable = {
+            {s = path .. "chback.ogg",   t = 0.25},
+            {s = common .. "cloth_4.ogg",  t = 0.75},
+            {s = path .. "chamber.ogg",  t = 0.75},
+        },
+    },
+    ["fix_empty_100"] = {
+        Source = "fix_empty_100",
+        Time = 50 / 30,
+        ShellEjectAt = false,
+        LHIK = true,
+        LHIKIn = 0.3,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.15,
+        LHIKOut = 0.4,
+        EventTable = {
+            {s = path .. "chback.ogg",   t = 0.1},
+            {s = common .. "cloth_4.ogg",  t = 0.5},
+            {s = path .. "chamber.ogg",  t = 0.5},
+        },
+    },
+
+    -- 30 Round Reloads --
+
     ["reload"] = {
         Source = "reload",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
         LHIK = true,
@@ -309,7 +410,6 @@ SWEP.Animations = {
             {s = ratel, t = 0.25},
             {s = path .. "magout.ogg", 	 t = 0.335},
             {s = ratel, t = 0.5},
-            {s = rottle,  t = 0.75},
             {s = path .. "magin.ogg",    t = 1.05},
             {s = ratel, t = 1.1},
             {s = rottle,  t = 1.15},
@@ -319,6 +419,8 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
         LHIK = true,
@@ -331,7 +433,6 @@ SWEP.Animations = {
             {s = ratel, t = 0.25},
             {s = path .. "magout.ogg", 	 t = 0.335},
             {s = ratel, t = 0.5},
-            {s = rottle,  t = 0.75},
             {s = path .. "magin.ogg",    t = 1.05},
             {s = ratel, t = 1.1},
             {s = rottle,  t = 1.39},
@@ -346,6 +447,7 @@ SWEP.Animations = {
 
     ["reload_20"] = {
         Source = "reload_20",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
@@ -365,6 +467,7 @@ SWEP.Animations = {
     },
     ["reload_empty_20"] = {
         Source = "reload_empty_20",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
@@ -388,6 +491,7 @@ SWEP.Animations = {
 
     ["reload_40"] = {
         Source = "reload_40",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
@@ -407,6 +511,7 @@ SWEP.Animations = {
     },
     ["reload_empty_40"] = {
         Source = "reload_empty_40",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
@@ -430,6 +535,7 @@ SWEP.Animations = {
 
     ["reload_60"] = {
         Source = "reload_60",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
         MinProgress = 1.5,
         LastClip1OutTime = 0.9,
@@ -449,6 +555,7 @@ SWEP.Animations = {
     },
     ["reload_empty_60"] = {
         Source = "reload_empty_60",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 79 / 30,
         MinProgress = 2,
         LastClip1OutTime = 0.7,
@@ -472,6 +579,7 @@ SWEP.Animations = {
 
     ["reload_100"] = {
         Source = "reload_100",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
         MinProgress = 1.75,
         LastClip1OutTime = 0.9,
@@ -493,6 +601,7 @@ SWEP.Animations = {
     },
     ["reload_empty_100"] = {
         Source = "reload_empty_100",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 90 / 30,
         MinProgress = 2.5,
         LastClip1OutTime = 0.7,
@@ -505,7 +614,6 @@ SWEP.Animations = {
             {s = rottle, t = 0.0},
             {s = path .. "magout.ogg", 	 t = 0.3},
             {s = rottle, t = 0.75},
-            {s = common .. "magdrop.ogg",  t = 0.65},
             {s = path .. "magin.ogg",    t = 1.05},
             {s = path .. "magtap.ogg",   t = 1.59},
             {s = rottle, t = 1.75},
@@ -513,6 +621,50 @@ SWEP.Animations = {
             {s = common .. "cloth_4.ogg",  t = 2.05},
             {s = path .. "chamber.ogg",  t = 2.22},
             {s = common .. "shoulder.ogg", t = 2.6},
+        },
+    },
+
+    -- 9mm 32 Round Reloads --
+
+    ["reload_9mm"] = {
+        Source = "reload_9mm",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = 71 / 30,
+        MinProgress = 1.5,
+        LastClip1OutTime = 0.9,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.15,
+        LHIKOut = 0.5,
+        EventTable = {
+            {s = rottle, t = 0.0},
+            {s = "weapons/arccw_ud/uzi/" .. "magout.ogg", 	 t = 16 / 30},
+            {s = rottle, t = 0.75},
+            {s = "weapons/arccw_ud/uzi/" .. "magin.ogg",    t = 27 / 30},
+            {s = rottle, t = 1.1},
+            {s = common .. "shoulder.ogg", t = 1.93},
+        },
+    },
+    ["reload_empty_9mm"] = {
+        Source = "reload_empty_9mm",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        Time = 79 / 30,
+        MinProgress = 2,
+        LastClip1OutTime = 0.7,
+        LHIK = true,
+        LHIKIn = 0.4,
+        LHIKEaseIn = 0.4,
+        LHIKEaseOut = 0.15,
+        LHIKOut = 0.4,
+        EventTable = {
+            {s = rottle, t = 0.0},
+            {s = "weapons/arccw_ud/uzi/" .. "magout.ogg", 	 t = 0.2},
+            {s = rottle, t = 0.75},
+            {s = "weapons/arccw_ud/uzi/" .. "magin.ogg",    t = 0.98},
+            {s = rottle, t = 1.39},
+            {s = path .. "boltdrop.ogg", t = 56 / 30},
+            {s = common .. "shoulder.ogg", t = 2.15},
         },
     },
 }
