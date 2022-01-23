@@ -11,10 +11,10 @@ ATT.Icon = Material("entities/arc9_att_m16_upper_a1.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = "m16_upper"
 
-ATT.RecoilMult = 1.1
-
-ATT.RecoilSideAdd = 1.2
-ATT.SpreadAdd = 0.0003
+ATT.RecoilMult = 1.15
+ATT.RecoilRandomSideAdd = 0.5
+ATT.SpreadAdd = 0.00035
+ATT.RecoilPatternDriftMult = 1.3
 
 ATT.FiremodesOverride = {
     {
@@ -24,5 +24,3 @@ ATT.FiremodesOverride = {
         Mode = 1
     }
 }
-
-ATT.RecoilPatternDriftMult = 1.25
