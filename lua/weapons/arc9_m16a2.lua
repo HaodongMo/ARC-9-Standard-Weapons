@@ -220,6 +220,7 @@ local common = ")^weapons/arc9_ud/common/"
 SWEP.ShootSoundFirst = path .. "first.ogg"
 SWEP.ShootSound = {path .. "auto1.ogg", path .. "auto2.ogg", path .. "auto3.ogg", path .. "auto4.ogg"}
 SWEP.DistantShootSound = path .. "dist.ogg"
+SWEP.ShootSoundSilencedFirst = path .. "fire_sup.ogg"
 SWEP.ShootSoundSilenced = path .. "fire_sup.ogg"
 SWEP.DistantShootSoundSilenced = common .. "sup_tail.ogg"
 SWEP.DryFireSound = path .. "dryfire.ogg"
@@ -963,6 +964,7 @@ SWEP.Attachments = {
         DefaultName = "Factory Flash Hider",
         Category = "muzzle",
         Bone = "m16_parent",
+        Installed = "muzzle_a2birdcage",
         Pos = Vector(0, -0.05, 29.75),
         Ang = Angle(90, 0, -90),
     },

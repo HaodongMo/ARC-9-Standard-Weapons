@@ -17,3 +17,6 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -1, 0)
     }
 }
+
+ATT.SwayAdd = 0.02
+ATT.AimDownSightsTimeAdd = 0.04
