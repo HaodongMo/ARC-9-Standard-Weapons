@@ -17,7 +17,8 @@ ATT.Attachments = {
         Pos = Vector(-1, 0, -1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 1.2, 0),
-        -- InstalledElements = {"nofs"},
+        ExcludeElements = {"ris_optic"},
+        InstalledElements = {"flattop_optic"},
     }
 }
 
