@@ -15,7 +15,7 @@ ATT.Scale = 1
 ATT.ModelOffset = Vector(0.26, 0, 0.06)
 
 ATT.ShootVolumeMult = 1.1
-ATT.MuzzleParticleOverride = "muzzleflash_pistol"
+ATT.MuzzleParticleOverride = "muzzleflash_famas"
 ATT.MuzzleDevice = true
 
 ATT.RecoilUpMult = 0.95

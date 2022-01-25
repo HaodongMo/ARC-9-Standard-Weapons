@@ -207,7 +207,7 @@ SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "muzzleflash_5" -- Used for some muzzle effects.
+SWEP.MuzzleParticle = "muzzleflash_m3" -- Used for some muzzle effects.
 
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
