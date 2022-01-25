@@ -2,12 +2,12 @@ ATT.PrintName = "RC83 Birdcage"
 ATT.CompactName = "BIRDCAGE"
 ATT.Description = [[A standard muzzle device used by RAY/CAR rifles.
 
-Reduces and muzzle flash somewhat.]]
+Reduces recoil and muzzle flash somewhat.]]
 
 ATT.PrintName_TrueName = "A2 Birdcage"
 ATT.Description_TrueName = [[A standard muzzle device used by M16 rifles.
 
-Reduces and muzzle flash somewhat.]]
+Reduces recoil and muzzle flash somewhat.]]
 
 ATT.Icon = Material("entities/arc9_att_muzzle_supp_a.png", "mips smooth")
 ATT.SortOrder = 1
