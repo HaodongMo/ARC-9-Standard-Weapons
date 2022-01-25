@@ -845,7 +845,10 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [5] = {
                 Pos = Vector(0, -0.05, 24.5),
-            }
+            },
+            [9] = {
+                Pos = Vector(0, -0.05, 19),
+            },
         }
     },
     ["m16_barrel_a1"] = {
