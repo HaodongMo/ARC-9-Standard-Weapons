@@ -2,7 +2,7 @@ ATT.PrintName = "ARC Flash Hider"
 ATT.CompactName = "F.HIDER"
 ATT.Description = [[A muzzle device capable of reducing the weapon's muzzle flash.]]
 
-ATT.Icon = Material("entities/arc9_att_muzzle_supp_a.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_muzzle_a2birdcage.png", "mips smooth")
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/muzzle_flashhider.mdl"

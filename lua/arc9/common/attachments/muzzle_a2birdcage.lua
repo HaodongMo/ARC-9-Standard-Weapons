@@ -9,7 +9,7 @@ ATT.Description_TrueName = [[A standard muzzle device used by M16 rifles.
 
 Reduces recoil and muzzle flash somewhat.]]
 
-ATT.Icon = Material("entities/arc9_att_muzzle_supp_a.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_muzzle_a2birdcage.png", "mips smooth")
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/muzzle_a2birdcage.mdl"
