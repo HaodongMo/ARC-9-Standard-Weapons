@@ -414,7 +414,7 @@ SWEP.Animations = {
             {s = rottle,  t = 1.39},
             {s = path .. "boltdrop.ogg", t = 1.85},
             {s = ratel, t = 1.9},
-            {s = common .. "grab.ogg", t = 2.0},
+            {s = common .. "grab.ogg", t = 2.125},
             {s = common .. "shoulder.ogg", t = 2.15},
         },
     },
