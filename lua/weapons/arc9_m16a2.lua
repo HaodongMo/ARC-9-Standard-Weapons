@@ -121,7 +121,7 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.5
+SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.75 -- Multiplier for vertical recoil
@@ -210,14 +210,15 @@ SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
 SWEP.MuzzleParticle = "muzzleflash_5" -- Used for some muzzle effects.
 
 SWEP.ShellModel = "models/shells/shell_556.mdl"
-
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
+SWEP.ShellScale = 1
+SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 -------------------------- SOUNDS
 
 local path = ")^weapons/arc9_ud/m16/"
 local common = ")^weapons/arc9_ud/common/"
-SWEP.ShootSoundFirst = path .. "first.ogg"
+SWEP.FirstShootSound = path .. "first.ogg"
 SWEP.ShootSound = {path .. "auto1.ogg", path .. "auto2.ogg", path .. "auto3.ogg", path .. "auto4.ogg"}
 SWEP.DistantShootSound = path .. "dist.ogg"
 SWEP.ShootSoundSilenced = path .. "fire_sup.ogg"
