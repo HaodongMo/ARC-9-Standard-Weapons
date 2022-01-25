@@ -90,7 +90,7 @@ SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 750
+SWEP.RPM = 800
 
 -- Works different to ArcCW
 

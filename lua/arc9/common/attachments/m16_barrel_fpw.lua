@@ -21,7 +21,7 @@ ATT.RangeMaxMult = 0.85
 
 ATT.RecoilUpMult = 0.9
 ATT.RecoilSideMult = 0.95
-ATT.RPMMult = 1.334
+ATT.RPMMult = 1.125
 
 ATT.SpreadAdd = 0.00350
 
