@@ -23,3 +23,5 @@ ATT.ArmorPiercingAdd = 0.1
 
 ATT.PhysBulletModelOverride = "models/weapons/w_models/w_nail.mdl"
 ATT.PhysBulletModelStickOverride = 10
+
+ATT.Ignore = true

@@ -19,8 +19,7 @@ ATT.ActivateElements = {"fpw"}
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RangeMaxMult = 0.85
 
-ATT.RecoilUpMult = 0.9
-ATT.RecoilSideMult = 0.95
+ATT.RecoilMult = 1.25
 ATT.RPMMult = 1.125
 
 ATT.SpreadAdd = 0.00350
@@ -29,3 +28,5 @@ ATT.AimDownSightsTimeMult = 0.93
 ATT.SprintToFireTimeMult = 0.94
 
 ATT.RecoilPatternDriftMult = 5
+
+ATT.SpreadMult = 1.334
