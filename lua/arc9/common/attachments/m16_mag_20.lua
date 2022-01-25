@@ -14,7 +14,9 @@ ATT.ClipSizeOverride = 20
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.9
 
+ATT.SpeedMult = 1.01
 ATT.ReloadTimeMult = 0.95
+ATT.SwayAdd = -0.1
 
 ATT.DropMagazineModel = "models/weapons/arc9/droppedmags/m16_mag_20.mdl"
 

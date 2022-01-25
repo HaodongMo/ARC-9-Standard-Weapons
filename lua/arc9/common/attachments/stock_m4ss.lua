@@ -26,3 +26,5 @@ ATT.AimDownSightsTimeMult = 1.28
 ATT.RecoilMult = 0.70
 ATT.RecoilKickMult = 1.47
 ATT.RecoilAutoControlMult = 4.25
+
+ATT.FreeAimRadiusMult = 0.7

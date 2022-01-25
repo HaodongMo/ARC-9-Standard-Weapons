@@ -84,7 +84,7 @@ SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 
 SWEP.DropMagazineModel = "models/weapons/arc9/droppedmags/m16_mag_30.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {
-    "weapons/arc9_ud/common/rifle_magdrop.ogg"
+    "weapons/arc9_ud/common/rifle_magdrop_1.ogg", "weapons/arc9_ud/common/rifle_magdrop_2.ogg", "weapons/arc9_ud/common/rifle_magdrop_3.ogg", "weapons/arc9_ud/common/rifle_magdrop_4.ogg"
 }  -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 
@@ -130,12 +130,12 @@ SWEP.RecoilSide = 0.4 -- Multiplier for vertical recoil
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.1
-SWEP.RecoilRandomSide = 0.5
+SWEP.RecoilRandomSide = 0.2
 
-SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.05 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.25 * 0.25 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1.5 * 0.25 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 2
 
@@ -157,7 +157,7 @@ SWEP.SwayMultShooting = 1.2
 
 SWEP.FreeAimRadiusSights = 1
 
-SWEP.SwayMultSights = 0.5
+SWEP.SwayMultSights = 0.3
 
 SWEP.AimDownSightsTime = 0.28 * 0.75 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.34 * 0.5 -- How long it takes to go from sprinting to being able to fire.
@@ -221,6 +221,7 @@ local common = ")^weapons/arc9_ud/common/"
 SWEP.FirstShootSound = path .. "first.ogg"
 SWEP.ShootSound = {path .. "auto1.ogg", path .. "auto2.ogg", path .. "auto3.ogg", path .. "auto4.ogg"}
 SWEP.DistantShootSound = path .. "dist.ogg"
+SWEP.ShootSoundSilencedFirst = path .. "fire_sup.ogg"
 SWEP.ShootSoundSilenced = path .. "fire_sup.ogg"
 SWEP.DistantShootSoundSilenced = common .. "sup_tail.ogg"
 SWEP.DryFireSound = path .. "dryfire.ogg"
@@ -414,7 +415,7 @@ SWEP.Animations = {
             {s = rottle,  t = 1.39},
             {s = path .. "boltdrop.ogg", t = 1.85},
             {s = ratel, t = 1.9},
-            {s = common .. "grab.ogg", t = 2.0},
+            {s = common .. "grab.ogg", t = 2.125},
             {s = common .. "shoulder.ogg", t = 2.15},
         },
     },
@@ -796,9 +797,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [5] = {
                 Pos = Vector(0, -0.05, 24.5),
-            },
-            [9] = {
-                Pos = Vector(0, -0.05, 20),
             }
         }
     },
@@ -811,9 +809,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [5] = {
                 Pos = Vector(0, -0.05, 24.5),
-            },
-            [9] = {
-                Pos = Vector(0, -0.05, 20),
             }
         }
     },
@@ -826,9 +821,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [5] = {
                 Pos = Vector(0, -0.05, 20),
-            },
-            [9] = {
-                Pos = Vector(0, -0.05, 17.9),
             }
         }
     },
@@ -841,9 +833,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [5] = {
                 Pos = Vector(0, -0.05, 20),
-            },
-            [9] = {
-                Pos = Vector(0, -0.05, 17.9),
             }
         }
     },
@@ -856,9 +845,6 @@ SWEP.AttachmentElements = {
         AttPosMods = {
             [5] = {
                 Pos = Vector(0, -0.05, 24.5),
-            },
-            [9] = {
-                Pos = Vector(0, -0.05, 19),
             }
         }
     },
@@ -914,6 +900,16 @@ SWEP.AttachmentElements = {
             {8, 4}
         }
     },
+    ["shortfs"] = {
+        AttPosMods = {
+            [9] = {
+                Pos = Vector(0, -0.05, 17.9),
+            },
+            [10] = {
+                Pos = Vector(0, -3, 17.9),
+            }
+        }
+    }
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -969,6 +965,7 @@ SWEP.Attachments = {
         DefaultName = "Factory Flash Hider",
         Category = "muzzle",
         Bone = "m16_parent",
+        Installed = "muzzle_a2birdcage",
         Pos = Vector(0, -0.05, 29.75),
         Ang = Angle(90, 0, -90),
     },
@@ -1000,7 +997,7 @@ SWEP.Attachments = {
     {
         PrintName = "MOUNT",
         Category = "mount_barrel",
-        ExcludeElements = {"m16_barrel_commando"},
+        ExcludeElements = {"nomount"},
         Bone = "m16_parent",
         Pos = Vector(0, -0.05, 26),
         Ang = Angle(90, 0, -90),
