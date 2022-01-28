@@ -44,7 +44,7 @@ end
 SWEP.ViewModel = "models/weapons/arc9/c_ud_m16.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 
-SWEP.Slot = 3
+SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
