@@ -44,9 +44,9 @@ SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    Pos = Vector(-7.5, 4, -7.5),
+    Pos = Vector(-5, 4, -6),
     Ang = Angle(-5, 0, 180),
-    Scale = 1
+    Scale = 0.9
 }
 
 SWEP.DefaultBodygroups = "00000000000000000000"
@@ -152,8 +152,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.81, -3, 0.85),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-3.05, -3, 1.6),
+    Ang = Angle(0, 0, 5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(0, 0, -45),
