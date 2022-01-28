@@ -5,7 +5,7 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9"
 
-SWEP.PrintName = "VS Code"
+SWEP.PrintName = "VS Zvezda"
 SWEP.TrueName = "VSS Vintorez"
 
 SWEP.Class = "Marksman Rifle"
@@ -21,19 +21,23 @@ SWEP.Credits = {
     Author = "your mom",
 }
 
-SWEP.Description = [[Integrally suppressed marksman rifle firing a subsonic cartridge.]]
+SWEP.Description = [[The Vintovka Snayperskaya Spetsiálnaya is a close-combat marksman rifle designed for urban warfare. Created to replace modified standard firearms for clandestine operations, its integral silencer effectively reduces its firing report, but there are no mechanisms in place to reduce the mechanical sound. Comes with a fully automatic fire option.
+    
+Fires a heavy round at a low muzzle velocity with good rate of fire.]]
 
 if !ARC9:UseTrueNames() then
 
-    SWEP.Trivia = {
-        Manufacturer = "Tula Arms Plant",
-        Calibre = "9x39mm",
-        Mechanism = "Gas-Operated Rotating Bolt",
-        Country = "	Soviet Union",
-        Year = "1987"
-    }
+SWEP.Trivia = {
+    Manufacturer = "ZVEZDA Military Concern",
+    Calibre = "9x39mm",
+    Mechanism = "Gas-Operated Rotating Bolt",
+    Country = "	Soviet Union",
+    Year = "1987"
+}
 
-    SWEP.Description = [[]]
+SWEP.Description = [[The Vintovka Spetsial'nyy Zvezda is a close-combat marksman rifle designed for urban warfare. Created to replace modified standard firearms for clandestine operations, its integral silencer effectively reduces its firing report, but there are no mechanisms in place to reduce the mechanical sound. Comes with a fully automatic fire option.
+    
+Fires a heavy round at a low muzzle velocity with good rate of fire.]]
 
 end
 
@@ -55,20 +59,27 @@ SWEP.Silencer = true
 
 -------------------------- DAMAGE PROFILE
 
--- provisionary balance; please change later
 SWEP.DamageMax = 37
-SWEP.DamageMin = 18
+SWEP.DamageMin = 22
 
 SWEP.DamageRand = 0
 
-SWEP.RangeMin = 35 / ARC9.HUToM
-SWEP.RangeMax = 350 / ARC9.HUToM
+SWEP.RangeMin = 1500
+SWEP.RangeMax = 5000
 
-SWEP.Penetration = 4
+SWEP.Penetration = 8
+
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2.5,
+    [HITGROUP_CHEST] = 1.25,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
+}
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 290 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 12500
 
 -------------------------- MAGAZINE
 
@@ -93,10 +104,10 @@ SWEP.RPM = 900
 
 SWEP.Firemodes = {
     {
-        Mode = 1
+        Mode = -1,
     },
     {
-        Mode = -1,
+        Mode = 1
     },
 }
 
@@ -104,26 +115,26 @@ SWEP.Firemodes = {
 
 SWEP.Recoil = 1
 
-SWEP.RecoilUp = 0.75
-SWEP.RecoilSide = 0.4
-SWEP.RecoilRandomUp = 0.1
-SWEP.RecoilRandomSide = 0.2
+SWEP.RecoilUp = 1
+SWEP.RecoilSide = 1
+SWEP.RecoilRandomUp = 0.3
+SWEP.RecoilRandomSide = 0.3
 
 SWEP.RecoilDissipationRate = 50
 SWEP.RecoilResetTime = 0.05
-SWEP.RecoilAutoControl = 1.5
+SWEP.RecoilAutoControl = 1.5 * 0.25
 
-SWEP.RecoilKick = 2
+SWEP.RecoilKick = 3.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.002
-SWEP.SpreadAddRecoil = 0.0002
+SWEP.Spread = 0.0005
+SWEP.SpreadAddRecoil = 0.0005
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 12
-SWEP.Sway = 1.25
+SWEP.FreeAimRadius = 20 / 1.25
+SWEP.Sway = 0.66 + 1
 
 SWEP.SwayMultMidAir = 2
 SWEP.SwayMultMove = 1.15
@@ -152,8 +163,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-3.05, -3, 1.6),
-    Ang = Angle(0, 0, 5),
+    Pos = Vector(-2.9325, -3, 2.1),
+    Ang = Angle(0.2, -0.7, 5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(0, 0, -45),
@@ -240,14 +251,6 @@ SWEP.Animations = {
             {s = path .. "mech.ogg", t = 0},
         },
     },
-    ["fire_empty"] = {
-        Source = "fire_empty",
-        Time = 13 / 30,
-        ShellEjectAt = 0.01,
-        EventTable = {
-            {s = path .. "mech_last.ogg", t = 0},
-        },
-    },
 
     -- 30 Round Reloads --
 
@@ -266,14 +269,8 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)
-    local vm = wep:GetOwner():GetViewModel()
-    if !vm then return end
-    if wep:HasElement("m16lp") then
-        vm:SetBodygroup(6, wep:HasElement("shortfs") and 3 or 1)
-    end
-end
-
 SWEP.Attachments = {
 
 }
+
+SWEP.DrawCrosshair = true
