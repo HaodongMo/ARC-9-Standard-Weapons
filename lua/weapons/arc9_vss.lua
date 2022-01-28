@@ -59,7 +59,7 @@ SWEP.Silencer = true
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 37
+SWEP.DamageMax = 30
 SWEP.DamageMin = 22
 
 SWEP.DamageRand = 0
@@ -202,7 +202,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 -------------------------- SOUNDS
 
-SWEP.ShootVolume = 90
+SWEP.ShootVolume = 100
 
 local path = ")^weapons/arc9_ud/m16/"
 local common = ")^weapons/arc9_ud/common/"
@@ -272,5 +272,3 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
 
 }
-
-SWEP.DrawCrosshair = true
