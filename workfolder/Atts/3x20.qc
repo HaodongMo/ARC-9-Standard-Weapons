@@ -14,6 +14,7 @@ $contents "solid"
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arc9\atts"
+$cdmaterials "effects/arc9/"
 
 $cbox 0 0 0 0 0 0
 
