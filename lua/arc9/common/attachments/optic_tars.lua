@@ -6,14 +6,14 @@ ATT.Description = [[The Trijicon TARS (Tactical Advanced Rifle Scope) is a rugge
 Long range scope with variable magnification.]]
 ATT.SortOrder = 7
 
-ATT.Model = "models/weapons/arc9/atts/trijitars.mdl"
+ATT.Model = "models/weapons/arc9/atts/trijitars_newrt.mdl"
 
 ATT.Category = "optic_picatinny"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 8.5, -1.70395),
+        Pos = Vector(0, 9.5, -1.70395),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15
     },
@@ -21,6 +21,8 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
+-- ATT.RTScopeUseSubmatReticle = true -- real
+-- ATT.RTScopeReticleSubmatIndex = 2 
 
 ATT.RTScopeFOV = 1.5
 
@@ -29,10 +31,11 @@ ATT.RTScopeFOVMin = 15
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 4
 
-ATT.RTScopeReticle = Material("arc9/tars.png", "mips smooth")
+ATT.RTScopeReticle = Material("arc9/tars_only.png", "mips smooth")
 ATT.RTScopeColor = Color(255, 0, 0)
 
 ATT.ScopeScreenRatio = 0.9
+ATT.ScopeLength = 30
 
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, -0.175)
