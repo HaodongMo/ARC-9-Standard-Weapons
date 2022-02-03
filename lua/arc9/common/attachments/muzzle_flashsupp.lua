@@ -1,4 +1,4 @@
-ATT.PrintName = "ARC Flash Hider"
+ATT.PrintName = "RAI Flash Hider"
 ATT.CompactName = "F.HIDER"
 ATT.Description = [[A muzzle device capable of reducing the weapon's muzzle flash.]]
 

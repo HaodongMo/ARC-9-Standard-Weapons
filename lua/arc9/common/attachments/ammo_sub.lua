@@ -15,3 +15,5 @@ ATT.PenetrationMult = 0.75
 ATT.ShootVolumeMult = 0.9
 
 ATT.TracerNum = 0
+
+ATT.RecoilMult = 0.94

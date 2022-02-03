@@ -18,5 +18,6 @@ ATT.SpreadAdd = -0.0005
 
 ATT.RPMMult = 0.9
 
-ATT.RecoilUpMult = 0.9
+ATT.RecoilUpMult = 0.95
+ATT.RecoilSideMult = 1.15
 ATT.RecoilPatternDriftMult = 0.95
