@@ -30,12 +30,13 @@ ATT.RTScopeNightVisionCC = {
     ["$pp_colour_addg"] = 0,
     ["$pp_colour_addb"] = 0,
     ["$pp_colour_brightness"] = 0.01,
-    ["$pp_colour_contrast"] = 3,
+    ["$pp_colour_contrast"] = 1.5,
     ["$pp_colour_colour"] = 1,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,
     ["$pp_colour_mulb"] = 0
 }
+ATT.RTScopeNightVisionNoiseColor = Color(0, 255, 0)
 
 ATT.RTScopeFLIR = true
 ATT.RTScopeFLIRSolid = false -- Solid color FLIR instead of like a shaded look
@@ -64,6 +65,8 @@ ATT.RTScopeFLIRCCCold = {
     ["$pp_colour_mulg"] = 0,
     ["$pp_colour_mulb"] = 0
 }
+
+ATT.RTScopeMotionBlur = true
 
 ATT.ScopeScreenRatio = 0.5
 
