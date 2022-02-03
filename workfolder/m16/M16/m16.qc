@@ -244,16 +244,12 @@ $sequence "draw" "anims\draw.smd" {
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 14 "StockHitsShoulder" }
 }
 
 $sequence "draw_empty" "anims\draw_empty.smd" {
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 14 "StockHitsShoulder" }
 }
 
 $sequence "holster" "anims\holster.smd" {
@@ -299,12 +295,6 @@ $sequence "reload" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 13 "MagOut" }
-	{ event 5004 29 "GunRaises" }
-	{ event 5004 39 "MagInFail" }
-	{ event 5004 47 "MagIn" }
-	{ event 5004 65 "StockHitsShoulder" }
 }
 
 $sequence "reload_empty" {
@@ -314,13 +304,6 @@ $sequence "reload_empty" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 12 "MagOut" }
-	{ event 5004 35 "GunRaises" }
-	{ event 5004 39 "MagInFail" }
-	{ event 5004 47 "MagIn" }
-	{ event 5004 59 "BoltCloses" }
-	{ event 5004 73 "StockHitsShoulder" }
 }
 
 $sequence "reload_20" {
@@ -330,12 +313,6 @@ $sequence "reload_20" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 13 "MagOut" }
-	{ event 5004 31 "GunRaises" }
-	{ event 5004 39 "MagInFail" }
-	{ event 5004 47 "MagIn" }
-	{ event 5004 64 "StockHitsShoulder" }
 }
 
 $sequence "reload_empty_20" {
@@ -345,13 +322,6 @@ $sequence "reload_empty_20" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 12 "MagOut" }
-	{ event 5004 28 "GunRaises" }
-	{ event 5004 39 "MagInFail" }
-	{ event 5004 47 "MagIn" }
-	{ event 5004 59 "BoltCloses" }
-	{ event 5004 73 "StockHitsShoulder" }
 }
 
 $sequence "reload_40" {
@@ -361,12 +331,6 @@ $sequence "reload_40" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 13 "MagOut" }
-	{ event 5004 31 "GunRaises" }
-	{ event 5004 40 "MagInFail" }
-	{ event 5004 50 "MagIn" }
-	{ event 5004 68 "StockHitsShoulder" }
 }
 
 $sequence "reload_empty_40" {
@@ -376,13 +340,6 @@ $sequence "reload_empty_40" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 12 "MagOut" }
-	{ event 5004 30 "GunRaises" }
-	{ event 5004 39 "MagInFail" }
-	{ event 5004 49 "MagIn" }
-	{ event 5004 60 "BoltCloses" }
-	{ event 5004 76 "StockHitsShoulder" }
 }
 
 $sequence "reload_60" {
@@ -392,12 +349,6 @@ $sequence "reload_60" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 13 "MagOut" }
-	{ event 5004 35 "GunRaises" }
-	{ event 5004 43 "MagInFail" }
-	{ event 5004 54 "MagIn" }
-	{ event 5004 72 "StockHitsShoulder" }
 }
 
 $sequence "reload_empty_60" {
@@ -407,13 +358,6 @@ $sequence "reload_empty_60" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 14 "MagOut" }
-	{ event 5004 33 "GunRaises" }
-	{ event 5004 43 "MagInFail" }
-	{ event 5004 54 "MagIn" }
-	{ event 5004 64 "BoltCloses" }
-	{ event 5004 80 "StockHitsShoulder" }
 }
 
 $sequence "reload_100" {
@@ -423,13 +367,6 @@ $sequence "reload_100" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 13 "MagOut" }
-	{ event 5004 35 "GunRaises" }
-	{ event 5004 44 "MagInFail" }
-	{ event 5004 54 "MagIn" }
-	{ event 5004 64 "MagHit" }
-	{ event 5004 84 "StockHitsShoulder" }
 }
 
 $sequence "reload_empty_100" {
@@ -439,15 +376,6 @@ $sequence "reload_empty_100" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 13 "MagOut" }
-	{ event 5004 36 "GunRaises" }
-	{ event 5004 44 "MagInFail" }
-	{ event 5004 56 "MagIn" }
-	{ event 5004 64 "MagHit" }
-	{ event 5004 79 "ChargingHandleBack" }
-	{ event 5004 90 "ChargingHandleForward" }
-	{ event 5004 105 "StockHitsShoulder" }
 }
 
 $sequence "reload_9mm" {
@@ -457,12 +385,6 @@ $sequence "reload_9mm" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 13 "MagOut" }
-	{ event 5004 29 "GunRaises" }
-	{ event 5004 39 "MagInFail" }
-	{ event 5004 47 "MagIn" }
-	{ event 5004 65 "StockHitsShoulder" }
 }
 
 $sequence "reload_empty_9mm" {
@@ -472,13 +394,6 @@ $sequence "reload_empty_9mm" {
 	"ACT_VM_RELOAD" 1
 	blend "sights" 0 1
 	snap
-	{ event 5004 0 "Starts" }
-	{ event 5004 12 "MagOut" }
-	{ event 5004 35 "GunRaises" }
-	{ event 5004 39 "MagInFail" }
-	{ event 5004 47 "MagIn" }
-	{ event 5004 59 "BoltCloses" }
-	{ event 5004 73 "StockHitsShoulder" }
 }
 
 $sequence "reload_empty_usas_20" {
