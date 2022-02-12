@@ -2,7 +2,7 @@ ATT.PrintName = "Quadstack 60 Round 5.56mm Mag"
 ATT.CompactName = "60RD"
 ATT.Icon = Material("entities/arc9_att_m16_mag_60.png", "mips smooth")
 ATT.Description = [[Significantly improved capacity with reduced handling.]]
-ATT.SortOrder = 0
+ATT.SortOrder = 60
 
 ATT.Category = "m16_mag"
 

@@ -323,11 +323,28 @@ SWEP.Animations = {
         Source = "fix",
         Time = 36 / 30 * 0.7,
         ShellEjectAt = 0.3,
-        LHIK = true,
-        LHIKIn = 0.3 * 0.7,
-        LHIKEaseIn = 0.4 * 0.7,
-        LHIKEaseOut = 0.15 * 0.7,
-        LHIKOut = 0.4 * 0.7,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.4,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "chback.ogg",   t = 0.05},
             {s = common .. "cloth_4.ogg",  t = 0.2},

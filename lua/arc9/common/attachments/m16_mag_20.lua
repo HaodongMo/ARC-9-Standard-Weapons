@@ -6,7 +6,7 @@ ATT.PrintName_TrueName = "STANAG 20 Round 5.56mm Mag"
 
 ATT.Icon = Material("entities/arc9_att_m16_mag_20.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 20
 ATT.Category = "m16_mag"
 
 ATT.ClipSizeOverride = 20

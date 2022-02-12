@@ -2,7 +2,7 @@ ATT.PrintName = "SAW 40 Round 5.56mm Mag"
 ATT.CompactName = "40RD"
 ATT.Icon = Material("entities/arc9_att_m16_mag_40.png", "mips smooth")
 ATT.Description = [[Offers improved capacity with minimal drawback.]]
-ATT.SortOrder = 0
+ATT.SortOrder = 40
 
 ATT.Category = "m16_mag"
 

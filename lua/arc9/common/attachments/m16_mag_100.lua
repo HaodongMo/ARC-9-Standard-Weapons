@@ -2,7 +2,7 @@ ATT.PrintName = "100 Round Drum 5.56mm Mag"
 ATT.CompactName = "100RD"
 ATT.Icon = Material("entities/arc9_att_m16_mag_100.png", "mips smooth")
 ATT.Description = [[Greatly increased capacity with massively reduced handling.]]
-ATT.SortOrder = 0
+ATT.SortOrder = 100
 
 ATT.Category = "m16_mag"
 
