@@ -200,6 +200,9 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
+SWEP.CamQCA = 3
+SWEP.CamOffsetAng = Angle(0, 0, 90)
+
 -------------------------- SOUNDS
 
 SWEP.ShootVolume = 100

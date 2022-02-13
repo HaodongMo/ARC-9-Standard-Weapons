@@ -17,6 +17,8 @@ ATT.ArmorPiercingMult = 0
 ATT.TracerColor = Color(255, 255, 255)
 ATT.TracerSizeAdd = 8
 
+ATT.ImpactDecal = "SmallScorch"
+
 ATT.DamageMinHook = function(swep, dmg)
     return swep:GetValue("DamageMax")
 end

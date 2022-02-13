@@ -19,6 +19,9 @@ ATT.ArmorPiercingMult = 0.25
 ATT.TracerColor = Color(255, 155, 25)
 ATT.TracerSizeAdd = 8
 
+ATT.ImpactEffect = "ManhackSparks"
+ATT.ImpactDecal = "SmallScorch"
+
 ATT.Hook_BulletImpact = function(swep, data)
     local tr = data.tr
 

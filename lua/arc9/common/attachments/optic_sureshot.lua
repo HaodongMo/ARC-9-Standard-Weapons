@@ -20,7 +20,7 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("arc9/dot.png", "additive")
+ATT.HoloSightReticle = Material("arc9/dot.png", "mips smooth")
 ATT.HoloSightSize = 1024
 ATT.HoloSightColor = Color(255, 0, 0)
 
