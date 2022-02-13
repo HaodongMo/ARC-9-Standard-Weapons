@@ -7,7 +7,7 @@ Improves fire rate substantially as well as handling, at the cost of range.]]
 
 ATT.PrintName_TrueName = "Mk18 CQBR 11\" Barrel"
 ATT.CompactName_TrueName = "11\"CQBR"
-ATT.Icon = Material("entities/arc9_att_m16_barrel_carbine_ris.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_m16_barrel_commando_ris.png", "mips smooth")
 -- ATT.Description_TrueName = [[Very short barrel for the CAR-15.
 
 -- Improves fire rate and handling, at the cost of range.]]
