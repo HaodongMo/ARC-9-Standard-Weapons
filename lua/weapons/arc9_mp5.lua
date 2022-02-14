@@ -521,6 +521,27 @@ SWEP.AttachmentElements = {
             {3, 3}
         }
     },
+    ["mp5_barrel_sd"] = {
+        Bodygroups = {
+            {6, 2},
+            {5, 1}
+        }
+    },
+    ["mp5_barrel_carbine"] = {
+        Bodygroups = {
+            {5, 2}
+        },
+        AttPosMods = {
+            [4] = {
+                Pos = Vector(0, 0.75, 15.25),
+            }
+        }
+    },
+    ["mp5_barrel_ris"] = {
+        Bodygroups = {
+            {6, 3},
+        }
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)

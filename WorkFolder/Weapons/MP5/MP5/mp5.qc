@@ -38,6 +38,7 @@ $bodygroup "5" {
 $bodygroup "6" {
 	studio "handguard.smd"
 	studio "handguard_tac.smd"
+	blank
 }
 
 $bodygroup "7" {
