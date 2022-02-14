@@ -227,8 +227,8 @@ local common = ")^weapons/arc9_ud/common/"
 SWEP.FirstShootSound = path .. "fire_first.ogg"
 SWEP.ShootSound = {path .. "fire_auto_1.ogg", path .. "fire_auto_2.ogg", path .. "fire_auto_3.ogg"}
 SWEP.DistantShootSound = path .. "fire_dist.ogg"
-SWEP.ShootSoundSilencedFirst = "weapons/arc9_ud/mini14/fire_supp.ogg"
-SWEP.ShootSoundSilenced = "weapons/arc9_ud/mini14/fire_supp.ogg"
+SWEP.ShootSoundSilencedFirst = path .. "fire_sup.ogg"
+SWEP.ShootSoundSilenced = path .. "fire_sup.ogg"
 SWEP.DryFireSound = path .. "dryfire.ogg"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
@@ -349,9 +349,9 @@ SWEP.Animations = {
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 12 / 30},
-            {s = path .. "magout.ogg",    t = 14 / 30},
+            {s = path .. "magout.ogg",    t = 12 / 30},
             {s = ratel, t = 18 / 30},
-            {s = path .. "magin.ogg",    t = 26 / 30},
+            {s = path .. "magin.ogg",    t = 19 / 30},
             {s = rottle,  t = 32 / 30},
             {s = common .. "grab.ogg", t = 1.81},
             {s = common .. "shoulder.ogg", t = 1.9},
@@ -386,16 +386,16 @@ SWEP.Animations = {
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 0.25},
-            {s = path .. "chback.ogg",    t = 6 / 30},
-            {s = path .. "chlock.ogg",    t = 10 / 30},
+            {s = path .. "chback.ogg",    t = 2 / 30},
+            {s = path .. "chlock.ogg",    t = 6 / 30},
             {s = common .. "raise.ogg", t = 11 / 30},
             {s = ratel, t = 14 / 30},
-            {s = path .. "magout.ogg",    t = 29 / 30},
+            {s = path .. "magout.ogg",    t = 26 / 30},
             {s = ratel, t = 34 / 30},
-            {s = path .. "magin.ogg",    t = 44 / 30},
+            {s = path .. "magin.ogg",    t = 34 / 30},
             {s = ratel, t = 50 / 30},
             {s = rottle,  t = 55 / 30},
-            {s = path .. "chamber.ogg",    t = 66 / 30},
+            {s = path .. "chamber.ogg",    t = 63 / 30},
             {s = common .. "grab.ogg", t = 2.2},
             {s = common .. "shoulder.ogg", t = 2.3},
         },
@@ -429,9 +429,9 @@ SWEP.Animations = {
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 12 / 30},
-            {s = path .. "magout.ogg",    t = 14 / 30},
+            {s = path .. "magout.ogg",    t = 12 / 30},
             {s = ratel, t = 18 / 30},
-            {s = path .. "magin.ogg",    t = 26 / 30},
+            {s = path .. "magin.ogg",    t = 19 / 30},
             {s = rottle,  t = 32 / 30},
             {s = common .. "grab.ogg", t = 1.81},
             {s = common .. "shoulder.ogg", t = 1.9},
@@ -466,16 +466,16 @@ SWEP.Animations = {
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 0.25},
-            {s = path .. "chback.ogg",    t = 6 / 30},
-            {s = path .. "chlock.ogg",    t = 10 / 30},
+            {s = path .. "chback.ogg",    t = 2 / 30},
+            {s = path .. "chlock.ogg",    t = 6 / 30},
             {s = common .. "raise.ogg", t = 11 / 30},
             {s = ratel, t = 14 / 30},
-            {s = path .. "magout.ogg",    t = 29 / 30},
+            {s = path .. "magout.ogg",    t = 26 / 30},
             {s = ratel, t = 34 / 30},
-            {s = path .. "magin.ogg",    t = 44 / 30},
+            {s = path .. "magin.ogg",    t = 34 / 30},
             {s = ratel, t = 50 / 30},
             {s = rottle,  t = 55 / 30},
-            {s = path .. "chamber.ogg",    t = 66 / 30},
+            {s = path .. "chamber.ogg",    t = 64 / 30},
             {s = common .. "grab.ogg", t = 2.2},
             {s = common .. "shoulder.ogg", t = 2.3},
         },
