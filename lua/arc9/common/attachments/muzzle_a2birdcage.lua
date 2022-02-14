@@ -13,7 +13,7 @@ ATT.Icon = Material("entities/arc9_att_muzzle_a2birdcage.png", "mips smooth")
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/muzzle_a2birdcage.mdl"
-ATT.Category = "muzzle"
+ATT.Category = "m16_muzzle"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0.26, 0, 0.06)

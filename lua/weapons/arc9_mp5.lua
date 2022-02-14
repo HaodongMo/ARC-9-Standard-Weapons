@@ -53,7 +53,7 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.DefaultBodygroups = "0000000400000000000000"
+SWEP.DefaultBodygroups = "0200000000000000000000"
 
 -------------------------- DAMAGE PROFILE
 
@@ -128,18 +128,18 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.35 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.2 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.02
-SWEP.RecoilRandomSide = 0.02
+SWEP.RecoilRandomUp = 0.1
+SWEP.RecoilRandomSide = 0.1
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.05 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1.4 * 0.25 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.75
 
@@ -151,8 +151,8 @@ SWEP.SpreadAddRecoil = 0.0001 -- Applied per unit of recoil.
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 10 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 1.5 -- How much the gun sways.
+SWEP.FreeAimRadius = 8 / 1.25 -- In degrees, how much this gun can free aim in hip fire.
+SWEP.Sway = 0.85 + 1 -- How much the gun sways.
 
 SWEP.SwayMultMidAir = 2
 SWEP.SwayMultMove = 1.15
@@ -211,7 +211,7 @@ SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "muzzleflash_mp5" -- Used for some muzzle effects.
+SWEP.MuzzleParticle = "muzzleflash_1" -- Used for some muzzle effects.
 
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
@@ -438,8 +438,8 @@ SWEP.Animations = {
         },
     },
 
-    ["reload_10mm_empty"] = {
-        Source = "reload_10mm_empty",
+    ["reload_empty_10mm"] = {
+        Source = "reload_empty_10mm",
         MinProgress = 51 / 30,
         IKTimeLine = {
             {
@@ -485,6 +485,42 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["bt_stock"] = {
+        Bodygroups = {
+            {1, 3}
+        }
+    },
+    ["rail"] = {
+        Bodygroups = {
+            {4, 1}
+        }
+    },
+    ["mp5_stock_solid"] = {
+        Bodygroups = {
+            {1, 0}
+        }
+    },
+    ["mp5_stock_sliding"] = {
+        Bodygroups = {
+            {1, 1},
+            {2, 1}
+        }
+    },
+    ["mp5_mag_40"] = {
+        Bodygroups = {
+            {3, 1}
+        }
+    },
+    ["mp5_mag_25"] = {
+        Bodygroups = {
+            {3, 2}
+        }
+    },
+    ["mp5_mag_15"] = {
+        Bodygroups = {
+            {3, 3}
+        }
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -493,18 +529,20 @@ end
 SWEP.Attachments = {
     {
         PrintName = "OPTIC",
+        InstalledElements = {"rail"},
         Category = "optic_picatinny",
         Bone = "body",
-        Pos = Vector(0, -1, 1.5),
+        Pos = Vector(0, -1.2, 3.5),
         Ang = Angle(90, 0, -90),
+        Scale = 0.75
     },
     {
         PrintName = "STOCK",
-        DefaultName = "Factory Solid Stock",
-        DefaultCompactName = "SOLID",
+        DefaultName = "No Stock",
+        DefaultCompactName = "CAP",
         Category = {"mp5_stock", "bt_stock"},
         Bone = "body",
-        Pos = Vector(0, 0, -5.5),
+        Pos = Vector(0, 0.85, -4.5),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -513,7 +551,7 @@ SWEP.Attachments = {
         DefaultCompactName = "9\"DWF",
         DefaultName_TrueName = "H&K 9\" Standard Barrel",
         DefaultCompactName_TrueName = "9\"HK",
-        Category = {"mp5_barrel"},
+        Category = "mp5_barrel",
         Bone = "body",
         Pos = Vector(0, 0.1, 10),
         Ang = Angle(90, 0, -90),
@@ -521,17 +559,20 @@ SWEP.Attachments = {
     {
         PrintName = "MUZZLE",
         DefaultName = "Factory Lug",
+        ExcludeElements = {"block_muzz"},
         Category = "muzzle",
         Bone = "body",
-        Pos = Vector(0, 0.75, 13.5),
+        Pos = Vector(0, 0.75, 13.25),
         Ang = Angle(90, 0, -90),
+        Scale = 0.75
     },
     {
         PrintName = "MAG",
         DefaultName = "Standard 30 Round",
         Category = "mp5_mag",
-        Bone = "mag",
-        Pos = Vector(0, 2, 0),
+        Bone = "body",
+        Icon_Offset = Vector(0, 0, 0),
+        Pos = Vector(0, 3, 5.5),
         Ang = Angle(90, 0, -90),
     },
     {
