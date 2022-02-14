@@ -54,7 +54,8 @@ ATT.Attachments = {
         ExtraSightDistance = 12,
         Pos = Vector(-3, 0, -1.7),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0)
+        Icon_Offset = Vector(0, 0, 0),
+        Hidden = true
     },
 }
 ATT.ActivateElements = {"shortfs", "nomount"}

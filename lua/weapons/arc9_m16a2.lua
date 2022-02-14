@@ -174,6 +174,20 @@ SWEP.SpeedMultBlindFire = 1
 SWEP.TracerNum = 1 -- Tracer every X
 SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if tracer effect supports it. For physical bullets, this is compressed down to 9-bit color.
 
+-------------------------- MALFUNCTIONS
+
+SWEP.Overheat = true -- Weapon will jam when it overheats, playing the "overheat" animation.
+SWEP.HeatCapacity = 63 -- rounds that can be fired non-stop before the gun jams, playing the "fix" animation
+SWEP.HeatDissipation = 10 -- rounds' worth of heat lost per second
+SWEP.HeatLockout = true -- overheating means you cannot fire until heat has been fully depleted
+SWEP.HeatDelayTime = 2.5 -- Amount of time that passes before heat begins to dissipate.
+SWEP.HeatFix = false -- when the "overheat" animation is played, all heat is restored.
+
+SWEP.Malfunction = false
+SWEP.MalfunctionJam = true -- After a malfunction happens, the gun will dryfire until reload is pressed.
+SWEP.MalfunctionWait = 0 -- The amount of time to wait before playing malfunction animation (or can reload)
+SWEP.MalfunctionMeanShotsToFail = 350 -- The mean number of shots between malfunctions, will be autocalculated if nil
+
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
@@ -319,6 +333,131 @@ SWEP.Animations = {
     ["fire_cycle"] = {
         Source = "fire",
         Time = 13 / 30,
+    },
+
+    ["fix"] = {
+        Source = "fix",
+        Time = 45 / 30,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.4,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "chback.ogg",   t = 0.15},
+            {s = common .. "cloth_4.ogg",  t = 0.5},
+            {s = path .. "chamber.ogg",  t = 0.55},
+        },
+    },
+    ["fix_empty"] = {
+        Source = "fix_empty",
+        Time = 45 / 30,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.4,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "chback.ogg",   t = 0.15},
+            {s = common .. "cloth_4.ogg",  t = 0.5},
+            {s = path .. "chamber.ogg",  t = 0.55},
+        },
+    },
+    ["fix_100"] = {
+        Source = "fix_100",
+        Time = 50 / 30,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.4,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "chback.ogg",   t = 0.15},
+            {s = common .. "cloth_4.ogg",  t = 0.5},
+            {s = path .. "chamber.ogg",  t = 0.55},
+        },
+    },
+    ["fix_empty_100"] = {
+        Source = "fix_empty_100",
+        Time = 50 / 30,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.4,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "chback.ogg",   t = 0.15},
+            {s = common .. "cloth_4.ogg",  t = 0.5},
+            {s = path .. "chamber.ogg",  t = 0.55},
+        },
     },
 
     ["cycle"] = {
