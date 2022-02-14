@@ -32,6 +32,7 @@ $bodygroup "4" {
 $bodygroup "5" {
 	studio "barrel.smd"
 	studio "barrel_sd.smd"
+	studio "barrel_long.smd"
 }
 
 $bodygroup "6" {
