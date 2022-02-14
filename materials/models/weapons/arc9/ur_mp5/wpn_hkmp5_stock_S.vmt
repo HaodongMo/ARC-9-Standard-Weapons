@@ -2,5 +2,5 @@
 {
 	"$basetexture" "models/weapons/arc9/ur_mp5/wpn_hkmp5_stock"
 	"$bumpmap" "models/weapons/arc9/ur_mp5/wpn_hkmp5_stock_bump"
-	"$translucent" 1
+	"$translucent" 0
 }

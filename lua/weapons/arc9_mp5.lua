@@ -84,7 +84,7 @@ SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 
 SWEP.DropMagazineModel = "models/weapons/arc9/droppedmags/mp5_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {
-    "weapons/arc9_ud/common/smg_magdrop.ogg"
+    "weapons/arc9_ud/common/magdrop_smg.ogg"
 }  -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 
@@ -107,7 +107,7 @@ SWEP.Firemodes = {
     },
     {
         Mode = 3,
-        -- add other attachment modifiers
+        RPMMult = 1.05
     },
     {
         Mode = 1
@@ -181,8 +181,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.81, -3, 0.85),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-3.12, -3, 1.4),
+    Ang = Angle(0, -0.1, -1),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(0, 0, -45),
@@ -253,8 +253,33 @@ SWEP.Animations = {
         Source = "idle",
     },
 
-    ["draw"] = {
+    ["ready"] = {
         Source = "ready",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "chback.ogg",    t = 8 / 30},
+            {s = path .. "chamber.ogg",    t = 15 / 30},
+        },
+    },
+
+    ["draw"] = {
+        Source = "draw",
     },
 
     ["holster"] = {
@@ -289,6 +314,11 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        EventTable = {
+            {s = ratel, t = 0},
+            {s = path .. "chback.ogg",    t = 10 / 30},
+            {s = path .. "chamber.ogg",    t = 19 / 30},
+        }
     },
 
     ["reload"] = {
@@ -317,8 +347,14 @@ SWEP.Animations = {
             },
         },
         EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = ratel, t = 12 / 30},
             {s = path .. "magout.ogg",    t = 14 / 30},
-            {s = path .. "magin.ogg",    t = 28 / 30},
+            {s = ratel, t = 18 / 30},
+            {s = path .. "magin.ogg",    t = 26 / 30},
+            {s = rottle,  t = 32 / 30},
+            {s = common .. "grab.ogg", t = 1.81},
+            {s = common .. "shoulder.ogg", t = 1.9},
         },
     },
 
@@ -348,11 +384,20 @@ SWEP.Animations = {
             },
         },
         EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = ratel, t = 0.25},
             {s = path .. "chback.ogg",    t = 6 / 30},
             {s = path .. "chlock.ogg",    t = 10 / 30},
+            {s = common .. "raise.ogg", t = 11 / 30},
+            {s = ratel, t = 14 / 30},
             {s = path .. "magout.ogg",    t = 29 / 30},
+            {s = ratel, t = 34 / 30},
             {s = path .. "magin.ogg",    t = 44 / 30},
+            {s = ratel, t = 50 / 30},
+            {s = rottle,  t = 55 / 30},
             {s = path .. "chamber.ogg",    t = 66 / 30},
+            {s = common .. "grab.ogg", t = 2.2},
+            {s = common .. "shoulder.ogg", t = 2.3},
         },
     },
 
@@ -382,8 +427,14 @@ SWEP.Animations = {
             },
         },
         EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = ratel, t = 12 / 30},
             {s = path .. "magout.ogg",    t = 14 / 30},
-            {s = path .. "magin.ogg",    t = 28 / 30},
+            {s = ratel, t = 18 / 30},
+            {s = path .. "magin.ogg",    t = 26 / 30},
+            {s = rottle,  t = 32 / 30},
+            {s = common .. "grab.ogg", t = 1.81},
+            {s = common .. "shoulder.ogg", t = 1.9},
         },
     },
 
@@ -413,11 +464,20 @@ SWEP.Animations = {
             },
         },
         EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = ratel, t = 0.25},
             {s = path .. "chback.ogg",    t = 6 / 30},
             {s = path .. "chlock.ogg",    t = 10 / 30},
+            {s = common .. "raise.ogg", t = 11 / 30},
+            {s = ratel, t = 14 / 30},
             {s = path .. "magout.ogg",    t = 29 / 30},
+            {s = ratel, t = 34 / 30},
             {s = path .. "magin.ogg",    t = 44 / 30},
+            {s = ratel, t = 50 / 30},
+            {s = rottle,  t = 55 / 30},
             {s = path .. "chamber.ogg",    t = 66 / 30},
+            {s = common .. "grab.ogg", t = 2.2},
+            {s = common .. "shoulder.ogg", t = 2.3},
         },
     },
 }
@@ -455,15 +515,15 @@ SWEP.Attachments = {
         DefaultCompactName_TrueName = "9\"HK",
         Category = {"mp5_barrel"},
         Bone = "body",
-        Pos = Vector(0, -0.05, 10),
+        Pos = Vector(0, 0.1, 10),
         Ang = Angle(90, 0, -90),
     },
     {
         PrintName = "MUZZLE",
         DefaultName = "Factory Lug",
         Category = "muzzle",
-        Bone = "bone",
-        Pos = Vector(0, -0.05, 29.75),
+        Bone = "body",
+        Pos = Vector(0, 0.75, 13.5),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -471,7 +531,7 @@ SWEP.Attachments = {
         DefaultName = "Standard 30 Round",
         Category = "mp5_mag",
         Bone = "mag",
-        Pos = Vector(0, 4, 6),
+        Pos = Vector(0, 2, 0),
         Ang = Angle(90, 0, -90),
     },
     {
