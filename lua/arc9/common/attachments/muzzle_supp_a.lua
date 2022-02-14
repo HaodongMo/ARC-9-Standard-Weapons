@@ -3,7 +3,7 @@ ATT.CompactName = "SUPP.A"
 ATT.Icon = Material("entities/arc9_att_muzzle_supp_a.png", "mips smooth")
 ATT.Description = [[Firearm suppressor for use with multiple calibers developed by the Advanced Research Centre. Combines sound suppression with light weight.
 
-Reduces weapon report and improves ranged ballistic performance at the cost of handling.]]
+Reduces weapon report and improves ranged ballistic performance at the cost of handling. In addition, it is easy for the suppressor to overheat.]]
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/silencer_tactical.mdl"
@@ -27,3 +27,10 @@ ATT.MuzzleDevice = true
 
 ATT.RecoilUpMult = 1.1
 ATT.RecoilRandomMult = 0.9
+
+ATT.Overheat = true
+ATT.HeatCapacityAdd = 25
+ATT.HeatDissipationMult = 0.9
+ATT.HeatLockout = true
+ATT.HeatDelayTimeAdd = 0.15
+ATT.HeatFix = false

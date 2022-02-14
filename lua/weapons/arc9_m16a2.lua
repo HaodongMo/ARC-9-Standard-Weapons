@@ -174,20 +174,6 @@ SWEP.SpeedMultBlindFire = 1
 SWEP.TracerNum = 1 -- Tracer every X
 SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if tracer effect supports it. For physical bullets, this is compressed down to 9-bit color.
 
--------------------------- MALFUNCTIONS
-
-SWEP.Overheat = true -- Weapon will jam when it overheats, playing the "overheat" animation.
-SWEP.HeatCapacity = 63 -- rounds that can be fired non-stop before the gun jams, playing the "fix" animation
-SWEP.HeatDissipation = 10 -- rounds' worth of heat lost per second
-SWEP.HeatLockout = true -- overheating means you cannot fire until heat has been fully depleted
-SWEP.HeatDelayTime = 2.5 -- Amount of time that passes before heat begins to dissipate.
-SWEP.HeatFix = false -- when the "overheat" animation is played, all heat is restored.
-
-SWEP.Malfunction = false
-SWEP.MalfunctionJam = true -- After a malfunction happens, the gun will dryfire until reload is pressed.
-SWEP.MalfunctionWait = 0 -- The amount of time to wait before playing malfunction animation (or can reload)
-SWEP.MalfunctionMeanShotsToFail = 350 -- The mean number of shots between malfunctions, will be autocalculated if nil
-
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
