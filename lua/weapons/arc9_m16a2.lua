@@ -159,7 +159,7 @@ SWEP.FreeAimRadiusSights = 1
 
 SWEP.SwayMultSights = 0.3
 
-SWEP.AimDownSightsTime = 0.28 * 0.75 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.31 * 0.75 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.34 * 0.5 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMult = 0.95
@@ -224,7 +224,7 @@ SWEP.FirstShootSound = path .. "first.ogg"
 SWEP.ShootSound = {path .. "auto1.ogg", path .. "auto2.ogg", path .. "auto3.ogg", path .. "auto4.ogg"}
 SWEP.DistantShootSound = path .. "dist.ogg"
 SWEP.ShootSoundSilencedFirst = path .. "fire_sup.ogg"
-SWEP.ShootSoundSilenced = path .. "fire_sup.ogg"
+SWEP.ShootSoundSilenced = {path .. "fire_auto_sup_2.ogg", path .. "fire_auto_sup_3.ogg"}
 SWEP.DistantShootSoundSilenced = common .. "sup_tail.ogg"
 SWEP.DryFireSound = path .. "dryfire.ogg"
 
