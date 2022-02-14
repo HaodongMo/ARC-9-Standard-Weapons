@@ -19,3 +19,4 @@ ATT.RecoilMult = 1.1
 ATT.RecoilKickMult = 1.25
 ATT.RPMMult = 0.75
 ATT.VisualRecoilMult = 1.25
+ATT.ShootPitchMult = 0.9
