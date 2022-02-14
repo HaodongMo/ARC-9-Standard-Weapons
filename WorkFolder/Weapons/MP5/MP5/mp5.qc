@@ -138,6 +138,20 @@ $sequence "idle" {
 	node "Ready"
 }
 
+$sequence "draw" {
+	"anims\draw.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "holster" {
+	"anims\holster.smd"
+	fps 30
+	"ACT_VM_HOLSTER" 1
+	snap
+}
+
 $sequence "firemode_pose" {
 	"anims\firemode_auto_pose.smd"
 	"anims\firemode_burst_pose.smd"
