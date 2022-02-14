@@ -82,9 +82,9 @@ SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
 SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 
-SWEP.DropMagazineModel = "models/weapons/arc9/droppedmags/m16_mag_30.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineModel = "models/weapons/arc9/droppedmags/mp5_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {
-    "weapons/arc9_ud/common/rifle_magdrop_1.ogg", "weapons/arc9_ud/common/rifle_magdrop_2.ogg", "weapons/arc9_ud/common/rifle_magdrop_3.ogg", "weapons/arc9_ud/common/rifle_magdrop_4.ogg"
+    "weapons/arc9_ud/common/smg_magdrop.ogg"
 }  -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 
@@ -225,7 +225,7 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 local path = ")^weapons/arc9_ud/mp5/"
 local common = ")^weapons/arc9_ud/common/"
 SWEP.FirstShootSound = path .. "fire_first.ogg"
-SWEP.ShootSound = {path .. "auto_1.ogg", path .. "auto_2.ogg", path .. "auto_3.ogg"}
+SWEP.ShootSound = {path .. "fire_auto_1.ogg", path .. "fire_auto_2.ogg", path .. "fire_auto_3.ogg"}
 SWEP.DistantShootSound = path .. "fire_dist.ogg"
 SWEP.ShootSoundSilencedFirst = "weapons/arc9_ud/mini14/fire_supp.ogg"
 SWEP.ShootSoundSilenced = "weapons/arc9_ud/mini14/fire_supp.ogg"
