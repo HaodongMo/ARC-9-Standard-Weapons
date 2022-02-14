@@ -7,6 +7,8 @@ ATT.CompactName_TrueName = "11\"SD"
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_a1.png", "mips smooth")
 
+ATT.ActivateElements = {"block_muzz"}
+
 ATT.SortOrder = 0
 ATT.Category = "mp5_barrel"
 

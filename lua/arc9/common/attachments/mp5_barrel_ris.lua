@@ -16,23 +16,23 @@ ATT.Attachments = {
     {
         PrintName = "RAIL",
         Category = {"grip_picatinny", "picatinny"},
-        Pos = Vector(-5, 0, 1.45),
+        Pos = Vector(-1, 0, 1.45),
         Ang = Angle(0, 0, 180),
-        Icon_Offset = Vector(0, 0, 0)
+        Icon_Offset = Vector(-1, 0, 0)
     },
     {
         PrintName = "RAIL",
         Category = "picatinny",
-        Pos = Vector(-5, -1.42, -0.05),
+        Pos = Vector(-1, -0.75, 0.725),
         Ang = Angle(0, 0, -90),
-        Icon_Offset = Vector(2, 0, 0)
+        Icon_Offset = Vector(0.5, 0, 0)
     },
     {
         PrintName = "RAIL",
         Category = "picatinny",
-        Pos = Vector(-5, 1.42, -0.05),
+        Pos = Vector(-1, 0.75, 0.725),
         Ang = Angle(0, 0, 90),
-        Icon_Offset = Vector(-2, 0, 0)
+        Icon_Offset = Vector(-3, 0, 0)
     },
 }
 

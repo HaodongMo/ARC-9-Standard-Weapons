@@ -533,13 +533,13 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [4] = {
-                Pos = Vector(0, 0.75, 15.25),
+                Pos = Vector(0, 0.75, 17.5),
             }
         }
     },
     ["mp5_barrel_ris"] = {
         Bodygroups = {
-            {6, 3},
+            {6, 1},
         }
     },
 }
@@ -563,8 +563,9 @@ SWEP.Attachments = {
         DefaultCompactName = "CAP",
         Category = {"mp5_stock", "bt_stock"},
         Bone = "body",
-        Pos = Vector(0, 0.85, -4.5),
+        Pos = Vector(0, 0.85, -4),
         Ang = Angle(90, 0, -90),
+        Scale = 0.75
     },
     {
         PrintName = "BARREL",
@@ -576,6 +577,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 0.1, 10),
         Ang = Angle(90, 0, -90),
+        Scale = 0.75
     },
     {
         PrintName = "MUZZLE",
