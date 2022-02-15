@@ -1,12 +1,6 @@
-ATT.PrintName = "PSM Contract2"
-ATT.CompactName = "CONTRACT2"
-ATT.Description = [[Sturdy, heavy stock for buffer tube adapters.
-
-Good sway mitigation, but poor point firing.]]
-
-ATT.PrintName_TrueName = "LMT SOPMOD"
-ATT.CompactName_TrueName = "M4SS"
-ATT.Description_TrueName = [[Sturdy, heavy stock for buffer tube adapters.
+ATT.PrintName = "LMT SOPMOD"
+ATT.CompactName = "SOPMOD"
+ATT.Description = [[Sturdy, heavy stock for buffer tube adapters. It is a part of the SOPMOD Block 0 standard.
 
 Good sway mitigation, but poor point firing.]]
 
