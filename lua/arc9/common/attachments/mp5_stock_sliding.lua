@@ -1,6 +1,6 @@
 ATT.PrintName = "MPK Sliding Stock"
 ATT.CompactName = "SLIDING"
-ATT.Description = [[A standard polymer stock.]]
+ATT.Description = [[A standard sliding stock. Significantly improves handling at the cost of aimed accuracy.]]
 
 ATT.PrintName_TrueName = "MP5A3 Sliding Stock"
 ATT.CompactName_TrueName = "A3STOCK"

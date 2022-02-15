@@ -123,20 +123,25 @@ ATT.HoloSightFunc = function(swep, pos, mdl)
     surface.SetDrawColor(col)
     surface.DrawTexturedRect(48, 57 + tilt, 16, 16)
 
-    if last_ccip_time + (1 / 15) <= CurTime() and haslaze then
-        local ccip = swep:GetCCIP().HitPos
-
-        if !ccip then
+    if last_ccip_time + (1 / 15) <= CurTime() then
+        if !haslaze then
             ccip_v = 0
             no_ccip = true
         else
-            ccip_v = ccip:ToScreen().y - (ScrH() / 2)
-            no_ccip = false
+            local ccip = swep:GetCCIP()
+
+            if !ccip then
+                ccip_v = 0
+                no_ccip = true
+            else
+                ccip_v = ccip.HitPos:ToScreen().y - (ScrH() / 2)
+                no_ccip = false
+            end
         end
         last_ccip_time = CurTime()
     end
 
-    if !no_ccip and haslaze then
+    if !no_ccip then
         surface.SetMaterial(ccip_mat)
         surface.SetDrawColor(col)
         surface.DrawTexturedRect(128 - 16, 48 + ccip_v, 32, 32)
