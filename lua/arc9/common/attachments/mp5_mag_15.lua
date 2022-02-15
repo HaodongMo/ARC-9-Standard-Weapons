@@ -4,7 +4,7 @@ ATT.Description = [[Low capacity magazine. Reduces capacity but improves handlin
 
 ATT.PrintName_TrueName = "HKMP5 15 Round 9mm Mag"
 
-ATT.Icon = Material("entities/arc9_att_m16_mag_20.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_mp5_mag_15.png", "mips smooth")
 
 ATT.SortOrder = 15
 ATT.Category = "mp5_mag"

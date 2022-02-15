@@ -7,7 +7,7 @@ Allows for easy mounting of tactical devices and grips, but is slightly less com
 ATT.PrintName_TrueName = "PTR Tri-Rail 9\" Barrel"
 ATT.CompactName_TrueName = "9\"TRI-RAIL"
 
-ATT.Icon = Material("entities/arc9_att_m16_barrel_a1.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_mp5_barrel_ris.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "mp5_barrel"
@@ -16,7 +16,7 @@ ATT.Attachments = {
     {
         PrintName = "RAIL",
         Category = {"grip_picatinny", "picatinny"},
-        Pos = Vector(-1, 0, 1.45),
+        Pos = Vector(-0.5, 0, 1.45),
         Ang = Angle(0, 0, 180),
         Icon_Offset = Vector(-1, 0, 0)
     },

@@ -5,7 +5,7 @@ ATT.Description = [[Extended barrel substantially improves range and muzzle velo
 ATT.PrintName_TrueName = "HK94 14\" Long Barrel"
 ATT.CompactName_TrueName = "14\"HK94"
 
-ATT.Icon = Material("entities/arc9_att_m16_barrel_a1.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_mp5_barrel_carbine.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "mp5_barrel"
@@ -19,3 +19,5 @@ ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.25
 
 ATT.RecoilUpMult = 0.95
+
+ATT.SpreadMultSights = 0.85

@@ -4,7 +4,7 @@ ATT.Description = [[Offers improved capacity with minimal drawback.]]
 
 ATT.PrintName_TrueName = "HKMP5 40 Round 9mm Mag"
 
-ATT.Icon = Material("entities/arc9_att_m16_mag_20.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_mp5_mag_40.png", "mips smooth")
 
 ATT.SortOrder = 40
 ATT.Category = "mp5_mag"

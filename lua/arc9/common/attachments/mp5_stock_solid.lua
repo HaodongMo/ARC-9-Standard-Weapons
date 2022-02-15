@@ -3,7 +3,8 @@ ATT.CompactName = "SOLID"
 ATT.Description = [[A standard polymer stock.]]
 
 ATT.PrintName_TrueName = "MP5A2 Solid Stock"
-ATT.Icon = Material("entities/arc9_att_m16_stock_wood.png", "mips smooth")
+
+ATT.Icon = Material("entities/arc9_att_mp5_stock_solid.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "mp5_stock"

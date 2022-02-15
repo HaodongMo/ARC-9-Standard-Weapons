@@ -5,7 +5,7 @@ ATT.Description = [[Handguard and barrel assembly fitted with an integral silenc
 ATT.PrintName_TrueName = "HKMP5SD 11\" Silenced Barrel"
 ATT.CompactName_TrueName = "11\"SD"
 
-ATT.Icon = Material("entities/arc9_att_m16_barrel_a1.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_mp5_barrel_sd.png", "mips smooth")
 
 ATT.ActivateElements = {"block_muzz"}
 

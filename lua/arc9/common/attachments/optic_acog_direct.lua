@@ -17,7 +17,7 @@ ATT.InvAtt = "optic_acog"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 6, -1.623),
+        Pos = Vector(0, 7, -1.623),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5
     },
@@ -36,7 +36,7 @@ ATT.RTScopeReticle = Material("arc9/acog.png", "mips smooth")
 ATT.RTScopeColor = Color(255, 0, 0)
 ATT.RTScopeShadowIntensity = 10
 
-ATT.ScopeScreenRatio = 0.5
+ATT.ScopeScreenRatio = 0.33
 
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, -0.4)

@@ -4,7 +4,7 @@ ATT.Description = [[Magazine that comes with a calibre adapter. Using 10mm ammun
 
 ATT.PrintName_TrueName = "MP5 FBI 25 Round 10mm Mag"
 
-ATT.Icon = Material("entities/arc9_att_m16_mag_20.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_mp5_mag_25.png", "mips smooth")
 
 ATT.SortOrder = 25
 ATT.Category = "mp5_mag"

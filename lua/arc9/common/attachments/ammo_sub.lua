@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/arc9_att_ammo.png", "mips smooth")
 ATT.Description = [[Rounds with a reduced load. Tracers are invisible. Reduces report slightly.]]
 ATT.SortOrder = 0
 
-ATT.Category = {"ammo"}
+ATT.Category = {"ammo", "ammo_assault", "ammo_pistol", "ammo_sniper"}
 
 ATT.PhysBulletMuzzleVelocityMult = 0.85
 

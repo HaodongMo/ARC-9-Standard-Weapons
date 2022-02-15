@@ -139,7 +139,7 @@ SWEP.RecoilRandomSide = 0.1
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.05 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.4 * 0.25 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.3 * 0.25 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.75
 
@@ -229,7 +229,7 @@ SWEP.ShootSound = {path .. "fire_auto_1.ogg", path .. "fire_auto_2.ogg", path ..
 SWEP.DistantShootSound = path .. "fire_dist.ogg"
 SWEP.ShootSoundSilencedFirst = path .. "fire_sup.ogg"
 SWEP.ShootSoundSilenced = path .. "fire_sup.ogg"
-SWEP.DryFireSound = path .. "dryfire.ogg"
+SWEP.DryFireSound = "weapons/arc9_ud/glock/dryfire.ogg"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -601,7 +601,7 @@ SWEP.Attachments = {
     {
         PrintName = "AMMO",
         DefaultName = "Standard FMJ",
-        Category = {"ammo_pistol"},
+        Category = {"ammo_pistol", "ammo"},
         Bone = "body",
         Pos = Vector(0, 6, 7),
         Ang = Angle(90, 0, -90),
