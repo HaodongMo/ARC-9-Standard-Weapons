@@ -53,7 +53,7 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.DefaultBodygroups = "0000000400000000000000"
+SWEP.DefaultBodygroups = "0200000000000000000000"
 
 -------------------------- DAMAGE PROFILE
 
@@ -128,18 +128,18 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.35 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.2 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.02
-SWEP.RecoilRandomSide = 0.02
+SWEP.RecoilRandomUp = 0.1
+SWEP.RecoilRandomSide = 0.1
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.05 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.3 * 0.25 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.75
 
@@ -151,8 +151,8 @@ SWEP.SpreadAddRecoil = 0.0001 -- Applied per unit of recoil.
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 10 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 1.5 -- How much the gun sways.
+SWEP.FreeAimRadius = 8 / 1.25 -- In degrees, how much this gun can free aim in hip fire.
+SWEP.Sway = 0.85 + 1 -- How much the gun sways.
 
 SWEP.SwayMultMidAir = 2
 SWEP.SwayMultMove = 1.15
@@ -211,7 +211,7 @@ SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "muzzleflash_mp5" -- Used for some muzzle effects.
+SWEP.MuzzleParticle = "muzzleflash_3" -- Used for some muzzle effects.
 
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
@@ -227,9 +227,9 @@ local common = ")^weapons/arc9_ud/common/"
 SWEP.FirstShootSound = path .. "fire_first.ogg"
 SWEP.ShootSound = {path .. "fire_auto_1.ogg", path .. "fire_auto_2.ogg", path .. "fire_auto_3.ogg"}
 SWEP.DistantShootSound = path .. "fire_dist.ogg"
-SWEP.ShootSoundSilencedFirst = "weapons/arc9_ud/mini14/fire_supp.ogg"
-SWEP.ShootSoundSilenced = "weapons/arc9_ud/mini14/fire_supp.ogg"
-SWEP.DryFireSound = path .. "dryfire.ogg"
+SWEP.ShootSoundSilencedFirst = path .. "fire_sup.ogg"
+SWEP.ShootSoundSilenced = path .. "fire_sup.ogg"
+SWEP.DryFireSound = "weapons/arc9_ud/glock/dryfire.ogg"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -349,9 +349,9 @@ SWEP.Animations = {
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 12 / 30},
-            {s = path .. "magout.ogg",    t = 14 / 30},
+            {s = path .. "magout.ogg",    t = 12 / 30},
             {s = ratel, t = 18 / 30},
-            {s = path .. "magin.ogg",    t = 26 / 30},
+            {s = path .. "magin.ogg",    t = 19 / 30},
             {s = rottle,  t = 32 / 30},
             {s = common .. "grab.ogg", t = 1.81},
             {s = common .. "shoulder.ogg", t = 1.9},
@@ -386,16 +386,16 @@ SWEP.Animations = {
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 0.25},
-            {s = path .. "chback.ogg",    t = 6 / 30},
-            {s = path .. "chlock.ogg",    t = 10 / 30},
+            {s = path .. "chback.ogg",    t = 2 / 30},
+            {s = path .. "chlock.ogg",    t = 6 / 30},
             {s = common .. "raise.ogg", t = 11 / 30},
             {s = ratel, t = 14 / 30},
-            {s = path .. "magout.ogg",    t = 29 / 30},
+            {s = path .. "magout.ogg",    t = 26 / 30},
             {s = ratel, t = 34 / 30},
-            {s = path .. "magin.ogg",    t = 44 / 30},
+            {s = path .. "magin.ogg",    t = 34 / 30},
             {s = ratel, t = 50 / 30},
             {s = rottle,  t = 55 / 30},
-            {s = path .. "chamber.ogg",    t = 66 / 30},
+            {s = path .. "chamber.ogg",    t = 63 / 30},
             {s = common .. "grab.ogg", t = 2.2},
             {s = common .. "shoulder.ogg", t = 2.3},
         },
@@ -429,17 +429,17 @@ SWEP.Animations = {
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 12 / 30},
-            {s = path .. "magout.ogg",    t = 14 / 30},
+            {s = path .. "magout.ogg",    t = 12 / 30},
             {s = ratel, t = 18 / 30},
-            {s = path .. "magin.ogg",    t = 26 / 30},
+            {s = path .. "magin.ogg",    t = 19 / 30},
             {s = rottle,  t = 32 / 30},
             {s = common .. "grab.ogg", t = 1.81},
             {s = common .. "shoulder.ogg", t = 1.9},
         },
     },
 
-    ["reload_10mm_empty"] = {
-        Source = "reload_10mm_empty",
+    ["reload_empty_10mm"] = {
+        Source = "reload_empty_10mm",
         MinProgress = 51 / 30,
         IKTimeLine = {
             {
@@ -466,16 +466,16 @@ SWEP.Animations = {
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 0.25},
-            {s = path .. "chback.ogg",    t = 6 / 30},
-            {s = path .. "chlock.ogg",    t = 10 / 30},
+            {s = path .. "chback.ogg",    t = 2 / 30},
+            {s = path .. "chlock.ogg",    t = 6 / 30},
             {s = common .. "raise.ogg", t = 11 / 30},
             {s = ratel, t = 14 / 30},
-            {s = path .. "magout.ogg",    t = 29 / 30},
+            {s = path .. "magout.ogg",    t = 26 / 30},
             {s = ratel, t = 34 / 30},
-            {s = path .. "magin.ogg",    t = 44 / 30},
+            {s = path .. "magin.ogg",    t = 34 / 30},
             {s = ratel, t = 50 / 30},
             {s = rottle,  t = 55 / 30},
-            {s = path .. "chamber.ogg",    t = 66 / 30},
+            {s = path .. "chamber.ogg",    t = 64 / 30},
             {s = common .. "grab.ogg", t = 2.2},
             {s = common .. "shoulder.ogg", t = 2.3},
         },
@@ -485,6 +485,63 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["bt_stock"] = {
+        Bodygroups = {
+            {1, 3}
+        }
+    },
+    ["rail"] = {
+        Bodygroups = {
+            {4, 1}
+        }
+    },
+    ["mp5_stock_solid"] = {
+        Bodygroups = {
+            {1, 0}
+        }
+    },
+    ["mp5_stock_sliding"] = {
+        Bodygroups = {
+            {1, 1},
+            {2, 1}
+        }
+    },
+    ["mp5_mag_40"] = {
+        Bodygroups = {
+            {3, 1}
+        }
+    },
+    ["mp5_mag_25"] = {
+        Bodygroups = {
+            {3, 2}
+        }
+    },
+    ["mp5_mag_15"] = {
+        Bodygroups = {
+            {3, 3}
+        }
+    },
+    ["mp5_barrel_sd"] = {
+        Bodygroups = {
+            {6, 2},
+            {5, 1}
+        }
+    },
+    ["mp5_barrel_carbine"] = {
+        Bodygroups = {
+            {5, 2}
+        },
+        AttPosMods = {
+            [4] = {
+                Pos = Vector(0, 0.75, 17.5),
+            }
+        }
+    },
+    ["mp5_barrel_ris"] = {
+        Bodygroups = {
+            {6, 1},
+        }
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -493,19 +550,22 @@ end
 SWEP.Attachments = {
     {
         PrintName = "OPTIC",
+        InstalledElements = {"rail"},
         Category = "optic_picatinny",
         Bone = "body",
-        Pos = Vector(0, -1, 1.5),
+        Pos = Vector(0, -1.2, 3.5),
         Ang = Angle(90, 0, -90),
+        Scale = 0.75
     },
     {
         PrintName = "STOCK",
-        DefaultName = "Factory Solid Stock",
-        DefaultCompactName = "SOLID",
+        DefaultName = "No Stock",
+        DefaultCompactName = "CAP",
         Category = {"mp5_stock", "bt_stock"},
         Bone = "body",
-        Pos = Vector(0, 0, -5.5),
+        Pos = Vector(0, 0.85, -4),
         Ang = Angle(90, 0, -90),
+        Scale = 0.75
     },
     {
         PrintName = "BARREL",
@@ -513,31 +573,35 @@ SWEP.Attachments = {
         DefaultCompactName = "9\"DWF",
         DefaultName_TrueName = "H&K 9\" Standard Barrel",
         DefaultCompactName_TrueName = "9\"HK",
-        Category = {"mp5_barrel"},
+        Category = "mp5_barrel",
         Bone = "body",
         Pos = Vector(0, 0.1, 10),
         Ang = Angle(90, 0, -90),
+        Scale = 0.75
     },
     {
         PrintName = "MUZZLE",
         DefaultName = "Factory Lug",
+        ExcludeElements = {"block_muzz"},
         Category = "muzzle",
         Bone = "body",
-        Pos = Vector(0, 0.75, 13.5),
+        Pos = Vector(0, 0.75, 13.25),
         Ang = Angle(90, 0, -90),
+        Scale = 0.75
     },
     {
         PrintName = "MAG",
         DefaultName = "Standard 30 Round",
         Category = "mp5_mag",
-        Bone = "mag",
-        Pos = Vector(0, 2, 0),
+        Bone = "body",
+        Icon_Offset = Vector(0, 0, 0),
+        Pos = Vector(0, 3, 5.5),
         Ang = Angle(90, 0, -90),
     },
     {
         PrintName = "AMMO",
         DefaultName = "Standard FMJ",
-        Category = {"ammo_pistol"},
+        Category = {"ammo_pistol", "ammo"},
         Bone = "body",
         Pos = Vector(0, 6, 7),
         Ang = Angle(90, 0, -90),

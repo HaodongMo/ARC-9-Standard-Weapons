@@ -159,8 +159,8 @@ SWEP.FreeAimRadiusSights = 1
 
 SWEP.SwayMultSights = 0.3
 
-SWEP.AimDownSightsTime = 0.31 * 0.75 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.34 * 0.5 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.34 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMult = 0.95
 SWEP.SpeedMultSights = 0.75
@@ -1110,7 +1110,7 @@ SWEP.Attachments = {
     {
         PrintName = "MUZZLE",
         DefaultName = "Factory Flash Hider",
-        Category = "muzzle",
+        Category = {"m16_muzzle", "muzzle"},
         Bone = "m16_parent",
         Installed = "muzzle_a2birdcage",
         Pos = Vector(0, -0.05, 29.75),
