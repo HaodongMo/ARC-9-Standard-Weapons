@@ -7,6 +7,7 @@ ATT.SortOrder = 1
 ATT.Model = "models/weapons/arc9/atts/elcan.mdl"
 
 ATT.Category = "optic_picatinny"
+ATT.Folder = "SCOPE"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {

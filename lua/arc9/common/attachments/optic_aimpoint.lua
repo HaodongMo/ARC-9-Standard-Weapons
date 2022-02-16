@@ -7,6 +7,7 @@ Narrow sight picture with improved focus.]]
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/aimpoint.mdl"
+ATT.Folder = "RDS"
 
 ATT.Category = {"optic_picatinny_medium", "optic_picatinny"}
 

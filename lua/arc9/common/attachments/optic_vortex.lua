@@ -5,6 +5,7 @@ ATT.Description = [[A holographic sight with "smart" networked functionality. Di
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/razer.mdl"
+ATT.Folder = "HOLO"
 
 ATT.Category = {"optic_picatinny_medium", "optic_picatinny"}
 

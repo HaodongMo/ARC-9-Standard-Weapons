@@ -7,6 +7,7 @@ Clear with a wide sight picture.]]
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/sureshot.mdl"
+ATT.Folder = "RDS"
 
 ATT.Category = {"optic_picatinny_medium", "optic_picatinny"}
 
@@ -21,7 +22,7 @@ ATT.Sights = {
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("arc9/dot.png", "mips smooth")
-ATT.HoloSightSize = 1024
+ATT.HoloSightSize = 1500
 ATT.HoloSightColor = Color(255, 0, 0)
 
 ATT.ModelOffset = Vector(0, 0, 0)
