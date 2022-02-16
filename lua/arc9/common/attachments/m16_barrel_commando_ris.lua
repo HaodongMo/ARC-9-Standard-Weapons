@@ -47,12 +47,12 @@ ATT.Attachments = {
     },
     {
         PrintName = "RAIL",
-        Category = "optic_picatinny",
-        RequireElements = {"flattop"},
-        ExcludeElements = {"flattop_optic"},
-        InstalledElements = {"ris_optic"},
+        Category = {"canted_picatinny", "optic_picatinny"},
+        -- RequireElements = {"flattop"},
+        -- ExcludeElements = {"flattop_optic"},
+        -- InstalledElements = {"ris_optic"},
         ExtraSightDistance = 12,
-        Pos = Vector(-3, 0, -1.7),
+        Pos = Vector(-3, 0, -1.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         Hidden = true

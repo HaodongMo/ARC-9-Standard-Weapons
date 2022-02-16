@@ -577,7 +577,6 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 0.1, 10),
         Ang = Angle(90, 0, -90),
-        Scale = 0.75
     },
     {
         PrintName = "MUZZLE",

@@ -7,7 +7,7 @@ Narrow sight picture with improved focus.]]
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/aimpoint.mdl"
-ATT.Folder = "RDS"
+ATT.Folder = "REFLEX"
 
 ATT.Category = {"optic_picatinny_medium", "optic_picatinny"}
 
@@ -22,6 +22,7 @@ ATT.Sights = {
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("arc9/dot.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 1024
 ATT.HoloSightColor = Color(255, 0, 0)
 

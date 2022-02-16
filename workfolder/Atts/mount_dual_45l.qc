@@ -1,10 +1,10 @@
 // Created by Crowbar 0.71
 
-$modelname "weapons\arc9\atts\eotech.mdl"
+$modelname "weapons\arc9\atts\mount_dual_45l.mdl"
 
 $bodygroup "body"
 {
-	studio "eotech.smd"
+	studio "mount_dual_45l.smd"
 }
 
 $surfaceprop "weapon"
@@ -15,20 +15,14 @@ $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arc9\atts"
 
-$attachment "holosight" "holosight" 0 0 0 rotate 0 0 0
-
-$cbox 0 0 0 0 0 0
-
-$bbox -1.501 -0.874 -0.421 2.028 0.904 1.859
-
 $sequence "idle" {
-	"eotech.smd"
+	"mount_dual_45l.smd"
 	fadein 0.2
 	fadeout 0.2
 	fps 30
 }
 
-$collisionmodel "eotech.smd"
+$collisionmodel "mount_dual_45l.smd"
 {
 	$mass 1
 	$inertia 1

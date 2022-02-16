@@ -9,6 +9,7 @@ ATT.SortOrder = 1
 ATT.Model = "models/weapons/arc9/atts/silencer_tactical.mdl"
 
 ATT.Category = "muzzle"
+ATT.Folder = "SUPPRESSOR"
 
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, 0)
