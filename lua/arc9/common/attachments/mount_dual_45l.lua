@@ -17,14 +17,14 @@ ATT.Scale = 1.25
 ATT.Attachments = {
     {
         PrintName = "RS",
-        Category = "optic_picatinny_medium",
+        Category = "rearsight_picatinny",
         Pos = Vector(2, -1.2, -0.12),
         Ang = Angle(0, 0, -45),
         KeepBaseIrons = true
     },
     {
         PrintName = "FS",
-        Category = "optic_picatinny_medium",
+        Category = "frontsight_picatinny",
         Pos = Vector(-3.5, -1.2, -0.12),
         Ang = Angle(0, 0, -45),
         KeepBaseIrons = true

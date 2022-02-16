@@ -17,7 +17,7 @@ ATT.Scale = 1.25
 ATT.Attachments = {
     {
         PrintName = "OPTIC",
-        Category = "optic_picatinny_medium",
+        Category = {"optic_picatinny_small", "rearsight_picatinny", "frontsight_picatinny"},
         Pos = Vector(0, 1.2, -0.12),
         Ang = Angle(0, 0, 45),
         Icon_Offset = Vector(-1, 0, 0),
