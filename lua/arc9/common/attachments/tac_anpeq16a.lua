@@ -8,19 +8,47 @@ ATT.SortOrder = 0
 ATT.Category = {"picatinny", "tac_picatinny_top", "tac_picatinny"}
 ATT.Model = "models/weapons/arc9/atts/anpeq16a.mdl"
 
-ATT.Laser = true
-ATT.LaserStrength = 1
-ATT.LaserColor = Color(0, 255, 0)
-ATT.LaserAttachment = 2
+ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
+ATT.ToggleStats = {
+    {
+        PrintName = "Both",
+        Laser = true,
+        LaserStrength = 1,
+        LaserColor = Color(0, 255, 0),
+        LaserAttachment = 2,
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 1024,
+        FlashlightFOV = 70,
+        FlashlightAttachment = 1,
+        SwayMult = 1.02,
+        FreeAimRadiusMultHipFire = 0.75
+    },
+    {
+        PrintName = "Light",
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 1024,
+        FlashlightFOV = 70,
+        FlashlightAttachment = 1,
+        SwayMult = 1.02,
+        FreeAimRadiusMultHipFire = 0.75
+    },
+    {
+        PrintName = "Laser",
+        Laser = true,
+        LaserStrength = 1,
+        LaserColor = Color(0, 255, 0),
+        LaserAttachment = 2,
+        SwayMult = 1.02,
+        FreeAimRadiusMultHipFire = 0.75
+    },
+    {
+        PrintName = "None",
+    }
+}
 
-ATT.Flashlight = true
-ATT.FlashlightColor = Color(255, 255, 255)
-ATT.FlashlightMaterial = "effects/flashlight001"
-ATT.FlashlightDistance = 1024
-ATT.FlashlightFOV = 70
-ATT.FlashlightAttachment = 1
-
-ATT.SwayMult = 1.02
-ATT.FreeAimRadiusMultHipFire = 0.75
 
 ATT.Scale = 1.25
