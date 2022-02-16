@@ -14,7 +14,7 @@ ATT.Icon = Material("entities/arc9_att_stock_m608.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "bt_stock"
-ATT.Folder = "TUBE STOCK"
+ATT.Folder = "TUBE"
 
 ATT.Model = "models/weapons/arc9/atts/stock_608.mdl"
 
