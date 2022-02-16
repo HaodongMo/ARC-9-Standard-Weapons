@@ -36,19 +36,19 @@ ATT.Attachments = {
     {
         PrintName = "RAIL",
         Category = "tac_picatinny_top",
-        Pos = Vector(-3, 0, -1.7),
+        Pos = Vector(-8, 0, -1.7),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         MergeSlots = {5},
     },
     {
         PrintName = "RAIL",
-        Category = {"canted_picatinny", "optic_picatinny"},
+        Category = {"canted_picatinny", "optic_picatinny_medium"},
         -- RequireElements = {"flattop"},
         -- ExcludeElements = {"flattop_optic"},
         -- InstalledElements = {"ris_optic"},
         ExtraSightDistance = 12,
-        Pos = Vector(-3, 0, -1.95),
+        Pos = Vector(-5, 0, -1.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         Hidden = true

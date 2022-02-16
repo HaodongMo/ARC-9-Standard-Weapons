@@ -38,7 +38,7 @@ ATT.SprintToFireTimeAdd = 0.08
 ATT.Attachments = {
     {
         PrintName = "OPTIC",
-        Category = "optic_picatinny_medium",
+        Category = {"optic_picatinny_medium", "canted_picatinny_small"},
         Pos = Vector(0.5, 0, -3.0089125),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),

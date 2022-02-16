@@ -6,7 +6,7 @@ ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/mount_45r.mdl"
 
-ATT.Category = {"optic_picatinny", "canted_picatinny"}
+ATT.Category = {"optic_picatinny", "canted_picatinny", "canted_picatinny_small"}
 ATT.Folder = "EXPANDER"
 
 // Allows a custom sight position to be defined
