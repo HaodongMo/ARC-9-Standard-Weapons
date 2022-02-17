@@ -8,6 +8,7 @@ ATT.Model = "models/weapons/arc9/atts/mount_dual_45l.mdl"
 
 ATT.Category = {"optic_picatinny", "canted_picatinny"}
 ATT.Folder = "EXPANDER"
+ATT.Max = 4
 
 // Allows a custom sight position to be defined
 
