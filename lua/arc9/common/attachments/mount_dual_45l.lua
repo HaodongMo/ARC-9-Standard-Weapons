@@ -30,4 +30,10 @@ ATT.Attachments = {
         Ang = Angle(0, 0, -45),
         KeepBaseIrons = true
     },
+    {
+        PrintName = "OPTIC",
+        Category = "optic_picatinny_small",
+        Pos = Vector(-0.5, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
 }

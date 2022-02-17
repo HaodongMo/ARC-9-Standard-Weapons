@@ -40,7 +40,7 @@ ATT.Attachments = {
         Pos = Vector(-6, 0, -1.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        MergeSlots = {5},
+        MergeSlots = {5, 6},
     },
     {
         PrintName = "RAIL",
@@ -54,6 +54,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
         Hidden = true
     },
+    {
+        PrintName = "FS",
+        Category = "frontsight_picatinny",
+        Pos = Vector(-11.75, 0, -1.95),
+        Ang = Angle(0, 0, 0),
+        Hidden = true
+    }
 }
 
 ATT.RecoilAutoControlMult = 0.95

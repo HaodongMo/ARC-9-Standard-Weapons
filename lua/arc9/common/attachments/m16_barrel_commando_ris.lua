@@ -41,10 +41,10 @@ ATT.Attachments = {
         PrintName = "RAIL",
         Category = {"tac_picatinny_top", "canted_picatinny"},
         ExtraSightDistance = 12,
-        Pos = Vector(-4, 0, -1.95),
+        Pos = Vector(-3, 0, -1.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        MergeSlots = {5},
+        MergeSlots = {5, 6},
     },
     {
         PrintName = "RAIL",
@@ -58,6 +58,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
         Hidden = true
     },
+    {
+        PrintName = "FS",
+        Category = "frontsight_picatinny",
+        Pos = Vector(-6, 0, -1.95),
+        Ang = Angle(0, 0, 0),
+        Hidden = true
+    }
 }
 ATT.ActivateElements = {"shortfs", "nomount"}
 
