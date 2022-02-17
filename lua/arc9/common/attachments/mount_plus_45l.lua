@@ -6,9 +6,10 @@ ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/mount_45l.mdl"
 
-ATT.Category = "optic_picatinny"
+ATT.Category = {"optic_picatinny", "long_cant_picatinny"}
 ATT.Folder = "EXPANDER"
 ATT.Max = 4
+ATT.InvAtt = "mount_45l"
 
 // Allows a custom sight position to be defined
 
@@ -31,5 +32,8 @@ ATT.Attachments = {
         Pos = Vector(1, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 1, 0),
+        RejectAttachments = {
+            ["long_cant_picatinny"] = true,
+        }
     },
 }

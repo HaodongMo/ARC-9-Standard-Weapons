@@ -6,7 +6,7 @@ ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/mount_dual_45l.mdl"
 
-ATT.Category = {"optic_picatinny", "canted_picatinny"}
+ATT.Category = {"optic_picatinny", "canted_picatinny", "long_cant_picatinny"}
 ATT.Folder = "EXPANDER"
 ATT.Max = 4
 
