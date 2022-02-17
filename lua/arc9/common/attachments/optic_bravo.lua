@@ -2,7 +2,7 @@ ATT.PrintName = "SIG Sauer BRAVO4"
 ATT.CompactName = "BRAVO4"
 ATT.Icon = Material("entities/arc9_att_optic_bravo.png", "mips smooth")
 ATT.Description = [[Wide-FOV magnified assault scope designed by SIG Sauer. Uniquely, it features a Picatinny standard rail on top for mounting additional optics.]]
-ATT.SortOrder = 1
+ATT.SortOrder = 3.5
 
 ATT.Model = "models/weapons/arc9/atts/bravo4.mdl"
 

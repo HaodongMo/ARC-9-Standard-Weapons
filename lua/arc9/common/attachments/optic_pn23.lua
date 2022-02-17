@@ -2,7 +2,7 @@ ATT.PrintName = "NPZ PN23 Gen 2"
 ATT.CompactName = "PN23"
 ATT.Icon = Material("entities/arc9_att_optic_pn23.png", "mips smooth")
 ATT.Description = [[Shock resistant night vision scope. Includes a light amplifier system allowing for target shooting, hunting, and combat operations in low light conditions.]]
-ATT.SortOrder = 1
+ATT.SortOrder = 99
 
 ATT.Model = "models/weapons/arc9/atts/pn23.mdl"
 

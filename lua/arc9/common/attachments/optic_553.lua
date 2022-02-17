@@ -5,7 +5,7 @@ ATT.Description = [[Boxy, professional-grade holographic sight. Well-protected f
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/553.mdl"
-ATT.Folder = "HOLO"
+ATT.Folder = "REFLEX"
 
 ATT.Category = {"optic_picatinny_medium", "optic_picatinny"}
 
