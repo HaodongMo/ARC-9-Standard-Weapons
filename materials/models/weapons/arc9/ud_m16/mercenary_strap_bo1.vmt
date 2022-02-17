@@ -1,12 +1,12 @@
 "VertexLitGeneric"
 {
-	"$basetexture"					"models/weapons/arc9/ud_m16/m16_buffertube_d"
-	"$bumpmap"					"models/weapons/arc9/ud_m16/m16_buffertube_n"
+	"$basetexture"					"models/weapons/arc9/ud_m16/mercenary_strap_bo1"
+	"$bumpmap"					"models/weapons/arc9/ud_m16/mercenary_strap_bo1_n"
 
 	"$phong"	"1"
-	"$phongexponent"	"3"
+	"$phongexponent"	"2"
 	"$phongalbedotint"	"1"
-	"$phongboost"	"0.3"
+	"$phongboost"	"0.2"
 	"$phongfresnelranges"	"[1 1 1]"
         "$phongdisablehalflambert"  "1"
 

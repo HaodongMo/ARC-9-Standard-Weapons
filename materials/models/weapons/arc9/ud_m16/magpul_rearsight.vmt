@@ -4,7 +4,7 @@
 	"$bumpmap" "models\weapons\arc9\ud_m16\magpul_rearsight_n"
 	"$normalmapalphaenvmapmask" 	1
 
-	"$phongwarptexture"			"models\weapons\arccw\ud_stalol\phongwarp_metal"
+	"$phongwarptexture"			"models/weapons/arc9/ud_stalol\phongwarp_metal"
 
 
 	"$blendTintByBaseAlpha" "1"

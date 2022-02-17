@@ -55,7 +55,7 @@ ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
     ["$pp_colour_mulg"] = 0,
     ["$pp_colour_mulb"] = 0
 }
-ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
+ATT.RTScopeFLIRCCCold = {
     ["$pp_colour_addr"] = 0,
     ["$pp_colour_addg"] = 0,
     ["$pp_colour_addb"] = 0,
