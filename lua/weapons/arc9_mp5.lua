@@ -39,6 +39,10 @@ SWEP.Description = [[A modern submachine gun based on a rifle-pattern mechanism.
 
 Well-balanced submachine gun. Low recoil with good rate of fire.]]
 
+else
+
+SWEP.PrintName = SWEP.TrueName
+
 end
 
 SWEP.ViewModel = "models/weapons/arc9/c_ur_mp5.mdl"

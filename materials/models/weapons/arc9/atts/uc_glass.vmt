@@ -1,7 +1,14 @@
 "VertexlitGeneric"
 {
    "$basetexture"   "models/weapons/arc9/atts/uc_glass"
+	"$bumpmap"    "effects/arc9/glass_nm"
 	"$translucent" 1
-	$alpha 0
-
+	// $alpha 1
+	"$phong" 1
+	"$phongboost" "2"
+	"$phongexponent" 0
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "1.0"
+	"$envmaptint" "[0.7 0.5 1.0]"
+	"$phongfresnelranges" "[0.01 0.35 3.0]"
 }

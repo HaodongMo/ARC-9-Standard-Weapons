@@ -2,7 +2,7 @@ ATT.PrintName = "BelOMO PK-06"
 ATT.CompactName = "PK06"
 ATT.Icon = Material("entities/arc9_att_optic_pk06.png", "mips smooth")
 ATT.Description = [[Compact Russian red dot sight made for hunters and sportsmen.]]
-ATT.SortOrder = 1
+ATT.SortOrder = 0.1
 
 ATT.Model = "models/weapons/arc9/atts/pk06.mdl"
 ATT.Folder = "REFLEX"

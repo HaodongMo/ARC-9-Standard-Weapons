@@ -39,6 +39,10 @@ SWEP.Description = [[The Vintovka Spetsial'nyy Zvezda is a close-combat marksman
     
 Fires a heavy round at a low muzzle velocity with good rate of fire.]]
 
+else
+
+SWEP.PrintName = SWEP.TrueName
+
 end
 
 SWEP.ViewModel = "models/weapons/arc9/c_arc9_vss.mdl"

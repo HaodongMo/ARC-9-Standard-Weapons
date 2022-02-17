@@ -2,7 +2,7 @@ ATT.PrintName = "Trijicon RMR"
 ATT.CompactName = "RMR"
 ATT.Icon = Material("entities/arc9_att_optic_rmr.png", "mips smooth")
 ATT.Description = [[Small red dot sight mounted on a Picatinny adapter base. Minimal extra weight makes this a perfect backup optic.]]
-ATT.SortOrder = 1
+ATT.SortOrder = 0.1
 
 ATT.Model = "models/weapons/arc9/atts/rmr.mdl"
 ATT.Folder = "REFLEX"

@@ -39,6 +39,10 @@ SWEP.Description = [[Adopted in 1983, the RAY/CAR 83 (Rayter Combat Automatic Ri
 
 Medium weight with good rate of fire in burst. Pace bursts well to maximize volume of fire.]]
 
+else
+
+SWEP.PrintName = SWEP.TrueName
+
 end
 
 SWEP.ViewModel = "models/weapons/arc9/c_ud_m16.mdl"
