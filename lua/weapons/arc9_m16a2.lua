@@ -1004,6 +1004,11 @@ SWEP.AttachmentElements = {
             {5, 1}
         },
     },
+    ["m16_barrel_lmg"] = {
+        Bodygroups = {
+            {5, 3}
+        },
+    },
     ["m16_barrel_wood"] = {
         Bodygroups = {
             {5, 1}
