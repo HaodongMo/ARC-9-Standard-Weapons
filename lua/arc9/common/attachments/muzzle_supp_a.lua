@@ -9,6 +9,7 @@ ATT.SortOrder = 1
 ATT.Model = "models/weapons/arc9/atts/silencer_tactical.mdl"
 
 ATT.Category = "muzzle"
+ATT.Folder = "SUPP"
 
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -29,7 +30,7 @@ ATT.RecoilUpMult = 1.1
 ATT.RecoilRandomMult = 0.9
 
 ATT.Overheat = true
-ATT.HeatCapacityAdd = 25
+ATT.HeatCapacityAdd = 40
 ATT.HeatDissipationMult = 0.9
 ATT.HeatLockout = true
 ATT.HeatDelayTimeAdd = 0.15

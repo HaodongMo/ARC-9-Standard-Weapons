@@ -39,6 +39,10 @@ SWEP.Description = [[Adopted in 1983, the RAY/CAR 83 (Rayter Combat Automatic Ri
 
 Medium weight with good rate of fire in burst. Pace bursts well to maximize volume of fire.]]
 
+else
+
+SWEP.PrintName = SWEP.TrueName
+
 end
 
 SWEP.ViewModel = "models/weapons/arc9/c_ud_m16.mdl"
@@ -177,8 +181,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.81, -3, 0.85),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-2.806, -3, 0.975),
+    Ang = Angle(0, -0.4, 0),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(0, 0, -45),
@@ -510,15 +514,19 @@ SWEP.Animations = {
             },
         },
         EventTable = {
+            {v1 = 0, v2 = 5000, vt = 0.1, t = 0},
             {s = rottle,  t = 0.0},
             {s = ratel, t = 0.25},
             {s = path .. "magout.ogg", 	 t = 0.335},
+            {v1 = 10000, v2 = 10000, vt = 0.1, t = 0.3},
             {s = ratel, t = 0.5},
             {s = path .. "magin.ogg",    t = 1.05},
             {s = ratel, t = 1.1},
             {s = rottle,  t = 1.15},
+            {v1 = 5000, v2 = 20000, vt = 0.1, t = 1.4},
             {s = common .. "grab.ogg", t = 1.81},
             {s = common .. "shoulder.ogg", t = 1.9},
+            {v1 = 0, v2 = 5000, vt = 0.1, t = 1.9},
         },
     },
     ["reload_empty"] = {
@@ -550,17 +558,22 @@ SWEP.Animations = {
             },
         },
         EventTable = {
+            {v1 = 0, v2 = 5000, vt = 0.1, t = 0},
             {s = rottle,  t = 0.0},
             {s = ratel, t = 0.25},
             {s = path .. "magout.ogg", 	 t = 0.335},
+            {v1 = 10000, v2 = 10000, vt = 0.1, t = 0.3},
             {s = ratel, t = 0.5},
             {s = path .. "magin.ogg",    t = 1.05},
+            {v1 = 10000, v2 = 10000, vt = 0.1, t = 1.4},
             {s = ratel, t = 1.1},
             {s = rottle,  t = 1.39},
             {s = path .. "boltdrop.ogg", t = 1.85},
+            {v1 = 40000, v2 = 40000, vt = 0.2, t = 2},
             {s = ratel, t = 1.9},
             {s = common .. "grab.ogg", t = 2.125},
             {s = common .. "shoulder.ogg", t = 2.15},
+            {v1 = 0, v2 = 5000, vt = 0.1, t = 2.15},
         },
     },
 
@@ -1000,6 +1013,11 @@ SWEP.AttachmentElements = {
             {5, 1}
         },
     },
+    ["m16_barrel_lmg"] = {
+        Bodygroups = {
+            {5, 3}
+        },
+    },
     ["m16_barrel_wood"] = {
         Bodygroups = {
             {5, 1}
@@ -1060,10 +1078,10 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
-    local vm = wep:GetOwner():GetViewModel()
-    if !vm then return end
+    local model = data.model
+    if !model then return end
     if wep:HasElement("m16lp") then
-        vm:SetBodygroup(6, wep:HasElement("shortfs") and 3 or 1)
+        model:SetBodygroup(6, wep:HasElement("shortfs") and 3 or 1)
     end
 end
 
@@ -1142,7 +1160,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "MOUNT",
+        PrintName = "CLAMP",
         Category = "mount_barrel",
         ExcludeElements = {"nomount"},
         Bone = "m16_parent",

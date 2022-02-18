@@ -39,10 +39,10 @@ ATT.Attachments = {
     },
     {
         PrintName = "OPTIC",
-        Category = "m16rs",
-        Pos = Vector(0, 0, 0),
+        Category = {"rearsight_picatinny", "carryhandle_picatinny"},
+        Pos = Vector(1, 0, -1),
         Ang = Angle(0, 0, 0),
-        Hidden = true
+        Hidden = true,
     }
 }
 

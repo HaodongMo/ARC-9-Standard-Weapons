@@ -140,6 +140,13 @@ $sequence "idle" {
 	node "Ready"
 }
 
+$sequence "ready" {
+	"anims\ready.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
 $sequence "draw" {
 	"anims\draw.smd"
 	fps 30

@@ -2,11 +2,12 @@ ATT.PrintName = "ELCAN SpecterDR 1x/4x"
 ATT.CompactName = "SPECTER"
 ATT.Icon = Material("entities/arc9_att_optic_elcan.png", "mips smooth")
 ATT.Description = [[A variable zoom dual role assault scope. Can be set to 1x or 4x magnification at the press of a switch. With a huge field of view, the SpecterDR offers excellent performance at both medium range and in CQB, designed to be durable enough for use in the harshest operating conditions.]]
-ATT.SortOrder = 1
+ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/arc9/atts/elcan.mdl"
 
 ATT.Category = "optic_picatinny"
+ATT.Folder = "SCOPE"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {

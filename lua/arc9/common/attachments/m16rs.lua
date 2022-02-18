@@ -11,3 +11,4 @@ ATT.Icon = Material("entities/arc9_att_m16rs.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "m16rs"
+ATT.Ignore = true

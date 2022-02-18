@@ -1,7 +1,7 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models\weapons\arc9\ud_m16/wooden/wood_grip"
-	"$bumpmap" "models\weapons\arc9\ud_m16/wooden/wood_grip_n"
+	"$basetexture" "models/weapons/arc9/ud_m16/wooden/wood_grip"
+	"$bumpmap" "models/weapons/arc9/ud_m16/wooden/wood_grip_n"
 	"$normalmapalphaenvmapmask" 	1
 	
 	"$phong" 		"1"

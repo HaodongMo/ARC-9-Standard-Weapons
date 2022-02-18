@@ -2,11 +2,12 @@ ATT.PrintName = "NPZ PN23 Gen 2"
 ATT.CompactName = "PN23"
 ATT.Icon = Material("entities/arc9_att_optic_pn23.png", "mips smooth")
 ATT.Description = [[Shock resistant night vision scope. Includes a light amplifier system allowing for target shooting, hunting, and combat operations in low light conditions.]]
-ATT.SortOrder = 1
+ATT.SortOrder = 99
 
 ATT.Model = "models/weapons/arc9/atts/pn23.mdl"
 
 ATT.Category = "optic_picatinny"
+ATT.Folder = "SCOPE"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {
@@ -50,6 +51,17 @@ ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
     ["$pp_colour_addb"] = 0,
     ["$pp_colour_brightness"] = 0.1,
     ["$pp_colour_contrast"] = 1.5,
+    ["$pp_colour_colour"] = 1,
+    ["$pp_colour_mulr"] = 0,
+    ["$pp_colour_mulg"] = 0,
+    ["$pp_colour_mulb"] = 0
+}
+ATT.RTScopeFLIRCCCold = {
+    ["$pp_colour_addr"] = 0,
+    ["$pp_colour_addg"] = 0,
+    ["$pp_colour_addb"] = 0,
+    ["$pp_colour_brightness"] = 0,
+    ["$pp_colour_contrast"] = 0.35,
     ["$pp_colour_colour"] = 1,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,

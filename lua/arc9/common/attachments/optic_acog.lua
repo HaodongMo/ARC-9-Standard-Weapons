@@ -6,11 +6,12 @@ ATT.Description = [[The ACOG is a magnified gunsight for aiding with target acqu
 It is very popular for its wide field of view and reliable design, and has made its way into the hands of military units worldwide.
 
 Using a mount, it can be attached to a Picatinny rail, or it can be attached to an AR carry handle directly.]]
-ATT.SortOrder = 1
+ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/arc9/atts/acog.mdl"
 
 ATT.Category = "optic_picatinny"
+ATT.Folder = "SCOPE"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {
@@ -37,7 +38,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.ScopeScreenRatio = 0.33
 
 ATT.Scale = 1.25
-ATT.ModelOffset = Vector(0, 0, -0.175)
+ATT.ModelOffset = Vector(0, 0, -0.25)
 
 ATT.SwayAdd = 0.05
 ATT.FreeAimRadiusMultSights = 0.1

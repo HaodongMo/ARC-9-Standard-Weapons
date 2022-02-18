@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/atts/553_c"
+	"$phongexponenttexture" "models/weapons/arc9/atts/553_m"
+	"$phongwarptexture"			"models\weapons\arc9\ud_stalol\phongwarp_metal"
+	"$normalmapalphaenvmapmask" 	1
+	
+	"$phong" 		"1"
+	"$phongexponent" "8"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[.1 0.4 2]"
+	
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" 			"1"
+	"$envmapFresnelMinMaxExp" "[0 5 .4]"
+	"$envmaptint" "[.05 .05  .05]"
+}

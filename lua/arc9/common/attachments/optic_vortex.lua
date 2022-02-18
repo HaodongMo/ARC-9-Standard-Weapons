@@ -2,9 +2,10 @@ ATT.PrintName = "AMG UX-1 Smart Holo"
 ATT.CompactName = "UX-1"
 ATT.Icon = Material("entities/arc9_att_optic_vortex.png", "mips smooth")
 ATT.Description = [[A holographic sight with "smart" networked functionality. Displays weapon tilt, shows predicted impact point, and automatically calculates range. At the same time, it is no bulkier or less reliable than any ordinary optic. The UX-1 is truly a close-combat optic for the digital age. Produced in collaboration between Vortex and ARCCW International (Advanced Research Center for Combat Weapons).]]
-ATT.SortOrder = 1
+ATT.SortOrder = 99
 
 ATT.Model = "models/weapons/arc9/atts/razer.mdl"
+ATT.Folder = "REFLEX"
 
 ATT.Category = {"optic_picatinny_medium", "optic_picatinny"}
 
@@ -53,8 +54,50 @@ ATT.HoloSightFunc = function(swep, pos, mdl)
     ang:RotateAroundAxis(ang:Right(), 90)
     ang:RotateAroundAxis(ang:Up(), -90)
 
+    local haslaze = true
+
+    local d = 32000
+    local tr = util.TraceLine({
+        start = mdl:GetPos(),
+        endpos = mdl:GetPos() + (mdl:GetAngles():Forward() * d),
+        mask = MASK_SHOT,
+        filter = swep:GetOwner()
+    })
+
+    local top = "-"
+
+    if tr.HitSky then
+        top = "---"
+        haslaze = false
+    else
+        top = tostring(math.ceil(tr.Fraction * d * ARC9.HUToM)) .. "m"
+    end
+
+    if last_ccip_time + (1 / 15) <= CurTime() then
+        if !haslaze then
+            ccip_v = 0
+            no_ccip = true
+        else
+            local ccip = swep:GetCCIP()
+
+            if !ccip then
+                ccip_v = 0
+                no_ccip = true
+            else
+                -- cam.Start3D(nil, nil, swep:GetOwner():GetFOV() / swep:GetSmoothedFOVMag())
+                -- ccip_v = ccip.HitPos:ToScreen().y - (ScrH() / 2)
+                local localhp = mdl:WorldToLocal(ccip.HitPos)
+                local localpos = mdl:WorldToLocal(pos)
+                ccip_v = (localpos.z - localhp.z) / 8
+                -- cam.End3D()
+                no_ccip = false
+            end
+        end
+        last_ccip_time = CurTime()
+    end
+
     cam.Start3D2D(pos - (ang:Right() * 512) - (ang:Forward() * 1024), ang, 8)
-    -- cam.IgnoreZ(false)
+    cam.IgnoreZ(true)
 
     surface.SetDrawColor(col_tp)
     surface.DrawRect(0, 0, 256, 128)
@@ -70,24 +113,6 @@ ATT.HoloSightFunc = function(swep, pos, mdl)
     surface.SetDrawColor(col)
     surface.SetMaterial(wifi)
     surface.DrawTexturedRect(256 - 64 - 24, 4, 24, 24)
-
-    local top = "-"
-    local haslaze = true
-
-    local d = 32000
-    local tr = util.TraceLine({
-        start = mdl:GetPos(),
-        endpos = mdl:GetPos() + (mdl:GetAngles():Forward() * d),
-        mask = MASK_SHOT,
-        filter = swep:GetOwner()
-    })
-
-    if tr.HitSky then
-        top = "---"
-        haslaze = false
-    else
-        top = tostring(math.ceil(tr.Fraction * d * ARC9.HUToM)) .. "m"
-    end
 
     surface.SetTextColor(col)
     surface.SetFont("razer_font_16")
@@ -122,24 +147,6 @@ ATT.HoloSightFunc = function(swep, pos, mdl)
     surface.SetMaterial(tilt_tri_right)
     surface.SetDrawColor(col)
     surface.DrawTexturedRect(48, 57 + tilt, 16, 16)
-
-    if last_ccip_time + (1 / 15) <= CurTime() then
-        if !haslaze then
-            ccip_v = 0
-            no_ccip = true
-        else
-            local ccip = swep:GetCCIP()
-
-            if !ccip then
-                ccip_v = 0
-                no_ccip = true
-            else
-                ccip_v = ccip.HitPos:ToScreen().y - (ScrH() / 2)
-                no_ccip = false
-            end
-        end
-        last_ccip_time = CurTime()
-    end
 
     if !no_ccip then
         surface.SetMaterial(ccip_mat)

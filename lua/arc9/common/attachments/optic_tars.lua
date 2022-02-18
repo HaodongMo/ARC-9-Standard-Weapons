@@ -7,6 +7,7 @@ Long range scope with variable magnification.]]
 ATT.SortOrder = 7
 
 ATT.Model = "models/weapons/arc9/atts/trijitars_newrt.mdl"
+ATT.Folder = "SCOPE"
 
 ATT.Category = "optic_picatinny"
 

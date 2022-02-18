@@ -4,7 +4,7 @@ ATT.Description = [[Rail-mounted vertical foregrip. Provides a stable, vertical 
 
 ATT.Icon = Material("entities/arc9_att_m16_grip_wood.png", "mips smooth")
 
-ATT.Model = "models/weapons/arccw/atts/uc_troygrip.mdl"
+ATT.Model = "models/weapons/arc9/atts/uc_troygrip.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip_picatinny"

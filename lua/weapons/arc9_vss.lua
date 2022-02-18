@@ -5,7 +5,7 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9"
 
-SWEP.PrintName = "VS Zvezda"
+SWEP.PrintName = "VSZ \"Zvezda\""
 SWEP.TrueName = "VSS Vintorez"
 
 SWEP.Class = "Marksman Rifle"
@@ -38,6 +38,10 @@ SWEP.Trivia = {
 SWEP.Description = [[The Vintovka Spetsial'nyy Zvezda is a close-combat marksman rifle designed for urban warfare. Created to replace modified standard firearms for clandestine operations, its integral silencer effectively reduces its firing report, but there are no mechanisms in place to reduce the mechanical sound. Comes with a fully automatic fire option.
     
 Fires a heavy round at a low muzzle velocity with good rate of fire.]]
+
+else
+
+SWEP.PrintName = SWEP.TrueName
 
 end
 
