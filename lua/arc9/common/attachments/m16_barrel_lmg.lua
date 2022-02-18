@@ -26,5 +26,6 @@ ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
 
 ATT.RecoilPatternDriftMult = 0.9
+ATT.FreeAimRadiusMult = 2.5
 
 ATT.Bipod = true
