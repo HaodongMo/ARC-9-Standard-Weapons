@@ -565,6 +565,7 @@ SWEP.Attachments = {
         PrintName = "STOCK",
         DefaultName = "No Stock",
         DefaultCompactName = "CAP",
+        Installed = "mp5_stock_solid",
         Category = {"mp5_stock", "bt_stock"},
         Bone = "body",
         Pos = Vector(0, 0.85, -4),

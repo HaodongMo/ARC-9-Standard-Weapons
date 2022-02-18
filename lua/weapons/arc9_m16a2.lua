@@ -1069,10 +1069,10 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
-    local vm = wep:GetOwner():GetViewModel()
-    if !vm then return end
+    local model = data.model
+    if !model then return end
     if wep:HasElement("m16lp") then
-        vm:SetBodygroup(6, wep:HasElement("shortfs") and 3 or 1)
+        model:SetBodygroup(6, wep:HasElement("shortfs") and 3 or 1)
     end
 end
 
