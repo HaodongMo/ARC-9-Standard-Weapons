@@ -229,12 +229,12 @@ local ratel = {common .. "rattle1.ogg", path .. "rattle2.ogg", path .. "rattle3.
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
 
-    if elements["mp5_mag_15"] then
-        return anim .. "_small"
-    elseif elements["mp5_mag_25"] then
-        return anim .. "_10mm"
-    -- elseif elements["mp5_mag_40"] then
-    --     return anim .. "_ext"
+    if elements["ak_mag_10_366"] then
+        return anim .. "_10rnd"
+    elseif elements["ak_mag_75"] then
+        return anim .. "_drum"
+    elseif elements["ak_mag_30_9"] then
+        return anim .. "_9mm"
     end
 end
 
@@ -386,6 +386,236 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 3.3},
         },
     },
+
+    ["reload_9mm"] = {
+        Source = "reload_9mm",
+        MinProgress = 28 / 30,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = ratel, t = 12 / 30},
+            {s = path .. "magout.ogg",    t = 12 / 30},
+            {s = ratel, t = 18 / 30},
+            {s = path .. "magin.ogg",    t = 22 / 30},
+            {s = rottle,  t = 32 / 30},
+            {s = common .. "grab.ogg", t = 1.81},
+            {s = common .. "shoulder.ogg", t = 1.9},
+        },
+    },
+
+    ["reload_empty_9mm"] = {
+        Source = "reload_9mm_empty",
+        MinProgress = 51 / 30,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = ratel, t = 12 / 30},
+            {s = path .. "magout.ogg",    t = 12 / 30},
+            {s = ratel, t = 18 / 30},
+            {s = path .. "magin.ogg",    t = 28 / 30},
+            {s = rottle,  t = 32 / 30},
+            {s = path .. "chback_9.ogg",    t = 57 / 30},
+            {s = path .. "chamber_9.ogg",    t = 59 / 30},
+            {s = common .. "grab.ogg", t = 2.2},
+            {s = common .. "shoulder.ogg", t = 3.3},
+        },
+    },
+
+
+    ["reload_drum"] = {
+        Source = "reload_drum",
+        MinProgress = 28 / 30,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = ratel, t = 12 / 30},
+            {s = path .. "magout_drum.ogg",    t = 8 / 30},
+            {s = ratel, t = 18 / 30},
+            {s = path .. "magin_drum.ogg",    t = 29 / 30},
+            {s = rottle,  t = 32 / 30},
+            {s = common .. "grab.ogg", t = 1.81},
+            {s = common .. "shoulder.ogg", t = 1.9},
+        },
+    },
+
+    ["reload_empty_drum"] = {
+        Source = "reload_drum_empty",
+        MinProgress = 51 / 30,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = ratel, t = 12 / 30},
+            {s = path .. "magout_drum.ogg",    t = 12 / 30},
+            {s = ratel, t = 18 / 30},
+            {s = path .. "magin_drum.ogg",    t = 40 / 30},
+            {s = rottle,  t = 32 / 30},
+            {s = common .. "grab.ogg", t = 66 / 30},
+            {s = path .. "chback.ogg",    t = 72 / 30},
+            {s = path .. "chamber.ogg",    t = 74 / 30},
+            {s = common .. "shoulder.ogg", t = 89 / 30},
+        },
+    },
+
+
+    ["reload_10rnd"] = {
+        Source = "reload_10rnd",
+        MinProgress = 28 / 30,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = ratel, t = 12 / 30},
+            {s = path .. "magout.ogg",    t = 12 / 30},
+            {s = ratel, t = 18 / 30},
+            {s = path .. "magin.ogg",    t = 22 / 30},
+            {s = rottle,  t = 32 / 30},
+            {s = common .. "grab.ogg", t = 1.81},
+            {s = common .. "shoulder.ogg", t = 1.9},
+        },
+    },
+
+    ["reload_empty_10rnd"] = {
+        Source = "reload_10rnd_empty",
+        MinProgress = 51 / 30,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = rottle,  t = 0.0},
+            {s = ratel, t = 12 / 30},
+            {s = path .. "magout.ogg",    t = 12 / 30},
+            {s = ratel, t = 18 / 30},
+            {s = path .. "magin.ogg",    t = 28 / 30},
+            {s = rottle,  t = 32 / 30},
+            {s = path .. "chback.ogg",    t = 57 / 30},
+            {s = path .. "chamber.ogg",    t = 59 / 30},
+            {s = common .. "grab.ogg", t = 2.2},
+            {s = common .. "shoulder.ogg", t = 3.3},
+        },
+    },
 }
 
 -------------------------- ATTACHMENTS
@@ -403,6 +633,12 @@ SWEP.AttachmentElements = {
             {6, 0}
         }
     },
+    ["ak_stock_underfolder"] = {
+        Bodygroups = {
+            {3, 0},
+            {6, 2}
+        }
+    },
     ["ak_stock_skeleton"] = {
         Bodygroups = {
             {3, 0},
@@ -416,6 +652,31 @@ SWEP.AttachmentElements = {
             {9, 4}
         }
     },
+    ["ak_mag_10_366"] = {
+        Bodygroups = {
+            {2, 6}
+        }
+    },
+    ["ak_mag_30_545"] = {
+        Bodygroups = {
+            {2, 2}
+        }
+    },
+    ["ak_mag_45_545"] = {
+        Bodygroups = {
+            {2, 3}
+        }
+    },
+    ["ak_mag_30_9"] = {
+        Bodygroups = {
+            {2, 4}
+        }
+    },
+    ["ak_mag_75"] = {
+        Bodygroups = {
+            {2, 1}
+        }
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -426,6 +687,7 @@ SWEP.Attachments = {
         PrintName = "STOCK",
         Category = {"ak_stock", "bt_stock"},
         Bone = "tag_weapon",
+        Installed = "ak_stock_solid",
         Pos = Vector(0, -6, 2.49),
         Ang = Angle(0, -90, 0),
         Scale = 0.75
