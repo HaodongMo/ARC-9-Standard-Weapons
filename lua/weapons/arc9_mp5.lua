@@ -5,7 +5,7 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9"
 
-SWEP.PrintName = "MPK Swordfish"
+SWEP.PrintName = "Swordfish MPK"
 SWEP.TrueName = "MP5"
 
 SWEP.Class = "Submachine Gun"

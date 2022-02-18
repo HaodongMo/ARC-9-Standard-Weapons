@@ -21,3 +21,14 @@ ATT.SprintToFireTimeMult = 1.25
 ATT.RecoilUpMult = 0.95
 
 ATT.SpreadMultSights = 0.85
+
+ATT.Attachments = {
+    {
+        PrintName = "CLAMP",
+        Category = "mount_barrel",
+        Pos = Vector(-5, 0, 0.65),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        Scale = 0.75
+    },
+}

@@ -1,6 +1,6 @@
 // Created by Crowbar 0.71
 
-$modelname "weapons\arccw\c_ur_ak.mdl"
+$modelname "weapons\arc9\c_ur_ak.mdl"
 
 $bodygroup "base"
 {
@@ -126,11 +126,11 @@ $contents "solid"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\weapons\arccw\shared\"
-$cdmaterials "models\weapons\arccw\ur_ak\"
-$cdmaterials "models\weapons\arccw\ud_common\"
-$cdmaterials "models\UC\attachments\"
-$cdmaterials "models\weapons\arccw\uc_shells\"
+$cdmaterials "models\weapons\arc9\shared\"
+$cdmaterials "models\weapons\arc9\ur_ak\"
+$cdmaterials "models\weapons\arc9\ud_common\"
+$cdmaterials "models\weapons\arc9\atts\"
+$cdmaterials "models\weapons\arc9\uc_shells\"
 
 $attachment "1" "muzzle" 0 0 0 rotate 0 90 -90
 $attachment "2" "shell" 0 0 0 rotate 0 90 -90

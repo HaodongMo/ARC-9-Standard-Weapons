@@ -5,7 +5,7 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9"
 
-SWEP.PrintName = "RAY/CAR 83"
+SWEP.PrintName = "RAY-CAR 83"
 SWEP.TrueName = "M16A2"
 
 SWEP.Class = "Assault Rifle"
@@ -35,7 +35,7 @@ SWEP.Trivia = {
     Year = "1983"
 }
 
-SWEP.Description = [[Adopted in 1983, the RAY/CAR 83 (Rayter Combat Automatic Rifle) is a widely used assault rifle created as a development of the AR series. It comes with new furniture, an improved rear sight, a case deflector, and a semi-auto/three-round burst fire selector.
+SWEP.Description = [[Adopted in 1983, the RAY-CAR 83 (Rayter Combat Automatic Rifle) is a widely used assault rifle created as a development of the AR series. It comes with new furniture, an improved rear sight, a case deflector, and a semi-auto/three-round burst fire selector.
 
 Medium weight with good rate of fire in burst. Pace bursts well to maximize volume of fire.]]
 
@@ -1151,7 +1151,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "MOUNT",
+        PrintName = "CLAMP",
         Category = "mount_barrel",
         ExcludeElements = {"nomount"},
         Bone = "m16_parent",
