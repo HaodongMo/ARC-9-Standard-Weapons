@@ -21,6 +21,9 @@ ATT.RangeMult = 0.65
 ATT.RecoilMult = 0.6
 ATT.RecoilKickMult = 0.7
 
+ATT.MuzzleParticleOverride = "muzzleflash_mp5"
+ATT.MuzzleParticle_Priority = 0.5
+
 local path = ")^weapons/arc9_ud/ak/stalol/"
 ATT.FirstShootSound = {path .. "ak9_first_1.wav", path .. "ak9_first_2.wav"}
 ATT.ShootSound = {path .. "ak9_loop_1.wav", path .. "ak9_loop_2.wav", path .. "ak9_loop_3.wav"}
