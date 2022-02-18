@@ -5,7 +5,7 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9"
 
-SWEP.PrintName = "VSZ \"Star\""
+SWEP.PrintName = "VSZ \"Zvezda\""
 SWEP.TrueName = "VSS Vintorez"
 
 SWEP.Class = "Marksman Rifle"

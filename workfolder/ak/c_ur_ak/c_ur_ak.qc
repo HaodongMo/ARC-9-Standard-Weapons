@@ -2,12 +2,12 @@
 
 $modelname "weapons\arc9\c_ur_ak.mdl"
 
-$bodygroup "base"
+$bodygroup "base" // 0
 {
 	studio "receiver_main.smd"
 	studio "ak12 reciever.smd"
 }
-$bodygroup "handguards"
+$bodygroup "handguards" // 1
 {
 	studio "ak47_handguard.smd"
 	studio "akm_handguard.smd"
@@ -24,7 +24,7 @@ $bodygroup "handguards"
 	studio "ak12 handguard.smd"
 	studio "railed handguard.smd"
 }
-$bodygroup "magazine"
+$bodygroup "magazine" // 2
 {
 	studio "762_30.smd"
 	studio "762_75.smd"
@@ -37,12 +37,12 @@ $bodygroup "magazine"
 	studio "ak308mag.smd"
 	studio "545b_30.smd"
 }
-$bodygroup "stock_adapt"
+$bodygroup "stock_adapt" // 3
 {
 	blank
 	studio "stock_adapter.smd"
 }
-$bodygroup "sights"
+$bodygroup "sights" // 4
 {
 	studio "default_ak_sight_trunnion.smd"
 	studio "aku_sights.smd"
@@ -50,12 +50,12 @@ $bodygroup "sights"
 	studio "ak12 sight.smd"
 	studio "ak_trunnion_rail.smd"
 }
-$bodygroup "barrel_internal"
+$bodygroup "barrel_internal" // 5
 {
 	studio "default_ak_barrels.smd"
 	blank
 }
-$bodygroup "stocks"
+$bodygroup "stocks" // 6
 {
 	studio "type3_stock.smd"
 	studio "underfolder_folded.smd"
@@ -69,6 +69,7 @@ $bodygroup "stocks"
 	blank
 	studio "aks_stock_folded.smd"
 	studio "ak12 stock.smd"
+	studio "stock_tube.smd"
 }
 $bodygroup "barrels"
 {
@@ -128,6 +129,7 @@ $illumposition 0 0 0
 
 $cdmaterials "models\weapons\arc9\shared\"
 $cdmaterials "models\weapons\arc9\ur_ak\"
+$cdmaterials "models\weapons\arc9\ud_m16\"
 $cdmaterials "models\weapons\arc9\ud_common\"
 $cdmaterials "models\weapons\arc9\atts\"
 $cdmaterials "models\weapons\arc9\uc_shells\"
