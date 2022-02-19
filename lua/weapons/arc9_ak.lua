@@ -212,6 +212,10 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
+SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
+    [1] = "tag_mag"
+}
+
 SWEP.HideBones = {
     "vm_mag2",
     "tag_mag2"
@@ -621,6 +625,16 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 3.3},
         },
     },
+
+    ["enter_bipod"] = {
+        Source = "bipod_deploy",
+        Time = 1
+    },
+
+    ["exit_bipod"] = {
+        Source = "bipod_undeploy",
+        Time = 1
+    }
 }
 
 -------------------------- ATTACHMENTS
@@ -664,12 +678,14 @@ SWEP.AttachmentElements = {
     },
     ["ak_mag_30_545"] = {
         Bodygroups = {
-            {2, 2}
+            {2, 2},
+            {10, 2}
         }
     },
     ["ak_mag_45_545"] = {
         Bodygroups = {
-            {2, 3}
+            {2, 3},
+            {10, 2}
         }
     },
     ["ak_mag_30_9"] = {
@@ -682,14 +698,36 @@ SWEP.AttachmentElements = {
             {2, 1}
         }
     },
+    ["ak_barrel_rpk"] = {
+        Bodygroups = {
+            {7, 1},
+            {8, 2}
+        },
+    }
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local ak74 = wep:GetValue("AK74")
+    local eles = data.elements
     local mdl = data.model
+    local long_barrel = eles["ak_barrel_rpk"]
 
     if ak74 then
-        mdl:SetBodygroup(8, 3)
+        if eles["muzzle"] then
+            mdl:SetBodygroup(8, 0)
+        else
+            mdl:SetBodygroup(8, 3)
+        end
+    end
+
+    if long_barrel then
+        mdl:SetBodygroup(8, 2)
+    end
+
+    if eles["ak_barrel_rpk"] and wep:GetBipod() then
+        if wep:GetEnterBipodTime() + 1 < CurTime() then
+            mdl:SetBodygroup(7, 7)
+        end
     end
 end
 
@@ -698,7 +736,15 @@ SWEP.Attachments = {
         PrintName = "MUZZLE",
         Category = "muzzle",
         Bone = "tag_weapon",
-        Pos = Vector(0, 23.75, 2.7),
+        Pos = Vector(0, 24, 2.7),
+        Ang = Angle(0, -90, 0),
+        Scale = 0.75
+    },
+    {
+        PrintName = "BARREL",
+        Category = "ak_barrel",
+        Bone = "tag_weapon",
+        Pos = Vector(0, 8, 2.7),
         Ang = Angle(0, -90, 0),
         Scale = 0.75
     },

@@ -71,25 +71,25 @@ $bodygroup "stocks" // 6
 	studio "ak12 stock.smd"
 	studio "stock_tube.smd"
 }
-$bodygroup "barrels"
+$bodygroup "barrels" // 7
 {
-	studio "ak_barrel.smd"
-	studio "rpk_barrel_bipod.smd"
-	studio "series_100_sbr.smd"
-	studio "type56_barrel.smd"
-	studio "vepr_barrel.smd"
-	blank
-	studio "ak12 barrel.smd"
-	studio "rpk_barrel_bipod_deployed.smd"
+	studio "ak_barrel.smd" // 0
+	studio "rpk_barrel_bipod.smd" // 1
+	studio "series_100_sbr.smd" // 2
+	studio "type56_barrel.smd" // 3
+	studio "vepr_barrel.smd" // 4
+	blank // 5
+	studio "ak12 barrel.smd" // 6
+	studio "rpk_barrel_bipod_deployed.smd" // 7
 }
-$bodygroup "muzzles"
+$bodygroup "muzzles" // 8
 {
 	studio "ak_barrel_ak_muzzle.smd"
 	studio "ak_barrel_akm_brake.smd"
 	blank
 	studio "ak74_compensator.smd"
 }
-$bodygroup "pistol_grips"
+$bodygroup "pistol_grips" // 9
 {
 	studio "type_3_grip.smd"
 	studio "akm_pistol_grip.smd"
@@ -98,7 +98,7 @@ $bodygroup "pistol_grips"
 	blank
 	studio "ak12 grip.smd"
 }
-$bodygroup "dust_covers"
+$bodygroup "dust_covers" // 10
 {
 	studio "smooth_dust_cover.smd"
 	studio "alpha_dust_cover.smd"
