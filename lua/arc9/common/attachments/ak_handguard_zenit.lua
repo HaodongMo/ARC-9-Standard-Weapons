@@ -16,9 +16,27 @@ ATT.RecoilAutoControlMult = 0.95
 
 ATT.Attachments = {
     {
+        PrintName = "RAIL",
+        Category = {"tac_picatinny_top", "canted_picatinny"},
+        ExtraSightDistance = 12,
+        Pos = Vector(0, 0, 0.95),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        MergeSlots = {2, 3},
+    },
+    {
         PrintName = "FS",
         Category = "frontsight_picatinny",
         Pos = Vector(-5.5, 0, 0.95),
         Ang = Angle(0, 0, 0),
-    }
+    },
+    {
+        PrintName = "RAIL",
+        Category = "optic_picatinny_medium",
+        ExtraSightDistance = 12,
+        Pos = Vector(0, 0, 0.95),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        Hidden = true
+    },
 }

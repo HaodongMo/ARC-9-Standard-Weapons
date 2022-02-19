@@ -9,20 +9,20 @@ $bodygroup "base" // 0
 }
 $bodygroup "handguards" // 1
 {
-	studio "ak47_handguard.smd"
-	studio "akm_handguard.smd"
-	studio "romaniandong.smd"
-	studio "ak74m_handguard_new.smd"
-	studio "series_100_handguard.001.smd"
-	studio "rpk74m_handguard.smd"
-	studio "aku_handguard-barrel-trunnion.smd"
-	studio "alpha_handguard.smd"
-	studio "pp19_handguard-barrel.smd"
-	studio "vepr_sok_handguard.smd"
-	studio "ak74m_handguard_red.smd"
-	studio "ak74m_handguard_od.smd"
-	studio "ak12 handguard.smd"
-	studio "railed handguard.smd"
+	studio "ak47_handguard.smd" // 0
+	studio "akm_handguard.smd" // 1
+	studio "romaniandong.smd" // 2
+	studio "ak74m_handguard_new.smd" // 3
+	studio "series_100_handguard.001.smd" // 4
+	studio "rpk74m_handguard.smd" // 5
+	studio "aku_handguard-barrel-trunnion.smd" // 6
+	studio "alpha_handguard.smd" // 7
+	studio "pp19_handguard-barrel.smd" // 8
+	studio "vepr_sok_handguard.smd" // 9
+	studio "ak74m_handguard_red.smd" // 10
+	studio "ak74m_handguard_od.smd" // 11
+	studio "ak12 handguard.smd" // 12
+	studio "railed handguard.smd" // 13
 }
 $bodygroup "magazine" // 2
 {

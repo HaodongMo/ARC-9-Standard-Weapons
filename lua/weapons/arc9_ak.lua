@@ -759,16 +759,41 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["ak_handguard_ak74m"] = {
+        Bodygroups = {
+            {1, 3}
+        }
+    },
     ["ak_handguard_zenit"] = {
         Bodygroups = {
             {1, 7}
+        }
+    },
+    ["ak_handguard_railed"] = {
+        Bodygroups = {
+            {1, 13}
         }
     },
     ["ak_dustcover_railed"] = {
         Bodygroups = {
             {10, 1}
         }
-    }
+    },
+    ["ak_grip_modern"] = {
+        Bodygroups = {
+            {9, 1}
+        }
+    },
+    ["ak_grip_alpha"] = {
+        Bodygroups = {
+            {9, 2}
+        }
+    },
+    ["ak_grip_ak12"] = {
+        Bodygroups = {
+            {9, 5}
+        }
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -864,6 +889,15 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 1.8, 2.5),
         Ang = Angle(90, 0, -90),
+        Scale = 0.75
+    },
+    {
+        PrintName = "GRIP",
+        Category = "ak_grip",
+        Bone = "tag_weapon",
+        ExcludeElements = {"blockgrip"},
+        Pos = Vector(0, -1, 0),
+        Ang = Angle(0, -90, 0),
         Scale = 0.75
     },
     {

@@ -24,3 +24,5 @@ ATT.RecoilKickMult = 1.1
 
 ATT.RecoilAutoControlMult = 2.5
 ATT.FreeAimRadiusMult = 1.25
+
+ATT.ActivateElements = {"blockgrip"}
