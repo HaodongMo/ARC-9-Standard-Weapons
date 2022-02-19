@@ -1,8 +1,6 @@
 ATT.PrintName = "TIA Soyuz 16\" Barrel"
 ATT.CompactName = "16\"SOYUZ"
-ATT.Description = [[Advanced barrel that alters the fire mode of the weapon. The first two shots fire in extremely rapid succession.
-
-In addition, the iron sights are incompatible with the ]]
+ATT.Description = [[Advanced barrel that alters the fire mode of the weapon. The first two shots fire in extremely rapid succession.]]
 
 ATT.PrintName_TrueName = "Nikonov Experimental 16\" Barrel"
 ATT.CompactName_TrueName = "16\"N-X"
