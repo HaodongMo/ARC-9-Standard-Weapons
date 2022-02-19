@@ -290,7 +290,7 @@ SWEP.Animations = {
     },
 
     ["fix"] = {
-        Source = "fix",
+        Source = "jamfix",
         IKTimeLine = {
             {
                 t = 0,
@@ -315,8 +315,9 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = ratel, t = 0},
-            {s = path .. "chback.ogg",    t = 10 / 30},
-            {s = path .. "chamber.ogg",    t = 19 / 30},
+            {s = path .. "chback.ogg",    t = 9 / 30},
+            {s = path .. "chamber.ogg",    t = 18 / 30},
+            {s = rottle,  t = 28 / 30},
         }
     },
 
@@ -698,11 +699,65 @@ SWEP.AttachmentElements = {
             {2, 1}
         }
     },
+    ["ak_barrel_type56"] = {
+        Bodygroups = {
+            {7, 3},
+            {8, 2},
+            {1, 1},
+            {11, 3}
+        },
+    },
     ["ak_barrel_rpk"] = {
         Bodygroups = {
             {7, 1},
             {8, 2}
         },
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0, 31.9, 2.6),
+                Ang = Angle(0, -90, 0),
+            }
+        }
+    },
+    ["ak_barrel_vepr"] = {
+        Bodygroups = {
+            {7, 4},
+            {8, 2},
+            {1, 9}
+        },
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0, 27.9, 2.675),
+                Ang = Angle(0, -90, 0),
+            }
+        }
+    },
+    ["ak_barrel_krink"] = {
+        Bodygroups = {
+            {1, 6},
+            {4, 1},
+            {5, 1},
+            {7, 5},
+            {8, 2},
+        },
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0, 14.5, 2.87),
+                Ang = Angle(0, -90, 0),
+            }
+        }
+    },
+    ["ak_barrel_ak12"] = {
+        Bodygroups = {
+            {7, 6},
+            {8, 2}
+        },
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0, 23.25, 2.9),
+                Ang = Angle(0, -90, 0),
+            }
+        }
     }
 }
 
@@ -710,7 +765,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local ak74 = wep:GetValue("AK74")
     local eles = data.elements
     local mdl = data.model
-    local long_barrel = eles["ak_barrel_rpk"]
+    local hasbarrel = eles["ak_barrel_rpk"] or eles["ak_barrel_vepr"] or eles["ak_barrel_ak12"]
 
     if ak74 then
         if eles["muzzle"] then
@@ -718,10 +773,18 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         else
             mdl:SetBodygroup(8, 3)
         end
+
+        if hasbarrel then
+            mdl:SetBodygroup(8, 2)
+        end
     end
 
-    if long_barrel then
-        mdl:SetBodygroup(8, 2)
+    if eles["ak_barrel_krink"] then
+        mdl:SetBodygroup(8, 4)
+
+        if eles["muzzle"] then
+            mdl:SetBodygroup(8, 2)
+        end
     end
 
     if eles["ak_barrel_rpk"] and wep:GetBipod() then
@@ -736,6 +799,7 @@ SWEP.Attachments = {
         PrintName = "MUZZLE",
         Category = "muzzle",
         Bone = "tag_weapon",
+        ExcludeElements = {"blockmuzzle"},
         Pos = Vector(0, 24, 2.7),
         Ang = Angle(0, -90, 0),
         Scale = 0.75

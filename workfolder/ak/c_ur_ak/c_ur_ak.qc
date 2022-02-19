@@ -88,6 +88,7 @@ $bodygroup "muzzles" // 8
 	studio "ak_barrel_akm_brake.smd"
 	blank
 	studio "ak74_compensator.smd"
+	studio "aku_muzzle.smd"
 }
 $bodygroup "pistol_grips" // 9
 {
@@ -106,7 +107,7 @@ $bodygroup "dust_covers" // 10
 	blank
 	studio "ak12 dust cover.smd"
 }
-$bodygroup "bayonets"
+$bodygroup "bayonets" // 11
 {
 	blank
 	studio "akm_bayonet.smd"

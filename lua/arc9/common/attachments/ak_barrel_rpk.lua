@@ -4,8 +4,8 @@ ATT.Description = [[Handguard and barrel assembly. Heavy barrel and handguard im
 
 Substantially improves recoil, at the cost of handling.]]
 
-ATT.PrintName_TrueName = "RPK SAW 20\" Barrel"
-ATT.CompactName_TrueName = "20\"RPK"
+ATT.PrintName_TrueName = "RPK SAW 23\" Barrel"
+ATT.CompactName_TrueName = "23\"RPK"
 
 ATT.Icon = Material("entities/arc9_att_ak_barrel_rpk.png", "mips smooth")
 
@@ -26,8 +26,8 @@ ATT.FreeAimRadiusMult = 2.5
 ATT.Bipod = true
 
 ATT.IronSightsOverride = {
-    Pos = Vector(-2.55, -3, 0.65),
-    Ang = Angle(0.26, 0.3, 4),
+    Pos = Vector(-2.55, -3, 0.8),
+    Ang = Angle(0.25, -0.1, 4),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(0, 0, -45),
