@@ -22,6 +22,7 @@ ATT.SprintToFireTimeMult = 1.05
 ATT.Silencer = true
 ATT.ShootVolumeMult = 0.8
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 ATT.ShootPitchMult = 0.98
 

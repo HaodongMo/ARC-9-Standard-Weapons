@@ -13,6 +13,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 
 ATT.ShootVolumeMult = 1.2
 ATT.MuzzleParticleOverride = "muzzleflash_6"
+ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
 ATT.RecoilMult = 0.9

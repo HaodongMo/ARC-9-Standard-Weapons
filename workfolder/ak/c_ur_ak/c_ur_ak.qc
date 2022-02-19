@@ -134,7 +134,7 @@ $cdmaterials "models\weapons\arc9\ud_common\"
 $cdmaterials "models\weapons\arc9\atts\"
 $cdmaterials "models\weapons\arc9\uc_shells\"
 
-$attachment "1" "muzzle" 0 0 0 rotate 0 90 -90
+$attachment "1" "muzzle" 0 0 0 rotate 0 90 0
 $attachment "2" "shell" 0 0 0 rotate 0 90 -90
 $attachment "5" "camera" 0 0 0 rotate -90 0 0
 

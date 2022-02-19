@@ -52,7 +52,7 @@ SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    Pos = Vector(-7.5, 4, -7.5),
+    Pos = Vector(-6, 4, -6),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -211,6 +211,11 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
+
+SWEP.HideBones = {
+    "vm_mag2",
+    "tag_mag2"
+}
 -------------------------- SOUNDS
 
 local path = ")^weapons/arc9_ud/ak/"
@@ -680,9 +685,23 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local ak74 = wep:GetValue("AK74")
+    local mdl = data.model
+
+    if ak74 then
+        mdl:SetBodygroup(8, 3)
+    end
 end
 
 SWEP.Attachments = {
+    {
+        PrintName = "MUZZLE",
+        Category = "muzzle",
+        Bone = "tag_weapon",
+        Pos = Vector(0, 23.75, 2.7),
+        Ang = Angle(0, -90, 0),
+        Scale = 0.75
+    },
     {
         PrintName = "STOCK",
         Category = {"ak_stock", "bt_stock"},
