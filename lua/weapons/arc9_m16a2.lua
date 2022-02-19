@@ -489,7 +489,7 @@ SWEP.Animations = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
-        MinProgress = 1.5,
+        MinProgress = 0.7,
         LastClip1OutTime = 0.9,
         IKTimeLine = {
             {
@@ -533,7 +533,7 @@ SWEP.Animations = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 79 / 30,
-        MinProgress = 2,
+        MinProgress = 0.6,
         LastClip1OutTime = 0.7,
         IKTimeLine = {
             {
@@ -583,7 +583,7 @@ SWEP.Animations = {
         Source = "reload_20",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
-        MinProgress = 1.5,
+        MinProgress = 0.7,
         LastClip1OutTime = 0.9,
         IKTimeLine = {
             {
@@ -620,7 +620,7 @@ SWEP.Animations = {
         Source = "reload_empty_20",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 79 / 30,
-        MinProgress = 2,
+        MinProgress = 0.6,
         LastClip1OutTime = 0.7,
         IKTimeLine = {
             {
@@ -661,7 +661,7 @@ SWEP.Animations = {
         Source = "reload_40",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
-        MinProgress = 1.5,
+        MinProgress = 0.7,
         LastClip1OutTime = 0.9,
         IKTimeLine = {
             {
@@ -698,7 +698,7 @@ SWEP.Animations = {
         Source = "reload_empty_40",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 79 / 30,
-        MinProgress = 2,
+        MinProgress = 0.6,
         LastClip1OutTime = 0.7,
         IKTimeLine = {
             {
@@ -739,7 +739,7 @@ SWEP.Animations = {
         Source = "reload_60",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
-        MinProgress = 1.5,
+        MinProgress = 0.7,
         LastClip1OutTime = 0.9,
         IKTimeLine = {
             {
@@ -776,7 +776,7 @@ SWEP.Animations = {
         Source = "reload_empty_60",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 79 / 30,
-        MinProgress = 2,
+        MinProgress = 0.6,
         LastClip1OutTime = 0.7,
         IKTimeLine = {
             {
@@ -817,7 +817,7 @@ SWEP.Animations = {
         Source = "reload_100",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 71 / 30,
-        MinProgress = 1.75,
+        MinProgress = 0.7,
         LastClip1OutTime = 0.9,
         IKTimeLine = {
             {
@@ -856,7 +856,7 @@ SWEP.Animations = {
         Source = "reload_empty_100",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = 90 / 30,
-        MinProgress = 2.5,
+        MinProgress = 0.6,
         LastClip1OutTime = 0.7,
         IKTimeLine = {
             {

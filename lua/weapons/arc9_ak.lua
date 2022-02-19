@@ -323,7 +323,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 28 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -360,7 +360,7 @@ SWEP.Animations = {
 
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 51 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -399,7 +399,7 @@ SWEP.Animations = {
 
     ["reload_9mm"] = {
         Source = "reload_9mm",
-        MinProgress = 28 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -436,7 +436,7 @@ SWEP.Animations = {
 
     ["reload_empty_9mm"] = {
         Source = "reload_9mm_empty",
-        MinProgress = 51 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -476,7 +476,7 @@ SWEP.Animations = {
 
     ["reload_drum"] = {
         Source = "reload_drum",
-        MinProgress = 28 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -513,7 +513,7 @@ SWEP.Animations = {
 
     ["reload_empty_drum"] = {
         Source = "reload_drum_empty",
-        MinProgress = 51 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -553,7 +553,7 @@ SWEP.Animations = {
 
     ["reload_10rnd"] = {
         Source = "reload_10rnd",
-        MinProgress = 28 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -590,7 +590,7 @@ SWEP.Animations = {
 
     ["reload_empty_10rnd"] = {
         Source = "reload_10rnd_empty",
-        MinProgress = 51 / 30,
+        MinProgress = 0.55,
         IKTimeLine = {
             {
                 t = 0,
@@ -865,7 +865,7 @@ SWEP.Attachments = {
         Scale = 0.75
     },
     {
-        PrintName = "DCOVER",
+        PrintName = "COVER",
         ExcludeElements = {"blockdc"},
         Category = "ak_dustcover",
         Bone = "tag_weapon",
@@ -883,7 +883,7 @@ SWEP.Attachments = {
         Scale = 0.75
     },
     {
-        PrintName = "DTAIL",
+        PrintName = "DOVETAIL",
         InstalledElements = {"dtail"},
         Category = "optic_dovetail",
         Bone = "tag_weapon",
