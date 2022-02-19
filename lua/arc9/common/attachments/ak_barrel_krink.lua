@@ -36,3 +36,5 @@ ATT.IronSightsOverride = {
     },
     Magnification = 1.1,
 }
+
+ATT.ActivateElements = {"blockhandguard", "blockdc"}

@@ -758,6 +758,16 @@ SWEP.AttachmentElements = {
                 Ang = Angle(0, -90, 0),
             }
         }
+    },
+    ["ak_handguard_zenit"] = {
+        Bodygroups = {
+            {1, 7}
+        }
+    },
+    ["ak_dustcover_railed"] = {
+        Bodygroups = {
+            {10, 1}
+        }
     }
 }
 
@@ -792,6 +802,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
             mdl:SetBodygroup(7, 7)
         end
     end
+
+    if eles["ak_dustcover_railed"] then
+        mdl:SetBodygroup(10, 1)
+    end
+
+    if eles["ak_handguard_zenit"] then
+        mdl:SetBodygroup(1, 7)
+    end
 end
 
 SWEP.Attachments = {
@@ -808,7 +826,25 @@ SWEP.Attachments = {
         PrintName = "BARREL",
         Category = "ak_barrel",
         Bone = "tag_weapon",
-        Pos = Vector(0, 8, 2.7),
+        Pos = Vector(0, 12, 2.7),
+        Ang = Angle(0, -90, 0),
+        Scale = 0.75
+    },
+    {
+        PrintName = "HANDGUARD",
+        ExcludeElements = {"blockhandguard"},
+        Category = "ak_handguard",
+        Bone = "tag_weapon",
+        Pos = Vector(0, 12.5, 4),
+        Ang = Angle(0, -90, 0),
+        Scale = 0.75
+    },
+    {
+        PrintName = "DCOVER",
+        ExcludeElements = {"blockdc"},
+        Category = "ak_dustcover",
+        Bone = "tag_weapon",
+        Pos = Vector(0, 0, 4),
         Ang = Angle(0, -90, 0),
         Scale = 0.75
     },
