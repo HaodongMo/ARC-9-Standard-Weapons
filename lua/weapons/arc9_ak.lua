@@ -223,6 +223,7 @@ SWEP.HideBones = {
 -------------------------- SOUNDS
 
 local path = ")^weapons/arc9_ud/ak/"
+local path1 = ")^weapons/arc9_ud/mp5/"
 local common = ")^weapons/arc9_ud/common/"
 SWEP.FirstShootSound = path .. "fire_first.ogg"
 SWEP.ShootSound = {path .. "fire_auto_1.ogg", path .. "fire_auto_2.ogg", path .. "fire_auto_3.ogg"}
@@ -906,7 +907,8 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 4),
         Ang = Angle(0, -90, 0),
-        Scale = 0.75
+        Scale = 0.75,
+        CorrectiveAng = Angle(-1, -1, 0)
     },
     {
         PrintName = "STOCK",
