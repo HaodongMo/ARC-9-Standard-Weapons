@@ -13,5 +13,6 @@ ATT.ModelOffset = Vector(2.5, 0, 0)
 
 ATT.ShootVolumeMult = 1.1
 ATT.MuzzleParticleOverride = "muzzleflash_mp5"
+ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 ATT.NoFlash = true

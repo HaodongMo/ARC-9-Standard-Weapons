@@ -11,14 +11,6 @@ ATT.TracerColor = Color(25, 255, 25)
 
 ATT.TracerSizeAdd = 5
 
-ATT.Hook_BulletImpact = function(swep, data)
-    local tr = data.tr
-
-    if math.Rand(0, 100) < data.dmgv * 0.25 then
-        tr.Entity:Ignite(0.25, 8)
-    end
-end
-
 ATT.FancyBullets = true
 ATT.HookP_ModifyBullet = function(swep, bullet)
     local rangemin = swep:GetProcessedValue("RangeMin")

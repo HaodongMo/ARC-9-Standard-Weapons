@@ -30,7 +30,6 @@ ATT.RecoilMult = 0.85
 ATT.RecoilKickMult = 0.875
 
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
-ATT.MuzzleParticle_Priority = 0.5
 
 local path = ")^weapons/arc9_ud/ak/"
 ATT.FirstShootSound = path .. "fire_545.ogg"
@@ -38,3 +37,4 @@ ATT.ShootSound = {path .. "fire_545_auto_1.ogg", path .. "fire_545_auto_2.ogg", 
 ATT.DistantShootSound = path .. "fire_dist.ogg"
 
 ATT.Ammo = "smg1"
+ATT.AK74 = true

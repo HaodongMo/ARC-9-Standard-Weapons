@@ -52,7 +52,7 @@ SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    Pos = Vector(-7.5, 4, -7.5),
+    Pos = Vector(-6, 4, -6),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -211,6 +211,15 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
+
+SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
+    [1] = "tag_mag"
+}
+
+SWEP.HideBones = {
+    "vm_mag2",
+    "tag_mag2"
+}
 -------------------------- SOUNDS
 
 local path = ")^weapons/arc9_ud/ak/"
@@ -281,7 +290,7 @@ SWEP.Animations = {
     },
 
     ["fix"] = {
-        Source = "fix",
+        Source = "jamfix",
         IKTimeLine = {
             {
                 t = 0,
@@ -306,14 +315,15 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = ratel, t = 0},
-            {s = path .. "chback.ogg",    t = 10 / 30},
-            {s = path .. "chamber.ogg",    t = 19 / 30},
+            {s = path .. "chback.ogg",    t = 9 / 30},
+            {s = path .. "chamber.ogg",    t = 18 / 30},
+            {s = rottle,  t = 28 / 30},
         }
     },
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 28 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -350,7 +360,7 @@ SWEP.Animations = {
 
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 51 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -389,7 +399,7 @@ SWEP.Animations = {
 
     ["reload_9mm"] = {
         Source = "reload_9mm",
-        MinProgress = 28 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -426,7 +436,7 @@ SWEP.Animations = {
 
     ["reload_empty_9mm"] = {
         Source = "reload_9mm_empty",
-        MinProgress = 51 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -466,7 +476,7 @@ SWEP.Animations = {
 
     ["reload_drum"] = {
         Source = "reload_drum",
-        MinProgress = 28 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -503,7 +513,7 @@ SWEP.Animations = {
 
     ["reload_empty_drum"] = {
         Source = "reload_drum_empty",
-        MinProgress = 51 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -543,7 +553,7 @@ SWEP.Animations = {
 
     ["reload_10rnd"] = {
         Source = "reload_10rnd",
-        MinProgress = 28 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -580,7 +590,7 @@ SWEP.Animations = {
 
     ["reload_empty_10rnd"] = {
         Source = "reload_10rnd_empty",
-        MinProgress = 51 / 30,
+        MinProgress = 0.55,
         IKTimeLine = {
             {
                 t = 0,
@@ -616,6 +626,16 @@ SWEP.Animations = {
             {s = common .. "shoulder.ogg", t = 3.3},
         },
     },
+
+    ["enter_bipod"] = {
+        Source = "bipod_deploy",
+        Time = 1
+    },
+
+    ["exit_bipod"] = {
+        Source = "bipod_undeploy",
+        Time = 1
+    }
 }
 
 -------------------------- ATTACHMENTS
@@ -659,12 +679,14 @@ SWEP.AttachmentElements = {
     },
     ["ak_mag_30_545"] = {
         Bodygroups = {
-            {2, 2}
+            {2, 2},
+            {10, 2}
         }
     },
     ["ak_mag_45_545"] = {
         Bodygroups = {
-            {2, 3}
+            {2, 3},
+            {10, 2}
         }
     },
     ["ak_mag_30_9"] = {
@@ -677,12 +699,180 @@ SWEP.AttachmentElements = {
             {2, 1}
         }
     },
+    ["ak_barrel_type56"] = {
+        Bodygroups = {
+            {7, 3},
+            {8, 2},
+            {1, 1},
+            {11, 3}
+        },
+    },
+    ["ak_barrel_rpk"] = {
+        Bodygroups = {
+            {7, 1},
+            {8, 2}
+        },
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0, 31.9, 2.6),
+                Ang = Angle(0, -90, 0),
+            }
+        }
+    },
+    ["ak_barrel_vepr"] = {
+        Bodygroups = {
+            {7, 4},
+            {8, 2},
+            {1, 9}
+        },
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0, 27.9, 2.675),
+                Ang = Angle(0, -90, 0),
+            }
+        }
+    },
+    ["ak_barrel_krink"] = {
+        Bodygroups = {
+            {1, 6},
+            {4, 1},
+            {5, 1},
+            {7, 5},
+            {8, 2},
+        },
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0, 14.5, 2.87),
+                Ang = Angle(0, -90, 0),
+            }
+        }
+    },
+    ["ak_barrel_ak12"] = {
+        Bodygroups = {
+            {7, 6},
+            {8, 2}
+        },
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0, 23.25, 2.9),
+                Ang = Angle(0, -90, 0),
+            }
+        }
+    },
+    ["ak_handguard_ak74m"] = {
+        Bodygroups = {
+            {1, 3}
+        }
+    },
+    ["ak_handguard_zenit"] = {
+        Bodygroups = {
+            {1, 7}
+        }
+    },
+    ["ak_handguard_railed"] = {
+        Bodygroups = {
+            {1, 13}
+        }
+    },
+    ["ak_dustcover_railed"] = {
+        Bodygroups = {
+            {10, 1}
+        }
+    },
+    ["ak_grip_modern"] = {
+        Bodygroups = {
+            {9, 1}
+        }
+    },
+    ["ak_grip_alpha"] = {
+        Bodygroups = {
+            {9, 2}
+        }
+    },
+    ["ak_grip_ak12"] = {
+        Bodygroups = {
+            {9, 5}
+        }
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local ak74 = wep:GetValue("AK74")
+    local eles = data.elements
+    local mdl = data.model
+    local hasbarrel = eles["ak_barrel_rpk"] or eles["ak_barrel_vepr"] or eles["ak_barrel_ak12"]
+
+    if ak74 then
+        if eles["muzzle"] then
+            mdl:SetBodygroup(8, 0)
+        else
+            mdl:SetBodygroup(8, 3)
+        end
+
+        if hasbarrel then
+            mdl:SetBodygroup(8, 2)
+        end
+    end
+
+    if eles["ak_barrel_krink"] then
+        mdl:SetBodygroup(8, 4)
+
+        if eles["muzzle"] then
+            mdl:SetBodygroup(8, 2)
+        end
+    end
+
+    if eles["ak_barrel_rpk"] and wep:GetBipod() then
+        if wep:GetEnterBipodTime() + 1 < CurTime() then
+            mdl:SetBodygroup(7, 7)
+        end
+    end
+
+    if eles["ak_dustcover_railed"] then
+        mdl:SetBodygroup(10, 1)
+    end
+
+    if eles["ak_handguard_zenit"] then
+        mdl:SetBodygroup(1, 7)
+    end
 end
 
 SWEP.Attachments = {
+    {
+        PrintName = "MUZZLE",
+        Category = "muzzle",
+        Bone = "tag_weapon",
+        ExcludeElements = {"blockmuzzle"},
+        Pos = Vector(0, 24, 2.7),
+        Ang = Angle(0, -90, 0),
+        Scale = 0.75
+    },
+    {
+        PrintName = "BARREL",
+        Category = "ak_barrel",
+        Bone = "tag_weapon",
+        Pos = Vector(0, 12, 2.7),
+        Ang = Angle(0, -90, 0),
+        Scale = 0.75
+    },
+    {
+        PrintName = "HANDGUARD",
+        ExcludeElements = {"blockhandguard"},
+        Category = "ak_handguard",
+        Bone = "tag_weapon",
+        Pos = Vector(0, 12.5, 4),
+        Ang = Angle(0, -90, 0),
+        Scale = 0.75
+    },
+    {
+        PrintName = "COVER",
+        ExcludeElements = {"blockdc"},
+        Category = "ak_dustcover",
+        Bone = "tag_weapon",
+        Pos = Vector(0, 0, 4),
+        Ang = Angle(0, -90, 0),
+        Scale = 0.75
+    },
     {
         PrintName = "STOCK",
         Category = {"ak_stock", "bt_stock"},
@@ -693,12 +883,21 @@ SWEP.Attachments = {
         Scale = 0.75
     },
     {
-        PrintName = "DTAIL",
+        PrintName = "DOVETAIL",
         InstalledElements = {"dtail"},
         Category = "optic_dovetail",
         Bone = "tag_weapon",
         Pos = Vector(0, 1.8, 2.5),
         Ang = Angle(90, 0, -90),
+        Scale = 0.75
+    },
+    {
+        PrintName = "GRIP",
+        Category = "ak_grip",
+        Bone = "tag_weapon",
+        ExcludeElements = {"blockgrip"},
+        Pos = Vector(0, -1, 0),
+        Ang = Angle(0, -90, 0),
         Scale = 0.75
     },
     {

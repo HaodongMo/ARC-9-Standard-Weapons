@@ -9,20 +9,20 @@ $bodygroup "base" // 0
 }
 $bodygroup "handguards" // 1
 {
-	studio "ak47_handguard.smd"
-	studio "akm_handguard.smd"
-	studio "romaniandong.smd"
-	studio "ak74m_handguard_new.smd"
-	studio "series_100_handguard.001.smd"
-	studio "rpk74m_handguard.smd"
-	studio "aku_handguard-barrel-trunnion.smd"
-	studio "alpha_handguard.smd"
-	studio "pp19_handguard-barrel.smd"
-	studio "vepr_sok_handguard.smd"
-	studio "ak74m_handguard_red.smd"
-	studio "ak74m_handguard_od.smd"
-	studio "ak12 handguard.smd"
-	studio "railed handguard.smd"
+	studio "ak47_handguard.smd" // 0
+	studio "akm_handguard.smd" // 1
+	studio "romaniandong.smd" // 2
+	studio "ak74m_handguard_new.smd" // 3
+	studio "series_100_handguard.001.smd" // 4
+	studio "rpk74m_handguard.smd" // 5
+	studio "aku_handguard-barrel-trunnion.smd" // 6
+	studio "alpha_handguard.smd" // 7
+	studio "pp19_handguard-barrel.smd" // 8
+	studio "vepr_sok_handguard.smd" // 9
+	studio "ak74m_handguard_red.smd" // 10
+	studio "ak74m_handguard_od.smd" // 11
+	studio "ak12 handguard.smd" // 12
+	studio "railed handguard.smd" // 13
 }
 $bodygroup "magazine" // 2
 {
@@ -71,25 +71,26 @@ $bodygroup "stocks" // 6
 	studio "ak12 stock.smd"
 	studio "stock_tube.smd"
 }
-$bodygroup "barrels"
+$bodygroup "barrels" // 7
 {
-	studio "ak_barrel.smd"
-	studio "rpk_barrel_bipod.smd"
-	studio "series_100_sbr.smd"
-	studio "type56_barrel.smd"
-	studio "vepr_barrel.smd"
-	blank
-	studio "ak12 barrel.smd"
-	studio "rpk_barrel_bipod_deployed.smd"
+	studio "ak_barrel.smd" // 0
+	studio "rpk_barrel_bipod.smd" // 1
+	studio "series_100_sbr.smd" // 2
+	studio "type56_barrel.smd" // 3
+	studio "vepr_barrel.smd" // 4
+	blank // 5
+	studio "ak12 barrel.smd" // 6
+	studio "rpk_barrel_bipod_deployed.smd" // 7
 }
-$bodygroup "muzzles"
+$bodygroup "muzzles" // 8
 {
 	studio "ak_barrel_ak_muzzle.smd"
 	studio "ak_barrel_akm_brake.smd"
 	blank
 	studio "ak74_compensator.smd"
+	studio "aku_muzzle.smd"
 }
-$bodygroup "pistol_grips"
+$bodygroup "pistol_grips" // 9
 {
 	studio "type_3_grip.smd"
 	studio "akm_pistol_grip.smd"
@@ -98,7 +99,7 @@ $bodygroup "pistol_grips"
 	blank
 	studio "ak12 grip.smd"
 }
-$bodygroup "dust_covers"
+$bodygroup "dust_covers" // 10
 {
 	studio "smooth_dust_cover.smd"
 	studio "alpha_dust_cover.smd"
@@ -106,7 +107,7 @@ $bodygroup "dust_covers"
 	blank
 	studio "ak12 dust cover.smd"
 }
-$bodygroup "bayonets"
+$bodygroup "bayonets" // 11
 {
 	blank
 	studio "akm_bayonet.smd"
@@ -134,7 +135,7 @@ $cdmaterials "models\weapons\arc9\ud_common\"
 $cdmaterials "models\weapons\arc9\atts\"
 $cdmaterials "models\weapons\arc9\uc_shells\"
 
-$attachment "1" "muzzle" 0 0 0 rotate 0 90 -90
+$attachment "1" "muzzle" 0 0 0 rotate 0 90 0
 $attachment "2" "shell" 0 0 0 rotate 0 90 -90
 $attachment "5" "camera" 0 0 0 rotate -90 0 0
 
