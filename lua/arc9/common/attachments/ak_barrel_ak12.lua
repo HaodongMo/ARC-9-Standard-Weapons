@@ -21,6 +21,7 @@ ATT.RecoilMultFirstShot = 0.25
 
 ATT.FiremodesOverride = {
     {
+        PrintName = "HYPER",
         Mode = -1
     },
     {
