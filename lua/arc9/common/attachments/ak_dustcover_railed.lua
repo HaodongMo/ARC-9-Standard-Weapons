@@ -26,3 +26,5 @@ ATT.Attachments = {
         Hidden = true
     }
 }
+
+ATT.ActivateElements = {"nokrinkrs"}

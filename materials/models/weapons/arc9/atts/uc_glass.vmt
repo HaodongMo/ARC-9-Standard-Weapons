@@ -5,7 +5,7 @@
 	"$translucent" 1
 	// $alpha 1
 	"$phong" 1
-	"$phongboost" "2"
+	"$phongboost" "0"
 	"$phongexponent" 0
 	"$envmap" "env_cubemap"
 	"$envmapfresnel" "1.0"

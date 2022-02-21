@@ -98,6 +98,7 @@ ATT.HoloSightFunc = function(swep, pos, mdl)
 
     cam.Start3D2D(pos - (ang:Right() * 512) - (ang:Forward() * 1024), ang, 8)
     cam.IgnoreZ(true)
+    swep:SetHoloSightRenderDepth(mdl)
 
     surface.SetDrawColor(col_tp)
     surface.DrawRect(0, 0, 256, 128)

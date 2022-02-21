@@ -114,11 +114,10 @@ $bodygroup "bayonets" // 11
 	studio "type56_bayonet_folded.smd"
 	studio "type56_bayonet_unfolded.smd"
 }
-$bodygroup "mount"
+$bodygroup "mount" // 12
 {
 	blank
-	studio "mount.smd"
-	studio "mount_laser.smd"
+	studio "warsaw.smd"
 }
 
 
