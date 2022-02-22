@@ -17,7 +17,7 @@ ATT.RPMMult = 0.8
 ATT.RPMMultFirstShot = 3
 
 ATT.RecoilMult = 1.25
-ATT.RecoilMultFirstShot = 0.25
+ATT.RecoilMultFirstShot = 0.1
 
 ATT.FiremodesOverride = {
     {

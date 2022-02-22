@@ -14,14 +14,14 @@ ATT.Attachments = {
     {
         PrintName = "OPTIC",
         Category = "optic_picatinny",
-        Pos = Vector(-3, 0, 1),
+        Pos = Vector(-3, 0, -1),
         Ang = Angle(0, 0, 0),
         MergeSlots = {2}
     },
     {
         PrintName = "RS",
         Category = "rearsight_picatinny",
-        Pos = Vector(0.5, 0, 1),
+        Pos = Vector(0.5, 0, -1),
         Ang = Angle(0, 0, 0),
         Hidden = true
     }

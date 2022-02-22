@@ -119,8 +119,8 @@ SWEP.Firemodes = {
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 1.1 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 1.1 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -886,7 +886,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 24, 2.7),
         Ang = Angle(0, -90, 0),
         Scale = 0.75,
-        CorrectiveAng = Angle(-1, -1, 0)
+        CorrectiveAng = Angle(-1.0, -1.15, 0)
     },
     {
         PrintName = "BARREL",
@@ -895,7 +895,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 12, 2.7),
         Ang = Angle(0, -90, 0),
         Scale = 0.75,
-        CorrectiveAng = Angle(-1, -1, 0)
+        CorrectiveAng = Angle(-1.0, -1.15, 0)
     },
     {
         PrintName = "HANDGUARD",
@@ -905,7 +905,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 12.5, 4),
         Ang = Angle(0, -90, 0),
         Scale = 0.75,
-        CorrectiveAng = Angle(-1, -1, 0)
+        CorrectiveAng = Angle(-1.0, -1.15, 0)
     },
     {
         PrintName = "COVER",
@@ -915,7 +915,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 4),
         Ang = Angle(0, -90, 0),
         Scale = 0.75,
-        CorrectiveAng = Angle(-1, -1, 0)
+        CorrectiveAng = Angle(-1.0, -1.15, 0)
     },
     {
         PrintName = "STOCK",
@@ -925,7 +925,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -6, 2.49),
         Ang = Angle(0, -90, 0),
         Scale = 0.75,
-        CorrectiveAng = Angle(-1, -1, 0)
+        CorrectiveAng = Angle(-1.0, -1.15, 0)
     },
     {
         PrintName = "DOVETAIL",
@@ -935,7 +935,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 1.8, 2.5),
         Ang = Angle(90, 0, -90),
         Scale = 0.75,
-        CorrectiveAng = Angle(-1, -1, 0)
+        CorrectiveAng = Angle(-1.0, -1.15, 0)
     },
     {
         PrintName = "GRIP",
@@ -945,7 +945,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -1, 0),
         Ang = Angle(0, -90, 0),
         Scale = 0.75,
-        CorrectiveAng = Angle(-1, -1, 0)
+        CorrectiveAng = Angle(-1.0, -1.15, 0)
     },
     {
         PrintName = "MAG",
@@ -955,7 +955,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
         Pos = Vector(0, 5.5, 1),
         Ang = Angle(90, 0, -90),
-        CorrectiveAng = Angle(-1, -1, 0)
+        CorrectiveAng = Angle(-1.0, -1.15, 0)
     },
     {
         PrintName = "AMMO",
@@ -964,6 +964,6 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 7, -2),
         Ang = Angle(90, 0, -90),
-        CorrectiveAng = Angle(-1, -1, 0)
+        CorrectiveAng = Angle(-1.0, -1.15, 0)
     },
 }

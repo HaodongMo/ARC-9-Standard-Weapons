@@ -128,8 +128,8 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.75 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.4 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.4 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.

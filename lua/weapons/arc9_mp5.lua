@@ -61,7 +61,7 @@ SWEP.DefaultBodygroups = "0200000000000000000000"
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 35 -- Damage done at point blank range
+SWEP.DamageMax = 23 -- Damage done at point blank range
 SWEP.DamageMin = 15 -- Damage done at maximum range
 
 SWEP.DamageRand = 0 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
@@ -132,8 +132,8 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.2 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
