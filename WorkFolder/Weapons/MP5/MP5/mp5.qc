@@ -9,6 +9,9 @@ $bodygroup "1" {
 	studio "stock_sliding_adapter.smd"
 	studio "stock_cap.smd"
 	studio "stock_tube.smd"
+	studio "stock_wood.smd"
+	studio "stock_pdw_ext.smd"
+	studio "stock_pdw_in.smd"
 }
 
 $bodygroup "2" {
@@ -38,6 +41,7 @@ $bodygroup "5" {
 $bodygroup "6" {
 	studio "handguard.smd"
 	studio "handguard_tac.smd"
+	studio "handguard_old.smd"
 	blank
 }
 
@@ -47,6 +51,7 @@ $bodygroup "7" {
 }
 
 $cdmaterials "models\weapons\arc9\ur_mp5"
+$cdmaterials "models\weapons\arc9\ur_mp5\bocw"
 $cdmaterials "models\weapons\arc9\ud_m16"
 $cdmaterials "models\weapons\arc9\ud_common"
 
