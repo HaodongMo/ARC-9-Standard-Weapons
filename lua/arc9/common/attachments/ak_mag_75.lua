@@ -23,3 +23,5 @@ ATT.SpeedMult = 0.985
 ATT.SupplyLimitMult = 0.25
 
 -- ATT.DropMagazineModel = "models/weapons/arc9/droppedmags/m16_mag_20.mdl"
+
+ATT.DropMagazineModel = "models/weapons/arc9/droppedmags/ak_762_75.mdl"
