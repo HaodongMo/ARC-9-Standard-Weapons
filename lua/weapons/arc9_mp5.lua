@@ -515,6 +515,16 @@ SWEP.AttachmentElements = {
             {1, 0}
         }
     },
+    ["mp5_stock_pdw"] = {
+        Bodygroups = {
+            {1, 5}
+        }
+    },
+    ["mp5_stock_wood"] = {
+        Bodygroups = {
+            {1, 4}
+        }
+    },
     ["mp5_stock_sliding"] = {
         Bodygroups = {
             {1, 1},
@@ -557,6 +567,12 @@ SWEP.AttachmentElements = {
             {6, 1},
         }
     },
+
+    ["mp5_barrel_old"] = {
+        Bodygroups = {
+            {6, 2}
+        }
+    }
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
