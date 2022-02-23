@@ -554,7 +554,8 @@ SWEP.AttachmentElements = {
     },
     ["mp5_barrel_carbine"] = {
         Bodygroups = {
-            {5, 2}
+            {5, 2},
+            {6, 0}
         },
         AttPosMods = {
             [4] = {
@@ -567,7 +568,17 @@ SWEP.AttachmentElements = {
             {6, 1},
         }
     },
-
+    ["mp5_barrel_carbine_ris"] = {
+        Bodygroups = {
+            {5, 2},
+            {6, 1}
+        },
+        AttPosMods = {
+            [4] = {
+                Pos = Vector(0, 0.75, 17.5),
+            }
+        }
+    },
     ["mp5_barrel_old"] = {
         Bodygroups = {
             {6, 2}

@@ -12,6 +12,8 @@ ATT.Category = "mp5_barrel"
 
 ATT.PhysBulletMuzzleVelocityMult = 1.25
 
+ATT.RPMMult = 0.9
+
 ATT.RangeMaxMult = 1.3
 ATT.RangeMinMult = 1.1
 
