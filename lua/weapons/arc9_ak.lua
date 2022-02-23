@@ -716,13 +716,13 @@ SWEP.AttachmentElements = {
     ["ak_mag_30_545"] = {
         Bodygroups = {
             {2, 2},
-            {10, 2}
+            -- {10, 2}
         }
     },
     ["ak_mag_45_545"] = {
         Bodygroups = {
             {2, 3},
-            {10, 2}
+            -- {10, 2}
         }
     },
     ["ak_mag_30_9"] = {
@@ -813,6 +813,11 @@ SWEP.AttachmentElements = {
     ["ak_dustcover_railed"] = {
         Bodygroups = {
             {10, 1}
+        }
+    },
+    ["ak_dustcover_ribbed"] = {
+        Bodygroups = {
+            {10, 2}
         }
     },
     ["ak_grip_modern"] = {

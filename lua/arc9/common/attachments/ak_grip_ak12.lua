@@ -9,3 +9,6 @@ ATT.Icon = Material("entities/arc9_att_ak_grip_ak12.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "ak_grip"
+
+ATT.RecoilAutoControlMult = 1.02
+ATT.SprintToFireTimeMult = 1.03

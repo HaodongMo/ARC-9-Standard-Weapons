@@ -10,6 +10,8 @@ ATT.Icon = Material("entities/arc9_att_ak_dustcover_railed.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = "ak_dustcover"
 
+ATT.SprintToFireTimeMult = 1.02
+
 ATT.Attachments = {
     {
         PrintName = "OPTIC",

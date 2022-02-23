@@ -110,7 +110,7 @@ ATT.RTScopeDrawFunc = function(swep, rtsize)
     if !no_ccip then
         surface.SetMaterial(arrow)
         surface.SetDrawColor(col)
-        surface.DrawTexturedRect(w / 2 - (ss * 48), v - (ss * 24), ss * 48, ss * 48)
+        surface.DrawTexturedRect(w / 2 - (ss * 48), v - (ss * 48), ss * 48, ss * 48)
     end
 
     local d = 32000

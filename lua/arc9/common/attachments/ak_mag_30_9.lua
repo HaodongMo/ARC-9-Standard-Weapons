@@ -31,4 +31,4 @@ ATT.DistantShootSound = path .. "ak9_tail.wav"
 ATT.Ammo = "pistol"
 ATT.PP19 = true
 
-ATT.DropMagazineModel = "models/weapons/arc9/droppedmags/ak_9x19.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/droppedmags/ak_9x19mm.mdl"
