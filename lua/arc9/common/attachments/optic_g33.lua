@@ -36,8 +36,8 @@ ATT.Attachments = {
 }
 
 -- TODO: correct the model so the RTScope isn't sideways
-ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 20
-ATT.RTScopeDefer = true
-ATT.RTScopeShadowIntensity = 10
+-- ATT.RTScope = true
+-- ATT.RTScopeSubmatIndex = 1
+-- ATT.RTScopeFOV = 20
+-- ATT.RTScopeDefer = true
+-- ATT.RTScopeShadowIntensity = 10
