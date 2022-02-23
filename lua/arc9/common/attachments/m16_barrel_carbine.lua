@@ -12,7 +12,7 @@ Short barrel improves fire rate and handling at the cost of ballistic performanc
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_carbine.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 14
 ATT.Category = "m16_barrel"
 ATT.ActivateElements = {"shortfs"}
 

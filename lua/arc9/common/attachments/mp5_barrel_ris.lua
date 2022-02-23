@@ -9,7 +9,7 @@ ATT.CompactName_TrueName = "9\"TRI-RAIL"
 
 ATT.Icon = Material("entities/arc9_att_mp5_barrel_ris.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 9
 ATT.Category = "mp5_barrel"
 
 ATT.Attachments = {

@@ -7,7 +7,7 @@ Short barrel improves fire rate and handling at the cost of ballistic performanc
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_carbine_ris.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 14
 ATT.Category = "m16_barrel"
 
 ATT.Attachments = {
@@ -44,9 +44,9 @@ ATT.Attachments = {
     {
         PrintName = "RAIL",
         Category = "optic_picatinny_medium",
-        RequireElements = {"flattop"},
-        ExcludeElements = {"flattop_optic"},
-        InstalledElements = {"ris_optic"},
+        -- RequireElements = {"flattop"},
+        -- ExcludeElements = {"flattop_optic"},
+        -- InstalledElements = {"ris_optic"},
         ExtraSightDistance = 12,
         Pos = Vector(-3, 0, -1.95),
         Ang = Angle(0, 0, 0),

@@ -14,7 +14,7 @@ ATT.IconOffset = Vector(18, -2, 2.5)
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_a1.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 20
 ATT.Category = "m16_barrel"
 
 ATT.RecoilUpMult = 0.8

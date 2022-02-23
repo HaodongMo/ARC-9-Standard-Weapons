@@ -7,7 +7,7 @@ ATT.CompactName_TrueName = "16\"T56"
 
 ATT.Icon = Material("entities/arc9_att_ak_barrel_type56.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 16
 ATT.Category = "ak_barrel"
 
 ATT.AimDownSightsTimeMult = 1.02
