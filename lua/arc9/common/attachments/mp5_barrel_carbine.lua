@@ -7,7 +7,7 @@ ATT.CompactName_TrueName = "14\"HK94"
 
 ATT.Icon = Material("entities/arc9_att_mp5_barrel_carbine.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 14
 ATT.Category = "mp5_barrel"
 
 ATT.PhysBulletMuzzleVelocityMult = 1.25

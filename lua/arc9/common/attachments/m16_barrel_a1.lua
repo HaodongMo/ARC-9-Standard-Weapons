@@ -12,7 +12,7 @@ Improves handling slightly, with a penalty to recoil.]]
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_a1.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 20
 ATT.Category = "m16_barrel"
 
 ATT.RecoilUpMult = 1.2

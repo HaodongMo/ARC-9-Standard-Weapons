@@ -9,7 +9,7 @@ ATT.Icon = Material("entities/arc9_att_mp5_barrel_sd.png", "mips smooth")
 
 ATT.ActivateElements = {"block_muzz"}
 
-ATT.SortOrder = 0
+ATT.SortOrder = 11
 ATT.Category = "mp5_barrel"
 
 ATT.PhysBulletMuzzleVelocityMult = 0.9

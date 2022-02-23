@@ -8,7 +8,7 @@ ATT.PrintName_TrueName = "Colt M16A4 RIS 20\" Barrel"
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_ris.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 20
 ATT.Category = "m16_barrel"
 
 ATT.Attachments = {
