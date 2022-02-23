@@ -548,7 +548,7 @@ SWEP.AttachmentElements = {
     },
     ["mp5_barrel_sd"] = {
         Bodygroups = {
-            {6, 2},
+            {6, 3},
             {5, 1}
         }
     },
