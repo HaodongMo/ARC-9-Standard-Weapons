@@ -280,10 +280,20 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
+        EventTable = {
+            {s = common .. "raise.ogg", t = 0},
+            {s = common .. "shoulder.ogg", t = 0.15},
+            {s = ratel, t = 0.2},
+        }
     },
 
     ["holster"] = {
-        Source = "holster",
+        Source = "draw",
+        Reverse = true,
+        EventTable = {
+            {s = ratel, t = 0},
+            {s = rotel, t = 0.2},
+        }
     },
 
     ["fire"] = {

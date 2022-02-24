@@ -22,7 +22,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "RS",
-        Category = "rearsight_picatinny",
+        Category = {"rearsight_picatinny", "carryhandle_picatinny"},
         Pos = Vector(0.5, 0, -1),
         Ang = Angle(0, 0, 0),
         Hidden = true

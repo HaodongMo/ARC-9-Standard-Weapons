@@ -224,6 +224,10 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
+
+SWEP.HideBones = {
+    "magb",
+}
 -------------------------- SOUNDS
 
 local path = ")^weapons/arc9_ud/mp5/"
