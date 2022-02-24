@@ -57,7 +57,7 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.DefaultBodygroups = "0001009000000000000000"
+SWEP.DefaultBodygroups = "0001009000000"
 
 -------------------------- DAMAGE PROFILE
 
@@ -213,7 +213,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-    [1] = "tag_mag"
+    [1] = "tag_mag2"
 }
 
 SWEP.HideBones = {
@@ -945,6 +945,7 @@ SWEP.Attachments = {
     {
         PrintName = "DOVETAIL",
         InstalledElements = {"dtail"},
+        ExcludeElements = {"blockdovetail"},
         Category = "optic_dovetail",
         Bone = "tag_weapon",
         Pos = Vector(0, 1.8, 2.5),

@@ -31,8 +31,8 @@ ATT.FiremodesOverride = {
 }
 
 ATT.IronSightsOverride = {
-    Pos = Vector(-2.56, -3, 1.35),
-    Ang = Angle(0.1, -1.8, 4),
+    Pos = Vector(-2.56, -3, 1.1),
+    Ang = Angle(0.2, -0.9, 4),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(0, 0, -45),

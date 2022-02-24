@@ -29,4 +29,4 @@ ATT.Attachments = {
     }
 }
 
-ATT.ActivateElements = {"nokrinkrs"}
+ATT.ActivateElements = {"nokrinkrs", "blockdovetail"}
