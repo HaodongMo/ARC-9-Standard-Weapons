@@ -59,6 +59,10 @@ SWEP.WorldModelOffset = {
 
 SWEP.DefaultBodygroups = "0001009000000"
 
+SWEP.SpreadMultHipFire = 3
+SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilAutoControlMultHipFire = 0.5
+
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageMax = 33 -- Damage done at point blank range
@@ -231,6 +235,15 @@ SWEP.DistantShootSound = path .. "fire_dist.ogg"
 SWEP.ShootSoundSilenced = {path .. "fire_sup_1.ogg", path .. "fire_sup_2.ogg", path .. "fire_sup_3.ogg"}
 SWEP.DryFireSound = "weapons/arc9_ud/ak/dryfire.ogg"
 
+-- SWEP.ShootSound = ""
+-- SWEP.FirstShootSound = ""
+-- SWEP.DistantShootSound = ""
+
+-- SWEP.ShootSoundLooping = "weapons/minigun_shoot.wav"
+-- SWEP.ShootSoundWindDown = "weapons/minigun_wind_down.wav"
+-- SWEP.Num = 4
+-- SWEP.Spread = 0.1
+
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
 local rottle = {common .. "cloth_1.ogg", common .. "cloth_2.ogg", common .. "cloth_3.ogg", common .. "cloth_4.ogg", common .. "cloth_6.ogg", common .. "rattle.ogg"}
@@ -300,6 +313,7 @@ SWEP.Animations = {
         Source = "fire",
         EventTable = {
             {s = path .. "mech.ogg", t = 0},
+            -- {s = "", t = 0}
         }
     },
 

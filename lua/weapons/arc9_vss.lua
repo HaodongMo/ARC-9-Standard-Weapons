@@ -61,6 +61,10 @@ SWEP.DefaultBodygroups = "00000000000000000000"
 
 SWEP.Silencer = true
 
+SWEP.SpreadMultHipFire = 3
+SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilAutoControlMultHipFire = 0.5
+
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageMax = 30
