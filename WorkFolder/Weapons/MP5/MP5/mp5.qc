@@ -5,11 +5,6 @@
 //  				ARCCW
 $modelname "weapons\arccw\c_ur_mp5.mdl"
  
-$bodygroup "studio" {
-	studio "receiver_lower_a4.smd"
-	studio "receiver_lower_a1.smd"
-}
-
 $bodygroup "1" {
 	studio "stock_solid.smd"
 	studio "stock_sliding_adapter.smd"
@@ -19,7 +14,6 @@ $bodygroup "1" {
 	studio "stock_pdw_ext.smd"
 	studio "stock_pdw_in.smd"
 
-	studio "stock_kurz.smd"
 	studio "stock_kurzcap.smd"
 }
 
@@ -64,6 +58,11 @@ $bodygroup "7" {
 $bodygroup "upper" {
 	studio "receiver_upper_a4.smd"
 	studio "receiver_upper_kurz.smd"
+}
+
+$bodygroup "lower" {
+	studio "receiver_lower_a4.smd"
+	studio "receiver_lower_a1.smd"
 }
 
 //  				ARC9
