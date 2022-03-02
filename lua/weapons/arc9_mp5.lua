@@ -59,6 +59,10 @@ SWEP.WorldModelOffset = {
 
 SWEP.DefaultBodygroups = "0200000000000000000000"
 
+SWEP.SpreadMultHipFire = 3
+SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilAutoControlMultHipFire = 0.5
+
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageMax = 23 -- Damage done at point blank range
