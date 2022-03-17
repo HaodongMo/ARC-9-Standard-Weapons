@@ -30,7 +30,7 @@ ATT.RecoilUpMult = 1.1
 ATT.RecoilRandomMult = 0.9
 
 ATT.Overheat = true
-ATT.HeatCapacityAdd = 75
+ATT.HeatCapacity = 75
 ATT.HeatDissipationMult = 1.25
 ATT.HeatLockout = true
 ATT.HeatDelayTimeAdd = 0.15
