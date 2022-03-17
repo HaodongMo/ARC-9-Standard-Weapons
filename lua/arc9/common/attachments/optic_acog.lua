@@ -32,7 +32,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 10
 ATT.RTScopeReticle = Material("arc9/acog.png", "mips smooth")
-ATT.RTScopeColor = Color(255, 0, 0)
+ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 
 ATT.ScopeScreenRatio = 0.33
