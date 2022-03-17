@@ -13,4 +13,11 @@ ATT.Category = "ak_handguard"
 ATT.RecoilAutoControlMult = 0.95
 
 ATT.Attachments = {
+    {
+        PrintName = "GRIP",
+        Category = {"grip_picatinny", "picatinny"},
+        Pos = Vector(0, 0, 3),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0)
+    },
 }

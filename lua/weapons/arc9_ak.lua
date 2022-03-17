@@ -168,6 +168,17 @@ SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 1
 SWEP.SpeedMultBlindFire = 1
 
+-------------------------- MELEE
+
+SWEP.Bash = false
+SWEP.PrimaryBash = false
+
+SWEP.BashDamage = 50
+SWEP.BashLungeRange = 64
+SWEP.BashRange = 32
+SWEP.PreBashTime = 0.25
+SWEP.PostBashTime = 0.5
+
 -------------------------- TRACERS
 
 SWEP.TracerNum = 1 -- Tracer every X
@@ -307,6 +318,10 @@ SWEP.Animations = {
             {s = ratel, t = 0},
             {s = rotel, t = 0.2},
         }
+    },
+
+    ["bash"] = {
+        Source = "bayonet"
     },
 
     ["fire"] = {

@@ -13,8 +13,11 @@ ATT.Category = "ak_barrel"
 ATT.AimDownSightsTimeMult = 1.02
 ATT.SprintToFireTimeMult = 1.02
 
+
+ATT.Bash = true
 ATT.BashDamageAdd = 25
-ATT.BashLungeRangeAdd = 64
+ATT.BashRangeAdd = 16
+ATT.BashLungeRangeAdd = 128
 
 ATT.ActivateElements = {
     "blockmuzzle"

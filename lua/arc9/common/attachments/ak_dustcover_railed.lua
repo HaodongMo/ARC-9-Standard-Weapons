@@ -26,7 +26,7 @@ ATT.Attachments = {
         Pos = Vector(0.5, 0, -1),
         Ang = Angle(0, 0, 0),
         Hidden = true
-    }
+    },
 }
 
 ATT.ActivateElements = {"nokrinkrs", "blockdovetail"}
