@@ -134,6 +134,17 @@ SWEP.RecoilAutoControl = 1.5 * 0.25
 
 SWEP.RecoilKick = 3.5
 
+-------------------------- MELEE
+
+SWEP.Bash = true
+SWEP.PrimaryBash = false
+
+SWEP.BashDamage = 50
+SWEP.BashLungeRange = 128
+SWEP.BashRange = 64
+SWEP.PreBashTime = 0.25
+SWEP.PostBashTime = 0.5
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.0005

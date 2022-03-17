@@ -130,6 +130,17 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 -- Use this hook to modify features of a firemode.
 -- SWEP.Hook_P_ModifyFiremode = function(self, firemode) return firemode end
 
+-------------------------- MELEE
+
+SWEP.Bash = true
+SWEP.PrimaryBash = false
+
+SWEP.BashDamage = 50
+SWEP.BashLungeRange = 128
+SWEP.BashRange = 64
+SWEP.PreBashTime = 0.25
+SWEP.PostBashTime = 0.5
+
 -------------------------- RECOIL
 
 -- General recoil multiplier
