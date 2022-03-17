@@ -903,6 +903,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     if eles["ak_handguard_zenit"] then
         mdl:SetBodygroup(1, 7)
+    elseif eles["ak_handguard_railed"] then
+        mdl:SetBodygroup(1, 13)
+    elseif eles["ak_handguard_ak74m"] then
+        mdl:SetBodygroup(1, 3)
     end
 end
 
