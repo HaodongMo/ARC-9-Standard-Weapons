@@ -1,7 +1,7 @@
-ATT.PrintName = "NcSTAR Advance Computing Optic Z4"
-ATT.CompactName = "ACO-Z4"
+ATT.PrintName = "NcSTAR Advanced eXperimental Optic Z4"
+ATT.CompactName = "AXO-Z4"
 ATT.Icon = Material("entities/arc9_att_optic_ado.png", "mips smooth")
-ATT.Description = [[The NcSTAR Advance Computing Optic is a development of the Advance Dual Optic, produced in conjunction with ARCCW (Advanced Research Center for Combat Weapons), that incorporates computer technology. It displays tactical/ballistic data on the scope's lens as part of the crosshair plane and in addition, possesses a backup reflex sight. In addition, it possesses a basic, non-target-identifying night vision mode.]]
+ATT.Description = [[The NcSTAR Advance eXperimental Optic is a development of the Advance Dual Optic, produced in conjunction with ARCCW (Advanced Research Center for Combat Weapons), that incorporates computer technology. It displays tactical/ballistic data on the scope's lens as part of the crosshair plane and in addition, possesses a backup reflex sight. In addition, it possesses a basic, non-target-identifying night vision mode.]]
 ATT.SortOrder = 107
 
 ATT.Model = "models/weapons/arc9/atts/ado.mdl"
