@@ -1,0 +1,18 @@
+ // ESCAPE FROM TARKOV TACTICAL REALISM WITH HARDCORE GAMEPLAY auto converter  eft  real vmt  darcy
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/atts/torrey/scope_all_torrey_pines_logic_t12_w_30hz_LOD0_diff"
+	"$bumpmap" "models/weapons/arc9/atts/torrey/scope_all_torrey_pines_logic_t12_w_30hz_LOD0_nrm"
+	"$phong" "1"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0.32 0.72 0.99]"
+	"$phongalbedotint" "1"
+	"$rimlight" "1"
+	"$rimmask" "1"
+	"$rimlightboost" "1.1"
+	"$rimlightexponent" "33"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .01 .01 .01 ]"
+	"$color2" "[0.7 0.7 0.7]"
+}

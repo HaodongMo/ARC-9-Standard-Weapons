@@ -13,7 +13,8 @@ ATT.Sights = {
     {
         Pos = Vector(0, 7.5, -1.6169025),
         Ang = Angle(0, 0, 0),
-        Magnification = 3
+        Magnification = 3,
+        DeferSights = true
     }
 }
 

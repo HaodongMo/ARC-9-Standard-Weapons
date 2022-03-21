@@ -23,6 +23,8 @@ ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 20
 ATT.RTScopeReticle = Material("arc9/nvis.png", "smooth")
 ATT.RTScopeColor = Color(255, 255, 255)
+ATT.RTScopeNoShadow = true
+ATT.RTScopeShadowIntensity = 0
 
 ATT.RTScopeNightVision = true
 ATT.RTScopeNightVisionMonochrome = false
@@ -48,8 +50,8 @@ ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
     ["$pp_colour_addr"] = 0,
     ["$pp_colour_addg"] = 0,
     ["$pp_colour_addb"] = 0,
-    ["$pp_colour_brightness"] = 0.1,
-    ["$pp_colour_contrast"] = 1.5,
+    ["$pp_colour_brightness"] = 0,
+    ["$pp_colour_contrast"] = 1,
     ["$pp_colour_colour"] = 1,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,
@@ -59,13 +61,30 @@ ATT.RTScopeFLIRCCCold = {
     ["$pp_colour_addr"] = 0,
     ["$pp_colour_addg"] = 0,
     ["$pp_colour_addb"] = 0,
-    ["$pp_colour_brightness"] = 0.4,
-    ["$pp_colour_contrast"] = 0.35,
+    ["$pp_colour_brightness"] = 0.5,
+    ["$pp_colour_contrast"] = 0.25,
     ["$pp_colour_colour"] = 1,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,
     ["$pp_colour_mulb"] = 0
 }
+
+local pattern = Material("pp/texturize/plain.png")
+local grid = Material("arc9/pxgrid.png")
+
+ATT.RTScopeDrawFunc = function(swep, rtsize)
+    render.UpdateScreenEffectTexture()
+    DrawTexturize(1, pattern)
+    cam.IgnoreZ(true)
+
+    cam.Start2D()
+
+    surface.SetMaterial(grid)
+    surface.SetDrawColor(0, 0, 0)
+    surface.DrawTexturedRect(0, 0, rtsize, rtsize)
+
+    cam.End2D()
+end
 
 ATT.RTScopeMotionBlur = true
 

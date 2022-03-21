@@ -1185,7 +1185,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "IRONS",
+        PrintName = "FS",
         Category = {"m16lp"},
         Bone = "m16_parent",
         ExcludeElements = {"fpw"},

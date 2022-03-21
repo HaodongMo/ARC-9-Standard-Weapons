@@ -16,7 +16,7 @@ ATT.Attachments = {
     {
         PrintName = "RAIL",
         Category = {"grip_picatinny", "picatinny"},
-        Pos = Vector(-0.5, 0, 1.45),
+        Pos = Vector(-0.5, 0, 2),
         Ang = Angle(0, 0, 180),
         Icon_Offset = Vector(-1, 0, 0),
         Scale = 0.75

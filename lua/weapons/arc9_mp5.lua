@@ -359,7 +359,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
@@ -400,7 +400,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.7,
                 lhik = 0,
                 rhik = 0
             },
@@ -450,7 +450,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
@@ -487,7 +487,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.7,
                 lhik = 0,
                 rhik = 0
             },
