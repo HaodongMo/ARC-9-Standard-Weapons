@@ -1,7 +1,7 @@
-ATT.PrintName = "TacticsZone T-12X"
+ATT.PrintName = "Torrey Pines Logic T-12X"
 ATT.CompactName = "T-12X"
 ATT.Icon = Material("entities/arc9_att_optic_t12w.png", "mips smooth")
-ATT.Description = [[Low-cost basic "smart" thermal optic made by the TacticsZone supply company.]]
+ATT.Description = [[Low-cost basic "smart" thermal optic made by Torrey Pines Logic, as a development of the T-12W with a built-in shot counter added by the ARCCW company (Advanced Research Center for Combat Weapons). The shot counter starts at 0 and counts up for each shot that it detects is fired from the gun.]]
 ATT.SortOrder = 99
 
 ATT.Model = "models/weapons/arc9/atts/t12w.mdl"
@@ -86,7 +86,7 @@ ATT.RTScopeDrawFunc = function(swep, rtsize)
 
     surface.SetMaterial(battery)
     surface.SetDrawColor(255, 50, 50)
-    surface.DrawTexturedRect(32, 256, 256, 256)
+    surface.DrawTexturedRect(16, 256 - 32, 256, 256)
 
     local clip = "C " .. tostring(swep:GetNthShot())
 
