@@ -16,12 +16,12 @@ ATT.Sights = {
         Ang = Angle(0, 0, 0),
         Magnification = 1.5
     },
-    {
-        Pos = Vector(0, 7.5, -3.237175),
-        Ang = Angle(0, 0, 0),
-        Magnification = 1.15,
-        Disassociate = true
-    }
+    -- {
+    --     Pos = Vector(0, 7.5, -3.237175),
+    --     Ang = Angle(0, 0, 0),
+    --     Magnification = 1.15,
+    --     Disassociate = true
+    -- }
 }
 
 ATT.RTScopeFOVMax = 10
