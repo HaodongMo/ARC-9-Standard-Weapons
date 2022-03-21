@@ -45,6 +45,9 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 2048
 ATT.HoloSightColor = Color(200, 255, 50, 200)
 
+local adj = 0.01
+ATT.HoloSightDepthAdjustment = adj
+
 ATT.ScopeScreenRatio = 0.8
 ATT.ScopeLength = 30
 
@@ -98,9 +101,15 @@ ATT.RTScopeDrawFunc = function(swep, rtsize)
 
             cam.Start3D(nil, nil, swep:GetRTScopeFOV(), 0, 0, w, h)
 
-            v = ccip_pos:ToScreen().y
+            v = ccip_pos:ToScreen().y - (h / 2)
 
             cam.End3D()
+
+            if GetConVar("arc9_cheapscopes"):GetBool() then
+                v = v / swep:GetCheapScopeScale(0.8)
+            end
+
+            v = v + (h / 2)
 
             cam.IgnoreZ(true)
         end
@@ -110,7 +119,7 @@ ATT.RTScopeDrawFunc = function(swep, rtsize)
     if !no_ccip then
         surface.SetMaterial(arrow)
         surface.SetDrawColor(col)
-        surface.DrawTexturedRect(w / 2 - (ss * 48), v - (ss * 48), ss * 48, ss * 48)
+        surface.DrawTexturedRect(w / 2 - (ss * 48), v - (ss * 24), ss * 48, ss * 48)
     end
 
     local d = 32000
@@ -179,7 +188,7 @@ ATT.HoloSightFunc = function(swep, pos, mdl)
 
     cam.Start3D2D(pos - (ang:Right() * 512) - (ang:Forward() * 512), ang, 8)
     cam.IgnoreZ(true)
-    swep:SetHoloSightRenderDepth(mdl)
+    swep:SetHoloSightRenderDepth(mdl, adj)
 
     surface.SetDrawColor(col_tp)
     surface.DrawRect(0, 0, 128, 128)
