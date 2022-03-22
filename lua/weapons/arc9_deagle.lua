@@ -203,7 +203,7 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "pistol"
+SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "normal"
 SWEP.HoldTypeHolstered = "normal"
 SWEP.HoldTypeSights = "revolver"
