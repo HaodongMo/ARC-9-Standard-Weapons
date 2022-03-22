@@ -52,8 +52,8 @@ SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    Pos = Vector(-7.5, 4, -7.5),
-    Ang = Angle(-5, 0, 180),
+    Pos = Vector(-10.5, 2.5, -5),
+    Ang = Angle(-6, -6, 180),
     Scale = 1
 }
 
@@ -144,7 +144,7 @@ SWEP.RecoilResetTime = 0.5 -- How long the gun must go before the recoil pattern
 
 SWEP.RecoilAutoControl = 1 * 0.5 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1.5
+SWEP.RecoilKick = 1.25
 
 SWEP.RecoilPatternDrift = 50
 
@@ -298,65 +298,18 @@ SWEP.Animations = {
         },
     },
     ["draw"] = {
-        Source = "ready",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-            {
-                t = 0.1,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.6,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 1,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        Source = "",
         EventTable = {
-            { s = rottle, t = 0 / 60, c = ca },
-            { s = path .. "rack1.ogg", t = 10 / 60, c = ca },
-            { s = path .. "rack2.ogg", t = 25 / 60, c = ca },
+            {s = path .. "draw.ogg", t = 0}, -- Not Temporary
+            {s = common .. "raise.ogg", t = 0.05},
         },
     },
 
     ["holster"] = {
-        Source = "ready",
-        Reverse = true,
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-            {
-                t = 0.4,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.9,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 1,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        Source = "",
         EventTable = {
-            { s = rottle, t = 0 / 60, c = ca },
-            { s = path .. "rack1.ogg", t = 15 / 60, c = ca },
-            { s = path .. "rack2.ogg", t = 30 / 60, c = ca },
+            {s = common .. "cloth_2.ogg", t = 0},
+            {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
         },
     },
     --[[["holster"] = {
@@ -549,6 +502,28 @@ SWEP.Animations = {
     },
     ["exit_inspect"] = {
         Source = "exit_inspect",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.85,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = rottle, t = 0 / 60, c = ca },
             { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
@@ -570,6 +545,33 @@ SWEP.Animations = {
     },
     ["exit_inspect_empty"] = {
         Source = "exit_inspect_empty",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.45,
+                lhik = 0,
+                rhik = 0,
+            },
+            {
+                t = 0.8,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = rottle, t = 0 / 60, c = ca },
             { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
@@ -591,6 +593,28 @@ SWEP.Animations = {
     },
     ["exit_inspect_jammed"] = {
         Source = "exit_inspect_jammed",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = rottle, t = 0 / 60, c = ca },
             { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
@@ -631,15 +655,30 @@ SWEP.AttachmentElements = {
             {2, 1}
         }
     },
-    ["deagle_skin_black"] = {
+    ["skin_black"] = {
         Skin = 1,
     },
-    ["deagle_skin_gold"] = {
+    ["skin_gold"] = {
         Skin = 2,
     },
-    ["deagle_skin_chrome"] = {
+    ["skin_chrome"] = {
         Skin = 3,
     },
+    ["deagle_barrel_annihilator"] = {
+        Bodygroups = {
+            {1, 6}
+        }
+    },
+    ["deagle_barrel_marksman"] = {
+        Bodygroups = {
+            {1, 3}
+        }
+    },
+    ["deagle_barrel_light"] = {
+        Bodygroups = {
+            {1, 5}
+        }
+    }
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -648,7 +687,7 @@ end
 SWEP.Attachments = {
     {
         PrintName = "OPTIC",
-        Category = "optic_picatinny_medium",
+        Category = "optic_picatinny",
         Pos = Vector(0, -5.55, 7),
         Ang = Angle(90, 0, -90),
         Bone = "Body",
@@ -657,7 +696,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "SLIDE",
-        Category = "deagle_slide",
+        Category = "deagle_barrel",
         Pos = Vector(0, -4.75, 1.5),
         Ang = Angle(90, 0, -90),
         Bone = "Body",
@@ -673,7 +712,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "FINISH",
-        Category = "deagle_finish",
+        Category = {"skin_black", "skin_chrome", "skin_gold"},
         Pos = Vector(0, -3, -2),
         Ang = Angle(90, 0, -90),
         Bone = "Body",
