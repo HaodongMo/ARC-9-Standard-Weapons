@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/ur_deagle/annihilator_base_d"
+	"$bumpmap" "models/weapons/arc9/ur_deagle/annihilator_base_n"
+	"$color2"	"[0.85 0.85 0.85]"
+	"$phong"					"1"
+	"$phongwarptexture"			"models\weapons/arc9\ud_stalol\phongwarp_gold" // string -- phong gradient texture: 256x16 texture where x:0 = unlit, x:256 = fully lit (default is a perfect 0-256 black to white gradient)
+	"$phongboost"				"19"
+	"$phongexponent"			"59"
+	"$phongfresnelranges"		"[1 0.5 3]"
+	"$phongtint"			"[1.6 1.25 1]"
+	"$halflambert" "1"
+	
+	
+	"$normalmapalphaenvmapmask" 	1
+	
+	$envmap "env_cubemap"
+	"$envmaptint"				"[0.4 0.37 0.18]"
+	$envmapfresnel "1"
+
+	$nocull 1
+}
+

@@ -3,7 +3,7 @@
 // $modelname "weapons\arc9\c_ur_mp5.mdl"
 
 //  				ARCCW
-$modelname "weapons\arccw\c_ur_mp5.mdl"
+$modelname "weapons/arc9\c_ur_mp5.mdl"
  
 $bodygroup "1" {
 	studio "stock_solid.smd"
@@ -73,9 +73,9 @@ $bodygroup "lower" {
 
 
 // 					ARCCW
-$cdmaterials "models\weapons\arccw\ur_mp5"
-$cdmaterials "models\weapons\arccw\ur_mp5\bocw"
-$cdmaterials "models\weapons\arccw\ud_common"
+$cdmaterials "models\weapons/arc9\ur_mp5"
+$cdmaterials "models\weapons/arc9\ur_mp5\bocw"
+$cdmaterials "models\weapons/arc9\ud_common"
 
 // $texturegroup "skinfamilies"
 // {

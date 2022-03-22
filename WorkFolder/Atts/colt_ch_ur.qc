@@ -1,6 +1,6 @@
 // Created by Crowbar 0.71
 
-$modelname "weapons\arccw\atts\colt_ch.mdl"
+$modelname "weapons/arc9\atts\colt_ch.mdl"
 
 $bodygroup "body"
 {
@@ -13,7 +13,7 @@ $contents "solid"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\weapons\arccw\ud_m16"
+$cdmaterials "models\weapons/arc9\ud_m16"
 
 $cbox 0 0 0 0 0 0
 
