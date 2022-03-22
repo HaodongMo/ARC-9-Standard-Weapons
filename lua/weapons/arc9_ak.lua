@@ -170,7 +170,7 @@ SWEP.SpeedMultBlindFire = 1
 
 -------------------------- MELEE
 
-SWEP.Bash = false
+SWEP.Bash = true
 SWEP.PrimaryBash = false
 
 SWEP.BashDamage = 50

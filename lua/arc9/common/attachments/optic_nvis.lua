@@ -12,9 +12,10 @@ ATT.Folder = "SCOPE"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 6, -1.56555),
+        Pos = Vector(0, 7.5, -1.56555),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.5
+        Magnification = 1.5,
+        ViewModelFOV = 40
     },
 }
 
@@ -73,9 +74,9 @@ local pattern = Material("pp/texturize/plain.png")
 -- local grid = Material("arc9/pxgrid.png")
 
 ATT.RTScopeDrawFunc = function(swep, rtsize)
-    render.UpdateScreenEffectTexture()
-    DrawTexturize(8, pattern)
-    cam.IgnoreZ(true)
+    -- render.UpdateScreenEffectTexture()
+    -- DrawTexturize(8, pattern)
+    -- cam.IgnoreZ(true)
 end
 
 ATT.RTScopeMotionBlur = true

@@ -34,6 +34,8 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("arc9/razer.png", "mips")
 ATT.HoloSightSize = 512
 ATT.HoloSightColor = Color(200, 255, 50, 200)
+local rd = 0.01
+ATT.HoloSightRenderDepth = rd
 
 if CLIENT then
 
@@ -98,7 +100,7 @@ ATT.HoloSightFunc = function(swep, pos, mdl)
 
     cam.Start3D2D(pos - (ang:Right() * 512) - (ang:Forward() * 1024), ang, 8)
     cam.IgnoreZ(true)
-    swep:SetHoloSightRenderDepth(mdl)
+    swep:SetHoloSightRenderDepth(mdl, rd)
 
     surface.SetDrawColor(col_tp)
     surface.DrawRect(0, 0, 256, 128)

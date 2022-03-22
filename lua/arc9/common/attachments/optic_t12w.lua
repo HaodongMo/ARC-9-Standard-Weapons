@@ -21,7 +21,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 40
+ATT.RTScopeFOV = 35
 ATT.RTScopeReticle = nil
 ATT.RTScopeColor = Color(255, 50, 50)
 ATT.RTScopeNoShadow = true

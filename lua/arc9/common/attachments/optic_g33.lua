@@ -11,10 +11,11 @@ ATT.Category = {"optic_picatinny"}
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 7.5, -1.6169025),
+        Pos = Vector(0, 12, -1.6169025),
         Ang = Angle(0, 0, 0),
         Magnification = 3,
-        DeferSights = true
+        DeferSights = true,
+        ViewModelFOV = 40
     }
 }
 
