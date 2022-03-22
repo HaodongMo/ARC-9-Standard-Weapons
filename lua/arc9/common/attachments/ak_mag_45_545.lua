@@ -38,3 +38,5 @@ ATT.DistantShootSound = path .. "fire_dist.ogg"
 
 ATT.Ammo = "smg1"
 ATT.AK74 = true
+
+ATT.DropMagazineModel = "models/weapons/arc9/droppedmags/ak_545_45.mdl"

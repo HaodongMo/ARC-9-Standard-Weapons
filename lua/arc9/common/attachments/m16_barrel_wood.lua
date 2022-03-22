@@ -8,7 +8,7 @@ ATT.PrintName_TrueName = "M16 Wooden 20\" Barrel"
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_wood.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 20
 ATT.Category = "m16_barrel"
 
 ATT.PhysBulletMuzzleVelocityMult = 1.05

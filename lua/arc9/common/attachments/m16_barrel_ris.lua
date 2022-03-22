@@ -8,7 +8,7 @@ ATT.PrintName_TrueName = "Colt M16A4 RIS 20\" Barrel"
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_ris.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 20
 ATT.Category = "m16_barrel"
 
 ATT.Attachments = {
@@ -40,14 +40,14 @@ ATT.Attachments = {
         Pos = Vector(-6, 0, -1.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        MergeSlots = {5, 6},
+        MergeSlots = {5},
     },
     {
         PrintName = "RAIL",
         Category = "optic_picatinny_medium",
-        RequireElements = {"flattop"},
-        ExcludeElements = {"flattop_optic"},
-        InstalledElements = {"ris_optic"},
+        -- RequireElements = {"flattop"},
+        -- ExcludeElements = {"flattop_optic"},
+        -- InstalledElements = {"ris_optic"},
         ExtraSightDistance = 12,
         Pos = Vector(-5, 0, -1.95),
         Ang = Angle(0, 0, 0),

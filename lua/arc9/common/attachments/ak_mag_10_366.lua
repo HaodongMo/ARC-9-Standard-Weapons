@@ -38,3 +38,5 @@ ATT.Ammo = "357"
 
 ATT.RPMMult = 0.75
 ATT.VPO209 = true
+
+ATT.DropMagazineModel = "models/weapons/arc9/droppedmags/ak_366tkm.mdl"

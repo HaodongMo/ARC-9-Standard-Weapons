@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/ur_deagle/deagle_c"
+	"$bumpmap" "models/weapons/arc9/ur_deagle/deagle_n"
+	"$normalmapalphaenvmapmask" 	1
+	"$color2" "[1.8 1.3 0.2]"
+	"$phongwarptexture"			"models\weapons/arc9\ud_stalol\phongwarp_gold" // string -- phong gradient texture: 256x16 texture where x:0 = unlit, x:256 = fully lit (default is a perfect 0-256 black to white gradient)
+
+
+	"$phong"					"1"
+ 	"$phongexponenttexture" "models\weapons/arc9\ur_deagle/deagle_e_shine"
+	"$phongboost"				"6.75"
+	"$phongfresnelranges"		"[1 0.5 3]"
+	"$phongtint"			"[1.6 1.25 1]"
+	"$halflambert" "1"
+	
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" 			"1"
+	//"$envmapFresnelMinMaxExp" "[0 5 .4]"
+	"$envmaptint"				"[0.4 0.37 0.18]"
+
+	"$nocull" "1"
+}

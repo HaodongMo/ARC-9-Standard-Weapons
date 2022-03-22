@@ -59,6 +59,10 @@ SWEP.WorldModelOffset = {
 
 SWEP.DefaultBodygroups = "0000000400000000000000"
 
+SWEP.SpreadMultHipFire = 3
+SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilAutoControlMultHipFire = 0.5
+
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageMax = 27 -- Damage done at point blank range
@@ -122,14 +126,25 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 -- Use this hook to modify features of a firemode.
 -- SWEP.Hook_P_ModifyFiremode = function(self, firemode) return firemode end
 
+-------------------------- MELEE
+
+SWEP.Bash = true
+SWEP.PrimaryBash = false
+
+SWEP.BashDamage = 50
+SWEP.BashLungeRange = 128
+SWEP.BashRange = 64
+SWEP.PreBashTime = 0.25
+SWEP.PostBashTime = 0.5
+
 -------------------------- RECOIL
 
 -- General recoil multiplier
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.75 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.4 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.4 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -677,7 +692,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
@@ -714,7 +729,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
@@ -872,7 +887,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.8,
                 lhik = 0,
                 rhik = 0
             },
@@ -1170,7 +1185,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "IRONS",
+        PrintName = "FS",
         Category = {"m16lp"},
         Bone = "m16_parent",
         ExcludeElements = {"fpw"},

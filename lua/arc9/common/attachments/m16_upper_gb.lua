@@ -16,6 +16,7 @@ ATT.SpreadMult = 0.775
 
 ATT.Firemodes = {
     {
+        PrintName = "BOLT",
         Mode = 1
     }
 }

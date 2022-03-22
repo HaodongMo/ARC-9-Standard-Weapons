@@ -12,7 +12,7 @@ Improves fire rate massively.]]
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_fpw.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 14
 ATT.Category = "m16_barrel"
 ATT.ActivateElements = {"fpw"}
 

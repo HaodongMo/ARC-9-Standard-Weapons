@@ -33,7 +33,7 @@ ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 4
 
 ATT.RTScopeReticle = Material("arc9/tars_only.png", "mips smooth")
-ATT.RTScopeColor = Color(255, 0, 0)
+ATT.RTScopeColorable = true
 
 ATT.ScopeScreenRatio = 0.9
 ATT.ScopeLength = 30

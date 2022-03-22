@@ -9,7 +9,7 @@ ATT.CompactName_TrueName = "23\"RPK"
 
 ATT.Icon = Material("entities/arc9_att_ak_barrel_rpk.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 23
 ATT.Category = "ak_barrel"
 
 ATT.RecoilUpMult = 0.8

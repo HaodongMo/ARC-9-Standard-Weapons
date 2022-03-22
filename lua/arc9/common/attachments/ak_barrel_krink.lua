@@ -9,7 +9,7 @@ ATT.CompactName_TrueName = "9\"KRINKOV"
 
 ATT.Icon = Material("entities/arc9_att_ak_barrel_krink.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 9
 ATT.Category = "ak_barrel"
 
 ATT.PhysBulletMuzzleVelocityMult = 0.85
@@ -37,4 +37,4 @@ ATT.IronSightsOverride = {
     Magnification = 1.1,
 }
 
-ATT.ActivateElements = {"blockhandguard", "blockdc"}
+ATT.ActivateElements = {"blockhandguard"}

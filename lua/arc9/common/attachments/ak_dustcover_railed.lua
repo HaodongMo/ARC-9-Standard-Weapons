@@ -10,19 +10,23 @@ ATT.Icon = Material("entities/arc9_att_ak_dustcover_railed.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = "ak_dustcover"
 
+ATT.SprintToFireTimeMult = 1.02
+
 ATT.Attachments = {
     {
         PrintName = "OPTIC",
         Category = "optic_picatinny",
-        Pos = Vector(-3, 0, 1),
+        Pos = Vector(-3, 0, -1),
         Ang = Angle(0, 0, 0),
         MergeSlots = {2}
     },
     {
         PrintName = "RS",
-        Category = "rearsight_picatinny",
-        Pos = Vector(0.5, 0, 1),
+        Category = {"rearsight_picatinny", "carryhandle_picatinny"},
+        Pos = Vector(0.5, 0, -1),
         Ang = Angle(0, 0, 0),
         Hidden = true
-    }
+    },
 }
+
+ATT.ActivateElements = {"nokrinkrs", "blockdovetail"}

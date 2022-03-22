@@ -11,7 +11,7 @@ ATT.Description_TrueName = [[Very short barrel for the CAR-15.
 
 Improves fire rate and handling, at the cost of range.]]
 
-ATT.SortOrder = 0
+ATT.SortOrder = 11
 ATT.Category = "m16_barrel"
 ATT.ActivateElements = {"shortfs", "nomount"}
 

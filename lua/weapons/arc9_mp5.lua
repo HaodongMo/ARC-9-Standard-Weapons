@@ -59,9 +59,13 @@ SWEP.WorldModelOffset = {
 
 SWEP.DefaultBodygroups = "0200000000000000000000"
 
+SWEP.SpreadMultHipFire = 3
+SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilAutoControlMultHipFire = 0.5
+
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 35 -- Damage done at point blank range
+SWEP.DamageMax = 23 -- Damage done at point blank range
 SWEP.DamageMin = 15 -- Damage done at maximum range
 
 SWEP.DamageRand = 0 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
@@ -88,7 +92,7 @@ SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 
 SWEP.DropMagazineModel = "models/weapons/arc9/droppedmags/mp5_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {
-    "weapons/arc9_ud/common/magdrop_smg.ogg"
+    "weapons/arc9_ud/common/smg_pistol_magdrop_1.ogg", "weapons/arc9_ud/common/smg_pistol_magdrop_2.ogg", "weapons/arc9_ud/common/smg_pistol_magdrop_3.ogg", "weapons/arc9_ud/common/smg_pistol_magdrop_4.ogg"
 }  -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 
@@ -126,14 +130,25 @@ SWEP.NonResetBurst = true -- Annoying behaviour where you have to shoot ALL THRE
 -- Use this hook to modify features of a firemode.
 -- SWEP.Hook_P_ModifyFiremode = function(self, firemode) return firemode end
 
+-------------------------- MELEE
+
+SWEP.Bash = true
+SWEP.PrimaryBash = false
+
+SWEP.BashDamage = 50
+SWEP.BashLungeRange = 128
+SWEP.BashRange = 64
+SWEP.PreBashTime = 0.25
+SWEP.PostBashTime = 0.5
+
 -------------------------- RECOIL
 
 -- General recoil multiplier
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.2 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -224,6 +239,10 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
+
+SWEP.HideBones = {
+    "magb",
+}
 -------------------------- SOUNDS
 
 local path = ")^weapons/arc9_ud/mp5/"
@@ -266,7 +285,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.5,
                 lhik = 0,
                 rhik = 0
             },
@@ -340,7 +359,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
@@ -381,7 +400,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.7,
                 lhik = 0,
                 rhik = 0
             },
@@ -431,7 +450,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
@@ -468,7 +487,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.7,
                 lhik = 0,
                 rhik = 0
             },
@@ -515,6 +534,16 @@ SWEP.AttachmentElements = {
             {1, 0}
         }
     },
+    ["mp5_stock_pdw"] = {
+        Bodygroups = {
+            {1, 5}
+        }
+    },
+    ["mp5_stock_wood"] = {
+        Bodygroups = {
+            {1, 4}
+        }
+    },
     ["mp5_stock_sliding"] = {
         Bodygroups = {
             {1, 1},
@@ -538,13 +567,14 @@ SWEP.AttachmentElements = {
     },
     ["mp5_barrel_sd"] = {
         Bodygroups = {
-            {6, 2},
+            {6, 3},
             {5, 1}
         }
     },
     ["mp5_barrel_carbine"] = {
         Bodygroups = {
-            {5, 2}
+            {5, 2},
+            {6, 0}
         },
         AttPosMods = {
             [4] = {
@@ -557,6 +587,22 @@ SWEP.AttachmentElements = {
             {6, 1},
         }
     },
+    ["mp5_barrel_carbine_ris"] = {
+        Bodygroups = {
+            {5, 2},
+            {6, 1}
+        },
+        AttPosMods = {
+            [4] = {
+                Pos = Vector(0, 0.75, 17.5),
+            }
+        }
+    },
+    ["mp5_barrel_old"] = {
+        Bodygroups = {
+            {6, 2}
+        }
+    }
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)

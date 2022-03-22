@@ -1,14 +1,20 @@
-$modelname "weapons\arc9\c_ur_mp5.mdl"
- 
-$bodygroup "studio" {
-	studio "receiver.smd"
-}
 
+//  				ARC9
+// $modelname "weapons\arc9\c_ur_mp5.mdl"
+
+//  				ARCCW
+$modelname "weapons/arc9\c_ur_mp5.mdl"
+ 
 $bodygroup "1" {
 	studio "stock_solid.smd"
 	studio "stock_sliding_adapter.smd"
 	studio "stock_cap.smd"
 	studio "stock_tube.smd"
+	studio "stock_wood.smd"
+	studio "stock_pdw_ext.smd"
+	studio "stock_pdw_in.smd"
+
+	studio "stock_kurzcap.smd"
 }
 
 $bodygroup "2" {
@@ -33,12 +39,15 @@ $bodygroup "5" {
 	studio "barrel.smd"
 	studio "barrel_sd.smd"
 	studio "barrel_long.smd"
+	studio "barrel_kurz.smd"
 }
 
 $bodygroup "6" {
 	studio "handguard.smd"
 	studio "handguard_tac.smd"
+	studio "handguard_old.smd"
 	blank
+	studio "handguard_kurz.smd"
 }
 
 $bodygroup "7" {
@@ -46,9 +55,27 @@ $bodygroup "7" {
 	studio "rails_sd.smd"
 }
 
-$cdmaterials "models\weapons\arc9\ur_mp5"
-$cdmaterials "models\weapons\arc9\ud_m16"
-$cdmaterials "models\weapons\arc9\ud_common"
+$bodygroup "upper" {
+	studio "receiver_upper_a4.smd"
+	studio "receiver_upper_kurz.smd"
+}
+
+$bodygroup "lower" {
+	studio "receiver_lower_a4.smd"
+	studio "receiver_lower_a1.smd"
+}
+
+//  				ARC9
+// $cdmaterials "models\weapons\arc9\ur_mp5"
+// $cdmaterials "models\weapons\arc9\ur_mp5\bocw"
+// $cdmaterials "models\weapons\arc9\ud_m16"
+// $cdmaterials "models\weapons\arc9\ud_common"
+
+
+// 					ARCCW
+$cdmaterials "models\weapons/arc9\ur_mp5"
+$cdmaterials "models\weapons/arc9\ur_mp5\bocw"
+$cdmaterials "models\weapons/arc9\ud_common"
 
 // $texturegroup "skinfamilies"
 // {
@@ -285,5 +312,6 @@ $bonemerge "ValveBiped.Bip01_R_Finger02"
 
 $collisionmodel "mp5_col.smd"
 {
-	$mass 5
+	$mass 35
+	$concave
 }

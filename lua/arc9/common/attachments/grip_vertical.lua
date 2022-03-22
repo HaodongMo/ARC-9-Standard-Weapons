@@ -21,3 +21,6 @@ ATT.SwayAdd = 0.1
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.075
 ATT.SpeedMult = 0.97
+
+ATT.HoldTypeSightsOverride = "smg"
+ATT.HoldTypeOverride = "shotgun"

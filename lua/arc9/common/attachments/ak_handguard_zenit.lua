@@ -19,7 +19,7 @@ ATT.Attachments = {
         PrintName = "RAIL",
         Category = {"tac_picatinny_top", "canted_picatinny"},
         ExtraSightDistance = 12,
-        Pos = Vector(0, 0, 0.95),
+        Pos = Vector(0, 0, -0.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         MergeSlots = {2, 3},
@@ -27,16 +27,44 @@ ATT.Attachments = {
     {
         PrintName = "FS",
         Category = "frontsight_picatinny",
-        Pos = Vector(-5.5, 0, 0.95),
+        Pos = Vector(-5.5, 0, -0.95),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "RAIL",
         Category = "optic_picatinny_medium",
         ExtraSightDistance = 12,
-        Pos = Vector(0, 0, 0.95),
+        Pos = Vector(0, 0, -0.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         Hidden = true
+    },
+    {
+        PrintName = "RAIL",
+        Category = "picatinny",
+        Pos = Vector(-6, -1.35, 1.5),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(2, 0, 0)
+    },
+    {
+        PrintName = "RAIL",
+        Category = "picatinny",
+        Pos = Vector(-6, 1.35, 1.5),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(-2, 0, 0)
+    },
+    {
+        PrintName = "RAIL",
+        Category = "picatinny",
+        Pos = Vector(-5.5, 0, 3),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0)
+    },
+    {
+        PrintName = "GRIP",
+        Category = "grip_picatinny",
+        Pos = Vector(0, 0, 3),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0)
     },
 }

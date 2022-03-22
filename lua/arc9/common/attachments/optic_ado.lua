@@ -1,7 +1,7 @@
-ATT.PrintName = "NcSTAR Advance Computing Optic Z4"
-ATT.CompactName = "ACO-Z4"
+ATT.PrintName = "NcSTAR Advanced eXperimental Optic Z4"
+ATT.CompactName = "AXO-Z4"
 ATT.Icon = Material("entities/arc9_att_optic_ado.png", "mips smooth")
-ATT.Description = [[The NcSTAR Advance Computing Optic is a development of the Advance Dual Optic that incorporates computer technology. It displays tactical/ballistic data on the scope's lens as part of the crosshair plane and in addition, possesses a backup reflex sight.]]
+ATT.Description = [[The NcSTAR Advance eXperimental Optic is a development of the Advance Dual Optic, produced in conjunction with ARCCW (Advanced Research Center for Combat Weapons), that incorporates computer technology. It displays tactical/ballistic data on the scope's lens as part of the crosshair plane and in addition, possesses a backup reflex sight. In addition, it possesses a basic, non-target-identifying night vision mode.]]
 ATT.SortOrder = 107
 
 ATT.Model = "models/weapons/arc9/atts/ado.mdl"
@@ -15,6 +15,27 @@ ATT.Sights = {
         Pos = Vector(0, 9.5, -2.53652),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15
+    },
+    {
+        Pos = Vector(0, 9.5, -2.53652),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.15,
+        ExtraSightData = {
+            RTScopeNightVision = true,
+            RTScopeNightVisionMonochrome = false,
+            RTScopeNightVisionCC = {
+                ["$pp_colour_addr"] = -255,
+                ["$pp_colour_addg"] = 0,
+                ["$pp_colour_addb"] = -255,
+                ["$pp_colour_brightness"] = 0.01,
+                ["$pp_colour_contrast"] = 1.1,
+                ["$pp_colour_colour"] = 1,
+                ["$pp_colour_mulr"] = 0,
+                ["$pp_colour_mulg"] = 0,
+                ["$pp_colour_mulb"] = 0
+            },
+            RTScopeNightVisionNoiseColor = Color(0, 255, 0)
+        }
     },
     {
         Pos = Vector(0, 7.5, -5.31471),
@@ -44,6 +65,9 @@ ATT.HoloSightReticle = Material("arc9/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 2048
 ATT.HoloSightColor = Color(200, 255, 50, 200)
+
+local adj = 0.01
+ATT.HoloSightDepthAdjustment = adj
 
 ATT.ScopeScreenRatio = 0.8
 ATT.ScopeLength = 30
@@ -98,9 +122,15 @@ ATT.RTScopeDrawFunc = function(swep, rtsize)
 
             cam.Start3D(nil, nil, swep:GetRTScopeFOV(), 0, 0, w, h)
 
-            v = ccip_pos:ToScreen().y
+            v = ccip_pos:ToScreen().y - (h / 2)
 
             cam.End3D()
+
+            if GetConVar("arc9_cheapscopes"):GetBool() then
+                v = v / swep:GetCheapScopeScale(0.8)
+            end
+
+            v = v + (h / 2)
 
             cam.IgnoreZ(true)
         end
@@ -162,12 +192,23 @@ ATT.RTScopeDrawFunc = function(swep, rtsize)
     surface.SetTextPos(ss * 300, ss * (270 + 4) + ScreenScale(16))
     surface.DrawText(armor)
 
-    local clip = "CLIP:" .. tostring(swep:Clip1())
+    local clip = "MAG:" .. tostring(swep:Clip1())
 
     surface.SetTextColor(col)
     surface.SetFont("ado_font_8")
     surface.SetTextPos(ss * 300, ss * (270 + 6) + ScreenScale(24))
     surface.DrawText(clip)
+
+    local cciptext = "CCIP: ACTIVE"
+
+    if no_ccip then
+        cciptext = "CCIP: OFF"
+    end
+
+    surface.SetTextColor(col)
+    surface.SetFont("ado_font_8")
+    surface.SetTextPos(ss * 300, ss * (270 + 8) + ScreenScale(32))
+    surface.DrawText(cciptext)
 end
 
 ATT.HoloSightFunc = function(swep, pos, mdl)
@@ -179,6 +220,7 @@ ATT.HoloSightFunc = function(swep, pos, mdl)
 
     cam.Start3D2D(pos - (ang:Right() * 512) - (ang:Forward() * 512), ang, 8)
     cam.IgnoreZ(true)
+    swep:SetHoloSightRenderDepth(mdl, adj)
 
     surface.SetDrawColor(col_tp)
     surface.DrawRect(0, 0, 128, 128)

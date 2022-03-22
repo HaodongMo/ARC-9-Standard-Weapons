@@ -9,7 +9,7 @@ ATT.CompactName_TrueName = "20\"VEPR"
 
 ATT.Icon = Material("entities/arc9_att_ak_barrel_vepr.png", "mips smooth")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 20
 ATT.Category = "ak_barrel"
 
 ATT.RecoilUpMult = 1.5
@@ -33,4 +33,4 @@ ATT.IronSightsOverride = {
     Magnification = 1.1,
 }
 
-ATT.ActivateElements = {"blockhandguard"}
+-- ATT.ActivateElements = {"blockhandguard"}

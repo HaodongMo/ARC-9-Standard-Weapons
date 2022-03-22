@@ -61,6 +61,10 @@ SWEP.DefaultBodygroups = "00000000000000000000"
 
 SWEP.Silencer = true
 
+SWEP.SpreadMultHipFire = 3
+SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilAutoControlMultHipFire = 0.5
+
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageMax = 30
@@ -129,6 +133,17 @@ SWEP.RecoilResetTime = 0.05
 SWEP.RecoilAutoControl = 1.5 * 0.25
 
 SWEP.RecoilKick = 3.5
+
+-------------------------- MELEE
+
+SWEP.Bash = true
+SWEP.PrimaryBash = false
+
+SWEP.BashDamage = 50
+SWEP.BashLungeRange = 128
+SWEP.BashRange = 64
+SWEP.PreBashTime = 0.25
+SWEP.PostBashTime = 0.5
 
 -------------------------- SPREAD
 
