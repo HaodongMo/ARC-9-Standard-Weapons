@@ -10,7 +10,7 @@ ATT.Model = "models/weapons/arccw/atts/ur_annihilator_laser.mdl"
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -6.75),
+        Pos = Vector(0, 7, -6.85),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
     }
