@@ -10,7 +10,6 @@ ATT.CompactName_TrueName = "20\"LMG"
 -- ATT.Model = "models/weapons/arc9/lhik/lmg_lhik.mdl"
 -- ATT.LHIK = false
 ATT.ModelOffset = Vector(-18, -2.5, 2)
-ATT.IconOffset = Vector(18, 2.5, -2)
 
 ATT.Icon = Material("entities/arc9_att_m16_barrel_a1.png", "mips smooth")
 

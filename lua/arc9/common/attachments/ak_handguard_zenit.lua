@@ -1,6 +1,6 @@
 ATT.PrintName = "TIA AlphAK"
 ATT.CompactName = "ALPHAK"
-ATT.Description = [[Railed handguard compatible with multiple AK barrels. Offers four-directional rails. A little heavy and uncomfortable to use, however.]]
+ATT.Description = [[Railed handguard compatible with multiple barrels. Offers four-directional rails. A little heavy and uncomfortable to use, however.]]
 
 ATT.PrintName_TrueName = "Zenitco B-30 Handguard"
 ATT.CompactName_TrueName = "B30"
@@ -42,14 +42,14 @@ ATT.Attachments = {
     {
         PrintName = "RAIL",
         Category = "picatinny",
-        Pos = Vector(-6, -1.35, 1.5),
+        Pos = Vector(-6, -1.25, 1.6),
         Ang = Angle(0, 0, -90),
         Icon_Offset = Vector(2, 0, 0)
     },
     {
         PrintName = "RAIL",
         Category = "picatinny",
-        Pos = Vector(-6, 1.35, 1.5),
+        Pos = Vector(-6, 1.25, 1.6),
         Ang = Angle(0, 0, 90),
         Icon_Offset = Vector(-2, 0, 0)
     },

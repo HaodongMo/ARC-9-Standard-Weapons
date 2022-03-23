@@ -2,12 +2,12 @@ ATT.PrintName = "Annihilator Laser"
 ATT.CompactName = "ANNIHILATOR"
 ATT.Description = [[Tactical laser module with iron sight.]]
 
-ATT.Icon = Material("entities/arc9_att_tac_anpeq16a.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_tac_annihilator.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "optic_picatinny"
 ATT.Model = "models/weapons/arccw/atts/ur_annihilator_laser.mdl"
-ATT.Folder = "LAM"
+ATT.Folder = "LIGHT-LAM"
 
 ATT.Sights = {
     {
@@ -37,4 +37,3 @@ ATT.ToggleStats = {
 ATT.Scale = 1.25
 
 ATT.ModelOffset = Vector(-8, 0, -5)
-ATT.IconOffset = Vector(8, 0, 5)

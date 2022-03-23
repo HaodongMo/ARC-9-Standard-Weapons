@@ -12,8 +12,8 @@ ATT.ClipSizeOverride = 8
 
 ATT.PhysBulletMuzzleVelocityMult = 1.5
 ATT.PenetrationMult = 0.8
-ATT.DamageMaxMult = 0.85
-ATT.DamageMinMult = 1.15
+ATT.DamageMaxMult = 0.95
+ATT.DamageMinMult = 1.25
 ATT.RangeMult = 1.1
 ATT.RecoilMult = 0.9
 ATT.RecoilKickMult = 0.85
