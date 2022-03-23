@@ -9,6 +9,9 @@ ATT.Category = {"picatinny", "tac_picatinny"}
 ATT.Model = "models/weapons/arc9/atts/tlr2.mdl"
 ATT.Folder = "LIGHT-LAM"
 
+ATT.AimDownSightsTimeMult = 1.04
+ATT.SprintToFireTimeMult = 1.04
+
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {

@@ -9,6 +9,9 @@ ATT.Category = "optic_picatinny"
 ATT.Model = "models/weapons/arccw/atts/ur_annihilator_laser.mdl"
 ATT.Folder = "LIGHT-LAM"
 
+ATT.AimDownSightsTimeMult = 1.04
+ATT.SprintToFireTimeMult = 1.04
+
 ATT.Sights = {
     {
         Pos = Vector(0, 7, -6.85),
