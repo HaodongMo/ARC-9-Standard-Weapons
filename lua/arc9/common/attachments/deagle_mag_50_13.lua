@@ -26,3 +26,5 @@ ATT.ReloadTimeMult = 1.05
 ATT.SwayAdd = 0.05
 
 ATT.ActivateElements = {"extended"}
+
+ATT.DropMagazineModelOverride = "models/weapons/arc9/droppedmags/deagle_mag_10.mdl"

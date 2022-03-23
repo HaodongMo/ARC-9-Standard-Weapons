@@ -1,5 +1,0 @@
-Diffuse=BlendFunc_DefBase
-Normal=FlatNormal
-Other[0]=BlendFunc_DefBlend
-Other[1]=DefaultTexture
-Other[2]=T_DefaultMaskTexture
