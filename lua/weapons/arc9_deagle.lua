@@ -364,6 +364,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        MinProgress = 0.7,
         MagSwapTime = 0.25,
         EventTable = {
             { s = rottle, t = 0 / 60, c = ca },
@@ -399,6 +400,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        MinProgress = 0.75,
         MagSwapTime = 0.25,
         EventTable = {
             { s = rottle, t = 0 / 60, c = ca },
