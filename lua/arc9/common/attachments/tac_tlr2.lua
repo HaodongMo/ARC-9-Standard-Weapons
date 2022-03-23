@@ -20,7 +20,7 @@ ATT.ToggleStats = {
         LaserStrength = 1,
         LaserColor = Color(255, 0, 0),
         Flashlight = true,
-        FlashlightColor = Color(245, 245, 255),
+        FlashlightColor = Color(200, 200, 255),
         FlashlightMaterial = "effects/flashlight001",
         FlashlightDistance = 800,
         FlashlightFOV = 75,
@@ -30,7 +30,7 @@ ATT.ToggleStats = {
     {
         PrintName = "Light",
         Flashlight = true,
-        FlashlightColor = Color(245, 245, 255),
+        FlashlightColor = Color(200, 200, 255),
         FlashlightMaterial = "effects/flashlight001",
         FlashlightDistance = 800,
         FlashlightFOV = 75,
