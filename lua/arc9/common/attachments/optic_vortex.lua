@@ -2,10 +2,10 @@ ATT.PrintName = "AMG UX-1 Smart Holo"
 ATT.CompactName = "UX-1"
 ATT.Icon = Material("entities/arc9_att_optic_vortex.png", "mips smooth")
 ATT.Description = [[A holographic sight with "smart" networked functionality. Displays weapon tilt, shows predicted impact point, and automatically calculates range. At the same time, it is no bulkier or less reliable than any ordinary optic. The UX-1 is truly a close-combat optic for the digital age. Produced in collaboration between Vortex and ARCCW International (Advanced Research Center for Combat Weapons).]]
-ATT.SortOrder = 99
+ATT.SortOrder = 2
 
 ATT.Model = "models/weapons/arc9/atts/razer.mdl"
-ATT.Folder = "REFLEX"
+ATT.Folder = "SMART"
 
 ATT.Category = {"optic_picatinny_medium", "optic_picatinny"}
 

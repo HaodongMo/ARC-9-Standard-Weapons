@@ -11,5 +11,6 @@ ATT.RecoilMult = 1.25
 
 ATT.AimDownSightsTimeMult = 0.92
 ATT.SprintToFireTimeMult = 0.92
+ATT.RPMMult = 1.1
 
 -- ATT.ActivateElements = {"blockhandguard"}

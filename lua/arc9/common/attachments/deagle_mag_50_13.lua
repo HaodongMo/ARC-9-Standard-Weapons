@@ -16,5 +16,6 @@ ATT.FiremodesOverride = {
     }
 }
 ATT.ReloadTimeMult = 1.15
+ATT.DamageMaxMult = 0.95
 
 ATT.ActivateElements = {"extended"}

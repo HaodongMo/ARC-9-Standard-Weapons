@@ -65,7 +65,7 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 60 -- Damage done at point blank range
+SWEP.DamageMax = 51 -- Damage done at point blank range
 SWEP.DamageMin = 35 -- Damage done at maximum range
 
 SWEP.DamageRand = 0 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
@@ -203,7 +203,7 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "pistol"
+SWEP.HoldType = "revolver"
 SWEP.HoldTypeSprint = "normal"
 SWEP.HoldTypeHolstered = "normal"
 SWEP.HoldTypeSights = "revolver"

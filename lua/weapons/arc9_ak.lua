@@ -235,6 +235,16 @@ SWEP.HideBones = {
     "vm_mag2",
     "tag_mag2"
 }
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "vm_mag",
+        "tag_mag"
+    },
+    [2] = {
+        "vm_mag2",
+        "tag_mag2"
+    }
+}
 -------------------------- SOUNDS
 
 local path = ")^weapons/arc9_ud/ak/"
@@ -390,6 +400,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -404,6 +415,9 @@ SWEP.Animations = {
             {s = common .. "magpouchin.ogg", t = 1.35},
             {s = common .. "shoulder.ogg", t = 2.05},
             {s = common .. "grab.ogg", t = 2.1},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.75}
         },
     },
 
@@ -432,6 +446,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -447,6 +462,9 @@ SWEP.Animations = {
             {s = path .. "chamber.ogg",    t = 2.0},
             {s = common .. "grab.ogg", t = 2.4},
             {s = common .. "shoulder.ogg", t = 2.5},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.1}
         },
     },
 
@@ -475,6 +493,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -489,6 +508,9 @@ SWEP.Animations = {
             {s = common .. "magpouchin.ogg", t = 1.35},
             {s = common .. "shoulder.ogg", t = 2.05},
             {s = common .. "grab.ogg", t = 2.1},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.75}
         },
     },
 
@@ -517,6 +539,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -531,6 +554,9 @@ SWEP.Animations = {
             {s = path .. "chamber_9.ogg",    t = 2.05},
             {s = common .. "grab.ogg", t = 2.4},
             {s = common .. "shoulder.ogg", t = 2.5},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.1}
         },
     },
 
@@ -565,6 +591,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 0,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -609,6 +636,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 0,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -651,6 +679,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -665,6 +694,9 @@ SWEP.Animations = {
             {s = common .. "magpouchin.ogg", t = 1.35},
             {s = common .. "shoulder.ogg", t = 2.05},
             {s = common .. "grab.ogg", t = 2.1},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.75}
         },
     },
 
@@ -693,6 +725,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -709,6 +742,9 @@ SWEP.Animations = {
             {s = path .. "chamber.ogg",    t = 2.0},
             {s = common .. "grab.ogg", t = 2.4},
             {s = common .. "shoulder.ogg", t = 2.5},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.1}
         },
     },
 

@@ -7,6 +7,7 @@ ATT.Icon = Material("entities/arc9_att_tac_anpeq16a.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = "optic_picatinny"
 ATT.Model = "models/weapons/arccw/atts/ur_annihilator_laser.mdl"
+ATT.Folder = "LAM"
 
 ATT.Sights = {
     {

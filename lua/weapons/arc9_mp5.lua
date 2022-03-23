@@ -243,6 +243,10 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 SWEP.HideBones = {
     "magb",
 }
+SWEP.ReloadHideBoneTables = {
+    [1] = {"magb"},
+    [2] = {"mag"}
+}
 -------------------------- SOUNDS
 
 local path = ")^weapons/arc9_ud/mp5/"
@@ -369,6 +373,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 2,
         EventTable = {
             {v1 = 0, v2 = 5000, vt = 0.1, t = 0},
             {s = rottle,  t = 0.0},
@@ -382,6 +387,9 @@ SWEP.Animations = {
             {s = common .. "grab.ogg", t = 1.81},
             {s = common .. "shoulder.ogg", t = 1.9},
             {v1 = 0, v2 = 5000, vt = 0.1, t = 2},
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.25},
+            {hide = 1, t = 1.5}
         },
     },
 
@@ -410,6 +418,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 2,
         EventTable = {
             {v1 = 0, v2 = 5000, vt = 0.1, t = 0},
             {s = rottle,  t = 0.0},
@@ -432,6 +441,9 @@ SWEP.Animations = {
             {s = common .. "grab.ogg", t = 2.2},
             {s = common .. "shoulder.ogg", t = 2.3},
             {v1 = 0, v2 = 5000, vt = 0.1, t = 2.3},
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.75},
+            {hide = 1, t = 1.25}
         },
     },
 
@@ -460,6 +472,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 2,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 12 / 30},
@@ -469,6 +482,9 @@ SWEP.Animations = {
             {s = rottle,  t = 32 / 30},
             {s = common .. "grab.ogg", t = 1.81},
             {s = common .. "shoulder.ogg", t = 1.9},
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.25},
+            {hide = 1, t = 1.5}
         },
     },
 
@@ -512,6 +528,9 @@ SWEP.Animations = {
             {s = path .. "chamber.ogg",    t = 64 / 30},
             {s = common .. "grab.ogg", t = 2.2},
             {s = common .. "shoulder.ogg", t = 2.3},
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.75},
+            {hide = 1, t = 1.25}
         },
     },
 }

@@ -13,9 +13,14 @@ ATT.Category = "deagle_barrel"
 ATT.RecoilUpMult = 1.4
 ATT.RecoilSideMult = 1.1
 
-ATT.SpreadMultSights = 0.4
+ATT.SpreadMultSights = 0.75
+ATT.SpreadMultHipFire = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+ATT.RangeMaxMult = 1.25
 
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.1
+
+ATT.RPMMult = 0.75
 
 -- ATT.ActivateElements = {"blockhandguard"}
