@@ -12,7 +12,7 @@ ATT.Category = "muzzle"
 ATT.Folder = "SUPP"
 
 ATT.Scale = 1.25
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0.25, 0, 0)
 
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 ATT.RangeMaxMult = 1.1

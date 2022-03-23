@@ -913,6 +913,20 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["ak_barrel_vityaz"] = {
+        Bodygroups = {
+            {1, 8},
+            {5, 1},
+            {7, 5},
+            {8, 5},
+        },
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0, 15.55, 2.87),
+                Ang = Angle(0, -90, 0),
+            }
+        }
+    },
     ["ak_barrel_ak12"] = {
         Bodygroups = {
             {7, 6},
@@ -920,7 +934,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [1] = {
-                Pos = Vector(0, 23.25, 2.75),
+                Pos = Vector(0, 23.1, 2.75),
                 Ang = Angle(0, -90, 0),
             }
         }
@@ -981,6 +995,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         end
 
         if hasbarrel then
+            mdl:SetBodygroup(8, 2)
+        end
+    end
+
+    if eles["ak_barrel_vityaz"] then
+        mdl:SetBodygroup(8, 5)
+
+        if eles["muzzle"] then
             mdl:SetBodygroup(8, 2)
         end
     end

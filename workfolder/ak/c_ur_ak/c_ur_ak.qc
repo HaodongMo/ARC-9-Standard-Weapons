@@ -89,6 +89,7 @@ $bodygroup "muzzles" // 8
 	blank
 	studio "ak74_compensator.smd"
 	studio "aku_muzzle.smd"
+	studio "pp19_muzzle.smd"
 }
 $bodygroup "pistol_grips" // 9
 {
