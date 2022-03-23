@@ -248,6 +248,7 @@ SWEP.ShootSound = path .. "fire.ogg"
 SWEP.ShootSoundSilenced = path .. "fire_sup_dist.ogg"
 SWEP.DistantShootSoundSilenced = path .. "fire_sup.ogg"
 SWEP.DistantShootSound = path .. "fire_dist.ogg"
+SWEP.DryFireSound = "weapons/arc9_ud/glock/dryfire.ogg"
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
