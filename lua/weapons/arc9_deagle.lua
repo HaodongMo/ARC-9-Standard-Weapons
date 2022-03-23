@@ -679,6 +679,16 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {1, 5}
         }
+    },
+    ["deagle_grip_wood"] = {
+        Bodygroups = {
+            {4, 1}
+        }
+    },
+    ["deagle_grip_rubber"] = {
+        Bodygroups = {
+            {4, 2}
+        }
     }
 }
 

@@ -5,7 +5,7 @@ ATT.Description = [[Long barrel which substantially improves muzzle velocity and
 ATT.PrintName_TrueName = "DE5010 10\" Barrel"
 ATT.CompactName_TrueName = "10\"5010"
 
-ATT.Icon = Material("entities/arc9_att_ak_barrel_vepr.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_deagle_barrel_marksman.png", "mips smooth")
 
 ATT.SortOrder = 10
 ATT.Category = "deagle_barrel"
