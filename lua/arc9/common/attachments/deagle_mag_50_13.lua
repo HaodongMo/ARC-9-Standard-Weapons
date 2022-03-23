@@ -18,4 +18,11 @@ ATT.FiremodesOverride = {
 ATT.ReloadTimeMult = 1.15
 ATT.DamageMaxMult = 0.95
 
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.1
+
+ATT.SpeedMult = 0.99
+ATT.ReloadTimeMult = 1.05
+ATT.SwayAdd = 0.05
+
 ATT.ActivateElements = {"extended"}
