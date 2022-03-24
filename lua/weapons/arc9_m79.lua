@@ -83,10 +83,10 @@ SWEP.RicochetChance = 0
 
 SWEP.HookC_DrawBullet = function(swep, bullet)
     if swep:GetValue("SuppressSmokeTrail") then return end
+    if bullet.Imaginary then return end
 
     local emitter = ParticleEmitter(bullet.Pos)
-    if bullet.Imaginary then return end
-    if not IsValid(emitter) then return end
+    if !IsValid(emitter) then return end
     local smoke = emitter:Add("particle/particle_smokegrenade", bullet.Pos)
     smoke:SetVelocity(VectorRand() * 25)
     smoke:SetGravity(Vector(math.Rand(-5, 5), math.Rand(-5, 5), math.Rand(-20, -25)))
@@ -102,8 +102,6 @@ SWEP.HookC_DrawBullet = function(swep, bullet)
     smoke:SetPos(bullet.Pos)
     smoke:SetLighting(false)
     emitter:Finish()
-
-    return
 end
 
 -------------------------- PHYS BULLET BALLISTICS
@@ -297,6 +295,33 @@ SWEP.Animations = {
         Source = "reload",
         Time = 101 / 30,
         MagSwapTime = 1.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 1,
+                rhik = 1,
+            },
+            {
+                t = 0.3,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0},
             {s = common .. "breaker_open.ogg",  t = 0.3},
@@ -320,6 +345,33 @@ SWEP.Animations = {
         Source = "reload",
         Time = 101 / 30,
         MagSwapTime = 1.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 1,
+                rhik = 1,
+            },
+            {
+                t = 0.3,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0},
             {s = common .. "breaker_open.ogg",  t = 0.3},
@@ -340,6 +392,33 @@ SWEP.Animations = {
     ["reload_caseless"] = {
         Source = "reload_caseless",
         Time = 101 / 30,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 1,
+                rhik = 1,
+            },
+            {
+                t = 0.3,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = rottle, t = 0},
             {s = common .. "breaker_open.ogg",  t = 0.3},
@@ -366,7 +445,21 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {1, 3}
         }
-    }
+    },
+    ["m79_pirategun_tactical"] = {
+        Bodygroups = {
+            {0, 2},
+            {2, 1},
+            {4, 2}
+        }
+    },
+    ["m79_pirategun"] = {
+        Bodygroups = {
+            {0, 1},
+            {2, 1},
+            {4, 2}
+        }
+    },
 }
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
@@ -385,5 +478,12 @@ SWEP.Attachments = {
         Bone = "m79_body",
         Pos = Vector(0, 0, 0),
         Ang = Angle(90, 0, -90),
-    }
+    },
+    {
+        PrintName = "BODY",
+        Category = "m79_body",
+        Bone = "m79_front",
+        Pos = Vector(0, 0, 1),
+        Ang = Angle(90, 0, -90),
+    },
 }

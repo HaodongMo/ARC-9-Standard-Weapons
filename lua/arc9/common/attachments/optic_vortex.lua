@@ -76,24 +76,19 @@ ATT.HoloSightFunc = function(swep, pos, mdl)
     end
 
     if last_ccip_time + (1 / 15) <= CurTime() then
-        if !haslaze then
+        local ccip = swep:GetCCIP()
+
+        if !ccip then
             ccip_v = 0
             no_ccip = true
         else
-            local ccip = swep:GetCCIP()
-
-            if !ccip then
-                ccip_v = 0
-                no_ccip = true
-            else
-                -- cam.Start3D(nil, nil, swep:GetOwner():GetFOV() / swep:GetSmoothedFOVMag())
-                -- ccip_v = ccip.HitPos:ToScreen().y - (ScrH() / 2)
-                local localhp = mdl:WorldToLocal(ccip.HitPos)
-                local localpos = mdl:WorldToLocal(pos)
-                ccip_v = (localpos.z - localhp.z) / 8
-                -- cam.End3D()
-                no_ccip = false
-            end
+            -- cam.Start3D(nil, nil, swep:GetViewModelFOV())
+            -- ccip_v = ccip.HitPos:ToScreen().y - (ScrH() / 2)
+            local localhp = mdl:WorldToLocal(ccip.HitPos)
+            local localpos = mdl:WorldToLocal(pos)
+            ccip_v = (localpos.z - localhp.z)
+            -- cam.End3D()
+            no_ccip = false
         end
         last_ccip_time = CurTime()
     end
