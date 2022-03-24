@@ -21,7 +21,9 @@ SWEP.Credits = {
     Author = "Urban Decay Team",
 }
 
-SWEP.Description = [[Single-shot break action grenade launcher. Fires a slow-moving explosive round.]]
+SWEP.Description = [[Often referred to as "The Thumper" or "Bloop Gun" for its distinctive firing sound, the M79 was developed to meet the need to improve the firepower of an infantry squad with a weapon more mobile than a mortar, but more powerful than a rifle grenade. Due to difficulties in producing a launcher which could fire more than a single shot, the M79 was adopted by the US Army in 1961, and though it would ultimately be replaced with repeating grenade launchers, it was loved by soldiers for its ease of use and reliability.
+    
+Single-shot break action grenade launcher. Fires a slow-moving explosive round.]]
 
 if !ARC9:UseTrueNames() then
 
@@ -33,7 +35,9 @@ SWEP.Trivia = {
     Year = "1961"
 }
 
-SWEP.Description = [[Single-shot break action grenade launcher. Fires a slow-moving explosive round.]]
+SWEP.Description = [[Often referred to as "The Thumper" or "Bloop Gun" for its distinctive firing sound, the GL1 was developed to meet the need to improve the firepower of an infantry squad with a weapon more mobile than a mortar, but more powerful than a rifle grenade. Due to difficulties in producing a launcher which could fire more than a single shot, the M79 was adopted in 1961, and though it would ultimately be replaced with repeating grenade launchers, it was loved by soldiers for its ease of use and reliability.
+    
+Single-shot break action grenade launcher. Fires a slow-moving explosive round.]]
 
 else
 
@@ -78,6 +82,8 @@ SWEP.SuppressSmokeTrail = false
 SWEP.ExplosionDamage = 95
 SWEP.ExplosionRadius = 256
 SWEP.ExplosionEffect = "Explosion"
+
+SWEP.PhysBulletModel = "models/Items/AR2_Grenade.mdl"
 
 SWEP.RicochetChance = 0
 

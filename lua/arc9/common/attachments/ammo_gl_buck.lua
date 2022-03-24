@@ -22,6 +22,7 @@ ATT.DamageMinOverride = 5
 ATT.RangeMinOverride = 750
 ATT.RangeMaxOverride = 10000
 
+ATT.PhysBulletModelOverride = false
 ATT.ImpactDecalOverride = ""
 
 ATT.SuppressSmokeTrail = true
