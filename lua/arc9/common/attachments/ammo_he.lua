@@ -19,16 +19,6 @@ ATT.TracerSizeAdd = 8
 
 ATT.ImpactDecal = "SmallScorch"
 
-ATT.DamageMinHook = function(swep, dmg)
-    return swep:GetValue("DamageMax")
-end
-
-ATT.Hook_BulletImpact = function(swep, data)
-    local tr = data.tr
-
-    util.BlastDamage(data.dmg:GetInflictor(), data.dmg:GetAttacker(), tr.HitPos, data.dmgv * 0.75, 50)
-    local fx = EffectData()
-    fx:SetOrigin(tr.HitPos)
-    util.Effect("HelicopterMegaBomb", fx)
-    sound.Play("^phx/explode00.wav", tr.HitPos, 100, 100, 1)
-end
+ATT.ExplosionDamage = 15
+ATT.ExplosionRadius = 50
+ATT.ExplosionEffect = "HelicopterMegaBomb"

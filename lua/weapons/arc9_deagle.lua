@@ -209,6 +209,10 @@ SWEP.SprintPos = Vector(5, 0, 0)
 SWEP.ActivePos = Vector(0, 0, -1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
+SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizePos = Vector(16, 32, 4)
+SWEP.CustomizeSnapshotFOV = 70
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "revolver"
@@ -373,7 +377,7 @@ SWEP.Animations = {
             },
         },
         MinProgress = 0.7,
-        MagSwapTime = 0.25,
+        MagSwapTime = 0.75,
         EventTable = {
             { s = rottle, t = 0 / 60, c = ca },
             { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
@@ -409,7 +413,7 @@ SWEP.Animations = {
             },
         },
         MinProgress = 0.75,
-        MagSwapTime = 0.25,
+        MagSwapTime = 0.75,
         EventTable = {
             { s = rottle, t = 0 / 60, c = ca },
             { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
@@ -428,7 +432,7 @@ SWEP.Animations = {
 
     ["reload_10"] = {
         Source = "reload_exte",
-        MagSwapTime = 0.25,
+        MagSwapTime = 0.75,
         IKTimeLine = {
             {
                 t = 0,
@@ -463,7 +467,7 @@ SWEP.Animations = {
     },
     ["reload_empty_10"] = {
         Source = "reload_empty_exte",
-        MagSwapTime = 0.25,
+        MagSwapTime = 0.75,
         IKTimeLine = {
             {
                 t = 0,

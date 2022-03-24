@@ -203,6 +203,10 @@ SWEP.SprintPos = Vector(5, 0, 0)
 SWEP.ActivePos = Vector(0, 0, -1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
+SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizePos = Vector(16, 32, 4)
+SWEP.CustomizeSnapshotFOV = 110
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "shotgun"
