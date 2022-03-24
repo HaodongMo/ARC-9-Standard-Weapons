@@ -57,7 +57,7 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.DefaultBodygroups = "0000000000000000000000"
+SWEP.DefaultBodygroups = "2000000000000000000000"
 
 SWEP.SpreadMultHipFire = 3
 SWEP.RecoilMultHipFire = 1.25
