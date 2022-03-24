@@ -2,12 +2,12 @@ ATT.PrintName = "N-Vision Halo-LR Thermal"
 ATT.CompactName = "HALO"
 ATT.Icon = Material("entities/arc9_att_optic_nvis.png", "mips smooth")
 ATT.Description = [[Bulky thermal scope that highlights targets. Bulky electronics heavily weigh down the weapon.]]
-ATT.SortOrder = 99
+ATT.SortOrder = 6
 
 ATT.Model = "models/weapons/arc9/atts/nvis.mdl"
 
 ATT.Category = "optic_picatinny"
-ATT.Folder = "SCOPE"
+ATT.Folder = "SMART"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {

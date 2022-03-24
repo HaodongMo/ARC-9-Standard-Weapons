@@ -13,8 +13,6 @@ ATT.Category = "ak_barrel"
 ATT.AimDownSightsTimeMult = 1.02
 ATT.SprintToFireTimeMult = 1.02
 
-
-ATT.Bash = true
 ATT.BashDamageAdd = 25
 ATT.BashRangeAdd = 16
 ATT.BashLungeRangeAdd = 128
@@ -22,3 +20,5 @@ ATT.BashLungeRangeAdd = 128
 ATT.ActivateElements = {
     "blockmuzzle"
 }
+
+ATT.AnimMeleeOverride = ACT_HL2MP_GESTURE_RANGE_ATTACK_MELEE2

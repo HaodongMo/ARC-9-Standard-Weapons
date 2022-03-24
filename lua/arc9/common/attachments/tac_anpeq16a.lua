@@ -7,6 +7,10 @@ ATT.Icon = Material("entities/arc9_att_tac_anpeq16a.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = {"picatinny", "tac_picatinny_top", "tac_picatinny"}
 ATT.Model = "models/weapons/arc9/atts/anpeq16a.mdl"
+ATT.Folder = "LIGHT-LAM"
+
+ATT.AimDownSightsTimeMult = 1.03
+ATT.SprintToFireTimeMult = 1.03
 
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {

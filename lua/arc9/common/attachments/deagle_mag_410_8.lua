@@ -15,7 +15,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.75
 ATT.PenetrationMult = 0.2
 ATT.DamageMaxMult = 1.25 * 1 / 5
 ATT.DamageMinMult = 0.75 * 1 / 5
-ATT.RangeMult = 0.5
+ATT.RangeMaxMult = 0.25
 ATT.RecoilMult = 0.9
 ATT.RecoilKickMult = 0.85
 

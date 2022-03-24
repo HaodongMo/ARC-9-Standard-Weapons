@@ -2,13 +2,13 @@ ATT.PrintName = "Torrey Pines Logic T-12X"
 ATT.CompactName = "T-12X"
 ATT.Icon = Material("entities/arc9_att_optic_t12w.png", "mips smooth")
 ATT.Description = [[Low-cost basic "smart" thermal optic made by Torrey Pines Logic, as a development of the T-12W with a built-in shot counter added by the ARCCW company (Advanced Research Center for Combat Weapons). The shot counter starts at 0 and counts up for each shot that it detects is fired from the gun.]]
-ATT.SortOrder = 99
+ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/t12w.mdl"
 
 ATT.Category = {"optic_picatinny_small", "optic_picatinny_medium", "optic_picatinny"}
 
-ATT.Folder = "REFLEX"
+ATT.Folder = "SMART"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {
@@ -104,7 +104,7 @@ end
 
 ATT.RTScopeMotionBlur = true
 
-ATT.ScopeScreenRatio = 0.15
+ATT.ScopeScreenRatio = 0.2
 
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, -0.25)

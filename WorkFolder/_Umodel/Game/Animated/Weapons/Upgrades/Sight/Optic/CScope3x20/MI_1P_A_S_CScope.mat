@@ -1,8 +1,0 @@
-Diffuse=T_1P_A_S_CScope_BC
-Normal=T_1P_A_S_CScope_N
-Other[0]=T_1P_A_S_CScope_M
-Other[1]=BlendFunc_DefBase
-Other[2]=BlendFunc_DefBlend
-Other[3]=FlatNormal
-Other[4]=DefaultTexture
-Other[5]=T_DefaultMaskTexture

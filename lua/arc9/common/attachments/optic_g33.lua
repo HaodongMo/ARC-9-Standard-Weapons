@@ -5,6 +5,7 @@ ATT.Description = [[An optical magnifier for increasing the zoom of reflex sight
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/g33.mdl"
+ATT.Folder = "EXPANDER"
 
 ATT.Category = {"optic_picatinny"}
 

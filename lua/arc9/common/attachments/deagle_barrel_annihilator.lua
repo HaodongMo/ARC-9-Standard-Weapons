@@ -2,7 +2,7 @@ ATT.PrintName = "Annihilator 7\" Barrel"
 ATT.CompactName = "7\"ANNIHILATOR"
 ATT.Description = [[Ported custom barrel with aggressive muzzle brake. Improves recoil and looks very impressive.]]
 
-ATT.Icon = Material("entities/arc9_att_ak_barrel_vepr.png", "mips smooth")
+ATT.Icon = Material("entities/arc9_att_deagle_barrel_annihilator.png", "mips smooth")
 
 ATT.SortOrder = 10
 ATT.Category = "deagle_barrel"

@@ -95,6 +95,7 @@ SWEP.DropMagazineSounds = {
     "weapons/arc9_ud/common/rifle_magdrop_1.ogg", "weapons/arc9_ud/common/rifle_magdrop_2.ogg", "weapons/arc9_ud/common/rifle_magdrop_3.ogg", "weapons/arc9_ud/common/rifle_magdrop_4.ogg"
 } -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
+SWEP.DropMagazineTime = 1
 
 -------------------------- FIREMODES
 
@@ -120,7 +121,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 1.5
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
@@ -202,6 +203,10 @@ SWEP.SprintPos = Vector(5, 0, 0)
 SWEP.ActivePos = Vector(0, 0, -1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
+SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizePos = Vector(16, 32, 4)
+SWEP.CustomizeSnapshotFOV = 110
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "shotgun"
@@ -234,6 +239,16 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 SWEP.HideBones = {
     "vm_mag2",
     "tag_mag2"
+}
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "vm_mag",
+        "tag_mag"
+    },
+    [2] = {
+        "vm_mag2",
+        "tag_mag2"
+    }
 }
 -------------------------- SOUNDS
 
@@ -390,6 +405,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -404,6 +420,9 @@ SWEP.Animations = {
             {s = common .. "magpouchin.ogg", t = 1.35},
             {s = common .. "shoulder.ogg", t = 2.05},
             {s = common .. "grab.ogg", t = 2.1},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.75}
         },
     },
 
@@ -432,6 +451,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -447,6 +467,9 @@ SWEP.Animations = {
             {s = path .. "chamber.ogg",    t = 2.0},
             {s = common .. "grab.ogg", t = 2.4},
             {s = common .. "shoulder.ogg", t = 2.5},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.1}
         },
     },
 
@@ -475,6 +498,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -489,6 +513,9 @@ SWEP.Animations = {
             {s = common .. "magpouchin.ogg", t = 1.35},
             {s = common .. "shoulder.ogg", t = 2.05},
             {s = common .. "grab.ogg", t = 2.1},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.75}
         },
     },
 
@@ -517,6 +544,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -531,6 +559,9 @@ SWEP.Animations = {
             {s = path .. "chamber_9.ogg",    t = 2.05},
             {s = common .. "grab.ogg", t = 2.4},
             {s = common .. "shoulder.ogg", t = 2.5},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.1}
         },
     },
 
@@ -565,6 +596,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 0,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -609,6 +641,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 0,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -651,6 +684,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -665,6 +699,9 @@ SWEP.Animations = {
             {s = common .. "magpouchin.ogg", t = 1.35},
             {s = common .. "shoulder.ogg", t = 2.05},
             {s = common .. "grab.ogg", t = 2.1},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.75}
         },
     },
 
@@ -693,6 +730,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 1,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = common .. "magpouch.ogg", t = 0.1},
@@ -709,6 +747,9 @@ SWEP.Animations = {
             {s = path .. "chamber.ogg",    t = 2.0},
             {s = common .. "grab.ogg", t = 2.4},
             {s = common .. "shoulder.ogg", t = 2.5},
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.5},
+            {hide = 2, t = 1.1}
         },
     },
 
@@ -876,6 +917,20 @@ SWEP.AttachmentElements = {
             }
         }
     },
+    ["ak_barrel_vityaz"] = {
+        Bodygroups = {
+            {1, 8},
+            {5, 1},
+            {7, 5},
+            {8, 5},
+        },
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0, 15.55, 2.87),
+                Ang = Angle(0, -90, 0),
+            }
+        }
+    },
     ["ak_barrel_ak12"] = {
         Bodygroups = {
             {7, 6},
@@ -883,7 +938,7 @@ SWEP.AttachmentElements = {
         },
         AttPosMods = {
             [1] = {
-                Pos = Vector(0, 23.25, 2.75),
+                Pos = Vector(0, 23.1, 2.75),
                 Ang = Angle(0, -90, 0),
             }
         }
@@ -944,6 +999,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         end
 
         if hasbarrel then
+            mdl:SetBodygroup(8, 2)
+        end
+    end
+
+    if eles["ak_barrel_vityaz"] then
+        mdl:SetBodygroup(8, 5)
+
+        if eles["muzzle"] then
             mdl:SetBodygroup(8, 2)
         end
     end

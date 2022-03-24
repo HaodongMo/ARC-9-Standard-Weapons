@@ -29,7 +29,7 @@ if !ARC9:UseTrueNames() then
 
 SWEP.Trivia = {
     Manufacturer = "Deutschewaffenfabrik",
-    Calibre = "9x19mm Jager",
+    Calibre = "9x21mm Jager",
     Mechanism = "Roller-Delayed Blowback",
     Country = "Germany",
     Year = "1966"
@@ -57,7 +57,7 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.DefaultBodygroups = "0200000000000000000000"
+SWEP.DefaultBodygroups = "2000000000000000000000"
 
 SWEP.SpreadMultHipFire = 3
 SWEP.RecoilMultHipFire = 1.25
@@ -95,6 +95,7 @@ SWEP.DropMagazineSounds = {
     "weapons/arc9_ud/common/smg_pistol_magdrop_1.ogg", "weapons/arc9_ud/common/smg_pistol_magdrop_2.ogg", "weapons/arc9_ud/common/smg_pistol_magdrop_3.ogg", "weapons/arc9_ud/common/smg_pistol_magdrop_4.ogg"
 }  -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
+SWEP.DropMagazineTime = 1
 
 -------------------------- FIREMODES
 
@@ -215,6 +216,10 @@ SWEP.SprintPos = Vector(5, 0, 0)
 SWEP.ActivePos = Vector(0, 0, -1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
+SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizePos = Vector(16, 32, 4)
+SWEP.CustomizeSnapshotFOV = 100
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "shotgun"
@@ -242,6 +247,10 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 SWEP.HideBones = {
     "magb",
+}
+SWEP.ReloadHideBoneTables = {
+    [1] = {"magb"},
+    [2] = {"mag"}
 }
 -------------------------- SOUNDS
 
@@ -369,6 +378,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 2,
         EventTable = {
             {v1 = 0, v2 = 5000, vt = 0.1, t = 0},
             {s = rottle,  t = 0.0},
@@ -382,6 +392,9 @@ SWEP.Animations = {
             {s = common .. "grab.ogg", t = 1.81},
             {s = common .. "shoulder.ogg", t = 1.9},
             {v1 = 0, v2 = 5000, vt = 0.1, t = 2},
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.25},
+            {hide = 1, t = 1.5}
         },
     },
 
@@ -410,6 +423,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 2,
         EventTable = {
             {v1 = 0, v2 = 5000, vt = 0.1, t = 0},
             {s = rottle,  t = 0.0},
@@ -432,6 +446,9 @@ SWEP.Animations = {
             {s = common .. "grab.ogg", t = 2.2},
             {s = common .. "shoulder.ogg", t = 2.3},
             {v1 = 0, v2 = 5000, vt = 0.1, t = 2.3},
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.75},
+            {hide = 1, t = 1.25}
         },
     },
 
@@ -460,6 +477,7 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        HideBoneIndex = 2,
         EventTable = {
             {s = rottle,  t = 0.0},
             {s = ratel, t = 12 / 30},
@@ -469,6 +487,9 @@ SWEP.Animations = {
             {s = rottle,  t = 32 / 30},
             {s = common .. "grab.ogg", t = 1.81},
             {s = common .. "shoulder.ogg", t = 1.9},
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.25},
+            {hide = 1, t = 1.5}
         },
     },
 
@@ -512,6 +533,9 @@ SWEP.Animations = {
             {s = path .. "chamber.ogg",    t = 64 / 30},
             {s = common .. "grab.ogg", t = 2.2},
             {s = common .. "shoulder.ogg", t = 2.3},
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.75},
+            {hide = 1, t = 1.25}
         },
     },
 }
@@ -521,60 +545,60 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
     ["bt_stock"] = {
         Bodygroups = {
-            {1, 3}
+            {0, 3}
         }
     },
     ["rail"] = {
         Bodygroups = {
-            {4, 1}
+            {3, 1}
         }
     },
     ["mp5_stock_solid"] = {
         Bodygroups = {
-            {1, 0}
+            {0, 0}
         }
     },
     ["mp5_stock_pdw"] = {
         Bodygroups = {
-            {1, 5}
+            {0, 5}
         }
     },
     ["mp5_stock_wood"] = {
         Bodygroups = {
-            {1, 4}
+            {0, 4}
         }
     },
     ["mp5_stock_sliding"] = {
         Bodygroups = {
-            {1, 1},
-            {2, 1}
+            {0, 1},
+            {1, 1}
         }
     },
     ["mp5_mag_40"] = {
         Bodygroups = {
-            {3, 1}
+            {2, 1}
         }
     },
     ["mp5_mag_25"] = {
         Bodygroups = {
-            {3, 2}
+            {2, 2}
         }
     },
     ["mp5_mag_15"] = {
         Bodygroups = {
-            {3, 3}
+            {2, 3}
         }
     },
     ["mp5_barrel_sd"] = {
         Bodygroups = {
-            {6, 3},
-            {5, 1}
+            {5, 3},
+            {4, 1}
         }
     },
     ["mp5_barrel_carbine"] = {
         Bodygroups = {
-            {5, 2},
-            {6, 0}
+            {4, 2},
+            {5, 0}
         },
         AttPosMods = {
             [4] = {
@@ -584,13 +608,13 @@ SWEP.AttachmentElements = {
     },
     ["mp5_barrel_ris"] = {
         Bodygroups = {
-            {6, 1},
+            {5, 1},
         }
     },
     ["mp5_barrel_carbine_ris"] = {
         Bodygroups = {
-            {5, 2},
-            {6, 1}
+            {4, 2},
+            {5, 1}
         },
         AttPosMods = {
             [4] = {
@@ -600,7 +624,7 @@ SWEP.AttachmentElements = {
     },
     ["mp5_barrel_old"] = {
         Bodygroups = {
-            {6, 2}
+            {5, 2}
         }
     }
 }

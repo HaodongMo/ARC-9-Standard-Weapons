@@ -65,7 +65,7 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 60 -- Damage done at point blank range
+SWEP.DamageMax = 51 -- Damage done at point blank range
 SWEP.DamageMin = 35 -- Damage done at maximum range
 
 SWEP.DamageRand = 0 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
@@ -74,6 +74,13 @@ SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
 SWEP.RangeMax = 10000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 4 -- Units of wood that can be penetrated by this gun.
+
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2.5,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
+}
 
 -------------------------- PHYS BULLET BALLISTICS
 
@@ -90,11 +97,12 @@ SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
 SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 
-SWEP.DropMagazineModel = "models/weapons/arc9/droppedmags/mp5_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineModel = "models/weapons/arc9/droppedmags/deagle_mag_7.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {
     "weapons/arc9_ud/common/smg_pistol_magdrop_1.ogg", "weapons/arc9_ud/common/smg_pistol_magdrop_2.ogg", "weapons/arc9_ud/common/smg_pistol_magdrop_3.ogg", "weapons/arc9_ud/common/smg_pistol_magdrop_4.ogg"
 }  -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
+SWEP.DropMagazineTime = 1
 
 -------------------------- FIREMODES
 
@@ -201,9 +209,13 @@ SWEP.SprintPos = Vector(5, 0, 0)
 SWEP.ActivePos = Vector(0, 0, -1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
+SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizePos = Vector(16, 32, 4)
+SWEP.CustomizeSnapshotFOV = 70
+
 -------------------------- HoldTypes
 
-SWEP.HoldType = "ar2"
+SWEP.HoldType = "revolver"
 SWEP.HoldTypeSprint = "normal"
 SWEP.HoldTypeHolstered = "normal"
 SWEP.HoldTypeSights = "revolver"
@@ -247,6 +259,7 @@ SWEP.ShootSound = path .. "fire.ogg"
 SWEP.ShootSoundSilenced = path .. "fire_sup_dist.ogg"
 SWEP.DistantShootSoundSilenced = path .. "fire_sup.ogg"
 SWEP.DistantShootSound = path .. "fire_dist.ogg"
+SWEP.DryFireSound = "weapons/arc9_ud/glock/dryfire.ogg"
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -363,7 +376,8 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
-        MagSwapTime = 0.25,
+        MinProgress = 0.7,
+        MagSwapTime = 0.75,
         EventTable = {
             { s = rottle, t = 0 / 60, c = ca },
             { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
@@ -398,7 +412,8 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
-        MagSwapTime = 0.25,
+        MinProgress = 0.75,
+        MagSwapTime = 0.75,
         EventTable = {
             { s = rottle, t = 0 / 60, c = ca },
             { s = common .. "magrelease.ogg", t = 7 / 60, c = ca },
@@ -417,7 +432,7 @@ SWEP.Animations = {
 
     ["reload_10"] = {
         Source = "reload_exte",
-        MagSwapTime = 0.25,
+        MagSwapTime = 0.75,
         IKTimeLine = {
             {
                 t = 0,
@@ -452,7 +467,7 @@ SWEP.Animations = {
     },
     ["reload_empty_10"] = {
         Source = "reload_empty_exte",
-        MagSwapTime = 0.25,
+        MagSwapTime = 0.75,
         IKTimeLine = {
             {
                 t = 0,
@@ -677,6 +692,16 @@ SWEP.AttachmentElements = {
     ["deagle_barrel_light"] = {
         Bodygroups = {
             {1, 5}
+        }
+    },
+    ["deagle_grip_wood"] = {
+        Bodygroups = {
+            {4, 1}
+        }
+    },
+    ["deagle_grip_rubber"] = {
+        Bodygroups = {
+            {4, 2}
         }
     }
 }

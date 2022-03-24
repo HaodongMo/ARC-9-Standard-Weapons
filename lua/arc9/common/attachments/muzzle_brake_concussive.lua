@@ -9,7 +9,7 @@ ATT.Model = "models/weapons/arc9/atts/muzzle_brake_concussive.mdl"
 ATT.Category = "muzzle"
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0.3, 0, 0)
 
 ATT.ShootVolumeMult = 1.2
 ATT.MuzzleParticleOverride = "muzzleflash_6"

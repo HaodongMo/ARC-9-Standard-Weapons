@@ -7,6 +7,7 @@ ATT.Icon = Material("entities/arc9_att_tac_cornercam.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = {"picatinny", "tac_picatinny_top", "tac_picatinny"}
 ATT.Model = "models/weapons/arc9/atts/cornercam.mdl"
+ATT.Folder = "MISC"
 
 ATT.Scale = 1.25
 
