@@ -66,16 +66,16 @@ $bodygroup "lower" {
 }
 
 //  				ARC9
-// $cdmaterials "models\weapons\arc9\ur_mp5"
-// $cdmaterials "models\weapons\arc9\ur_mp5\bocw"
-// $cdmaterials "models\weapons\arc9\ud_m16"
-// $cdmaterials "models\weapons\arc9\ud_common"
+$cdmaterials "models\weapons\arc9\ur_mp5"
+$cdmaterials "models\weapons\arc9\ur_mp5\bocw"
+$cdmaterials "models\weapons\arc9\ud_m16"
+$cdmaterials "models\weapons\arc9\ud_common"
 
 
 // 					ARCCW
-$cdmaterials "models\weapons/arc9\ur_mp5"
-$cdmaterials "models\weapons/arc9\ur_mp5\bocw"
-$cdmaterials "models\weapons/arc9\ud_common"
+// $cdmaterials "models\weapons/arc9\ur_mp5"
+// $cdmaterials "models\weapons/arc9\ur_mp5\bocw"
+// $cdmaterials "models\weapons/arc9\ud_common"
 
 // $texturegroup "skinfamilies"
 // {

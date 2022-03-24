@@ -12,3 +12,4 @@ ATT.BulletGuidance = true
 
 ATT.PhysBulletMuzzleVelocityMult = 0.5
 ATT.PhysBulletDragMult = 1.5
+ATT.PhysBulletGravityMult = 0

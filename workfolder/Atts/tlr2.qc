@@ -16,7 +16,8 @@ $illumposition 0 0 0
 $cdmaterials "models\weapons\arc9\atts\"
 $cdmaterials "effects/arc9/"
 
-// $attachment "holosight" "holosight" 0 0 0 rotate 0 0 0
+$attachment "flashlight" "flashlight" 0 0 0 rotate 0 -180 0
+$attachment "laser" "laser" 0 0 0 rotate 0 -180 0
 
 $cbox 0 0 0 0 0 0
 

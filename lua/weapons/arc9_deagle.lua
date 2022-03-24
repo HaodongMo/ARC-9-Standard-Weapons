@@ -75,6 +75,13 @@ SWEP.RangeMax = 10000 -- In Hammer units, how far bullets can travel before deal
 
 SWEP.Penetration = 4 -- Units of wood that can be penetrated by this gun.
 
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2.5,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
+}
+
 -------------------------- PHYS BULLET BALLISTICS
 
 SWEP.PhysBulletMuzzleVelocity = 12000

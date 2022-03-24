@@ -57,7 +57,7 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.DefaultBodygroups = "0200000000000000000000"
+SWEP.DefaultBodygroups = "0000000000000000000000"
 
 SWEP.SpreadMultHipFire = 3
 SWEP.RecoilMultHipFire = 1.25
@@ -541,60 +541,60 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
     ["bt_stock"] = {
         Bodygroups = {
-            {1, 3}
+            {0, 3}
         }
     },
     ["rail"] = {
         Bodygroups = {
-            {4, 1}
+            {3, 1}
         }
     },
     ["mp5_stock_solid"] = {
         Bodygroups = {
-            {1, 0}
+            {0, 0}
         }
     },
     ["mp5_stock_pdw"] = {
         Bodygroups = {
-            {1, 5}
+            {0, 5}
         }
     },
     ["mp5_stock_wood"] = {
         Bodygroups = {
-            {1, 4}
+            {0, 4}
         }
     },
     ["mp5_stock_sliding"] = {
         Bodygroups = {
-            {1, 1},
-            {2, 1}
+            {0, 1},
+            {1, 1}
         }
     },
     ["mp5_mag_40"] = {
         Bodygroups = {
-            {3, 1}
+            {2, 1}
         }
     },
     ["mp5_mag_25"] = {
         Bodygroups = {
-            {3, 2}
+            {2, 2}
         }
     },
     ["mp5_mag_15"] = {
         Bodygroups = {
-            {3, 3}
+            {2, 3}
         }
     },
     ["mp5_barrel_sd"] = {
         Bodygroups = {
-            {6, 3},
-            {5, 1}
+            {5, 3},
+            {4, 1}
         }
     },
     ["mp5_barrel_carbine"] = {
         Bodygroups = {
-            {5, 2},
-            {6, 0}
+            {4, 2},
+            {5, 0}
         },
         AttPosMods = {
             [4] = {
@@ -604,13 +604,13 @@ SWEP.AttachmentElements = {
     },
     ["mp5_barrel_ris"] = {
         Bodygroups = {
-            {6, 1},
+            {5, 1},
         }
     },
     ["mp5_barrel_carbine_ris"] = {
         Bodygroups = {
-            {5, 2},
-            {6, 1}
+            {4, 2},
+            {5, 1}
         },
         AttPosMods = {
             [4] = {
@@ -620,7 +620,7 @@ SWEP.AttachmentElements = {
     },
     ["mp5_barrel_old"] = {
         Bodygroups = {
-            {6, 2}
+            {5, 2}
         }
     }
 }

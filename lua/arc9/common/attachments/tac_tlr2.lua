@@ -19,11 +19,13 @@ ATT.ToggleStats = {
         Laser = true,
         LaserStrength = 1,
         LaserColor = Color(255, 0, 0),
+        LaserAttachment = 2,
         Flashlight = true,
         FlashlightColor = Color(200, 200, 255),
         FlashlightMaterial = "effects/flashlight001",
         FlashlightDistance = 800,
         FlashlightFOV = 75,
+        FlashlightAttachment = 1,
         SwayMult = 1.02,
         FreeAimRadiusMultHipFire = 0.75
     },
@@ -34,6 +36,7 @@ ATT.ToggleStats = {
         FlashlightMaterial = "effects/flashlight001",
         FlashlightDistance = 800,
         FlashlightFOV = 75,
+        FlashlightAttachment = 1,
         SwayMult = 1.02,
         FreeAimRadiusMultHipFire = 0.75
     },
@@ -42,6 +45,7 @@ ATT.ToggleStats = {
         Laser = true,
         LaserStrength = 1,
         LaserColor = Color(255, 0, 0),
+        LaserAttachment = 2,
         SwayMult = 1.02,
         FreeAimRadiusMultHipFire = 0.75
     },
@@ -51,7 +55,7 @@ ATT.ToggleStats = {
 }
 
 
-ATT.Scale = 1.25
+ATT.Scale = 1
 
 ATT.ModelOffset = Vector(0, 0, -0.15)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
