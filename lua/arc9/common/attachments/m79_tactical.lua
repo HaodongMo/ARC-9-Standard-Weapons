@@ -13,7 +13,7 @@ ATT.Attachments = {
     {
         PrintName = "RAIL",
         Category = {"picatinny", "grip_picatinny"}, // single or {"list", "of", "values"}
-        Pos = Vector(-4, 0, 0.4),
+        Pos = Vector(-4, 0, 0.65),
         Ang = Angle(0, 0, 180),
     }
 }

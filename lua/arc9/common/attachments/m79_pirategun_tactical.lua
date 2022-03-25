@@ -12,7 +12,7 @@ ATT.Category = "m79_body"
 ATT.Attachments = {
     {
         PrintName = "OPTIC",
-        Category = "optic_picatinny", // single or {"list", "of", "values"}
+        Category = {"optic_picatinny", "picatinny"}, // single or {"list", "of", "values"}
         Pos = Vector(0.25, 0, -4),
         Ang = Angle(0, 0, 0),
     }

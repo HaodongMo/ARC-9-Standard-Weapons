@@ -33,5 +33,5 @@ ATT.ToggleStats = {
 
 ATT.Scale = 1
 
-ATT.ModelOffset = Vector(0.6, 0, -0.15)
+ATT.ModelOffset = Vector(0.6, 0, 0.25)
 ATT.ModelAngleOffset = Angle(0, 0, 180)

@@ -11,7 +11,7 @@ ATT.Folder = "MISC"
 
 ATT.Scale = 1.25
 
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0, 0, -0.25)
 ATT.SprintToFireTimeMult = 1.1
 
 if CLIENT then
