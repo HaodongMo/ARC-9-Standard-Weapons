@@ -34,8 +34,8 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("arc9/razer.png", "mips")
 ATT.HoloSightSize = 512
 ATT.HoloSightColor = Color(200, 255, 50, 200)
-local rd = 0.01
-ATT.HoloSightRenderDepth = rd
+local rd = nil
+-- ATT.HoloSightRenderDepth = rd
 
 if CLIENT then
 
