@@ -1150,7 +1150,7 @@ SWEP.Attachments = {
     {
         PrintName = "MUZZLE",
         DefaultName = "Factory Flash Hider",
-        Category = {"m16_muzzle", "muzzle"},
+        Category = {"m16_muzzle", "muzzle", "suppressor"},
         Bone = "m16_parent",
         Installed = "muzzle_a2birdcage",
         Pos = Vector(0, -0.05, 29.75),
