@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/arc9_att_ammo.png", "mips smooth")
 ATT.Description = [[Explosive rounds sacrifice direct damage in favor of dealing damage in a radius around the impact point. The effect is spectacular, but little explosive filler can be put inside most bullets.]]
 ATT.SortOrder = 0
 
-ATT.Category = {"ammo_assault", "ammo_sniper"}
+ATT.Category = {"ammo_assault", "ammo_sniper", "ammo"}
 
 ATT.PhysBulletMuzzleVelocityMult = 0.65
 

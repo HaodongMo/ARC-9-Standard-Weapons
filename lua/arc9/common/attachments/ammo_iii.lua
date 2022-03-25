@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/arc9_att_ammo.png", "mips smooth")
 ATT.Description = [[Immediate-Impact Incendiary rounds have a chance to light targets on fire, and deal a lot more damage.]]
 ATT.SortOrder = 0
 
-ATT.Category = {"ammo_assault", "ammo_sniper"}
+ATT.Category = {"ammo_assault", "ammo_sniper", "ammo"}
 
 ATT.SpreadMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 0.8
