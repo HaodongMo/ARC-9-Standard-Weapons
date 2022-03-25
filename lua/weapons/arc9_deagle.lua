@@ -224,7 +224,7 @@ SWEP.HoldTypeBlindfire = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
-SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
+SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
