@@ -7,7 +7,7 @@ ATT.SortOrder = 6
 ATT.Model = "models/weapons/arc9/atts/nvis.mdl"
 
 ATT.Category = "optic_picatinny"
-ATT.Folder = "SMART"
+ATT.Folder = "SCOPE"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {

@@ -301,6 +301,7 @@ SWEP.Animations = {
         Source = "reload",
         Time = 101 / 30,
         MagSwapTime = 1.5,
+        MinProgress = 0.65,
         IKTimeLine = {
             {
                 t = 0,
@@ -398,6 +399,7 @@ SWEP.Animations = {
     ["reload_caseless"] = {
         Source = "reload_caseless",
         Time = 101 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -464,6 +466,11 @@ SWEP.AttachmentElements = {
             {0, 1},
             {2, 1},
             {4, 2}
+        }
+    },
+    ["m79_tactical"] = {
+        Bodygroups = {
+            {0, 3},
         }
     },
 }

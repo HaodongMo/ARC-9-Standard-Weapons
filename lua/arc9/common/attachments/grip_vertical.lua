@@ -12,6 +12,7 @@ ATT.Category = "grip_picatinny"
 ATT.RecoilPatternDriftMult = 0.75
 ATT.RecoilAutoControlMult = 1.15
 
+ATT.LHIK_Priority = 10
 ATT.LHIK = true
 
 ATT.ModelOffset = Vector(0, 0, -0.5)
