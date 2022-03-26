@@ -52,7 +52,7 @@ SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    Pos = Vector(-6, 4, -6),
+    Pos = Vector(-8, 2, -5),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -209,7 +209,7 @@ SWEP.CustomizeSnapshotFOV = 110
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "shotgun"
+SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldTypeSights = "ar2"
@@ -240,6 +240,7 @@ SWEP.HideBones = {
     "vm_mag2",
     "tag_mag2"
 }
+
 SWEP.ReloadHideBoneTables = {
     [1] = {
         "vm_mag",
