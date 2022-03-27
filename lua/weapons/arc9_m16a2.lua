@@ -52,7 +52,7 @@ SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    Pos = Vector(-7.5, 4, -7.5),
+    Pos = Vector(-7.5, 1.5, -5.5),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -218,7 +218,7 @@ SWEP.CustomizeSnapshotFOV = 110
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "shotgun"
+SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldTypeSights = "ar2"
@@ -227,7 +227,7 @@ SWEP.HoldTypeBlindfire = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
-SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
+SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
@@ -1150,7 +1150,7 @@ SWEP.Attachments = {
     {
         PrintName = "MUZZLE",
         DefaultName = "Factory Flash Hider",
-        Category = {"m16_muzzle", "muzzle"},
+        Category = {"m16_muzzle", "muzzle", "suppressor"},
         Bone = "m16_parent",
         Installed = "muzzle_a2birdcage",
         Pos = Vector(0, -0.05, 29.75),

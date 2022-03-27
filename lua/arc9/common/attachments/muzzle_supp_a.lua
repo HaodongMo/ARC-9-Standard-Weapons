@@ -8,7 +8,7 @@ ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/arc9/atts/silencer_tactical.mdl"
 
-ATT.Category = "muzzle"
+ATT.Category = "suppressor"
 ATT.Folder = "SUPP"
 
 ATT.Scale = 1.25

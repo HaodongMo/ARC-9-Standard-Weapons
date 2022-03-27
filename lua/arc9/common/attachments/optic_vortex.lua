@@ -34,8 +34,8 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("arc9/razer.png", "mips")
 ATT.HoloSightSize = 512
 ATT.HoloSightColor = Color(200, 255, 50, 200)
-local rd = 0.01
-ATT.HoloSightRenderDepth = rd
+local rd = nil
+-- ATT.HoloSightRenderDepth = rd
 
 if CLIENT then
 
@@ -82,12 +82,12 @@ ATT.HoloSightFunc = function(swep, pos, mdl)
             ccip_v = 0
             no_ccip = true
         else
-            -- cam.Start3D(nil, nil, swep:GetViewModelFOV())
-            -- ccip_v = ccip.HitPos:ToScreen().y - (ScrH() / 2)
-            local localhp = mdl:WorldToLocal(ccip.HitPos)
-            local localpos = mdl:WorldToLocal(pos)
-            ccip_v = (localpos.z - localhp.z)
-            -- cam.End3D()
+            cam.Start3D(nil, nil, swep:GetViewModelFOV())
+            ccip_v = ccip.HitPos:ToScreen().y - (ScrH() / 2)
+            -- local localhp = mdl:WorldToLocal(ccip.HitPos)
+            -- local localpos = mdl:WorldToLocal(pos)
+            -- ccip_v = (localpos.z - localhp.z)
+            cam.End3D()
             no_ccip = false
         end
         last_ccip_time = CurTime()

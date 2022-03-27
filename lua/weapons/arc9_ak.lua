@@ -52,7 +52,7 @@ SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    Pos = Vector(-6, 4, -6),
+    Pos = Vector(-8, 2, -5),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -209,7 +209,7 @@ SWEP.CustomizeSnapshotFOV = 110
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "shotgun"
+SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldTypeSights = "ar2"
@@ -218,7 +218,7 @@ SWEP.HoldTypeBlindfire = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
-SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
+SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
@@ -240,6 +240,7 @@ SWEP.HideBones = {
     "vm_mag2",
     "tag_mag2"
 }
+
 SWEP.ReloadHideBoneTables = {
     [1] = {
         "vm_mag",
@@ -357,12 +358,12 @@ SWEP.Animations = {
             },
             {
                 t = 0.4,
-                lhik = 0,
+                lhik = 1,
                 rhik = 0
             },
             {
                 t = 0.6,
-                lhik = 0,
+                lhik = 1,
                 rhik = 0
             },
             {
@@ -1045,7 +1046,7 @@ end
 SWEP.Attachments = {
     {
         PrintName = "MUZZLE",
-        Category = "muzzle",
+        Category = {"muzzle", "suppressor"},
         Bone = "tag_weapon",
         ExcludeElements = {"blockmuzzle"},
         Pos = Vector(0, 24, 2.7),

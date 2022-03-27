@@ -7,6 +7,7 @@ $bodygroup "studio"
 	studio "m79_new.smd"
 	studio "m79_pirategun.smd"
 	studio "m79_pirategun_tactical.smd"
+	studio "m79_tac.smd"
 }
 $bodygroup "1"
 {

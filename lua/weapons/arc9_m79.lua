@@ -52,7 +52,7 @@ SWEP.Slot = 4
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10.5, 2.5, -5),
+    Pos = Vector(-10.5, 1.5, -3),
     Ang = Angle(-6, -6, 180),
     Scale = 1
 }
@@ -241,13 +241,13 @@ SWEP.CustomizeSnapshotFOV = 100
 SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_CROSSBOW
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
-SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
+SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
@@ -301,6 +301,7 @@ SWEP.Animations = {
         Source = "reload",
         Time = 101 / 30,
         MagSwapTime = 1.5,
+        MinProgress = 0.65,
         IKTimeLine = {
             {
                 t = 0,
@@ -398,6 +399,7 @@ SWEP.Animations = {
     ["reload_caseless"] = {
         Source = "reload_caseless",
         Time = 101 / 30,
+        MinProgress = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -464,6 +466,11 @@ SWEP.AttachmentElements = {
             {0, 1},
             {2, 1},
             {4, 2}
+        }
+    },
+    ["m79_tactical"] = {
+        Bodygroups = {
+            {0, 3},
         }
     },
 }
