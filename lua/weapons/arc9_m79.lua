@@ -52,7 +52,7 @@ SWEP.Slot = 4
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10.5, 2.5, -5),
+    Pos = Vector(-10.5, 1.5, -3),
     Ang = Angle(-6, -6, 180),
     Scale = 1
 }
@@ -241,7 +241,7 @@ SWEP.CustomizeSnapshotFOV = 100
 SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
