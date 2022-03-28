@@ -33,6 +33,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 10
 ATT.RTScopeReticle = Material("arc9/elcan.png", "mips smooth")
+ATT.RTScopeReticleScale = 1.6
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 
