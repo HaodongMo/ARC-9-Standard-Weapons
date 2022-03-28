@@ -1,8 +1,8 @@
 ATT.PrintName = "CNTR Lie Ren 20\" Barrel"
 ATT.CompactName = "20\"LIEREN"
-ATT.Description = [[Handguard and barrel assembly. Long precision barrel improves accuracy while aiming down sights.
+ATT.Description = [[Handguard and barrel assembly made for civilian variants of the rifle.
 
-Better range, precision, and muzzle velocity, at the cost of recoil control.]]
+Better range, precision, and muzzle velocity, at the cost of recoil control and mobility.]]
 
 ATT.PrintName_TrueName = "Molot Vepr 20\" Barrel"
 ATT.CompactName_TrueName = "20\"VEPR"
@@ -12,16 +12,17 @@ ATT.Icon = Material("entities/arc9_att_ak_barrel_vepr.png", "mips smooth")
 ATT.SortOrder = 20
 ATT.Category = "ak_barrel"
 
-ATT.RecoilUpMult = 1.5
-ATT.RecoilSideMult = 1.1
-
-ATT.SpreadMultSights = 0.5
+ATT.RangeMaxMult = 1.3
+ATT.SpreadAdd = -0.002315
+ATT.PhysBulletMuzzleVelocityMult = 1.25
 
 ATT.AimDownSightsTimeMult = 1.04
 ATT.SprintToFireTimeMult = 1.05
 
-ATT.RecoilPatternDriftMult = 1.2
-ATT.FreeAimRadiusMult = 2.5
+ATT.RPMMult = 0.9
+
+ATT.RecoilPatternDriftMult = 1.25
+ATT.FreeAimRadiusMult = 1.5
 
 ATT.IronSightsOverride = {
     Pos = Vector(-2.55, -3, 0.9),
@@ -33,4 +34,4 @@ ATT.IronSightsOverride = {
     Magnification = 1.1,
 }
 
--- ATT.ActivateElements = {"blockhandguard"}
+ATT.ActivateElements = {"changedhandguard"}
