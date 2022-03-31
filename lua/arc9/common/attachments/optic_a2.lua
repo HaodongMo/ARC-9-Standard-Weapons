@@ -13,9 +13,11 @@ ATT.Sights = {
     {
         Pos = Vector(0, 6, -1.59112),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.5
+        Magnification = 1.5,
     },
 }
+
+ATT.KeepBaseIrons = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1

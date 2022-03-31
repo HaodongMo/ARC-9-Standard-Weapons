@@ -163,7 +163,8 @@ ATT.Sights = {
     {
         Pos = Vector(0, 7.5, -1.76345),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.1
+        Magnification = 1.1,
+        IsIronSight = true
     }
 }
 

@@ -18,7 +18,7 @@ ATT.Attachments = {
         Category = "optic_picatinny", // single or {"list", "of", "values"}
         Pos = Vector(0.25, 0, -1.25),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 1, 0)
+        Icon_Offset = Vector(0, 1, 0),
     }
 }
 
