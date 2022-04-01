@@ -32,7 +32,8 @@ ATT.ToggleStats = {
         FreeAimRadiusMultHipFire = 0.75,
         Flare = true,
         FlareColor = Color(0, 255, 0),
-        FlareSize = 100
+        FlareSize = 100,
+        FlareAttachment = 1
     },
     {
         PrintName = "Off",

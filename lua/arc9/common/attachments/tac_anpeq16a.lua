@@ -30,7 +30,8 @@ ATT.ToggleStats = {
         FreeAimRadiusMultHipFire = 0.75,
         Flare = true,
         FlareColor = Color(150, 255, 150),
-        FlareSize = 125
+        FlareSize = 150,
+        FlareAttachment = 1
     },
     {
         PrintName = "Light",
@@ -44,7 +45,8 @@ ATT.ToggleStats = {
         FreeAimRadiusMultHipFire = 0.75,
         Flare = true,
         FlareColor = Color(255, 255, 255),
-        FlareSize = 125
+        FlareSize = 125,
+        FlareAttachment = 1
     },
     {
         PrintName = "Laser",
@@ -56,7 +58,8 @@ ATT.ToggleStats = {
         FreeAimRadiusMultHipFire = 0.75,
         Flare = true,
         FlareColor = Color(0, 255, 0),
-        FlareSize = 100
+        FlareSize = 100,
+        FlareAttachment = 2
     },
     {
         PrintName = "None",
