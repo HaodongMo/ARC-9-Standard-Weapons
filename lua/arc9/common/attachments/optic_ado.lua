@@ -243,3 +243,7 @@ ATT.HoloSightFunc = function(swep, pos, mdl)
 end
 
 end
+
+ATT.Flare = true
+ATT.FlareColor = Color(255, 255, 255)
+ATT.FlareSize = 32

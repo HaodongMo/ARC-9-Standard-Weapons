@@ -27,7 +27,10 @@ ATT.ToggleStats = {
         FlashlightFOV = 75,
         FlashlightAttachment = 1,
         SwayMult = 1.02,
-        FreeAimRadiusMultHipFire = 0.75
+        FreeAimRadiusMultHipFire = 0.75,
+        Flare = true,
+        FlareColor = Color(255, 245, 245),
+        FlareSize = 125
     },
     {
         PrintName = "Light",
@@ -38,7 +41,10 @@ ATT.ToggleStats = {
         FlashlightFOV = 75,
         FlashlightAttachment = 1,
         SwayMult = 1.02,
-        FreeAimRadiusMultHipFire = 0.75
+        FreeAimRadiusMultHipFire = 0.75,
+        Flare = true,
+        FlareColor = Color(200, 200, 255),
+        FlareSize = 125
     },
     {
         PrintName = "Laser",
@@ -47,7 +53,10 @@ ATT.ToggleStats = {
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 2,
         SwayMult = 1.02,
-        FreeAimRadiusMultHipFire = 0.75
+        FreeAimRadiusMultHipFire = 0.75,
+        Flare = true,
+        FlareColor = Color(255, 0, 0),
+        FlareSize = 100
     },
     {
         PrintName = "None",

@@ -23,7 +23,10 @@ ATT.ToggleStats = {
         FlashlightFOV = 75,
         FlashlightAttachment = 1,
         SwayMult = 1.02,
-        FreeAimRadiusMultHipFire = 0.75
+        FreeAimRadiusMultHipFire = 0.75,
+        Flare = true,
+        FlareColor = Color(255, 255, 255),
+        FlareSize = 125
     },
     {
         PrintName = "None",

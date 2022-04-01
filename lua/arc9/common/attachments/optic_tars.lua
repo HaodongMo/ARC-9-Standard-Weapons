@@ -45,3 +45,7 @@ ATT.SwayAdd = 0.2
 ATT.FreeAimRadiusMultSights = 0.1
 ATT.AimDownSightsTimeAdd = 0.16
 ATT.SprintToFireTimeAdd = 0.12
+
+ATT.Flare = true
+ATT.FlareColor = Color(255, 255, 255)
+ATT.FlareSize = 32

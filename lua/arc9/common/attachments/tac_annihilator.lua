@@ -29,7 +29,10 @@ ATT.ToggleStats = {
         LaserColor = Color(0, 255, 0),
         LaserAttachment = 1,
         SwayMult = 1.02,
-        FreeAimRadiusMultHipFire = 0.75
+        FreeAimRadiusMultHipFire = 0.75,
+        Flare = true,
+        FlareColor = Color(0, 255, 0),
+        FlareSize = 100
     },
     {
         PrintName = "Off",
