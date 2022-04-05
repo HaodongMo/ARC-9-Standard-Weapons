@@ -1,6 +1,6 @@
 ATT.PrintName = "Annihilator Laser"
 ATT.CompactName = "ANNIHILATOR"
-ATT.Description = [[Tactical laser module with iron sight.]]
+ATT.Description = [[Tactical laser module with iron sight. Lasers help with aiming, and can blind enemies, but will reveal the location of the user.]]
 
 ATT.Icon = Material("entities/arc9_att_tac_annihilator.png", "mips smooth")
 
@@ -32,8 +32,9 @@ ATT.ToggleStats = {
         FreeAimRadiusMultHipFire = 0.75,
         Flare = true,
         FlareColor = Color(0, 255, 0),
-        FlareSize = 100,
-        FlareAttachment = 1
+        FlareSize = 50,
+        FlareAttachment = 1,
+        FlareFocus = true
     },
     {
         PrintName = "Off",

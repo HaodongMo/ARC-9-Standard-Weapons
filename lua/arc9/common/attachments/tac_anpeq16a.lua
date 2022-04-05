@@ -1,6 +1,6 @@
 ATT.PrintName = "AN/PEQ-16A"
 ATT.CompactName = "PEQ16A"
-ATT.Description = [[Tactical laser/light module that provides an aiming point while hip firing.]]
+ATT.Description = [[Tactical laser/light module that provides an aiming point while hip firing. Lasers help with aiming, and can blind enemies, but will reveal the location of the user.]]
 
 ATT.Icon = Material("entities/arc9_att_tac_anpeq16a.png", "mips smooth")
 
@@ -58,8 +58,9 @@ ATT.ToggleStats = {
         FreeAimRadiusMultHipFire = 0.75,
         Flare = true,
         FlareColor = Color(0, 255, 0),
-        FlareSize = 100,
-        FlareAttachment = 2
+        FlareSize = 50,
+        FlareAttachment = 2,
+        FlareFocus = true
     },
     {
         PrintName = "None",
