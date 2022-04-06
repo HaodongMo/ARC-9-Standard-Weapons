@@ -2,7 +2,7 @@ ATT.PrintName = "EOTech G33"
 ATT.CompactName = "G33"
 ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
 ATT.Description = [[An optical magnifier for increasing the zoom of reflex sights.]]
-ATT.SortOrder = 1
+ATT.SortOrder = 2
 
 ATT.Model = "models/weapons/arc9/atts/g33.mdl"
 ATT.Folder = "EXPANDER"
