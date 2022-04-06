@@ -12,3 +12,4 @@ ATT.Category = "magpul_rbp"
 ATT.Model = "models/weapons/arc9/atts/stock_moe_rbp.mdl"
 
 ATT.RecoilKickMult = 0.75
+ATT.AimDownSightsTimeAdd = 0.02

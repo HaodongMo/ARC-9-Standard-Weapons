@@ -12,15 +12,14 @@ ATT.Folder = "TUBE"
 
 ATT.Model = "models/weapons/arc9/atts/stock_sopmod.mdl"
 
-ATT.SpeedMult = 0.98
+ATT.SpeedMult = 0.99
 
-ATT.SwayAdd = -0.75
-ATT.SwayMult = 0.85
-ATT.SprintToFireTimeMult = 1.44
-ATT.AimDownSightsTimeMult = 1.33
+ATT.SwayAdd = -1
+ATT.SprintToFireTimeMult = 1.4
+ATT.AimDownSightsTimeMult = 1.3
 
 ATT.RecoilMult = 0.7
 ATT.RecoilKickMult = 1.42
 ATT.RecoilAutoControlMult = 4
 
-ATT.FreeAimRadiusMult = 0.9
+ATT.FreeAimRadiusMult = 0.85

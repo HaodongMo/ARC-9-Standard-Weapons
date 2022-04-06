@@ -24,7 +24,7 @@ ATT.Attachments = {
 
 ATT.SpeedMult = 0.99
 
-ATT.SwayAdd = -0.95
+ATT.SwayAdd = -0.9
 ATT.SprintToFireTimeMult = 1.39
 ATT.AimDownSightsTimeMult = 1.33
 
