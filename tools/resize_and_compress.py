@@ -8,6 +8,7 @@ from ctypes import create_string_buffer
 
 from VTFLibWrapper.VTFLibEnums import ImageFormat
 
+# Edit these variables
 PATH_TO_DIR = "materials/"
 CLAMP_SIZE = 2048
 
