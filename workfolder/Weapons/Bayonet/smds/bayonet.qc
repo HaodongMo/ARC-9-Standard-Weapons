@@ -59,6 +59,22 @@ $sequence "attack" {
 	fadeout 0.03
 }
 
+$sequence "attack2" {
+	"anims\attack2.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+	fadein 0.03
+	fadeout 0.03
+}
+
+$sequence "attack3" {
+	"anims\attack3.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+	fadein 0.03
+	fadeout 0.03
+}
+
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"
 $bonemerge "ValveBiped.Bip01_L_UpperArm"
