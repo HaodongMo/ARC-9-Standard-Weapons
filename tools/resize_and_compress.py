@@ -38,17 +38,25 @@ for path, subdirs, files in os.walk(PATH_TO_DIR):
 
             # print(format.name)
 
-
             if scale != 1 or format not in (ImageFormat.ImageFormatDXT1, ImageFormat.ImageFormatDXT5):
-                image_full = vtf_lib.image_load(filepath)
+                image_full = vtf_lib.image_load(filepath, False)
                 if scale != 1:
+                    def_options = vtf_lib.create_default_params_structure()
+                    def_options.ImageFormat = ImageFormat.ImageFormatDXT5
                     image_data = vtf_lib.get_rgba8888()
-                    image = Image.frombuffer(data=image_data, size=(w, h), mode="RGBA")
-                    image = image.resize((neww, newh))
-                    vtf_lib.bind_image(image)
-                if format not in (ImageFormat.ImageFormatDXT1, ImageFormat.ImageFormatDXT5):
+                    image_data = bytes(image_data.contents)
+
+                    image = Image.frombytes("RGBA", (w, h), image_data)
+                    image = image.resize((int(neww), int(newh)))
+
+                    image_data = (np.asarray(image)*-1) * 255
+                    image_data = image_data.astype(np.uint8, copy=False)
+                    image_data = create_string_buffer(image_data.tobytes())
+                    vtf_lib.image_create_single(int(neww), int(newh), image_data, def_options)
+                elif format not in (ImageFormat.ImageFormatDXT1, ImageFormat.ImageFormatDXT5):
                     vtf_lib.convert(ImageFormat.ImageFormatDXT5)
                 vtf_lib.image_save(filepath)
+                print("Converted", filepath, "successfully.")
 
 
 
