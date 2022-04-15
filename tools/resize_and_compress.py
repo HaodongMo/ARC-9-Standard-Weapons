@@ -49,7 +49,7 @@ for path, subdirs, files in os.walk(PATH_TO_DIR):
                 if scale != 1:
                     image_scaled = image.resize((int(neww), int(newh)))
                     image_a_scaled = a.resize((int(neww), int(newh)))
-                    r,g,b = image_scaled.split()
+                    r,g,b, fake_a = image_scaled.split()
                     colorImage = (r, g, b, image_a_scaled)
                     image = Image.merge('RGBA', colorImage)
 
@@ -63,7 +63,7 @@ for path, subdirs, files in os.walk(PATH_TO_DIR):
 
                 vtf_lib.image_create_single(int(neww), int(newh), image_data, def_options)
                 vtf_lib.image_save(filepath)
-                print("Converted", filepath, "successfully.")
+                print("Converted", filepath, "successfully:", w, "x", h, "->", int(neww), "x", int(newh))
 
 
 
