@@ -312,7 +312,8 @@ SWEP.Animations = {
         },
     },
     ["draw"] = {
-        Source = "",
+        Source = "idle",
+        Time = 0.75,
         EventTable = {
             {s = path .. "draw.ogg", t = 0}, -- Not Temporary
             {s = common .. "raise.ogg", t = 0.05},
@@ -320,7 +321,8 @@ SWEP.Animations = {
     },
 
     ["holster"] = {
-        Source = "",
+        Source = "idle",
+        Time = 0.6,
         EventTable = {
             {s = common .. "cloth_2.ogg", t = 0},
             {s = path .. "holster.ogg", t = 0.2}, -- Not Temporary
