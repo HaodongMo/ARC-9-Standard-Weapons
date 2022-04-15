@@ -9,7 +9,7 @@ from ctypes import create_string_buffer
 from VTFLibWrapper.VTFLibEnums import ImageFormat
 
 # Edit these variables
-PATH_TO_DIR = "materials/models/weapons/arc9/ud_m16/stalol/"
+PATH_TO_DIR = "materials/"
 CLAMP_SIZE = 2048
 
 vtf_lib = VTFLib.VTFLib()

@@ -46,16 +46,16 @@ for path, subdirs, files in os.walk(PATH_TO_DIR):
                 image_data = bytes(image_data.contents)
                 image = Image.frombytes("RGBA", (w, h), image_data)
 
-                should_dxt1 = has_transparency(image)
-
-                image_data = (np.asarray(image)*-1) * 255
-                image_data = image_data.astype(np.uint8, copy=False)
-                image_data = create_string_buffer(image_data.tobytes())
-
-                def_options.Resize = 1
+                should_dxt1 = not has_transparency(image)
 
                 if should_dxt1:
                     def_options.ImageFormat = ImageFormat.ImageFormatDXT1
+                    def_options.Resize = 1
+
+                    image_data = (np.asarray(image)*-1) * 255
+                    image_data = image_data.astype(np.uint8, copy=False)
+                    image_data = create_string_buffer(image_data.tobytes())
+                    
                     vtf_lib.image_create_single(w, h, image_data, def_options)
                     vtf_lib.image_save(filepath)
                     print("DXT1-ified", filepath, "successfully.")
