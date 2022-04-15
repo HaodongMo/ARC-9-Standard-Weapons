@@ -9,7 +9,7 @@ from ctypes import create_string_buffer
 from VTFLibWrapper.VTFLibEnums import ImageFormat
 
 # Edit these variables
-PATH_TO_DIR = "materials/"
+PATH_TO_DIR = "materials/models/weapons/arc9/ud_m16/stalol/"
 CLAMP_SIZE = 2048
 
 vtf_lib = VTFLib.VTFLib()
@@ -47,9 +47,10 @@ for path, subdirs, files in os.walk(PATH_TO_DIR):
                 r, g, b, a = image.split()
 
                 if scale != 1:
+                    image = image.convert("RGB")
                     image_scaled = image.resize((int(neww), int(newh)))
                     image_a_scaled = a.resize((int(neww), int(newh)))
-                    r,g,b, fake_a = image_scaled.split()
+                    r,g,b = image_scaled.split()
                     colorImage = (r, g, b, image_a_scaled)
                     image = Image.merge('RGBA', colorImage)
 
