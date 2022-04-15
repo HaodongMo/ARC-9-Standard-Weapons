@@ -1,10 +1,13 @@
-from lib2to3.pytree import convert
-from PIL import Image
+from PIL import Image, ImageChops, ImageOps
 import os
+import sys
+import math
 import VTFLibWrapper.VTFLib as VTFLib
 import VTFLibWrapper.VTFLibEnums as VTFLibEnums
 import numpy as np
 from ctypes import create_string_buffer
+from pathlib import Path
+import shutil
 
 from VTFLibWrapper.VTFLibEnums import ImageFormat
 
@@ -37,9 +40,9 @@ for path, subdirs, files in os.walk(PATH_TO_DIR):
 
             if scale != 1 or format not in (ImageFormat.ImageFormatDXT1, ImageFormat.ImageFormatDXT5):
                 image_full = vtf_lib.image_load(filepath, False)
-                def_options = vtf_lib.create_default_params_structure()
-                def_options.ImageFormat = ImageFormat.ImageFormatDXT5
                 if scale != 1:
+                    def_options = vtf_lib.create_default_params_structure()
+                    def_options.ImageFormat = ImageFormat.ImageFormatDXT5
                     image_data = vtf_lib.get_rgba8888()
                     image_data = bytes(image_data.contents)
 
@@ -50,10 +53,8 @@ for path, subdirs, files in os.walk(PATH_TO_DIR):
                     image_data = image_data.astype(np.uint8, copy=False)
                     image_data = create_string_buffer(image_data.tobytes())
                     vtf_lib.image_create_single(int(neww), int(newh), image_data, def_options)
-                # elif format not in (ImageFormat.ImageFormatDXT1, ImageFormat.ImageFormatDXT5):
-                converted_image = vtf_lib.convert(ImageFormat.ImageFormatDXT5).contents
-                # converted_image = bytes(converted_image.contents)
-                vtf_lib.image_create_single(int(neww), int(newh), converted_image, def_options)
+                elif format not in (ImageFormat.ImageFormatDXT1, ImageFormat.ImageFormatDXT5):
+                    vtf_lib.convert(ImageFormat.ImageFormatDXT5)
                 vtf_lib.image_save(filepath)
                 print("Converted", filepath, "successfully.")
 
