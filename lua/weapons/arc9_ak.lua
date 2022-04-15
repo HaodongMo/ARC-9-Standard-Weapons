@@ -1093,17 +1093,17 @@ SWEP.Attachments = {
         Scale = 0.75,
         CorrectiveAng = Angle(-1.0, -1.15, 0)
     },
-    {
-        PrintName = "DOVETAIL",
-        InstalledElements = {"dtail"},
-        ExcludeElements = {"blockdovetail"},
-        Category = "optic_dovetail",
-        Bone = "tag_weapon",
-        Pos = Vector(0, 1.8, 2.5),
-        Ang = Angle(90, 0, -90),
-        Scale = 0.75,
-        CorrectiveAng = Angle(-1.0, -1.15, 0)
-    },
+    -- {
+    --     PrintName = "DOVETAIL",
+    --     InstalledElements = {"dtail"},
+    --     ExcludeElements = {"blockdovetail"},
+    --     Category = "optic_dovetail",
+    --     Bone = "tag_weapon",
+    --     Pos = Vector(0, 1.8, 2.5),
+    --     Ang = Angle(90, 0, -90),
+    --     Scale = 0.75,
+    --     CorrectiveAng = Angle(-1.0, -1.15, 0)
+    -- },
     {
         PrintName = "GRIP",
         Category = "ak_grip",
