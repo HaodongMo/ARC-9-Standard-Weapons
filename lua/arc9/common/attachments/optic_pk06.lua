@@ -29,3 +29,4 @@ ATT.ModelOffset = Vector(0, 0, -0.375)
 ATT.SwayAdd = 0.01
 ATT.FreeAimRadiusMultSights = 0.25
 ATT.SprintToFireTimeAdd = 0.012
+ATT.AimDownSightsTimeAdd = 0.01

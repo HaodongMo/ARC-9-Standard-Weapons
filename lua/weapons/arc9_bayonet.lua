@@ -67,27 +67,18 @@ SWEP.Firemodes = {
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 12 / 1.25 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0.75 + 1 -- How much the gun sways.
+SWEP.FreeAimRadius = 0
 
-SWEP.SwayMultMidAir = 2
-SWEP.SwayMultMove = 1.15
-SWEP.SwayMultCrouch = 0.66
-SWEP.SwayMultShooting = 1.2
+SWEP.SprintToFireTime = 0.15 -- How long it takes to go from sprinting to being able to fire.
 
-SWEP.FreeAimRadiusSights = 1
-
-SWEP.SwayMultSights = 0.3
-
-SWEP.AimDownSightsTime = 0.33 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.35 -- How long it takes to go from sprinting to being able to fire.
-
-SWEP.SpeedMult = 0.95
+SWEP.SpeedMult = 1
 SWEP.SpeedMultSights = 0.75
 SWEP.SpeedMultShooting = 0.7
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 1
 SWEP.SpeedMultBlindFire = 1
+
+SWEP.ShootWhileSprint = true
 
 -------------------------- MELEE
 
@@ -97,7 +88,7 @@ SWEP.PrimaryBash = true
 SWEP.BashDamage = 50
 SWEP.BashLungeRange = 256
 SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
+SWEP.PreBashTime = 0.5
 SWEP.PostBashTime = 0.5
 
 -------------------------- TRACERS
@@ -157,7 +148,7 @@ SWEP.Animations = {
     },
 
     ["bash"] = {
-        Source = "attack"
+        Source = {"attack", "attack2", "attack3"}
     },
 
 }
