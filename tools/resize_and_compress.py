@@ -9,9 +9,23 @@ from ctypes import create_string_buffer
 from VTFLibWrapper.VTFLibEnums import ImageFormat
 
 PATH_TO_DIR = "materials/"
-CLAMP_SIZE = 2048
 
 vtf_lib = VTFLib.VTFLib()
+
+def has_transparency(img):
+    if image.info.get("transparency", None) is not None:
+        return True
+    if img.mode == "P":
+        transparent = img.info.get("transparency", -1)
+        for _, index in img.getcolors():
+            if index == transparent:
+                return True
+    elif img.mode == "RGBA":
+        extrema = img.getextrema()
+        if extrema[3][0] < 255:
+            return True
+
+    return False
 
 for path, subdirs, files in os.walk(PATH_TO_DIR):
     for name in files:
@@ -28,9 +42,9 @@ for path, subdirs, files in os.walk(PATH_TO_DIR):
 
             # print(filepath)
             scale = 1
-            if w > CLAMP_SIZE or h > CLAMP_SIZE:
+            if w > 2048 or h > 2048:
                 maxd = max(w, h)
-                scale = CLAMP_SIZE / maxd
+                scale = 2048 / maxd
                 neww *= scale
                 newh *= scale
 
