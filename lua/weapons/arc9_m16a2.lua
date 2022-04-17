@@ -47,6 +47,7 @@ end
 
 SWEP.ViewModel = "models/weapons/arc9/c_ud_m16.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
+SWEP.ViewModelFOV = 70
 
 SWEP.Slot = 2
 
@@ -209,8 +210,8 @@ SWEP.IronSights = {
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, 0)
 
-SWEP.ActivePos = Vector(0, 0, -1)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(0.33, 0, 0)
+SWEP.ActiveAng = Angle(0, 0, -3)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(20, 32, 4)
