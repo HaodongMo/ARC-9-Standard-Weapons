@@ -16,4 +16,15 @@
 	"$envmap" "env_cubemap"
 	"$envmaptint" "[.015 .015 .015]"
 	"$nocull" "1"
+
+	$detail ""
+    	$detailblendmode 4
+   	$detailblendfactor 5
+	Proxies {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            			blend $detailblendfactor
+		}
+	}
 }

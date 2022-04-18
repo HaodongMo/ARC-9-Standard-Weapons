@@ -1198,4 +1198,12 @@ SWEP.Attachments = {
         Pos = Vector(0, -3, 24),
         Ang = Angle(90, 0, -90),
     },
+    {
+        PrintName = "Cosmetic",
+        DefaultCompactName = "Skin",
+        Bone = "m16_parent",
+        Pos = Vector(0, 5, -5),
+        Ang = Angle(0, 0, 0),
+        Category = "universal_camo",
+    },
 }
