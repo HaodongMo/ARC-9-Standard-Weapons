@@ -253,9 +253,9 @@ SWEP.ReloadHideBoneTables = {
 }
 -------------------------- SOUNDS
 
-local path = ")^weapons/arccw_ur/ak/"
-local path1 = ")^weapons/arccw_ur/mp5/"
-local common = ")^/arccw_uc/common/" --temp for now i guess
+local path = ")^weapons/arc9_ud/ak/"
+local path1 = ")^weapons/arc9_ud/mp5/"
+local common = ")^/arc9_ud/common/" --temp for now i guess
 --SWEP.FirstShootSound = path .. "fire_first.ogg"
 SWEP.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
 SWEP.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
