@@ -1,6 +1,6 @@
 // Created by Crowbar 0.71
 
-$modelname "weapons/arccw_ushanka/ultima.mdl"
+$modelname "weapons/arc9_ushanka/ultima.mdl"
 
 $bodygroup "studio"
 {
@@ -14,7 +14,7 @@ $contents "solid"
 
 $illumposition -0.148 -0.142 0.669
 
-$cdmaterials "models\weapons\arccw_ushanka\ultima\"
+$cdmaterials "models\weapons/arc9_ushanka\ultima\"
 
 $attachment "holosight" "holosight" 0 0 0 rotate 0 0 0
 

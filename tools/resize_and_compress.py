@@ -9,13 +9,15 @@ from ctypes import create_string_buffer
 from VTFLibWrapper.VTFLibEnums import ImageFormat
 
 # Edit these variables
-PATH_TO_DIR = "materials/"
+PATH_TO_DIR = "materials/models/weapons/arc9/ur_spas12"
 CLAMP_SIZE = 2048
 
 vtf_lib = VTFLib.VTFLib()
 
 for path, subdirs, files in os.walk(PATH_TO_DIR):
+    # print(path)
     for name in files:
+        print(name)
         filepath = os.path.join(path, name)
         filetype = name.split(".")[-1]
         if filetype == "vtf":
@@ -27,7 +29,6 @@ for path, subdirs, files in os.walk(PATH_TO_DIR):
             newh = h
             format = vtf_lib.image_format()
 
-            # print(filepath)
             scale = 1
             if w > CLAMP_SIZE or h > CLAMP_SIZE:
                 maxd = max(w, h)
@@ -38,6 +39,7 @@ for path, subdirs, files in os.walk(PATH_TO_DIR):
             # print(format.name)
 
             if scale != 1 or format not in (ImageFormat.ImageFormatDXT1, ImageFormat.ImageFormatDXT5):
+            # if True:
                 image_full = vtf_lib.image_load(filepath, False)
                 def_options = vtf_lib.create_default_params_structure()
                 image_data = vtf_lib.get_rgba8888()

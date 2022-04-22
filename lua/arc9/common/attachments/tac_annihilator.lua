@@ -6,7 +6,7 @@ ATT.Icon = Material("entities/arc9_att_tac_annihilator.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "optic_picatinny"
-ATT.Model = "models/weapons/arccw/atts/ur_annihilator_laser.mdl"
+ATT.Model = "models/weapons/arc9/atts/ur_annihilator_laser.mdl"
 ATT.Folder = "LIGHT-LAM"
 
 ATT.AimDownSightsTimeMult = 1.04
