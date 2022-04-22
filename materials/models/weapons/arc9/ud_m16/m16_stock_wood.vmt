@@ -15,6 +15,16 @@
 	"$envmapFresnelMinMaxExp" "[0 5 .4]"
 	"$envmaptint" "[.1 .1  .1]"
 	
-	"$ambientocclusion" "1"
+
 	"$nocull" "1"
+	$detail ""
+    	$detailblendmode 2
+   	$detailblendfactor 0.5
+	Proxies {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            			blend $detailblendfactor
+		}
+	}
 }

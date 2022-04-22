@@ -256,11 +256,12 @@ SWEP.ReloadHideBoneTables = {
 local path = ")^weapons/arc9_ud/ak/"
 local path1 = ")^weapons/arc9_ud/mp5/"
 local common = ")^weapons/arc9_ud/common/"
-SWEP.FirstShootSound = path .. "fire_first.ogg"
-SWEP.ShootSound = {path .. "fire_auto_1.ogg", path .. "fire_auto_2.ogg", path .. "fire_auto_3.ogg"}
-SWEP.DistantShootSound = path .. "fire_dist.ogg"
-SWEP.ShootSoundSilenced = {path .. "fire_sup_1.ogg", path .. "fire_sup_2.ogg", path .. "fire_sup_3.ogg"}
-SWEP.DryFireSound = "weapons/arc9_ud/ak/dryfire.ogg"
+--SWEP.FirstShootSound = path .. "fire_first.ogg"
+SWEP.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
+SWEP.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+SWEP.ShootSoundSilenced = path .. "fire_sup_1.ogg", path .. "fire_sup_2.ogg", path .. "fire_sup_3.ogg" -- Temporary
+SWEP.DistantShootSoundSilenced = common .. "sup_tail.ogg"
+SWEP.ShootDrySound = path .. "dryfire.ogg"
 
 -- SWEP.ShootSound = ""
 -- SWEP.FirstShootSound = ""
@@ -343,7 +344,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            {s = path .. "mech.ogg", t = 0},
+            {s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0},
             -- {s = "", t = 0}
         }
     },
