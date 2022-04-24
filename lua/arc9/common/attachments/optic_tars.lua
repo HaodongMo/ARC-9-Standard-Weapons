@@ -14,9 +14,10 @@ ATT.Category = "optic_picatinny"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 9.5, -1.70395),
+        Pos = Vector(0, 15, -1.70395),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.15
+        Magnification = 1.15,
+        ViewModelFOV = 15
     },
 }
 
@@ -35,7 +36,7 @@ ATT.RTScopeAdjustmentLevels = 4
 ATT.RTScopeReticle = Material("arc9/tars_only.png", "mips smooth")
 ATT.RTScopeColorable = true
 
-ATT.ScopeScreenRatio = 0.9
+ATT.ScopeScreenRatio = 0.95
 ATT.ScopeLength = 30
 
 ATT.Scale = 1.25

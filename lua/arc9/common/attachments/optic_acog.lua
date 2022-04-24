@@ -16,9 +16,10 @@ ATT.Folder = "SCOPE"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -1.623),
+        Pos = Vector(0, 10, -1.623),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.5
+        Magnification = 1.5,
+        ViewModelFOV = 15
     },
     {
         Pos = Vector(0, 7.5, -2.943875),
@@ -35,7 +36,7 @@ ATT.RTScopeReticle = Material("arc9/acog.png", "mips smooth")
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 
-ATT.ScopeScreenRatio = 0.33
+ATT.ScopeScreenRatio = 0.9
 
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, -0.25)

@@ -22,7 +22,7 @@ ATT.Sights = {
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("arc9/okp7.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 512
+ATT.HoloSightSize = 400
 ATT.HoloSightColor = Color(165, 255, 168)
 
 ATT.ModelOffset = Vector(0, 0, -0.32)
