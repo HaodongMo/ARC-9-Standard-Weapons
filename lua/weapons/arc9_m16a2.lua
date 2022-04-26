@@ -210,6 +210,7 @@ SWEP.IronSights = {
 SWEP.SprintAng = Angle(30, -10, -20)
 SWEP.SprintPos = Vector(3, 0, 0)
 
+SWEP.ViewModelFOVBase = 75
 SWEP.ActivePos = Vector(0.33, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, -3)
 

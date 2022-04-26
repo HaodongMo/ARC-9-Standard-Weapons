@@ -103,7 +103,8 @@ SWEP.HasSights = false
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, 0)
 
-SWEP.ActivePos = Vector(0, 0, -1)
+SWEP.ViewModelFOVBase = 90
+SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
