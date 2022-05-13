@@ -59,6 +59,30 @@ $sequence "attack" {
 	fadeout 0.03
 }
 
+$sequence "attack_hit" {
+	"anims\attack_hit.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+	fadein 0.03
+	fadeout 0.03
+}
+
+$sequence "attack2_hit" {
+	"anims\attack2_hit.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+	fadein 0.03
+	fadeout 0.03
+}
+
+$sequence "attack3_hit" {
+	"anims\attack3_hit.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+	fadein 0.03
+	fadeout 0.03
+}
+
 $sequence "attack2" {
 	"anims\attack2.smd"
 	fps 30
