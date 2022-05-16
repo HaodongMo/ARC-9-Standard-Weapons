@@ -178,6 +178,13 @@ SWEP.RecoilAutoControl = 1 * 0.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.25
 
+SWEP.FOV_RecoilAdd = 8 -- FOV to increase or decrease by.
+SWEP.FOV_Recoil_TimeStart = 0.1 -- Peak
+SWEP.FOV_Recoil_TimeEnd = 0.45 -- Until dropoff
+-- https://wiki.facepunch.com/gmod/math.ease
+SWEP.FOV_Recoil_FuncStart = math.ease.OutCirc -- Function to use
+SWEP.FOV_Recoil_FuncEnd = math.ease.InCirc
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.001
