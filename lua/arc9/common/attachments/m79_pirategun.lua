@@ -18,3 +18,13 @@ ATT.SwayMult = 2
 ATT.ModelOffset = Vector(-24, -3.5, 6)
 ATT.Model = "models/weapons/arc9/lhik/lhik_short.mdl"
 ATT.LHIK = true
+
+
+ATT.Attachments = {
+    {
+        PrintName = "Buffer Tube",
+        Category = "eft_ar15_buffertube",
+        Pos = Vector(11, 0, 0),
+        Ang = Angle(0, 90, 0),
+    },
+}
