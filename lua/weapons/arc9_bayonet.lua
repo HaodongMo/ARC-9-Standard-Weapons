@@ -152,6 +152,10 @@ SWEP.Animations = {
         Source = {"attack", "attack2", "attack3"}
     },
 
+    ["impact"] = {
+        Source = {"attack1_hit", "attack2_hit", "attack3_hit"}
+    },
+
 }
 
 -------------------------- ATTACHMENTS
