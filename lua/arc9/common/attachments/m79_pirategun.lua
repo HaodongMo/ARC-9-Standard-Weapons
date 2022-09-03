@@ -25,6 +25,6 @@ ATT.Attachments = {
         PrintName = "Buffer Tube",
         Category = "eft_ar15_buffertube",
         Pos = Vector(11, 0, 0),
-        Ang = Angle(0, 90, 0),
+        Ang = Angle(0, 15, 0),
     },
 }

@@ -15,7 +15,14 @@ ATT.Attachments = {
         Category = {"optic_picatinny", "picatinny"}, // single or {"list", "of", "values"}
         Pos = Vector(0.25, 0, -4),
         Ang = Angle(0, 0, 0),
-    }
+    },
+    {
+        PrintName = "Buffer Tube",
+        Category = "eft_ar15_buffertube",
+        VMBone = "m79_body",
+        Pos = Vector(5, 0, 1),
+        Ang = Angle(0, 15, 0),
+    },
 }
 
 ATT.RecoilAutoControlMult = 0.95

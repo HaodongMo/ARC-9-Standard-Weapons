@@ -25,7 +25,7 @@ ATT.RTScopeFOV = 15
 ATT.RTScopeReticle = Material("arc9/colt.png", "mips smooth")
 ATT.RTScopeColor = Color(255, 255, 255)
 
-ATT.ScopeScreenRatio = 0.5
+ATT.ScopeScreenRatio = 0.3333
 
 ATT.ModelOffset = Vector(0, 0, -0.1)
 
