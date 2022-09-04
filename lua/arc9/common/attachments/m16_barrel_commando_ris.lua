@@ -21,7 +21,8 @@ ATT.Attachments = {
         Category = {"grip_picatinny", "picatinny"},
         Pos = Vector(-3, 0, 1.45),
         Ang = Angle(0, 0, 180),
-        Icon_Offset = Vector(0, 0, 0)
+        Icon_Offset = Vector(0, 0, 0),
+        MergeSlots = {2}
     },
     {
         Category = "ubgl_picatinny",

@@ -15,6 +15,9 @@ ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
         Source = "fire",
     },
+    ["fire_empty_ubgl"] = {
+        Source = "fire",
+    },
     ["reload_ubgl"] = {
         Source = "reload",
         EventTable = {
@@ -31,6 +34,9 @@ ATT.IKAnimationProxy = {
         Source = "to_armed"
     },
     ["idle_ubgl"] = {
+        Source = "idle_armed"
+    },
+    ["idle_empty_ubgl"] = {
         Source = "idle_armed"
     },
     ["idle"] = {
