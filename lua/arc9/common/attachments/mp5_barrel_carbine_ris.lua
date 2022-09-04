@@ -29,7 +29,7 @@ ATT.SpreadMultSights = 0.85
 ATT.Attachments = {
     {
         PrintName = "RAIL",
-        Category = {"grip_picatinny", "picatinny"},
+        Category = {"grip_picatinny", "picatinny", "eft_tactical", "eft_tactical_top"},
         Pos = Vector(-0.5, 0, 1.45),
         Ang = Angle(0, 0, 180),
         Icon_Offset = Vector(-1, 0, 0),
@@ -37,7 +37,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "RAIL",
-        Category = "picatinny",
+        Category = {"picatinny", "eft_tactical", "eft_tactical_top"},
         Pos = Vector(-1, -0.75, 0.725),
         Ang = Angle(0, 0, -90),
         Icon_Offset = Vector(0.5, 0, 0),
@@ -45,7 +45,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "RAIL",
-        Category = "picatinny",
+        Category = {"picatinny", "eft_tactical", "eft_tactical_top"},
         Pos = Vector(-1, 0.75, 0.725),
         Ang = Angle(0, 0, 90),
         Icon_Offset = Vector(-3, 0, 0),

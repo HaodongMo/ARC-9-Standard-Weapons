@@ -224,8 +224,8 @@ SWEP.CustomizeSnapshotFOV = 70
 -------------------------- HoldTypes
 
 SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "normal"
-SWEP.HoldTypeHolstered = "normal"
+SWEP.HoldTypeSprint = "rpg"
+SWEP.HoldTypeHolstered = "rpg"
 SWEP.HoldTypeSights = "rpg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
@@ -724,6 +724,7 @@ SWEP.Attachments = {
     {
         PrintName = "OPTIC",
         Category = "optic_picatinny",
+        DefaultIcon = Material("arc9/def_att_icons/optic.png"),
         Pos = Vector(0, -5.55, 7),
         Ang = Angle(90, 0, -90),
         Bone = "Body",
@@ -741,6 +742,7 @@ SWEP.Attachments = {
     {
         PrintName = "MAG",
         Category = "deagle_mag",
+        DefaultIcon = Material("arc9/def_att_icons/mag_pistol.png"),
         Pos = Vector(0, -1, 1),
         Ang = Angle(90, 0, -90),
         Bone = "Body",
@@ -749,6 +751,7 @@ SWEP.Attachments = {
     {
         PrintName = "FINISH",
         Category = {"skin_black", "skin_chrome", "skin_gold"},
+        DefaultIcon = Material("arc9/def_att_icons/skin.png"),
         Pos = Vector(0, -3, -2),
         Ang = Angle(90, 0, -90),
         Bone = "Body",
@@ -757,6 +760,7 @@ SWEP.Attachments = {
     {
         PrintName = "GRIP",
         Category = "deagle_grip",
+        DefaultIcon = Material("arc9/def_att_icons/grip_ar.png"),
         Pos = Vector(0, -2.75, 1.25),
         Ang = Angle(90, 0, -90),
         Bone = "Body",
@@ -765,6 +769,7 @@ SWEP.Attachments = {
     {
         PrintName = "AMMO",
         DefaultName = "Standard FMJ",
+        DefaultIcon = Material("arc9/def_att_icons/ammotype.png"),
         Category = {"ammo_pistol", "ammo"},
         Pos = Vector(0, 1, 2),
         Ang = Angle(90, 0, -90),

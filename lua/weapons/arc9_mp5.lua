@@ -231,8 +231,8 @@ SWEP.CustomizeSnapshotFOV = 100
 -------------------------- HoldTypes
 
 SWEP.HoldType = "ar2"
-SWEP.HoldTypeSprint = "passive"
-SWEP.HoldTypeHolstered = "passive"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
 SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
@@ -644,7 +644,8 @@ SWEP.Attachments = {
     {
         PrintName = "OPTIC",
         InstalledElements = {"rail"},
-        Category = "optic_picatinny",
+        Category = {"optic_picatinny", "eft_optic_large"},
+        DefaultIcon = Material("arc9/def_att_icons/optic.png"),
         Bone = "body",
         Pos = Vector(0, -1.2, 3.5),
         Ang = Angle(90, 0, -90),
@@ -656,6 +657,7 @@ SWEP.Attachments = {
         DefaultCompactName = "CAP",
         Installed = "mp5_stock_solid",
         Category = {"mp5_stock", "bt_stock"},
+        DefaultIcon = Material("arc9/def_att_icons/stock_ak.png"),
         Bone = "body",
         Pos = Vector(0, 0.85, -4),
         Ang = Angle(90, 0, -90),
@@ -667,6 +669,7 @@ SWEP.Attachments = {
         DefaultCompactName = "9\"DWF",
         DefaultName_TrueName = "H&K 9\" Standard Barrel",
         DefaultCompactName_TrueName = "9\"HK",
+        DefaultIcon = Material("arc9/def_att_icons/barrel.png"),
         Category = "mp5_barrel",
         Bone = "body",
         Pos = Vector(0, 0.1, 10),
@@ -685,6 +688,7 @@ SWEP.Attachments = {
     {
         PrintName = "MAG",
         DefaultName = "Standard 30 Round",
+        DefaultIcon = Material("arc9/def_att_icons/mag_pistol.png"),
         Category = "mp5_mag",
         Bone = "body",
         Icon_Offset = Vector(0, 0, 0),
@@ -694,6 +698,7 @@ SWEP.Attachments = {
     {
         PrintName = "AMMO",
         DefaultName = "Standard FMJ",
+        DefaultIcon = Material("arc9/def_att_icons/ammotype.png"),
         Category = {"ammo_pistol", "ammo"},
         Bone = "body",
         Pos = Vector(0, 6, 7),

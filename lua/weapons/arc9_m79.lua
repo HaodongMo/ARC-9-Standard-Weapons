@@ -495,6 +495,7 @@ SWEP.Attachments = {
     {
         PrintName = "AMMO",
         DefaultName = "HE",
+        DefaultIcon = Material("arc9/def_att_icons/ammotype_gl.png"),
         Category = {"m79_grenade", "ammo_gl"},
         Bone = "m79_body",
         Pos = Vector(0, 0, 0),

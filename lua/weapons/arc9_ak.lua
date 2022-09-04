@@ -1066,6 +1066,7 @@ SWEP.Attachments = {
     {
         PrintName = "BARREL",
         Category = "ak_barrel",
+        DefaultIcon = Material("arc9/def_att_icons/barrel.png"),
         Bone = "tag_weapon",
         Pos = Vector(0, 12, 2.7),
         Ang = Angle(0, -90, 0),
@@ -1095,6 +1096,7 @@ SWEP.Attachments = {
     {
         PrintName = "STOCK",
         Category = {"ak_stock", "bt_stock"},
+        DefaultIcon = Material("arc9/def_att_icons/stock_ak.png"),
         Bone = "tag_weapon",
         Installed = "ak_stock_solid",
         Pos = Vector(0, -6, 2.49),
@@ -1116,6 +1118,7 @@ SWEP.Attachments = {
     {
         PrintName = "GRIP",
         Category = "ak_grip",
+        DefaultIcon = Material("arc9/def_att_icons/grip_ak.png"),
         Bone = "tag_weapon",
         ExcludeElements = {"blockgrip"},
         Pos = Vector(0, -1, 0),
@@ -1126,6 +1129,7 @@ SWEP.Attachments = {
     {
         PrintName = "MAG",
         DefaultName = "Standard 30 Round",
+        DefaultIcon = Material("arc9/def_att_icons/mag_ak.png"),
         Category = "ak_mag",
         Bone = "tag_weapon",
         Icon_Offset = Vector(0, 0, 0),
@@ -1136,6 +1140,7 @@ SWEP.Attachments = {
     {
         PrintName = "AMMO",
         DefaultName = "Standard FMJ",
+        DefaultIcon = Material("arc9/def_att_icons/ammotype.png"),
         Category = {"ammo_assault", "ammo"},
         Bone = "tag_weapon",
         Pos = Vector(0, 7, -2),

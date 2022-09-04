@@ -1139,6 +1139,7 @@ SWEP.Attachments = {
     {
         PrintName = "TUBE",
         DefaultName = "Buffer Tube",
+        DefaultIcon = Material("arc9/def_att_icons/stock_ak.png"),
         Category = {"m16_stock", "bt_stock"},
         Installed = "m16_stock_solid",
         Bone = "m16_parent",
@@ -1151,6 +1152,7 @@ SWEP.Attachments = {
         DefaultCompactName = "20\"RIB",
         DefaultName_TrueName = "Colt M16A2 20\" Barrel",
         DefaultCompactName_TrueName = "20\"A2",
+        DefaultIcon = Material("arc9/def_att_icons/barrel.png"),
         Category = {"m16_barrel"},
         Bone = "m16_parent",
         Pos = Vector(0, -0.05, 10),
@@ -1168,6 +1170,7 @@ SWEP.Attachments = {
     {
         PrintName = "MAG",
         DefaultName = "Standard 30 Round",
+        DefaultIcon = Material("arc9/def_att_icons/mag_ar.png"),
         Category = "m16_mag",
         Bone = "m16_parent",
         Pos = Vector(0, 4, 6),
@@ -1176,6 +1179,7 @@ SWEP.Attachments = {
     {
         PrintName = "AMMO",
         DefaultName = "Standard FMJ",
+        DefaultIcon = Material("arc9/def_att_icons/ammotype.png"),
         Category = {"ammo", "ammo_assault"},
         Bone = "m16_parent",
         Pos = Vector(0, 6, 7),
@@ -1184,6 +1188,7 @@ SWEP.Attachments = {
     {
         PrintName = "GRIP",
         DefaultName = "Factory Grip",
+        DefaultIcon = Material("arc9/def_att_icons/grip_ar.png"),
         ExcludeElements = {"gripstock"},
         Category = "m16_grip",
         Bone = "m16_parent",
@@ -1200,6 +1205,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "FS",
+        DefaultIcon = Material("arc9/def_att_icons/fs.png"),
         Category = {"m16lp"},
         Bone = "m16_parent",
         ExcludeElements = {"fpw"},
@@ -1209,6 +1215,7 @@ SWEP.Attachments = {
     {
         PrintName = "Cosmetic",
         DefaultCompactName = "Skin",
+        DefaultIcon = Material("arc9/def_att_icons/skin.png"),
         Bone = "m16_parent",
         Pos = Vector(0, 5, -5),
         Ang = Angle(0, 0, 0),
