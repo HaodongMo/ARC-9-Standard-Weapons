@@ -3,7 +3,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC-9"
+SWEP.Category = "ARC9 - Standard (do not use)"
 
 SWEP.PrintName = "Gryphon Century"
 SWEP.TrueName = "Desert Eagle"

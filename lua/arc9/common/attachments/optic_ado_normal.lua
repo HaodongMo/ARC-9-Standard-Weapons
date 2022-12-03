@@ -5,7 +5,7 @@ ATT.Description = [[3-9x variable optic with integrated red dot mounted on top. 
 ATT.SortOrder = 9
 
 ATT.Model = "models/weapons/arc9/atts/ado.mdl"
-ATT.Folder = "SCOPE"
+ATT.Folder = "Scopes"
 
 ATT.Category = "optic_picatinny"
 
