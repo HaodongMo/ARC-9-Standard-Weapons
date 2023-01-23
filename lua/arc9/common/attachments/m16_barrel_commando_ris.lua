@@ -51,7 +51,7 @@ ATT.Attachments = {
         Pos = Vector(-3, 0, -1.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        MergeSlots = {5, 6},
+        MergeSlots = {6, 7},
     },
     {
         PrintName = "RAIL",
